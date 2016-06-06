@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.name          = "openstack-ruby-sdk"
   s.version       = OpenStackRubySDK::VERSION
   s.authors       = ["Matt Darby"]
-  s.email         = ["matt.darby@openstack.com"]
+  s.email         = ["matt.darby@rackspace.com"]
 
   s.summary       = "OpenStack Ruby SDK"
   s.description   = "OpenStack Ruby SDK"
