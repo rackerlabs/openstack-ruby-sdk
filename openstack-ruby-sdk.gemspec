@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
 
   s.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|s|features)/}) }
   s.bindir        = "bin"
-  s.executables   = [""]
+  s.executables   = []
   s.require_paths = ["lib"]
 
   s.add_dependency "rackspace-ruby-sdk-core"
