@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe Openstack::Ruby::Sdk do
+describe OpenStackRubySDK do
   it 'has a version number' do
-    expect(Openstack::Ruby::Sdk::VERSION).not_to be nil
+    expect(OpenStackRubySDK::VERSION).not_to be nil
   end
 
   it 'does something useful' do
