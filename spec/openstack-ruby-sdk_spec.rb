@@ -5,7 +5,8 @@ describe OpenStackRubySDK do
     expect(OpenStackRubySDK::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  it 'knows what services are available' do
+    expect(Peace.service_catalog.available_services.size).to be > 0
   end
+
 end
