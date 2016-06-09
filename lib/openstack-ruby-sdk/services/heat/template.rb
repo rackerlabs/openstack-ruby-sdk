@@ -1,4 +1,5 @@
 class OpenStackRubySDK::Heat::Template < Peace::Model
+  attr_accessor :HeatTemplateFormatVersion, :Outputs, :Parameters, :Resources
   # GET /v1/​{tenant_id}​/stacks/​{stack_name}​/​{stack_id}​/template
   # GET /v1/​{tenant_id}​/template_versions
   # POST /v1/​{tenant_id}​/validate
