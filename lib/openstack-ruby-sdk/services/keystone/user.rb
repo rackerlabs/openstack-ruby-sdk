@@ -1,4 +1,5 @@
 class OpenStackRubySDK::Keystone::User < Peace::Model
+  attr_accessor :default_project_id, :description, :domain_id, :email, :enabled, :id, :links, :name
   # GET /v3/users
   # POST /v3/users
   # GET /v3/users/​{user_id}​

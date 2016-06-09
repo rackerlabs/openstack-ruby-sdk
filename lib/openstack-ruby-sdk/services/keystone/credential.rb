@@ -1,4 +1,5 @@
 class OpenStackRubySDK::Keystone::Credential < Peace::Model
+  attr_accessor :blob, :id, :links, :project_id, :type, :user_id
   # POST /v3/credentials
   # GET /v3/credentials
   # GET /v3/credentials/​{credential_id}​

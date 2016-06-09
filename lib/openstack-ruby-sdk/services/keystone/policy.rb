@@ -1,4 +1,5 @@
 class OpenStackRubySDK::Keystone::Policy < Peace::Model
+  attr_accessor :blob, :id, :links, :project_id, :type, :user_id
   # POST /v3/policies
   # GET /v3/policies
   # GET /v3/policies/​{policy_id}​

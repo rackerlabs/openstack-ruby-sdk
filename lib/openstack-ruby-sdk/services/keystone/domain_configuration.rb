@@ -1,4 +1,5 @@
 class OpenStackRubySDK::Keystone::DomainConfiguration < Peace::Model
+  attr_accessor :identity, :ldap
   # GET /v3/domains/​{domain_id}​/config
   # PATCH /v3/domains/​{domain_id}​/config
   # DELETE /v3/domains/​{domain_id}​/config
