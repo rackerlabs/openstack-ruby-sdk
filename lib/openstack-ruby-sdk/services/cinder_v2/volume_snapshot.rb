@@ -1,5 +1,5 @@
 class OpenStackRubySDK::CinderV2::VolumeSnapshot < Peace::Model
-  attr_accessor :created_at, :description, :id, :metadata, :name, :"os-extended-snapshot-attributes:progress", :"os-extended-snapshot-attributes:project_id", :size, :status, :volume_id
+  attr_accessor :created_at, :description, :id, :metadata, :name, :os_extended_snapshot_attributes, :size, :status, :volume_id
   # POST /v2/​{tenant_id}​/snapshots
   # GET /v2/​{tenant_id}​/snapshots
   # GET /v2/​{tenant_id}​/snapshots/detail
