@@ -8,7 +8,6 @@ end
 SERVICE_NAME_MAP = {
   "neutron"    => "neutron",
   "cinderv2"   => "cinderv2",
-  "aodh"       => "aodh",
   "glance"     => "glance",
   "ceilometer" => "ceilometer",
   "heat"       => "heat",
@@ -19,7 +18,6 @@ SERVICE_NAME_MAP = {
 SERVICE_KLASSES = {
   "neutron"    => "OpenStackRubySDK::Neutron",
   "cinderv2"   => "OpenStackRubySDK::CinderV2",
-  "aodh"       => "OpenStackRubySDK::Aodh",
   "glance"     => "OpenStackRubySDK::Glance",
   "ceilometer" => "OpenStackRubySDK::Ceilometer",
   "heat"       => "OpenStackRubySDK::Heat",
