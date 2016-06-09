@@ -1,4 +1,5 @@
 class OpenStackRubySDK::Neutron::Subnet < Peace::Model
+  attr_accessor :allocation_pools, :cidr, :created_at, :dns_nameservers, :enable_dhcp, :gateway_ip, :host_routes, :id, :ip_version, :name, :network_id, :tenant_id, :updated_at
   # GET /v2.0/subnets
   # POST /v2.0/subnets
   # POST /v2.0/subnets
