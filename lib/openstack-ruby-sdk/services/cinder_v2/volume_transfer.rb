@@ -1,4 +1,5 @@
 class OpenStackRubySDK::CinderV2::VolumeTransfer < Peace::Model
+  attr_accessor :created_at, :id, :links, :name, :volume_id
   # POST /v2/​{tenant_id}​/os-volume-transfer
   # GET /v2/​{tenant_id}​/os-volume-transfer
   # GET /v2/​{tenant_id}​/os-volume-transfer/detail
