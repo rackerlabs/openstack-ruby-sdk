@@ -6,7 +6,6 @@ module OpenStackRubySDK
 end
 
 SERVICE_NAME_MAP = {
-  "nova"       => "nova",
   "neutron"    => "neutron",
   "cinderv2"   => "cinderv2",
   "aodh"       => "aodh",
@@ -18,7 +17,6 @@ SERVICE_NAME_MAP = {
 }
 
 SERVICE_KLASSES = {
-  "nova"       => "OpenStackRubySDK::Nova",
   "neutron"    => "OpenStackRubySDK::Neutron",
   "cinderv2"   => "OpenStackRubySDK::CinderV2",
   "aodh"       => "OpenStackRubySDK::Aodh",
