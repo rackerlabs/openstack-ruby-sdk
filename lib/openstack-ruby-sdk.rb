@@ -6,23 +6,25 @@ module OpenStackRubySDK
 end
 
 SERVICE_NAME_MAP = {
-  "neutron"    => "neutron",
+  "ceilometer" => "ceilometer",
   "cinderv2"   => "cinderv2",
   "glance"     => "glance",
-  "ceilometer" => "ceilometer",
   "heat"       => "heat",
-  "swift"      => "swift",
-  "keystone"   => "keystone"
+  "keystone"   => "keystone",
+  "neutron"    => "neutron",
+  "nova"       => "nova",
+  "swift"      => "swift"
 }
 
 SERVICE_KLASSES = {
-  "neutron"    => "OpenStackRubySDK::Neutron",
+  "ceilometer" => "OpenStackRubySDK::Ceilometer",
   "cinderv2"   => "OpenStackRubySDK::CinderV2",
   "glance"     => "OpenStackRubySDK::Glance",
-  "ceilometer" => "OpenStackRubySDK::Ceilometer",
   "heat"       => "OpenStackRubySDK::Heat",
-  "swift"      => "OpenStackRubySDK::Swift",
-  "keystone"   => "OpenStackRubySDK::Keystone"
+  "keystone"   => "OpenStackRubySDK::Keystone",
+  "neutron"    => "OpenStackRubySDK::Neutron",
+  "nova"       => "OpenStackRubySDK::Nova",
+  "swift"      => "OpenStackRubySDK::Swift"
 }
 
 Dir[File.expand_path "lib/openstack-ruby-sdk/services/**/base.rb"].each{ |f| require_relative f }
