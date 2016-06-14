@@ -4,7 +4,7 @@ describe OpenStackRubySDK do
   before do
     ENV['SDK'] = "openstack"
   end
-  
+
   it 'has a version number' do
     expect(OpenStackRubySDK::VERSION).not_to be nil
   end
@@ -37,7 +37,7 @@ describe OpenStackRubySDK do
     end
 
     it 'knows the URL for a service based on name and region' do
-      expect(Peace.service_catalog.url_for('compute')).not_to be_nil
+      expect(Peace.service_catalog.url_for('neutron')).not_to be_nil
     end
 
     it 'expects these env vars' do
