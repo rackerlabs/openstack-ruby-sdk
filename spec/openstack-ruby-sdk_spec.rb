@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK do
+describe OpenStackRubySDK, :vcr do
   before do
     ENV['SDK'] = "openstack"
   end

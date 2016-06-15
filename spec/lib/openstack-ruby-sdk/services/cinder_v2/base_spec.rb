@@ -1,8 +1,5 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::CinderV2 do
+describe OpenStackRubySDK::CinderV2, :vcr do
   let(:base){ OpenStackRubySDK::CinderV2.new }
-  
-  it 'does something' do
-  end
 end
