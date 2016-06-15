@@ -16,8 +16,6 @@ class OpenStackRubySDK::Nova::Server < Peace::Model
   attr_with_alias :vm_state, 'OS-EXT-STS:vm_state'
   attr_with_alias :zone_id, 'RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId'
 
-  # require_attributes :image_id, :flavor_id
-
   belongs_to :user
   belongs_to :tenant
   belongs_to :boot_volume
@@ -51,17 +49,7 @@ class OpenStackRubySDK::Nova::Server < Peace::Model
 
   # http://api.rackspace.com/#createImage
   def create_image(name, options={})
-    # data = {
-    #     "createImage" : {
-    #         "name" : "new-image",
-    #         "metadata": {
-    #             "ImageType": "Gold",
-    #             "ImageVersion": "2.0"
-    #         }
-    #     }
-    # }
-    #
-    # perform_action!(data)
+    perform_action!({ createImage: { name: name, metadata: options } })
   end
 
   # http://api.rackspace.com/#confirmResizeServer
@@ -71,7 +59,7 @@ class OpenStackRubySDK::Nova::Server < Peace::Model
 
   # http://api.rackspace.com/#rebootServer
   def reboot(type='SOFT')
-    perform_action!(reboot: {type: type})
+    perform_action!(reboot: { type: type })
   end
 
   # http://api.rackspace.com/#rebuildServer
@@ -132,7 +120,7 @@ class OpenStackRubySDK::Nova::Server < Peace::Model
   private
 
   def perform_action!(data)
-    Peace::Request.post("#{url}/actions", data)
+    Peace::Request.post("#{url}/action", data)
   end
 
 end

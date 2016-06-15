@@ -23,23 +23,23 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 15 Jun 2016 16:11:56 GMT
+      - Wed, 15 Jun 2016 18:40:38 GMT
       Server:
       - Apache
       Vary:
       - X-Auth-Token
       X-Openstack-Request-Id:
-      - req-0ac8010f-930d-4133-bcb1-4c54d502aea9
+      - req-b8270110-18f3-43d8-8c7a-ef743279808d
       Content-Length:
       - '4281'
       Content-Type:
       - application/json
     body:
       encoding: UTF-8
-      string: '{"access": {"token": {"issued_at": "2016-06-15T16:11:56.000000Z", "expires":
-        "2016-06-16T04:11:56Z", "id": "gAAAAABXYX5MH8aUulKf84zgfj-4fY01dxB3q6KpSiT6l9ytU-cRcdOWNFW2odsDCC4X0Rt1OLe8PeXqOAS1INzpumsjpsuq_mRbSuMxB1gz91BobUTNJt5yH5f5oa6MUdy_cfG0GHmThD9DowqCV5pNO6IqZZTSxwyXvYjAUzMlgzcsF6bG2Bs",
+      string: '{"access": {"token": {"issued_at": "2016-06-15T18:40:38.000000Z", "expires":
+        "2016-06-16T06:40:38Z", "id": "gAAAAABXYaEmEk0Rl2W6m7g93zcjNnC3pkzcUei1uvoEKZEVLVWi1dgLFl0d5KsIiks00dimD8s6PTXaE1LK-NUn_n8026urlo7Lq7WfsdeHD-nYw32CyDyyltphQKV7A8YD75CeXqY15sPww4zDZvKMPpGBlOcXS9kec8X19rplJQ6QnX2y45Y",
         "tenant": {"description": "", "enabled": true, "id": "4f8f44a4262041e0a2330fb59099f810",
-        "name": "<OS_TENANT_NAME>"}, "audit_ids": ["WyBwxVj7SluBScCILG_zSg"]}, "serviceCatalog":
+        "name": "<OS_TENANT_NAME>"}, "audit_ids": ["1dzEqpVTTMuh5julcDgovg"]}, "serviceCatalog":
         [{"endpoints": [{"adminURL": "http://172.29.236.100:8774/v2/4f8f44a4262041e0a2330fb59099f810",
         "region": "RegionOne", "internalURL": "http://172.29.236.100:8774/v2.1/4f8f44a4262041e0a2330fb59099f810",
         "id": "5c705b8537e7476ea74527025de382c8", "publicURL": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810"}],
@@ -83,7 +83,7 @@ http_interactions:
         [], "id": "e77daadf2e414f6ab9dc5da0520510ca", "roles": [{"name": "admin"}],
         "name": "<OS_USERNAME>"}, "metadata": {"is_admin": 0, "roles": ["0ac5a1859cc345039eafaf2f9725bbe7"]}}}'
     http_version: 
-  recorded_at: Wed, 15 Jun 2016 16:11:56 GMT
+  recorded_at: Wed, 15 Jun 2016 18:40:39 GMT
 - request:
     method: post
     uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers
@@ -96,7 +96,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXYX5MH8aUulKf84zgfj-4fY01dxB3q6KpSiT6l9ytU-cRcdOWNFW2odsDCC4X0Rt1OLe8PeXqOAS1INzpumsjpsuq_mRbSuMxB1gz91BobUTNJt5yH5f5oa6MUdy_cfG0GHmThD9DowqCV5pNO6IqZZTSxwyXvYjAUzMlgzcsF6bG2Bs
+      - gAAAAABXYaEmEk0Rl2W6m7g93zcjNnC3pkzcUei1uvoEKZEVLVWi1dgLFl0d5KsIiks00dimD8s6PTXaE1LK-NUn_n8026urlo7Lq7WfsdeHD-nYw32CyDyyltphQKV7A8YD75CeXqY15sPww4zDZvKMPpGBlOcXS9kec8X19rplJQ6QnX2y45Y
       Content-Type:
       - application/json
       Content-Length:
@@ -111,7 +111,7 @@ http_interactions:
       Content-Length:
       - '444'
       Location:
-      - http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/d9aa9b17-34da-4bf1-bb85-48e7c6eef2eb
+      - http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/4666ff50-b066-438a-84ce-821e0ebe94eb
       Content-Type:
       - application/json
       X-Openstack-Nova-Api-Version:
@@ -119,21 +119,21 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-b87f710d-147a-469b-a8f4-dbb04b2a377b
+      - req-b82fbc1d-25d8-4c59-a3b2-27fc4f99f2d9
       Date:
-      - Wed, 15 Jun 2016 16:11:57 GMT
+      - Wed, 15 Jun 2016 18:40:39 GMT
     body:
       encoding: UTF-8
       string: '{"server": {"security_groups": [{"name": "default"}], "OS-DCF:diskConfig":
-        "MANUAL", "id": "d9aa9b17-34da-4bf1-bb85-48e7c6eef2eb", "links": [{"href":
-        "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/d9aa9b17-34da-4bf1-bb85-48e7c6eef2eb",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/d9aa9b17-34da-4bf1-bb85-48e7c6eef2eb",
-        "rel": "bookmark"}], "adminPass": "7pdFpRjN3RXs"}}'
+        "MANUAL", "id": "4666ff50-b066-438a-84ce-821e0ebe94eb", "links": [{"href":
+        "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/4666ff50-b066-438a-84ce-821e0ebe94eb",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/4666ff50-b066-438a-84ce-821e0ebe94eb",
+        "rel": "bookmark"}], "adminPass": "vESDYGSEEUk8"}}'
     http_version: 
-  recorded_at: Wed, 15 Jun 2016 16:11:57 GMT
+  recorded_at: Wed, 15 Jun 2016 18:40:39 GMT
 - request:
     method: get
-    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/d9aa9b17-34da-4bf1-bb85-48e7c6eef2eb
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/4666ff50-b066-438a-84ce-821e0ebe94eb
     body:
       encoding: US-ASCII
       string: ''
@@ -143,7 +143,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXYX5MH8aUulKf84zgfj-4fY01dxB3q6KpSiT6l9ytU-cRcdOWNFW2odsDCC4X0Rt1OLe8PeXqOAS1INzpumsjpsuq_mRbSuMxB1gz91BobUTNJt5yH5f5oa6MUdy_cfG0GHmThD9DowqCV5pNO6IqZZTSxwyXvYjAUzMlgzcsF6bG2Bs
+      - gAAAAABXYaEmEk0Rl2W6m7g93zcjNnC3pkzcUei1uvoEKZEVLVWi1dgLFl0d5KsIiks00dimD8s6PTXaE1LK-NUn_n8026urlo7Lq7WfsdeHD-nYw32CyDyyltphQKV7A8YD75CeXqY15sPww4zDZvKMPpGBlOcXS9kec8X19rplJQ6QnX2y45Y
       Content-Type:
       - application/json
       User-Agent:
@@ -162,26 +162,26 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-2f8acc82-38f8-4be5-89be-f4e3fd70dd0f
+      - req-31b0ce12-0f2c-4245-932b-cbc578fff8c3
       Date:
-      - Wed, 15 Jun 2016 16:11:57 GMT
+      - Wed, 15 Jun 2016 18:40:39 GMT
     body:
       encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-06-15T16:11:57Z", "hostId":
-        "", "OS-EXT-SRV-ATTR:host": null, "addresses": {}, "links": [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/d9aa9b17-34da-4bf1-bb85-48e7c6eef2eb",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/d9aa9b17-34da-4bf1-bb85-48e7c6eef2eb",
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-15T18:40:39Z", "hostId":
+        "", "OS-EXT-SRV-ATTR:host": null, "addresses": {}, "links": [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/4666ff50-b066-438a-84ce-821e0ebe94eb",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/4666ff50-b066-438a-84ce-821e0ebe94eb",
         "rel": "bookmark"}], "key_name": null, "image": {"id": "9060f38f-bb54-4806-a2b3-24a2173af252",
         "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/9060f38f-bb54-4806-a2b3-24a2173af252",
         "rel": "bookmark"}]}, "OS-EXT-STS:task_state": null, "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-00000006", "OS-SRV-USG:launched_at":
+        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-0000000d", "OS-SRV-USG:launched_at":
         null, "OS-EXT-SRV-ATTR:hypervisor_hostname": null, "flavor": {"id": "1", "links":
         [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/flavors/1",
-        "rel": "bookmark"}]}, "id": "d9aa9b17-34da-4bf1-bb85-48e7c6eef2eb", "OS-SRV-USG:terminated_at":
+        "rel": "bookmark"}]}, "id": "4666ff50-b066-438a-84ce-821e0ebe94eb", "OS-SRV-USG:terminated_at":
         null, "OS-EXT-AZ:availability_zone": "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca",
-        "name": "Testing", "created": "2016-06-15T16:11:57Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810",
+        "name": "Testing", "created": "2016-06-15T18:40:39Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810",
         "OS-DCF:diskConfig": "MANUAL", "os-extended-volumes:volumes_attached": [],
         "accessIPv4": "", "accessIPv6": "", "progress": 0, "OS-EXT-STS:power_state":
         0, "config_drive": "", "metadata": {}}}'
     http_version: 
-  recorded_at: Wed, 15 Jun 2016 16:11:57 GMT
+  recorded_at: Wed, 15 Jun 2016 18:40:39 GMT
 recorded_with: VCR 3.0.3

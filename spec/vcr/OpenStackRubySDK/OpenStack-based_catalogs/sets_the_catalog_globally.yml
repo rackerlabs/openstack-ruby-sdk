@@ -23,23 +23,23 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 15 Jun 2016 16:11:57 GMT
+      - Wed, 15 Jun 2016 18:40:40 GMT
       Server:
       - Apache
       Vary:
       - X-Auth-Token
       X-Openstack-Request-Id:
-      - req-a3b3554c-b5f0-44b3-a7af-268901bd3914
+      - req-b944c9f1-4a18-4d9e-ab36-698737f3eb7e
       Content-Length:
       - '4281'
       Content-Type:
       - application/json
     body:
       encoding: UTF-8
-      string: '{"access": {"token": {"issued_at": "2016-06-15T16:11:57.000000Z", "expires":
-        "2016-06-16T04:11:57Z", "id": "gAAAAABXYX5NuVuaRBFgFvpfW5HKm9O8oXYWzAztZBx1gXAnCg7HKwNBGJHe6vRZR8DScH4V1oJz5KteiNtbu8YaOpTMlVhNY3a8tisOrT3hHDsV4ROYPfziWPFJzxGSnEELF2MoY1xHfynfxWgjpSOUmH1Y3m1s9RAL3wk5cKGtILu8dkv5jUQ",
+      string: '{"access": {"token": {"issued_at": "2016-06-15T18:40:40.000000Z", "expires":
+        "2016-06-16T06:40:40Z", "id": "gAAAAABXYaEoofMqjk03TzDwOk1u7L1fiafe_oKzKSCCP-3mXIPrqAv7gaA_JVVHNcv6tKKb7Nr7BWkw2PK-UnCXG-9ALPUYZ9CKtiGBUvN1c9YH59LNQuu-Nx3SWb8vhDkyZYzdnqK639OeIEgnrN001gL-C1YQQdqV5U3nqSWw99uZv5zhfCg",
         "tenant": {"description": "", "enabled": true, "id": "4f8f44a4262041e0a2330fb59099f810",
-        "name": "<OS_TENANT_NAME>"}, "audit_ids": ["Pn5I3yOSRCqrbwo4HjzeoA"]}, "serviceCatalog":
+        "name": "<OS_TENANT_NAME>"}, "audit_ids": ["dxm_66PrR4-o-J1iwUSMNA"]}, "serviceCatalog":
         [{"endpoints": [{"adminURL": "http://172.29.236.100:8774/v2/4f8f44a4262041e0a2330fb59099f810",
         "region": "RegionOne", "internalURL": "http://172.29.236.100:8774/v2.1/4f8f44a4262041e0a2330fb59099f810",
         "id": "5c705b8537e7476ea74527025de382c8", "publicURL": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810"}],
@@ -83,5 +83,5 @@ http_interactions:
         [], "id": "e77daadf2e414f6ab9dc5da0520510ca", "roles": [{"name": "admin"}],
         "name": "<OS_USERNAME>"}, "metadata": {"is_admin": 0, "roles": ["0ac5a1859cc345039eafaf2f9725bbe7"]}}}'
     http_version: 
-  recorded_at: Wed, 15 Jun 2016 16:11:57 GMT
+  recorded_at: Wed, 15 Jun 2016 18:40:41 GMT
 recorded_with: VCR 3.0.3

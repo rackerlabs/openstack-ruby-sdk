@@ -1,0 +1,146 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers
+    body:
+      encoding: UTF-8
+      string: '{"server":{"name":"Testing","flavorRef":1,"imageRef":"9060f38f-bb54-4806-a2b3-24a2173af252"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXYaEmEk0Rl2W6m7g93zcjNnC3pkzcUei1uvoEKZEVLVWi1dgLFl0d5KsIiks00dimD8s6PTXaE1LK-NUn_n8026urlo7Lq7WfsdeHD-nYw32CyDyyltphQKV7A8YD75CeXqY15sPww4zDZvKMPpGBlOcXS9kec8X19rplJQ6QnX2y45Y
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '93'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Content-Length:
+      - '444'
+      Location:
+      - http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/10e1cdc1-4475-4b14-bacd-aed0f24a8864
+      Content-Type:
+      - application/json
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-4705a188-5391-47d2-9840-02dc7f376e38
+      Date:
+      - Wed, 15 Jun 2016 19:23:16 GMT
+    body:
+      encoding: UTF-8
+      string: '{"server": {"security_groups": [{"name": "default"}], "OS-DCF:diskConfig":
+        "MANUAL", "id": "10e1cdc1-4475-4b14-bacd-aed0f24a8864", "links": [{"href":
+        "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/10e1cdc1-4475-4b14-bacd-aed0f24a8864",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/10e1cdc1-4475-4b14-bacd-aed0f24a8864",
+        "rel": "bookmark"}], "adminPass": "YjwW6hi4d9uv"}}'
+    http_version: 
+  recorded_at: Wed, 15 Jun 2016 19:23:16 GMT
+- request:
+    method: get
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/10e1cdc1-4475-4b14-bacd-aed0f24a8864
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXYaEmEk0Rl2W6m7g93zcjNnC3pkzcUei1uvoEKZEVLVWi1dgLFl0d5KsIiks00dimD8s6PTXaE1LK-NUn_n8026urlo7Lq7WfsdeHD-nYw32CyDyyltphQKV7A8YD75CeXqY15sPww4zDZvKMPpGBlOcXS9kec8X19rplJQ6QnX2y45Y
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '1432'
+      Content-Type:
+      - application/json
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-15c2950f-b362-4925-8682-aba44fe4b741
+      Date:
+      - Wed, 15 Jun 2016 19:23:16 GMT
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-06-15T19:23:16Z", "hostId":
+        "", "OS-EXT-SRV-ATTR:host": null, "addresses": {}, "links": [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/10e1cdc1-4475-4b14-bacd-aed0f24a8864",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/10e1cdc1-4475-4b14-bacd-aed0f24a8864",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9060f38f-bb54-4806-a2b3-24a2173af252",
+        "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/9060f38f-bb54-4806-a2b3-24a2173af252",
+        "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "scheduling", "OS-EXT-STS:vm_state":
+        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-00000016", "OS-SRV-USG:launched_at":
+        null, "OS-EXT-SRV-ATTR:hypervisor_hostname": null, "flavor": {"id": "1", "links":
+        [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/flavors/1",
+        "rel": "bookmark"}]}, "id": "10e1cdc1-4475-4b14-bacd-aed0f24a8864", "OS-SRV-USG:terminated_at":
+        null, "OS-EXT-AZ:availability_zone": "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca",
+        "name": "Testing", "created": "2016-06-15T19:23:16Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810",
+        "OS-DCF:diskConfig": "MANUAL", "os-extended-volumes:volumes_attached": [],
+        "accessIPv4": "", "accessIPv6": "", "progress": 0, "OS-EXT-STS:power_state":
+        0, "config_drive": "", "metadata": {}}}'
+    http_version: 
+  recorded_at: Wed, 15 Jun 2016 19:23:16 GMT
+- request:
+    method: post
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/10e1cdc1-4475-4b14-bacd-aed0f24a8864/action
+    body:
+      encoding: UTF-8
+      string: '{"createImage":{"name":"<OS_TENANT_NAME>","metadata":{}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXYaEmEk0Rl2W6m7g93zcjNnC3pkzcUei1uvoEKZEVLVWi1dgLFl0d5KsIiks00dimD8s6PTXaE1LK-NUn_n8026urlo7Lq7WfsdeHD-nYw32CyDyyltphQKV7A8YD75CeXqY15sPww4zDZvKMPpGBlOcXS9kec8X19rplJQ6QnX2y45Y
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '48'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 409
+      message: Conflict
+    headers:
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '151'
+      X-Compute-Request-Id:
+      - req-e1caaf21-1a3e-4bbc-970a-f5d332580915
+      Date:
+      - Wed, 15 Jun 2016 19:23:16 GMT
+    body:
+      encoding: UTF-8
+      string: '{"conflictingRequest": {"message": "Cannot ''createImage'' instance
+        10e1cdc1-4475-4b14-bacd-aed0f24a8864 while it is in vm_state building", "code":
+        409}}'
+    http_version: 
+  recorded_at: Wed, 15 Jun 2016 19:23:17 GMT
+recorded_with: VCR 3.0.3
