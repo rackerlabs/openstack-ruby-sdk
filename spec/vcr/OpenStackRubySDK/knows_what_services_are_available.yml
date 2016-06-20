@@ -23,23 +23,23 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 20 Jun 2016 18:48:50 GMT
+      - Mon, 20 Jun 2016 17:37:36 GMT
       Server:
       - Apache
       Vary:
       - X-Auth-Token
       X-Openstack-Request-Id:
-      - req-7370e308-efbd-44e9-85d8-ae094ec6b9dd
+      - req-a2a5bbb2-4df8-44f0-b5c6-a08b680f8579
       Content-Length:
       - '4281'
       Content-Type:
       - application/json
     body:
       encoding: UTF-8
-      string: '{"access": {"token": {"issued_at": "2016-06-20T18:48:50.000000Z", "expires":
-        "2016-06-21T06:48:50Z", "id": "gAAAAABXaDqSf4dBW97XOWq75aApfNgIiQ3537HbSKqSn7egsBABZ6kj2M2rdYMYi8KqdCKMPHBDEC7J6vilASVMBo2RlTVG1uG5TXeHrZ7tu7UOZn11aVOhA8LmQ5NcsQjBXifUZ3kOj-HssLkZX0ocZ0qPthfjRl9Ny-P5_epyiPp8UgvTBrM",
+      string: '{"access": {"token": {"issued_at": "2016-06-20T17:37:36.000000Z", "expires":
+        "2016-06-21T05:37:36Z", "id": "gAAAAABXaCngP6GnPnRLGvswvsR0yh-GQFA-FhFg3KG5Xn6ePERzPEEi7nXhhAsbVAc1w6YxDojpQDpdq0-z-BWV-jBb1fmF4v1m1v0Kq91XpnlN37oTtUruB_GgJtZbJY-iIRJ9K7AKU2Zx7s3ViowWPvkhGB0ekLK_-q2GHvvwudFfbXZG_-g",
         "tenant": {"description": "", "enabled": true, "id": "4f8f44a4262041e0a2330fb59099f810",
-        "name": "<OS_TENANT_NAME>"}, "audit_ids": ["aMuzJEfGQQq95U1hxH7C5w"]}, "serviceCatalog":
+        "name": "<OS_TENANT_NAME>"}, "audit_ids": ["IcYVHAb3RBW2ay-QXcKuEQ"]}, "serviceCatalog":
         [{"endpoints": [{"adminURL": "http://172.29.236.100:8774/v2/4f8f44a4262041e0a2330fb59099f810",
         "region": "RegionOne", "internalURL": "http://172.29.236.100:8774/v2.1/4f8f44a4262041e0a2330fb59099f810",
         "id": "5c705b8537e7476ea74527025de382c8", "publicURL": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810"}],
@@ -83,88 +83,5 @@ http_interactions:
         [], "id": "e77daadf2e414f6ab9dc5da0520510ca", "roles": [{"name": "admin"}],
         "name": "<OS_USERNAME>"}, "metadata": {"is_admin": 0, "roles": ["0ac5a1859cc345039eafaf2f9725bbe7"]}}}'
     http_version: 
-  recorded_at: Mon, 20 Jun 2016 18:48:50 GMT
-- request:
-    method: get
-    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Auth-Token:
-      - gAAAAABXaDqSf4dBW97XOWq75aApfNgIiQ3537HbSKqSn7egsBABZ6kj2M2rdYMYi8KqdCKMPHBDEC7J6vilASVMBo2RlTVG1uG5TXeHrZ7tu7UOZn11aVOhA8LmQ5NcsQjBXifUZ3kOj-HssLkZX0ocZ0qPthfjRl9Ny-P5_epyiPp8UgvTBrM
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Length:
-      - '364'
-      Content-Type:
-      - application/json
-      X-Openstack-Nova-Api-Version:
-      - '2.1'
-      Vary:
-      - X-OpenStack-Nova-API-Version
-      X-Compute-Request-Id:
-      - req-de968076-90a3-48df-9a41-1126902ba73c
-      Date:
-      - Mon, 20 Jun 2016 18:48:50 GMT
-    body:
-      encoding: UTF-8
-      string: '{"servers": [{"id": "28a48cd7-5da7-45d1-8aeb-0d0e25782969", "links":
-        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/28a48cd7-5da7-45d1-8aeb-0d0e25782969",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/28a48cd7-5da7-45d1-8aeb-0d0e25782969",
-        "rel": "bookmark"}], "name": "<OS_TENANT_NAME>"}]}'
-    http_version: 
-  recorded_at: Mon, 20 Jun 2016 18:48:50 GMT
-- request:
-    method: post
-    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/28a48cd7-5da7-45d1-8aeb-0d0e25782969/action
-    body:
-      encoding: UTF-8
-      string: '{"reboot":{"type":"SOFT"}}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Auth-Token:
-      - gAAAAABXaDqSf4dBW97XOWq75aApfNgIiQ3537HbSKqSn7egsBABZ6kj2M2rdYMYi8KqdCKMPHBDEC7J6vilASVMBo2RlTVG1uG5TXeHrZ7tu7UOZn11aVOhA8LmQ5NcsQjBXifUZ3kOj-HssLkZX0ocZ0qPthfjRl9Ny-P5_epyiPp8UgvTBrM
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '26'
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 202
-      message: Accepted
-    headers:
-      Content-Length:
-      - '0'
-      Content-Type:
-      - application/json
-      X-Openstack-Nova-Api-Version:
-      - '2.1'
-      Vary:
-      - X-OpenStack-Nova-API-Version
-      X-Compute-Request-Id:
-      - req-7f44fa1d-2212-4d62-907b-b956f9e20053
-      Date:
-      - Mon, 20 Jun 2016 18:48:50 GMT
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Mon, 20 Jun 2016 18:48:50 GMT
+  recorded_at: Mon, 20 Jun 2016 17:37:36 GMT
 recorded_with: VCR 3.0.3

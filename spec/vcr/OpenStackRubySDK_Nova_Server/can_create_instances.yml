@@ -23,23 +23,23 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 15 Jun 2016 18:40:38 GMT
+      - Mon, 20 Jun 2016 18:45:14 GMT
       Server:
       - Apache
       Vary:
       - X-Auth-Token
       X-Openstack-Request-Id:
-      - req-b8270110-18f3-43d8-8c7a-ef743279808d
+      - req-d65695db-dac2-44a1-9936-99f54014fa17
       Content-Length:
       - '4281'
       Content-Type:
       - application/json
     body:
       encoding: UTF-8
-      string: '{"access": {"token": {"issued_at": "2016-06-15T18:40:38.000000Z", "expires":
-        "2016-06-16T06:40:38Z", "id": "gAAAAABXYaEmEk0Rl2W6m7g93zcjNnC3pkzcUei1uvoEKZEVLVWi1dgLFl0d5KsIiks00dimD8s6PTXaE1LK-NUn_n8026urlo7Lq7WfsdeHD-nYw32CyDyyltphQKV7A8YD75CeXqY15sPww4zDZvKMPpGBlOcXS9kec8X19rplJQ6QnX2y45Y",
+      string: '{"access": {"token": {"issued_at": "2016-06-20T18:45:14.000000Z", "expires":
+        "2016-06-21T06:45:14Z", "id": "gAAAAABXaDm6kQ5l8rFZ0MkRZO_zzOSzzG-ncqjgVRhMwTL-ba9Md5or5h6n_MjmFBu8E5CKNQeEOGgGQIGhQsb4i8BiciyOd-49letkyrqonUCuD06sT5GAsQnZLAEeh16XgRjhpWLyyjRuzupeO_Pp6ZRCmfuvEcGeh9G9r5I94_0ETbUNBD4",
         "tenant": {"description": "", "enabled": true, "id": "4f8f44a4262041e0a2330fb59099f810",
-        "name": "<OS_TENANT_NAME>"}, "audit_ids": ["1dzEqpVTTMuh5julcDgovg"]}, "serviceCatalog":
+        "name": "<OS_TENANT_NAME>"}, "audit_ids": ["zOb3FeMeR8KiZxntAmSQuA"]}, "serviceCatalog":
         [{"endpoints": [{"adminURL": "http://172.29.236.100:8774/v2/4f8f44a4262041e0a2330fb59099f810",
         "region": "RegionOne", "internalURL": "http://172.29.236.100:8774/v2.1/4f8f44a4262041e0a2330fb59099f810",
         "id": "5c705b8537e7476ea74527025de382c8", "publicURL": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810"}],
@@ -83,57 +83,10 @@ http_interactions:
         [], "id": "e77daadf2e414f6ab9dc5da0520510ca", "roles": [{"name": "admin"}],
         "name": "<OS_USERNAME>"}, "metadata": {"is_admin": 0, "roles": ["0ac5a1859cc345039eafaf2f9725bbe7"]}}}'
     http_version: 
-  recorded_at: Wed, 15 Jun 2016 18:40:39 GMT
-- request:
-    method: post
-    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers
-    body:
-      encoding: UTF-8
-      string: '{"server":{"name":"Testing","flavorRef":1,"imageRef":"9060f38f-bb54-4806-a2b3-24a2173af252"}}'
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Auth-Token:
-      - gAAAAABXYaEmEk0Rl2W6m7g93zcjNnC3pkzcUei1uvoEKZEVLVWi1dgLFl0d5KsIiks00dimD8s6PTXaE1LK-NUn_n8026urlo7Lq7WfsdeHD-nYw32CyDyyltphQKV7A8YD75CeXqY15sPww4zDZvKMPpGBlOcXS9kec8X19rplJQ6QnX2y45Y
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '93'
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 202
-      message: Accepted
-    headers:
-      Content-Length:
-      - '444'
-      Location:
-      - http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/4666ff50-b066-438a-84ce-821e0ebe94eb
-      Content-Type:
-      - application/json
-      X-Openstack-Nova-Api-Version:
-      - '2.1'
-      Vary:
-      - X-OpenStack-Nova-API-Version
-      X-Compute-Request-Id:
-      - req-b82fbc1d-25d8-4c59-a3b2-27fc4f99f2d9
-      Date:
-      - Wed, 15 Jun 2016 18:40:39 GMT
-    body:
-      encoding: UTF-8
-      string: '{"server": {"security_groups": [{"name": "default"}], "OS-DCF:diskConfig":
-        "MANUAL", "id": "4666ff50-b066-438a-84ce-821e0ebe94eb", "links": [{"href":
-        "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/4666ff50-b066-438a-84ce-821e0ebe94eb",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/4666ff50-b066-438a-84ce-821e0ebe94eb",
-        "rel": "bookmark"}], "adminPass": "vESDYGSEEUk8"}}'
-    http_version: 
-  recorded_at: Wed, 15 Jun 2016 18:40:39 GMT
+  recorded_at: Mon, 20 Jun 2016 18:45:14 GMT
 - request:
     method: get
-    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/4666ff50-b066-438a-84ce-821e0ebe94eb
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers
     body:
       encoding: US-ASCII
       string: ''
@@ -143,7 +96,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXYaEmEk0Rl2W6m7g93zcjNnC3pkzcUei1uvoEKZEVLVWi1dgLFl0d5KsIiks00dimD8s6PTXaE1LK-NUn_n8026urlo7Lq7WfsdeHD-nYw32CyDyyltphQKV7A8YD75CeXqY15sPww4zDZvKMPpGBlOcXS9kec8X19rplJQ6QnX2y45Y
+      - gAAAAABXaDm6kQ5l8rFZ0MkRZO_zzOSzzG-ncqjgVRhMwTL-ba9Md5or5h6n_MjmFBu8E5CKNQeEOGgGQIGhQsb4i8BiciyOd-49letkyrqonUCuD06sT5GAsQnZLAEeh16XgRjhpWLyyjRuzupeO_Pp6ZRCmfuvEcGeh9G9r5I94_0ETbUNBD4
       Content-Type:
       - application/json
       User-Agent:
@@ -154,7 +107,7 @@ http_interactions:
       message: OK
     headers:
       Content-Length:
-      - '1424'
+      - '364'
       Content-Type:
       - application/json
       X-Openstack-Nova-Api-Version:
@@ -162,26 +115,15 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-31b0ce12-0f2c-4245-932b-cbc578fff8c3
+      - req-b105db66-dadc-4051-8ee6-9a522151bd9b
       Date:
-      - Wed, 15 Jun 2016 18:40:39 GMT
+      - Mon, 20 Jun 2016 18:45:14 GMT
     body:
       encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-06-15T18:40:39Z", "hostId":
-        "", "OS-EXT-SRV-ATTR:host": null, "addresses": {}, "links": [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/4666ff50-b066-438a-84ce-821e0ebe94eb",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/4666ff50-b066-438a-84ce-821e0ebe94eb",
-        "rel": "bookmark"}], "key_name": null, "image": {"id": "9060f38f-bb54-4806-a2b3-24a2173af252",
-        "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/9060f38f-bb54-4806-a2b3-24a2173af252",
-        "rel": "bookmark"}]}, "OS-EXT-STS:task_state": null, "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-0000000d", "OS-SRV-USG:launched_at":
-        null, "OS-EXT-SRV-ATTR:hypervisor_hostname": null, "flavor": {"id": "1", "links":
-        [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/flavors/1",
-        "rel": "bookmark"}]}, "id": "4666ff50-b066-438a-84ce-821e0ebe94eb", "OS-SRV-USG:terminated_at":
-        null, "OS-EXT-AZ:availability_zone": "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca",
-        "name": "Testing", "created": "2016-06-15T18:40:39Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810",
-        "OS-DCF:diskConfig": "MANUAL", "os-extended-volumes:volumes_attached": [],
-        "accessIPv4": "", "accessIPv6": "", "progress": 0, "OS-EXT-STS:power_state":
-        0, "config_drive": "", "metadata": {}}}'
+      string: '{"servers": [{"id": "28a48cd7-5da7-45d1-8aeb-0d0e25782969", "links":
+        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/28a48cd7-5da7-45d1-8aeb-0d0e25782969",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/28a48cd7-5da7-45d1-8aeb-0d0e25782969",
+        "rel": "bookmark"}], "name": "<OS_TENANT_NAME>"}]}'
     http_version: 
-  recorded_at: Wed, 15 Jun 2016 18:40:39 GMT
+  recorded_at: Mon, 20 Jun 2016 18:45:14 GMT
 recorded_with: VCR 3.0.3
