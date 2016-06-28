@@ -1,4 +1,5 @@
-class OpenStackRubySDK::CinderV2::QuotaSetsExtension < Peace::Model
+class OpenStackRubySDK::CinderV2::QuotaSetsExtension  
+  include Peace::Model
   attr_accessor :quota_set
   # GET /v2/​{admin_tenant_id}​/os-quota-sets/​{tenant_id}​
   # PUT /v2/​{admin_tenant_id}​/os-quota-sets/​{tenant_id}​

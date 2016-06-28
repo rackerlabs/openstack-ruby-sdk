@@ -12,5 +12,5 @@ end
 
 desc "Start a terminal with this gem preloaded."
 task :console do
-  exec "irb -r openstack-ruby-sdk -I ./lib"
+  exec "SDK='openstack' irb -r openstack-ruby-sdk -I ./lib"
 end

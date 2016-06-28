@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Neutron::Network < Peace::Model
+class OpenStackRubySDK::Neutron::Network  
+  include Peace::Model
   attr_accessor :admin_state_up, :created_at, :id, :mtu, :name, :port_security_enabled, :qos_policy_id, :router, :shared, :status, :subnets, :tenant_id, :updated_at
   # GET /v2.0/networks
   # POST /v2.0/networks

@@ -1,4 +1,6 @@
-class OpenStackRubySDK::Ceilometer::Meter < Peace::Model
+class OpenStackRubySDK::Ceilometer::Meter
+  
+  include Peace::Model
   attr_accessor :meter_id, :name, :project_id, :resource_id, :source, :type, :unit, :user_id
 
   # "GET /v2/meters",

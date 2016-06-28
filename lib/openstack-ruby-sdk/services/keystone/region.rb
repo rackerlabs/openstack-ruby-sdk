@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Keystone::Region < Peace::Model
+class OpenStackRubySDK::Keystone::Region  
+  include Peace::Model
   attr_accessor :description, :id, :links, :parent_region_id
   # GET /v3/regions
   # POST /v3/regions

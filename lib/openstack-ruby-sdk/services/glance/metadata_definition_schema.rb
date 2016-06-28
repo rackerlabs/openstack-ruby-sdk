@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Glance::MetadataDefinitionSchema < Peace::Model
+class OpenStackRubySDK::Glance::MetadataDefinitionSchema  
+  include Peace::Model
   # GET /v2/schemas/metadefs/namespace
   # GET /v2/schemas/metadefs/namespaces
   # GET /v2/schemas/metadefs/object

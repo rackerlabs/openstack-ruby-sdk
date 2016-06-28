@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Swift::Object < Peace::Model
+class OpenStackRubySDK::Swift::Object  
+  include Peace::Model
   # GET /v1/​{account}​/​{container}​/​{object}​
   # PUT /v1/​{account}​/​{container}​/​{object}​
   # COPY /v1/​{account}​/​{container}​/​{object}​

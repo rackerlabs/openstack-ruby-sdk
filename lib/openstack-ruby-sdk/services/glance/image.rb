@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Glance::Image < Peace::Model
+class OpenStackRubySDK::Glance::Image  
+  include Peace::Model
   attr_accessor :checksum, :container_format, :created_at, :disk_format, :file, :id, :min_disk, :min_ram, :name, :owner, :protected, :schema, :self, :size, :status, :tags, :updated_at, :virtual_size, :visibility
   # GET /v2/images
   # POST /v2/images

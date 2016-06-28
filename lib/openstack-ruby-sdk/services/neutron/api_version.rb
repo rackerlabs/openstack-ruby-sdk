@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Neutron::ApiVersion < Peace::Model
+class OpenStackRubySDK::Neutron::ApiVersion  
+  include Peace::Model
   attr_accessor :status, :id, :links
   # GET /
 end

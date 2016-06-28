@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Nova::Server < Peace::Model
+class OpenStackRubySDK::Nova::Server  
+  include Peace::Model
 
   REBOOT_TYPES = ['SOFT', 'HARD']
 
@@ -28,11 +29,9 @@ class OpenStackRubySDK::Nova::Server < Peace::Model
   	def servers_with_details; end
   end
 
-	def actions; end
 	def attach_volume; end
 	def confirm_resize; end
 	def create_bootable_volume; end
-	def create_image; end
 	def delete_volume_attachment; end
 	def details; end
 	def key_pairs; end
@@ -86,25 +85,25 @@ class OpenStackRubySDK::Nova::Server < Peace::Model
   end
 
   # http://api.rackspace.com/#rescueServer
-  def rescue(image_ref="none")
-    if image_ref == "none"
-      {rescue: "none"}
+  def rescue(imageRef="none")
+    if imageRef == "none"
+      data = { rescue: "none" }
     else
-      {rescue: { rescue_image_ref: image_ref } }
+      data = { rescue: { rescue_image_ref: imageRef } }
     end
 
     perform_action!(data)
   end
 
   # http://api.rackspace.com/#resizeServer
-  def resize
-    # data = {
-    #   "resize" : {
-    #       "flavorRef" : "3",
-    #       "OS-DCF:diskConfig" : "manual"
-    #   }
-    # }
-    # perform_action!(data)
+  def resize(flavorRef)
+    data = {
+      "resize": {
+          "flavorRef": "#{flavorRef}",
+          "OS-DCF:diskConfig": "AUTO"
+      }
+    }
+    perform_action!(data)
   end
 
   # http://api.rackspace.com/#revertResizeServer

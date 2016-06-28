@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Nova::Flavor < Peace::Model
+class OpenStackRubySDK::Nova::Flavor  
+  include Peace::Model
   attr_accessor :id, :name, :links, :ram, :vcpus, :swap, :rxtx_factor, :disk
   attr_with_alias :extra_specs, 'OS-FLV-WITH-EXT-SPECS:extra_specs'
   attr_with_alias :ephemeral, 'OS-FLV-EXT-DATA:ephemeral'

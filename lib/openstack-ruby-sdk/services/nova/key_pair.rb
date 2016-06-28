@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Nova::KeyPair < Peace::Model
+class OpenStackRubySDK::Nova::KeyPair  
+  include Peace::Model
   belongs_to :user
 
   attr_accessor :id, :public_key, :private_key, :user_id, :fingerprint, :name

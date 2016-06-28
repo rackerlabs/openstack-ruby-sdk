@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Nova::Volume < Peace::Model
+class OpenStackRubySDK::Nova::Volume  
+  include Peace::Model
 
   attr_accessor :id, :device, :server_id, :volume_id
 

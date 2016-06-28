@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Keystone::Group < Peace::Model
+class OpenStackRubySDK::Keystone::Group  
+  include Peace::Model
   attr_accessor :description, :domain_id, :id, :links, :name
   # POST /v3/groups
   # GET /v3/groups

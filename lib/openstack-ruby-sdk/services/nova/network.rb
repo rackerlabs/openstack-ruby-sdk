@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Nova::Network < Peace::Model
+class OpenStackRubySDK::Nova::Network  
+  include Peace::Model
   attr_accessor :id, :label, :cidr
 
   class << self

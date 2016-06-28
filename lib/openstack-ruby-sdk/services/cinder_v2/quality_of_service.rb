@@ -1,4 +1,5 @@
-class OpenStackRubySDK::CinderV2::QualityOfService < Peace::Model
+class OpenStackRubySDK::CinderV2::QualityOfService  
+  include Peace::Model
   attr_accessor :links, :qos_specs
   # POST /v2/​{tenant_id}​/qos-specs
   # GET /v2/​{tenant_id}​/qos-specs

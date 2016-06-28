@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Swift::Container < Peace::Model
+class OpenStackRubySDK::Swift::Container  
+  include Peace::Model
   attr_accessor :hash, :last_modified, :bytes, :name, :content_type
   # GET /v1/​{account}​/​{container}​
   # PUT /v1/​{account}​/​{container}​

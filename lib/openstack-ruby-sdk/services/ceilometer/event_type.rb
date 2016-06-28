@@ -1,3 +1,5 @@
-class OpenStackRubySDK::Ceilometer::EventType < Peace::Model
+class OpenStackRubySDK::Ceilometer::EventType
+  
+  include Peace::Model
   attr_accessor :name
 end

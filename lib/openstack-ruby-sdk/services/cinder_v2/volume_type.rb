@@ -1,4 +1,5 @@
-class OpenStackRubySDK::CinderV2::VolumeType < Peace::Model
+class OpenStackRubySDK::CinderV2::VolumeType  
+  include Peace::Model
   attr_accessor :description, :extra_specs, :id, :is_public, :name
   # GET /v2/​{tenant_id}​/types
   # POST /v2/​{tenant_id}​/types

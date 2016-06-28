@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Heat::Stack < Peace::Model
+class OpenStackRubySDK::Heat::Stack  
+  include Peace::Model
   attr_accessor :capabilities, :creation_time, :description, :disable_rollback, :id, :links, :notification_topics, :outputs, :parameters, :parent, :stack_name, :stack_owner, :stack_status, :stack_status_reason, :stack_user_project_id, :tags, :template_description, :timeout_mins, :updated_time
   # POST /v1/​{tenant_id}​/stacks
   # POST /v1/​{tenant_id}​/stacks

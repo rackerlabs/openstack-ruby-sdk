@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Glance::ImageSchema < Peace::Model
+class OpenStackRubySDK::Glance::ImageSchema  
+  include Peace::Model
   attr_accessor :additionalProperties, :links, :name, :properties
   # GET /v2/schemas/images
   # GET /v2/schemas/image

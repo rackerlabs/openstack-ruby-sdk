@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Heat::SoftwareConfiguration < Peace::Model
+class OpenStackRubySDK::Heat::SoftwareConfiguration  
+  include Peace::Model
   attr_accessor :config, :creation_time, :group, :id, :inputs, :name, :options, :outputs
   # POST /v1/​{tenant_id}​/software_configs
   # GET /v1/​{tenant_id}​/software_configs/​{config_id}​

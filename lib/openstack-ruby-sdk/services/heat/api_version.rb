@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Heat::ApiVersion < Peace::Model
+class OpenStackRubySDK::Heat::ApiVersion  
+  include Peace::Model
   attr_accessor :status, :id, :links
   # GET /
 end
