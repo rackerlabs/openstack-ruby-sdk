@@ -1,13 +1,15 @@
-class OpenStackRubySDK::Nova::Server  
+class OpenStackRubySDK::Nova::Server
   include Peace::Model
 
   REBOOT_TYPES = ['SOFT', 'HARD']
 
-  attr_accessor :id, :name, :created, :updated, :progress, :user_id, :tenant_id, :links, :personality, :config_drive, :user_data, :addresses, :boot_volume_id, :boot_volume_size, :boot_image_id, :key_name, :metadata, :flavorRef, :imageRef
+  attr_accessor :id, :name, :created, :updated, :progress, :user_id, :tenant_id, :links, :personality, :config_drive, :user_data, :addresses, :boot_volume_id, :boot_volume_size, :boot_image_id, :key_name, :metadata
 
   attr_with_alias :bandwidth, 'rax-bandwidth:bandwidth'
   attr_with_alias :disk_config, 'OS-DCF:diskConfig'
+  attr_with_alias :flavor_id, :flavorRef
   attr_with_alias :host_id, :hostId
+  attr_with_alias :image_id, :imageRef
   attr_with_alias :ipv4_address, 'accessIPv4'
   attr_with_alias :ipv6_address, 'accessIPv6'
   attr_with_alias :password, :adminPass
