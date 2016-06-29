@@ -1,2 +1,3 @@
-class OpenStackRubySDK::Neutron < Peace::Service
+class OpenStackRubySDK::Neutron
+  include Peace::Service
 end

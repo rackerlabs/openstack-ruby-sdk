@@ -1,4 +1,5 @@
-class OpenStackRubySDK::Nova < Peace::Service
+class OpenStackRubySDK::Nova
+  include Peace::Service
 
   has_resource :attachment
   has_resource :flavor

@@ -1,2 +1,3 @@
-class OpenStackRubySDK::Swift < Peace::Service
+class OpenStackRubySDK::Swift
+  include Peace::Service
 end

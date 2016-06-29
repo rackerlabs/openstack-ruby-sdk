@@ -1,2 +1,3 @@
-class OpenStackRubySDK::Glance < Peace::Service
+class OpenStackRubySDK::Glance
+  include Peace::Service
 end

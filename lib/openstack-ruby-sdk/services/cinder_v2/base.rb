@@ -1,2 +1,3 @@
-class OpenStackRubySDK::CinderV2 < Peace::Service
+class OpenStackRubySDK::CinderV2
+  include Peace::Service
 end

@@ -1,2 +1,3 @@
-class OpenStackRubySDK::Keystone < Peace::Service
+class OpenStackRubySDK::Keystone
+  include Peace::Service
 end

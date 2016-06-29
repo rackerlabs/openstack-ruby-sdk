@@ -1,2 +1,3 @@
-class OpenStackRubySDK::Heat < Peace::Service
+class OpenStackRubySDK::Heat
+  include Peace::Service
 end
