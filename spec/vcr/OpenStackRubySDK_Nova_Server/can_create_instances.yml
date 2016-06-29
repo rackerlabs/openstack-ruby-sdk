@@ -50,7 +50,7 @@ http_interactions:
         [{"adminURL": "http://172.29.236.100:8776/v2/4f8f44a4262041e0a2330fb59099f810",
         "region": "RegionOne", "internalURL": "http://172.29.236.100:8776/v2/4f8f44a4262041e0a2330fb59099f810",
         "id": "024b50dc6d5944308a977d17c0dfac9c", "publicURL": "http://172.99.87.154:8776/v2/4f8f44a4262041e0a2330fb59099f810"}],
-        "endpoints_links": [], "type": "volumev2", "name": "cinderv2"}, {"endpoints":
+        "endpoints_links": [], "type": "volumev2", "name": "cinder"}, {"endpoints":
         [{"adminURL": "http://172.29.236.100:8042", "region": "RegionOne", "internalURL":
         "http://172.29.236.100:8042", "id": "7110c30e08684c5881b04e46e3e242fb", "publicURL":
         "http://172.99.87.154:8042"}], "endpoints_links": [], "type": "alarming",
