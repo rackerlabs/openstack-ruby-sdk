@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers
+    body:
+      encoding: UTF-8
+      string: '{"server":{"id":null,"name":"924345","created":null,"updated":null,"progress":null,"user_id":null,"tenant_id":null,"links":null,"personality":null,"config_drive":null,"user_data":null,"addresses":null,"boot_volume_id":null,"boot_volume_size":null,"boot_image_id":null,"key_name":null,"metadata":null,"image":null,"flavor":null,"security_groups":null,"OS-EXT-AZ:availability_zone":null,"rax-bandwidth:bandwidth":null,"OS-DCF:diskConfig":null,"flavorRef":null,"hostId":null,"OS-EXT-SRV-ATTR:host":null,"OS-EXT-SRV-ATTR:hypervisor_hostname":null,"imageRef":null,"OS-EXT-SRV-ATTR:instance_name":null,"accessIPv4":null,"accessIPv6":null,"OS-SRV-USG:launched_at":null,"adminPass":null,"OS-EXT-STS:power_state":null,"OS-EXT-STS:task_state":null,"status":null,"OS-SRV-USG:terminated_at":null,"OS-EXT-STS:vm_state":null,"os-extended-volumes:volumes_attached":null,"RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId":null}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXdUFn8sb1t5o90UErqgGOmuUMySWd9oU4n1Ipuq16CoPy3NQmt0jmxz2fjVNiJb6_wyqeZfpU5IdzzNUAQPJUPSEYZXYi2h8OvFnSvtbCHFhhkkRXvL6QGa3tDW1hA8m2iWCMEzIqUPhdKpHY3ZtQNYIyGNAFTs1g16wjmoPcUlQ4u44
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '900'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '1727'
+      X-Compute-Request-Id:
+      - req-dc465752-be56-4da3-bf11-6cb667761135
+      Date:
+      - Thu, 30 Jun 2016 15:57:56 GMT
+    body:
+      encoding: UTF-8
+      string: '{"badRequest": {"message": "Invalid input for field/attribute server.
+        Value: {u''OS-EXT-STS:task_state'': None, u''addresses'': None, u''links'':
+        None, u''personality'': None, u''image'': None, u''boot_image_id'': None,
+        u''user_data'': None, u''OS-EXT-STS:vm_state'': None, u''OS-EXT-SRV-ATTR:instance_name'':
+        None, u''OS-SRV-USG:launched_at'': None, u''flavor'': None, u''id'': None,
+        u''security_groups'': None, u''rax-bandwidth:bandwidth'': None, u''user_id'':
+        None, u''imageRef'': None, u''OS-DCF:diskConfig'': None, u''accessIPv4'':
+        None, u''accessIPv6'': None, u''progress'': None, u''OS-EXT-STS:power_state'':
+        None, u''OS-EXT-AZ:availability_zone'': None, u''metadata'': None, u''status'':
+        None, u''updated'': None, u''hostId'': None, u''OS-EXT-SRV-ATTR:host'': None,
+        u''OS-SRV-USG:terminated_at'': None, u''key_name'': None, u''flavorRef'':
+        None, u''RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId'': None, u''boot_volume_id'':
+        None, u''boot_volume_size'': None, u''OS-EXT-SRV-ATTR:hypervisor_hostname'':
+        None, u''name'': u''924345'', u''created'': None, u''tenant_id'': None, u''adminPass'':
+        None, u''os-extended-volumes:volumes_attached'': None, u''config_drive'':
+        None}. Additional properties are not allowed (u''OS-EXT-STS:task_state'',
+        u''addresses'', u''links'', u''image'', u''boot_image_id'', u''RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId'',
+        u''OS-EXT-STS:vm_state'', u''OS-EXT-SRV-ATTR:instance_name'', u''OS-SRV-USG:launched_at'',
+        u''flavor'', u''id'', u''rax-bandwidth:bandwidth'', u''user_id'', u''progress'',
+        u''OS-EXT-STS:power_state'', u''OS-EXT-AZ:availability_zone'', u''status'',
+        u''updated'', u''hostId'', u''OS-EXT-SRV-ATTR:host'', u''OS-SRV-USG:terminated_at'',
+        u''boot_volume_id'', u''boot_volume_size'', u''OS-EXT-SRV-ATTR:hypervisor_hostname'',
+        u''created'', u''tenant_id'', u''os-extended-volumes:volumes_attached'' were
+        unexpected)", "code": 400}}'
+    http_version: 
+  recorded_at: Thu, 30 Jun 2016 15:57:56 GMT
+recorded_with: VCR 3.0.3

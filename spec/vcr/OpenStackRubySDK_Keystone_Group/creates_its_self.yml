@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://172.99.87.154:5000/v3/groups
+    body:
+      encoding: UTF-8
+      string: '{"group":{"description":null,"domain_id":null,"id":null,"links":null,"name":"330829"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXdUFn8sb1t5o90UErqgGOmuUMySWd9oU4n1Ipuq16CoPy3NQmt0jmxz2fjVNiJb6_wyqeZfpU5IdzzNUAQPJUPSEYZXYi2h8OvFnSvtbCHFhhkkRXvL6QGa3tDW1hA8m2iWCMEzIqUPhdKpHY3ZtQNYIyGNAFTs1g16wjmoPcUlQ4u44
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '86'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Thu, 30 Jun 2016 15:57:44 GMT
+      Server:
+      - Apache
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-eae794d1-8c98-47d6-84de-dd39b10c52df
+      Content-Length:
+      - '120'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"error": {"message": "Invalid input for field ''domain_id''. The value
+        is ''None''.", "code": 400, "title": "Bad Request"}}'
+    http_version: 
+  recorded_at: Thu, 30 Jun 2016 15:57:44 GMT
+recorded_with: VCR 3.0.3

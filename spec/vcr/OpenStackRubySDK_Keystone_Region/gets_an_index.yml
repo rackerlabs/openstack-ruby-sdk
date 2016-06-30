@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://172.99.87.154:5000/v3/regions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXdUFn8sb1t5o90UErqgGOmuUMySWd9oU4n1Ipuq16CoPy3NQmt0jmxz2fjVNiJb6_wyqeZfpU5IdzzNUAQPJUPSEYZXYi2h8OvFnSvtbCHFhhkkRXvL6QGa3tDW1hA8m2iWCMEzIqUPhdKpHY3ZtQNYIyGNAFTs1g16wjmoPcUlQ4u44
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jun 2016 15:57:46 GMT
+      Server:
+      - Apache
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-6267c6e5-236e-41f9-933d-5867f86c5933
+      Content-Length:
+      - '239'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"regions": [{"parent_region_id": null, "id": "RegionOne", "links":
+        {"self": "http://172.99.87.154:5000/v3/regions/RegionOne"}, "description":
+        ""}], "links": {"self": "http://172.99.87.154:5000/v3/regions", "previous":
+        null, "next": null}}'
+    http_version: 
+  recorded_at: Thu, 30 Jun 2016 15:57:46 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://172.99.87.154:8776/v1/4f8f44a4262041e0a2330fb59099f810/volumes
+    body:
+      encoding: UTF-8
+      string: '{"volume":{"attachments":null,"availability_zone":null,"bootable":null,"consistencygroup_id":null,"created_at":null,"description":null,"encrypted":null,"id":null,"links":null,"metadata":null,"migration_status":null,"multiattach":null,"name":"509931","os_vol_host_attr":null,"os_vol_mig_status_attr":null,"os_vol_tenant_attr":null,"os_volume_replication":null,"replication_status":null,"size":null,"snapshot_id":null,"source_volid":null,"status":null,"user_id":null,"volume_type":null}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXdUFn8sb1t5o90UErqgGOmuUMySWd9oU4n1Ipuq16CoPy3NQmt0jmxz2fjVNiJb6_wyqeZfpU5IdzzNUAQPJUPSEYZXYi2h8OvFnSvtbCHFhhkkRXvL6QGa3tDW1hA8m2iWCMEzIqUPhdKpHY3ZtQNYIyGNAFTs1g16wjmoPcUlQ4u44
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '485'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Openstack-Api-Version:
+      - '1.0'
+      Vary:
+      - OpenStack-API-Version
+      Content-Length:
+      - '124'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Compute-Request-Id:
+      - req-d9495cc5-a23d-48c5-a7ec-58f9b348c7ea
+      X-Openstack-Request-Id:
+      - req-d9495cc5-a23d-48c5-a7ec-58f9b348c7ea
+      Date:
+      - Thu, 30 Jun 2016 15:57:35 GMT
+    body:
+      encoding: UTF-8
+      string: '{"badRequest": {"message": "Invalid input received: Volume size ''None''
+        must be an integer and greater than 0", "code": 400}}'
+    http_version: 
+  recorded_at: Thu, 30 Jun 2016 15:57:35 GMT
+recorded_with: VCR 3.0.3

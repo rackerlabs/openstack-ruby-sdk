@@ -1,40 +1,29 @@
 require 'spec_helper'
 
 describe OpenStackRubySDK::Nova::Server, :vcr do
-  let(:server){ OpenStackRubySDK::Nova::Server.first }
+  let(:server){ OpenStackRubySDK::Nova::Server.new }
 
-  it 'can create instances' do
-    expect(server.id).to be_present
+  it 'gets an index' do
+    expect(OpenStackRubySDK::Nova::Server.all).to eq([])
   end
 
-  it 'can change the admin password' do
-    pending
-    # TODO: This leaves the server in vm_error state
-    expect(server.change_password('TESTING')).to eq true
+  it 'gets its self' do
+    expect(OpenStackRubySDK::Nova::Server.find(server.id)).to eq(server)
   end
 
-  it 'can soft reboot' do
-    expect(server.reboot).to eq true
+  it 'creates its self' do
+    server.name = Time.now.usec.to_s
+    expect(server.save).to eq(true)
   end
 
-  it 'can hard reboot' do
-    expect(server.reboot('HARD')).to eq true
+  it 'updates its self' do
+    server.name = Time.now.usec.to_s
+    expect(server.save).to eq(true)
+    server.name = Time.now.usec.to_s
+    expect(server.save).to eq(true)
   end
 
-  it 'can create an image of its self' do
-    expect(server.create_image("testing")).to eq true
+  it 'deletes its self' do
+    expect(server.destroy).to eq(true)
   end
-
-  it 'can be rescued' do
-    expect(server.rescue).to eq true
-    sleep 10
-    expect(server.unrescue).to eq true
-  end
-
-  it 'can be resized' do
-    expect(server.resize(3)).to eq true
-    # sleep 10
-    expect(server.confirm_resize).to eq true
-  end
-
 end

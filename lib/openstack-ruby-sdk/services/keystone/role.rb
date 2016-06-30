@@ -1,6 +1,6 @@
-class OpenStackRubySDK::Keystone::Role  
+class OpenStackRubySDK::Keystone::Role
   include Peace::Model
-  attr_accessor :id, :links, :name
+  attr_accessor :id, :links, :name, :domain_id
   # POST /v3/roles
   # GET /v3/roles
   # GET /v3/roles/​{role_id}​

@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://172.99.87.154:8776/v1/4f8f44a4262041e0a2330fb59099f810/volume_image_metadata_extensions
+    body:
+      encoding: UTF-8
+      string: '{"volumeimagemetadataextension":{"attachments":null,"availability_zone":null,"bootable":null,"created_at":null,"description":null,"encrypted":null,"id":null,"links":null,"metadata":null,"name":"736243","os_vol_tenant_attr":null,"size":null,"snapshot_id":null,"source_volid":null,"status":null,"user_id":null,"volume_type":null}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXdUFn8sb1t5o90UErqgGOmuUMySWd9oU4n1Ipuq16CoPy3NQmt0jmxz2fjVNiJb6_wyqeZfpU5IdzzNUAQPJUPSEYZXYi2h8OvFnSvtbCHFhhkkRXvL6QGa3tDW1hA8m2iWCMEzIqUPhdKpHY3ZtQNYIyGNAFTs1g16wjmoPcUlQ4u44
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '328'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Length:
+      - '52'
+      Content-Type:
+      - text/plain; charset=UTF-8
+      X-Openstack-Request-Id:
+      - req-15a6dde8-1cc9-4da3-b0e5-725094342063
+      Date:
+      - Thu, 30 Jun 2016 15:57:33 GMT
+    body:
+      encoding: UTF-8
+      string: "404 Not Found\n\nThe resource could not be found.\n\n   "
+    http_version: 
+  recorded_at: Thu, 30 Jun 2016 15:57:33 GMT
+recorded_with: VCR 3.0.3

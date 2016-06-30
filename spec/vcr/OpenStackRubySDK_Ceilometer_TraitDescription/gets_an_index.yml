@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://172.99.87.154:8777/trait_descriptions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXdUFn8sb1t5o90UErqgGOmuUMySWd9oU4n1Ipuq16CoPy3NQmt0jmxz2fjVNiJb6_wyqeZfpU5IdzzNUAQPJUPSEYZXYi2h8OvFnSvtbCHFhhkkRXvL6QGa3tDW1hA8m2iWCMEzIqUPhdKpHY3ZtQNYIyGNAFTs1g16wjmoPcUlQ4u44
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Content-Length:
+      - '75'
+      Content-Type:
+      - application/json
+      X-Openstack-Request-Id:
+      - req-697cff88-393e-4760-900e-51bbf5b9f13f
+      Server:
+      - Werkzeug/0.11.4 Python/2.7.6
+      Date:
+      - Thu, 30 Jun 2016 15:57:29 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"error_message": {"code": 404, "description": null, "title": "Not
+        Found"}}'
+    http_version: 
+  recorded_at: Thu, 30 Jun 2016 15:57:29 GMT
+recorded_with: VCR 3.0.3
