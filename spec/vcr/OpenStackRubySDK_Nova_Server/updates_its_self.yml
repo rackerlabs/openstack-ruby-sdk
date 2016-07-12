@@ -2,21 +2,152 @@
 http_interactions:
 - request:
     method: post
+    uri: "<OS_AUTH_URL>"
+    body:
+      encoding: UTF-8
+      string: '{"auth":{"tenantName":"<OS_TENANT_NAME>","passwordCredentials":{"username":"<OS_USERNAME>","password":"<OS_PASSWORD>"}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '113'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 12 Jul 2016 18:12:15 GMT
+      Server:
+      - Apache
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-e8eb2ca7-ab54-4fe6-b486-b206fd2fa942
+      Content-Length:
+      - '4281'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"access": {"token": {"issued_at": "2016-07-12T18:12:15.000000Z", "expires":
+        "2016-07-13T06:12:15Z", "id": "gAAAAABXhTL_rBEYCnRRIMIo94K5de1fzJlV1DMOSIdbNUc4raMHq08YHYelTENoyG_wNzjwEX2WM1O2spmNCF6PyM10GvvjRhHyD09GzYhCrF2yP_SXHkRe8MJjfXNx-_JOBZSvisBim5mRmyKH9parbE-_Czzh6eZ2BxhSODO6PQWRjHqPdaQ",
+        "tenant": {"description": "", "enabled": true, "id": "4f8f44a4262041e0a2330fb59099f810",
+        "name": "<OS_TENANT_NAME>"}, "audit_ids": ["ozz9NEMcTcOPAppVOB8urQ"]}, "serviceCatalog":
+        [{"endpoints": [{"adminURL": "http://172.29.236.100:8774/v2/4f8f44a4262041e0a2330fb59099f810",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8774/v2.1/4f8f44a4262041e0a2330fb59099f810",
+        "id": "5c705b8537e7476ea74527025de382c8", "publicURL": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810"}],
+        "endpoints_links": [], "type": "compute", "name": "nova"}, {"endpoints": [{"adminURL":
+        "http://172.29.236.100:9696", "region": "RegionOne", "internalURL": "http://172.29.236.100:9696",
+        "id": "5eb4d64141174dfcac8ed18845d86e8c", "publicURL": "http://172.99.87.154:9696"}],
+        "endpoints_links": [], "type": "network", "name": "neutron"}, {"endpoints":
+        [{"adminURL": "http://172.29.236.100:8776/v2/4f8f44a4262041e0a2330fb59099f810",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8776/v2/4f8f44a4262041e0a2330fb59099f810",
+        "id": "024b50dc6d5944308a977d17c0dfac9c", "publicURL": "http://172.99.87.154:8776/v2/4f8f44a4262041e0a2330fb59099f810"}],
+        "endpoints_links": [], "type": "volumev2", "name": "cinderv2"}, {"endpoints":
+        [{"adminURL": "http://172.29.236.100:8042", "region": "RegionOne", "internalURL":
+        "http://172.29.236.100:8042", "id": "7110c30e08684c5881b04e46e3e242fb", "publicURL":
+        "http://172.99.87.154:8042"}], "endpoints_links": [], "type": "alarming",
+        "name": "aodh"}, {"endpoints": [{"adminURL": "http://172.29.236.100:9292",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:9292", "id":
+        "5f9ca00fc1aa41de82f714af3ec2f44f", "publicURL": "http://172.99.87.154:9292"}],
+        "endpoints_links": [], "type": "image", "name": "glance"}, {"endpoints": [{"adminURL":
+        "http://172.29.236.100:8777/", "region": "RegionOne", "internalURL": "http://172.29.236.100:8777",
+        "id": "166d9f3d36104e60ab944f4147dddafe", "publicURL": "http://172.99.87.154:8777"}],
+        "endpoints_links": [], "type": "metering", "name": "ceilometer"}, {"endpoints":
+        [{"adminURL": "http://172.29.236.100:8000/v1", "region": "RegionOne", "internalURL":
+        "http://172.29.236.100:8000/v1", "id": "1432f36f2eb846e183eb5692e48c42b7",
+        "publicURL": "http://172.99.87.154:8000/v1"}], "endpoints_links": [], "type":
+        "cloudformation", "name": "heat-cfn"}, {"endpoints": [{"adminURL": "http://172.29.236.100:8776/v1/4f8f44a4262041e0a2330fb59099f810",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8776/v1/4f8f44a4262041e0a2330fb59099f810",
+        "id": "61e6c9e21bdf49f9a74c2f75284e8370", "publicURL": "http://172.99.87.154:8776/v1/4f8f44a4262041e0a2330fb59099f810"}],
+        "endpoints_links": [], "type": "volume", "name": "cinder"}, {"endpoints":
+        [{"adminURL": "http://172.29.236.100:8004/v1/4f8f44a4262041e0a2330fb59099f810",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8004/v1/4f8f44a4262041e0a2330fb59099f810",
+        "id": "271767fb39574a8da664a7c8e94d9ad1", "publicURL": "http://172.99.87.154:8004/v1/4f8f44a4262041e0a2330fb59099f810"}],
+        "endpoints_links": [], "type": "orchestration", "name": "heat"}, {"endpoints":
+        [{"adminURL": "http://172.29.236.100:8080/v1/AUTH_4f8f44a4262041e0a2330fb59099f810",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8080/v1/AUTH_4f8f44a4262041e0a2330fb59099f810",
+        "id": "10be816ee9c24178b85afaef361d7586", "publicURL": "http://172.99.87.154:8080/v1/AUTH_4f8f44a4262041e0a2330fb59099f810"}],
+        "endpoints_links": [], "type": "object-store", "name": "swift"}, {"endpoints":
+        [{"adminURL": "http://172.29.236.100:35357/v3", "region": "RegionOne", "internalURL":
+        "http://172.29.236.100:5000/v3", "id": "0f1132698b2a4732ac30d6f9cbfbd09b",
+        "publicURL": "http://172.99.87.154:5000/v3"}], "endpoints_links": [], "type":
+        "identity", "name": "keystone"}], "user": {"username": "<OS_USERNAME>", "roles_links":
+        [], "id": "e77daadf2e414f6ab9dc5da0520510ca", "roles": [{"name": "admin"}],
+        "name": "<OS_USERNAME>"}, "metadata": {"is_admin": 0, "roles": ["0ac5a1859cc345039eafaf2f9725bbe7"]}}}'
+    http_version: 
+  recorded_at: Tue, 12 Jul 2016 18:12:15 GMT
+- request:
+    method: post
     uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers
     body:
       encoding: UTF-8
-      string: '{"server":{"id":null,"name":"924345","created":null,"updated":null,"progress":null,"user_id":null,"tenant_id":null,"links":null,"personality":null,"config_drive":null,"user_data":null,"addresses":null,"boot_volume_id":null,"boot_volume_size":null,"boot_image_id":null,"key_name":null,"metadata":null,"image":null,"flavor":null,"security_groups":null,"OS-EXT-AZ:availability_zone":null,"rax-bandwidth:bandwidth":null,"OS-DCF:diskConfig":null,"flavorRef":null,"hostId":null,"OS-EXT-SRV-ATTR:host":null,"OS-EXT-SRV-ATTR:hypervisor_hostname":null,"imageRef":null,"OS-EXT-SRV-ATTR:instance_name":null,"accessIPv4":null,"accessIPv6":null,"OS-SRV-USG:launched_at":null,"adminPass":null,"OS-EXT-STS:power_state":null,"OS-EXT-STS:task_state":null,"status":null,"OS-SRV-USG:terminated_at":null,"OS-EXT-STS:vm_state":null,"os-extended-volumes:volumes_attached":null,"RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId":null}}'
+      string: '{"server":{"flavorRef":"1","imageRef":"9060f38f-bb54-4806-a2b3-24a2173af252","name":"Testing"}}'
     headers:
       Accept:
       - application/json
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXdUFn8sb1t5o90UErqgGOmuUMySWd9oU4n1Ipuq16CoPy3NQmt0jmxz2fjVNiJb6_wyqeZfpU5IdzzNUAQPJUPSEYZXYi2h8OvFnSvtbCHFhhkkRXvL6QGa3tDW1hA8m2iWCMEzIqUPhdKpHY3ZtQNYIyGNAFTs1g16wjmoPcUlQ4u44
+      - gAAAAABXhTL_rBEYCnRRIMIo94K5de1fzJlV1DMOSIdbNUc4raMHq08YHYelTENoyG_wNzjwEX2WM1O2spmNCF6PyM10GvvjRhHyD09GzYhCrF2yP_SXHkRe8MJjfXNx-_JOBZSvisBim5mRmyKH9parbE-_Czzh6eZ2BxhSODO6PQWRjHqPdaQ
       Content-Type:
       - application/json
       Content-Length:
-      - '900'
+      - '95'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Content-Length:
+      - '444'
+      Location:
+      - http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1
+      Content-Type:
+      - application/json
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-b76afcc1-a53c-443b-8933-59622f6e8d8e
+      Date:
+      - Tue, 12 Jul 2016 18:12:15 GMT
+    body:
+      encoding: UTF-8
+      string: '{"server": {"security_groups": [{"name": "default"}], "OS-DCF:diskConfig":
+        "MANUAL", "id": "800e806a-c7aa-4a08-9cdf-91283bbd74e1", "links": [{"href":
+        "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1",
+        "rel": "bookmark"}], "adminPass": "Mr6TU2JHgWFw"}}'
+    http_version: 
+  recorded_at: Tue, 12 Jul 2016 18:12:15 GMT
+- request:
+    method: put
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1
+    body:
+      encoding: UTF-8
+      string: '{"server":{"id":"800e806a-c7aa-4a08-9cdf-91283bbd74e1","name":"823712","created":null,"updated":null,"progress":null,"user_id":null,"tenant_id":null,"links":[{"href":"http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1","rel":"self"},{"href":"http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1","rel":"bookmark"}],"personality":null,"config_drive":null,"user_data":null,"addresses":null,"boot_volume_id":null,"boot_volume_size":null,"boot_image_id":null,"key_name":null,"metadata":null,"image":null,"flavor":null,"security_groups":[{"name":"default"}],"OS-EXT-AZ:availability_zone":null,"rax-bandwidth:bandwidth":null,"OS-DCF:diskConfig":"MANUAL","flavorRef":null,"hostId":null,"OS-EXT-SRV-ATTR:host":null,"OS-EXT-SRV-ATTR:hypervisor_hostname":null,"imageRef":null,"OS-EXT-SRV-ATTR:instance_name":null,"accessIPv4":null,"accessIPv6":null,"OS-SRV-USG:launched_at":null,"adminPass":"Mr6TU2JHgWFw","OS-EXT-STS:power_state":null,"OS-EXT-STS:task_state":null,"status":null,"OS-SRV-USG:terminated_at":null,"OS-EXT-STS:vm_state":null,"os-extended-volumes:volumes_attached":null,"RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId":null}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXhTL_rBEYCnRRIMIo94K5de1fzJlV1DMOSIdbNUc4raMHq08YHYelTENoyG_wNzjwEX2WM1O2spmNCF6PyM10GvvjRhHyD09GzYhCrF2yP_SXHkRe8MJjfXNx-_JOBZSvisBim5mRmyKH9parbE-_Czzh6eZ2BxhSODO6PQWRjHqPdaQ
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1226'
       User-Agent:
       - Ruby
   response:
@@ -31,37 +162,177 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Content-Length:
-      - '1727'
+      - '2208'
       X-Compute-Request-Id:
-      - req-dc465752-be56-4da3-bf11-6cb667761135
+      - req-12da94c5-4755-469a-bd5c-f75e67fcb2d7
       Date:
-      - Thu, 30 Jun 2016 15:57:56 GMT
+      - Tue, 12 Jul 2016 18:12:15 GMT
     body:
       encoding: UTF-8
       string: '{"badRequest": {"message": "Invalid input for field/attribute server.
         Value: {u''OS-EXT-STS:task_state'': None, u''addresses'': None, u''links'':
-        None, u''personality'': None, u''image'': None, u''boot_image_id'': None,
-        u''user_data'': None, u''OS-EXT-STS:vm_state'': None, u''OS-EXT-SRV-ATTR:instance_name'':
-        None, u''OS-SRV-USG:launched_at'': None, u''flavor'': None, u''id'': None,
-        u''security_groups'': None, u''rax-bandwidth:bandwidth'': None, u''user_id'':
-        None, u''imageRef'': None, u''OS-DCF:diskConfig'': None, u''accessIPv4'':
-        None, u''accessIPv6'': None, u''progress'': None, u''OS-EXT-STS:power_state'':
+        [{u''href'': u''http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1'',
+        u''rel'': u''self''}, {u''href'': u''http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1'',
+        u''rel'': u''bookmark''}], u''personality'': None, u''image'': None, u''boot_image_id'':
+        None, u''user_data'': None, u''OS-EXT-STS:vm_state'': None, u''OS-EXT-SRV-ATTR:instance_name'':
+        None, u''OS-SRV-USG:launched_at'': None, u''flavor'': None, u''id'': u''800e806a-c7aa-4a08-9cdf-91283bbd74e1'',
+        u''security_groups'': [{u''name'': u''default''}], u''rax-bandwidth:bandwidth'':
+        None, u''user_id'': None, u''imageRef'': None, u''OS-DCF:diskConfig'': u''MANUAL'',
+        u''accessIPv4'': None, u''accessIPv6'': None, u''progress'': None, u''OS-EXT-STS:power_state'':
         None, u''OS-EXT-AZ:availability_zone'': None, u''metadata'': None, u''status'':
         None, u''updated'': None, u''hostId'': None, u''OS-EXT-SRV-ATTR:host'': None,
         u''OS-SRV-USG:terminated_at'': None, u''key_name'': None, u''flavorRef'':
         None, u''RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId'': None, u''boot_volume_id'':
         None, u''boot_volume_size'': None, u''OS-EXT-SRV-ATTR:hypervisor_hostname'':
-        None, u''name'': u''924345'', u''created'': None, u''tenant_id'': None, u''adminPass'':
-        None, u''os-extended-volumes:volumes_attached'': None, u''config_drive'':
+        None, u''name'': u''823712'', u''created'': None, u''tenant_id'': None, u''adminPass'':
+        u''Mr6TU2JHgWFw'', u''os-extended-volumes:volumes_attached'': None, u''config_drive'':
         None}. Additional properties are not allowed (u''OS-EXT-STS:task_state'',
-        u''addresses'', u''links'', u''image'', u''boot_image_id'', u''RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId'',
+        u''addresses'', u''links'', u''image'', u''boot_image_id'', u''user_data'',
         u''OS-EXT-STS:vm_state'', u''OS-EXT-SRV-ATTR:instance_name'', u''OS-SRV-USG:launched_at'',
-        u''flavor'', u''id'', u''rax-bandwidth:bandwidth'', u''user_id'', u''progress'',
-        u''OS-EXT-STS:power_state'', u''OS-EXT-AZ:availability_zone'', u''status'',
-        u''updated'', u''hostId'', u''OS-EXT-SRV-ATTR:host'', u''OS-SRV-USG:terminated_at'',
-        u''boot_volume_id'', u''boot_volume_size'', u''OS-EXT-SRV-ATTR:hypervisor_hostname'',
-        u''created'', u''tenant_id'', u''os-extended-volumes:volumes_attached'' were
-        unexpected)", "code": 400}}'
+        u''flavor'', u''id'', u''security_groups'', u''rax-bandwidth:bandwidth'',
+        u''user_id'', u''imageRef'', u''config_drive'', u''progress'', u''OS-EXT-STS:power_state'',
+        u''OS-EXT-AZ:availability_zone'', u''metadata'', u''status'', u''updated'',
+        u''hostId'', u''OS-EXT-SRV-ATTR:host'', u''OS-SRV-USG:terminated_at'', u''key_name'',
+        u''flavorRef'', u''RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId'', u''boot_volume_id'',
+        u''boot_volume_size'', u''OS-EXT-SRV-ATTR:hypervisor_hostname'', u''created'',
+        u''tenant_id'', u''adminPass'', u''os-extended-volumes:volumes_attached'',
+        u''personality'' were unexpected)", "code": 400}}'
     http_version: 
-  recorded_at: Thu, 30 Jun 2016 15:57:56 GMT
+  recorded_at: Tue, 12 Jul 2016 18:12:15 GMT
+- request:
+    method: put
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1
+    body:
+      encoding: UTF-8
+      string: '{"server":{"id":"800e806a-c7aa-4a08-9cdf-91283bbd74e1","name":"491460","created":null,"updated":null,"progress":null,"user_id":null,"tenant_id":null,"links":[{"href":"http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1","rel":"self"},{"href":"http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1","rel":"bookmark"}],"personality":null,"config_drive":null,"user_data":null,"addresses":null,"boot_volume_id":null,"boot_volume_size":null,"boot_image_id":null,"key_name":null,"metadata":null,"image":null,"flavor":null,"security_groups":[{"name":"default"}],"OS-EXT-AZ:availability_zone":null,"rax-bandwidth:bandwidth":null,"OS-DCF:diskConfig":"MANUAL","flavorRef":null,"hostId":null,"OS-EXT-SRV-ATTR:host":null,"OS-EXT-SRV-ATTR:hypervisor_hostname":null,"imageRef":null,"OS-EXT-SRV-ATTR:instance_name":null,"accessIPv4":null,"accessIPv6":null,"OS-SRV-USG:launched_at":null,"adminPass":"Mr6TU2JHgWFw","OS-EXT-STS:power_state":null,"OS-EXT-STS:task_state":null,"status":null,"OS-SRV-USG:terminated_at":null,"OS-EXT-STS:vm_state":null,"os-extended-volumes:volumes_attached":null,"RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId":null}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXhQTSI_xrXen4jyOpJLPAF88DKfnw_3VYT-6bycsLpy6p3sqmAL0_ESq2JDvR-8tIWYUxlnDiIKI0mOXJ9rBcVYGULlh2u5leKC99BGJpXG-KyQqF8QAYHYHvMUbD1W8jAt8kSST_-dza4h6lubl3kZe3uQPmfn038df_KLgvjmlGhCQ
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1226'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2208'
+      X-Compute-Request-Id:
+      - req-a4c271b9-1a4a-47e2-b6a6-0abe4589da6e
+      Date:
+      - Tue, 12 Jul 2016 18:52:46 GMT
+    body:
+      encoding: UTF-8
+      string: '{"badRequest": {"message": "Invalid input for field/attribute server.
+        Value: {u''OS-EXT-STS:task_state'': None, u''addresses'': None, u''links'':
+        [{u''href'': u''http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1'',
+        u''rel'': u''self''}, {u''href'': u''http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1'',
+        u''rel'': u''bookmark''}], u''personality'': None, u''image'': None, u''boot_image_id'':
+        None, u''user_data'': None, u''OS-EXT-STS:vm_state'': None, u''OS-EXT-SRV-ATTR:instance_name'':
+        None, u''OS-SRV-USG:launched_at'': None, u''flavor'': None, u''id'': u''800e806a-c7aa-4a08-9cdf-91283bbd74e1'',
+        u''security_groups'': [{u''name'': u''default''}], u''rax-bandwidth:bandwidth'':
+        None, u''user_id'': None, u''imageRef'': None, u''OS-DCF:diskConfig'': u''MANUAL'',
+        u''accessIPv4'': None, u''accessIPv6'': None, u''progress'': None, u''OS-EXT-STS:power_state'':
+        None, u''OS-EXT-AZ:availability_zone'': None, u''metadata'': None, u''status'':
+        None, u''updated'': None, u''hostId'': None, u''OS-EXT-SRV-ATTR:host'': None,
+        u''OS-SRV-USG:terminated_at'': None, u''key_name'': None, u''flavorRef'':
+        None, u''RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId'': None, u''boot_volume_id'':
+        None, u''boot_volume_size'': None, u''OS-EXT-SRV-ATTR:hypervisor_hostname'':
+        None, u''name'': u''491460'', u''created'': None, u''tenant_id'': None, u''adminPass'':
+        u''Mr6TU2JHgWFw'', u''os-extended-volumes:volumes_attached'': None, u''config_drive'':
+        None}. Additional properties are not allowed (u''OS-EXT-STS:task_state'',
+        u''addresses'', u''links'', u''image'', u''boot_image_id'', u''user_data'',
+        u''OS-EXT-STS:vm_state'', u''OS-EXT-SRV-ATTR:instance_name'', u''OS-SRV-USG:launched_at'',
+        u''flavor'', u''id'', u''security_groups'', u''rax-bandwidth:bandwidth'',
+        u''user_id'', u''imageRef'', u''config_drive'', u''progress'', u''OS-EXT-STS:power_state'',
+        u''OS-EXT-AZ:availability_zone'', u''metadata'', u''status'', u''updated'',
+        u''hostId'', u''OS-EXT-SRV-ATTR:host'', u''OS-SRV-USG:terminated_at'', u''key_name'',
+        u''flavorRef'', u''RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId'', u''boot_volume_id'',
+        u''boot_volume_size'', u''OS-EXT-SRV-ATTR:hypervisor_hostname'', u''created'',
+        u''tenant_id'', u''adminPass'', u''os-extended-volumes:volumes_attached'',
+        u''personality'' were unexpected)", "code": 400}}'
+    http_version: 
+  recorded_at: Tue, 12 Jul 2016 18:52:46 GMT
+- request:
+    method: put
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1
+    body:
+      encoding: UTF-8
+      string: '{"server":{"id":"800e806a-c7aa-4a08-9cdf-91283bbd74e1","name":"491460","created":null,"updated":null,"progress":null,"user_id":null,"tenant_id":null,"links":[{"href":"http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1","rel":"self"},{"href":"http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1","rel":"bookmark"}],"personality":null,"config_drive":null,"user_data":null,"addresses":null,"boot_volume_id":null,"boot_volume_size":null,"boot_image_id":null,"key_name":null,"metadata":null,"image":null,"flavor":null,"security_groups":[{"name":"default"}],"OS-EXT-AZ:availability_zone":null,"rax-bandwidth:bandwidth":null,"OS-DCF:diskConfig":"MANUAL","flavorRef":null,"hostId":null,"OS-EXT-SRV-ATTR:host":null,"OS-EXT-SRV-ATTR:hypervisor_hostname":null,"imageRef":null,"OS-EXT-SRV-ATTR:instance_name":null,"accessIPv4":null,"accessIPv6":null,"OS-SRV-USG:launched_at":null,"adminPass":"Mr6TU2JHgWFw","OS-EXT-STS:power_state":null,"OS-EXT-STS:task_state":null,"status":null,"OS-SRV-USG:terminated_at":null,"OS-EXT-STS:vm_state":null,"os-extended-volumes:volumes_attached":null,"RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId":null}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXhQTSI_xrXen4jyOpJLPAF88DKfnw_3VYT-6bycsLpy6p3sqmAL0_ESq2JDvR-8tIWYUxlnDiIKI0mOXJ9rBcVYGULlh2u5leKC99BGJpXG-KyQqF8QAYHYHvMUbD1W8jAt8kSST_-dza4h6lubl3kZe3uQPmfn038df_KLgvjmlGhCQ
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1226'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '2208'
+      X-Compute-Request-Id:
+      - req-e35162cd-98b0-4350-a7b3-47c585baab79
+      Date:
+      - Tue, 12 Jul 2016 18:52:50 GMT
+    body:
+      encoding: UTF-8
+      string: '{"badRequest": {"message": "Invalid input for field/attribute server.
+        Value: {u''OS-EXT-STS:task_state'': None, u''addresses'': None, u''links'':
+        [{u''href'': u''http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1'',
+        u''rel'': u''self''}, {u''href'': u''http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/800e806a-c7aa-4a08-9cdf-91283bbd74e1'',
+        u''rel'': u''bookmark''}], u''personality'': None, u''image'': None, u''boot_image_id'':
+        None, u''user_data'': None, u''OS-EXT-STS:vm_state'': None, u''OS-EXT-SRV-ATTR:instance_name'':
+        None, u''OS-SRV-USG:launched_at'': None, u''flavor'': None, u''id'': u''800e806a-c7aa-4a08-9cdf-91283bbd74e1'',
+        u''security_groups'': [{u''name'': u''default''}], u''rax-bandwidth:bandwidth'':
+        None, u''user_id'': None, u''imageRef'': None, u''OS-DCF:diskConfig'': u''MANUAL'',
+        u''accessIPv4'': None, u''accessIPv6'': None, u''progress'': None, u''OS-EXT-STS:power_state'':
+        None, u''OS-EXT-AZ:availability_zone'': None, u''metadata'': None, u''status'':
+        None, u''updated'': None, u''hostId'': None, u''OS-EXT-SRV-ATTR:host'': None,
+        u''OS-SRV-USG:terminated_at'': None, u''key_name'': None, u''flavorRef'':
+        None, u''RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId'': None, u''boot_volume_id'':
+        None, u''boot_volume_size'': None, u''OS-EXT-SRV-ATTR:hypervisor_hostname'':
+        None, u''name'': u''491460'', u''created'': None, u''tenant_id'': None, u''adminPass'':
+        u''Mr6TU2JHgWFw'', u''os-extended-volumes:volumes_attached'': None, u''config_drive'':
+        None}. Additional properties are not allowed (u''OS-EXT-STS:task_state'',
+        u''addresses'', u''links'', u''image'', u''boot_image_id'', u''user_data'',
+        u''OS-EXT-STS:vm_state'', u''OS-EXT-SRV-ATTR:instance_name'', u''OS-SRV-USG:launched_at'',
+        u''flavor'', u''id'', u''security_groups'', u''rax-bandwidth:bandwidth'',
+        u''user_id'', u''imageRef'', u''config_drive'', u''progress'', u''OS-EXT-STS:power_state'',
+        u''OS-EXT-AZ:availability_zone'', u''metadata'', u''status'', u''updated'',
+        u''hostId'', u''OS-EXT-SRV-ATTR:host'', u''OS-SRV-USG:terminated_at'', u''key_name'',
+        u''flavorRef'', u''RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId'', u''boot_volume_id'',
+        u''boot_volume_size'', u''OS-EXT-SRV-ATTR:hypervisor_hostname'', u''created'',
+        u''tenant_id'', u''adminPass'', u''os-extended-volumes:volumes_attached'',
+        u''personality'' were unexpected)", "code": 400}}'
+    http_version: 
+  recorded_at: Tue, 12 Jul 2016 18:52:50 GMT
 recorded_with: VCR 3.0.3
