@@ -7,8 +7,13 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
     OpenStackRubySDK::Nova::Server.create({
       flavorRef: flavor_id,
       imageRef: image_id,
-      name: 'Testing'
+      name: Time.now.usec.to_s
     })
+  end
+
+  before do
+    # Ensure even playing field
+    OpenStackRubySDK::Nova::Server.all.each{ |s| s.destroy }
   end
 
   it 'gets an index' do
@@ -25,9 +30,7 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
 
   it 'updates its self' do
     server.name = Time.now.usec.to_s
-    expect(server.save).to eq(true)
-    server.name = Time.now.usec.to_s
-    expect(server.save).to eq(true)
+    expect{ server.save}.to change{ server.updated }
   end
 
   it 'deletes its self' do

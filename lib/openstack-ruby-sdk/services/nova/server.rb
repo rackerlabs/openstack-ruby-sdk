@@ -26,13 +26,6 @@ class OpenStackRubySDK::Nova::Server
   attr_with_alias :volumes_attached, 'os-extended-volumes:volumes_attached'
   attr_with_alias :zone_id, 'RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId'
 
-  belongs_to :user
-  belongs_to :tenant
-  belongs_to :boot_volume
-  belongs_to :boot_image
-  has_many :attachments
-  has_many :volumes
-
   class << self
   	def create_with_disk_config; end
   	def servers_with_details; end
@@ -49,6 +42,20 @@ class OpenStackRubySDK::Nova::Server
 	def network_addresses_and_network; end
 	def retrieves_addresses; end
 	def volume_attachment_details; end
+  def attachments; end
+  def boot_image; end
+  def boot_volume; end
+  def tenant; end
+  def user; end
+  def volumes; end
+
+  def save
+    data = { server: {} }
+    data[:server].merge!({ accessIPv4: ipv4_address }) if ipv4_address.present?
+    data[:server].merge!({ accessIPv6: ipv6_address }) if ipv6_address.present?
+    data[:server].merge!({ name: name }) if name.present?
+    refresh! Peace::Request.put(url, data)
+  end
 
   # http://api.rackspace.com/#changePassword
   def change_password(pass)
