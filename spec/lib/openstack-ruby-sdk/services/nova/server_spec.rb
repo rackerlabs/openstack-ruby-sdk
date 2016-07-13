@@ -50,4 +50,8 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
     }.by(1)
   end
 
+  it 'can reboot' do
+    expect(server.reboot).to eq(true)
+  end
+
 end
