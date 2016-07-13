@@ -11,8 +11,7 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
     })
   end
 
-  before do
-    # Ensure even playing field
+  after do
     OpenStackRubySDK::Nova::Server.all.each{ |s| s.destroy }
   end
 
@@ -30,10 +29,25 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
 
   it 'updates its self' do
     server.name = Time.now.usec.to_s
-    expect{ server.save}.to change{ server.updated }
+    expect{ server.save }.to change{ server.updated }
   end
 
   it 'deletes its self' do
     expect(server.destroy).to eq(true)
   end
+
+  it 'updates the admin password' do
+    skip "Is this RAX only?"
+    # Peace::Helpers.wait_for(server)
+    # expect{ server.change_password("j3Peu626UnDJ") }.to change{ server.updated }
+  end
+
+  it 'creates an image' do
+    expect {
+      server.create_image('Testing')
+    }.to change {
+      OpenStackRubySDK::Nova::Image.all.count
+    }.by(1)
+  end
+
 end

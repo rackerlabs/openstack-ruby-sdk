@@ -23,23 +23,23 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Wed, 13 Jul 2016 17:20:41 GMT
+      - Wed, 13 Jul 2016 18:18:52 GMT
       Server:
       - Apache
       Vary:
       - X-Auth-Token
       X-Openstack-Request-Id:
-      - req-550fbd43-e4a1-4aac-911f-87c23e23438b
+      - req-220211df-a093-424d-bf8d-8ca465717371
       Content-Length:
       - '4281'
       Content-Type:
       - application/json
     body:
       encoding: UTF-8
-      string: '{"access": {"token": {"issued_at": "2016-07-13T17:20:42.000000Z", "expires":
-        "2016-07-14T05:20:42Z", "id": "gAAAAABXhnhqYuBJAPdgBmT4xeHRP4x8a7dwXIAVWLvzjlCi_TahuvUNDsy59lcvQIs59f8ckHFMNsuD2PEb4wp0EhVTNeMGP2nqsoWFbYmlipNi_oxhAx67amVDG4LD6dOLsa7DV67rnpCbnwhX5hdlck2eqmLOA5TEjzSuzfSTBGpP-rOSj0M",
+      string: '{"access": {"token": {"issued_at": "2016-07-13T18:18:53.000000Z", "expires":
+        "2016-07-14T06:18:53Z", "id": "gAAAAABXhoYN3xK4j3XRRzxLwj8LlRxcrTTqaDxCp6PXXY29WWeqa_VRtFI-z_yKbVAi5JzQ1UJ3YgmcWSCmy5RyYXXdcaRQnglkU0pQRbDGyngR7vF3XENetQzL1NJtODRzg4kX-mAcluY_WiPcz7zicrLWK-H75XC-eV85PGazE5NkVcjwwbA",
         "tenant": {"description": "", "enabled": true, "id": "4f8f44a4262041e0a2330fb59099f810",
-        "name": "<OS_TENANT_NAME>"}, "audit_ids": ["3mgd7t65StebY9O3aJfTYQ"]}, "serviceCatalog":
+        "name": "<OS_TENANT_NAME>"}, "audit_ids": ["Q6kXhoFqSGWM_Ol1ELzsMA"]}, "serviceCatalog":
         [{"endpoints": [{"adminURL": "http://172.29.236.100:8774/v2/4f8f44a4262041e0a2330fb59099f810",
         "region": "RegionOne", "internalURL": "http://172.29.236.100:8774/v2.1/4f8f44a4262041e0a2330fb59099f810",
         "id": "5c705b8537e7476ea74527025de382c8", "publicURL": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810"}],
@@ -83,7 +83,7 @@ http_interactions:
         [], "id": "e77daadf2e414f6ab9dc5da0520510ca", "roles": [{"name": "admin"}],
         "name": "<OS_USERNAME>"}, "metadata": {"is_admin": 0, "roles": ["0ac5a1859cc345039eafaf2f9725bbe7"]}}}'
     http_version: 
-  recorded_at: Wed, 13 Jul 2016 17:20:42 GMT
+  recorded_at: Wed, 13 Jul 2016 18:18:53 GMT
 - request:
     method: get
     uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers
@@ -96,7 +96,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXhnhqYuBJAPdgBmT4xeHRP4x8a7dwXIAVWLvzjlCi_TahuvUNDsy59lcvQIs59f8ckHFMNsuD2PEb4wp0EhVTNeMGP2nqsoWFbYmlipNi_oxhAx67amVDG4LD6dOLsa7DV67rnpCbnwhX5hdlck2eqmLOA5TEjzSuzfSTBGpP-rOSj0M
+      - gAAAAABXhoYN3xK4j3XRRzxLwj8LlRxcrTTqaDxCp6PXXY29WWeqa_VRtFI-z_yKbVAi5JzQ1UJ3YgmcWSCmy5RyYXXdcaRQnglkU0pQRbDGyngR7vF3XENetQzL1NJtODRzg4kX-mAcluY_WiPcz7zicrLWK-H75XC-eV85PGazE5NkVcjwwbA
       Content-Type:
       - application/json
       User-Agent:
@@ -115,14 +115,14 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-6edd9e11-3e2a-49ca-8c68-d2a8094a6cea
+      - req-65ed7349-733a-40a8-a8be-43a5fcc89d19
       Date:
-      - Wed, 13 Jul 2016 17:20:42 GMT
+      - Wed, 13 Jul 2016 18:18:53 GMT
     body:
       encoding: UTF-8
       string: '{"servers": []}'
     http_version: 
-  recorded_at: Wed, 13 Jul 2016 17:20:42 GMT
+  recorded_at: Wed, 13 Jul 2016 18:18:53 GMT
 - request:
     method: get
     uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers
@@ -135,7 +135,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXhnhqYuBJAPdgBmT4xeHRP4x8a7dwXIAVWLvzjlCi_TahuvUNDsy59lcvQIs59f8ckHFMNsuD2PEb4wp0EhVTNeMGP2nqsoWFbYmlipNi_oxhAx67amVDG4LD6dOLsa7DV67rnpCbnwhX5hdlck2eqmLOA5TEjzSuzfSTBGpP-rOSj0M
+      - gAAAAABXhoYN3xK4j3XRRzxLwj8LlRxcrTTqaDxCp6PXXY29WWeqa_VRtFI-z_yKbVAi5JzQ1UJ3YgmcWSCmy5RyYXXdcaRQnglkU0pQRbDGyngR7vF3XENetQzL1NJtODRzg4kX-mAcluY_WiPcz7zicrLWK-H75XC-eV85PGazE5NkVcjwwbA
       Content-Type:
       - application/json
       User-Agent:
@@ -154,12 +154,12 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-e4ffb5b4-6cd8-4baa-8df7-a7cc674feff6
+      - req-6812fba3-1859-4cbe-9ce2-6f50860f1772
       Date:
-      - Wed, 13 Jul 2016 17:20:42 GMT
+      - Wed, 13 Jul 2016 18:18:53 GMT
     body:
       encoding: UTF-8
       string: '{"servers": []}'
     http_version: 
-  recorded_at: Wed, 13 Jul 2016 17:20:42 GMT
+  recorded_at: Wed, 13 Jul 2016 18:18:53 GMT
 recorded_with: VCR 3.0.3

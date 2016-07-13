@@ -53,13 +53,15 @@ class OpenStackRubySDK::Nova::Server
     data = { server: {} }
     data[:server].merge!({ accessIPv4: ipv4_address }) if ipv4_address.present?
     data[:server].merge!({ accessIPv6: ipv6_address }) if ipv6_address.present?
+    data[:server].merge!({ 'OS-DCF:diskConfig': disk_config }) if disk_config.present?
     data[:server].merge!({ name: name }) if name.present?
     refresh! Peace::Request.put(url, data)
   end
 
   # http://api.rackspace.com/#changePassword
   def change_password(pass)
-    perform_action!(changePassword: {adminPass: pass})
+    # TODO: This doesn't seem to work; always get the same error.
+    perform_action!(changePassword: { adminPass: pass })
   end
 
   # http://api.rackspace.com/#createImage

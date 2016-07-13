@@ -20,7 +20,12 @@ RSpec.configure do |config|
     c.cassette_library_dir = "spec/vcr"
     c.hook_into :webmock
     c.configure_rspec_metadata!
-    c.default_cassette_options = { :record => :new_episodes }
+    c.default_cassette_options = { :record => :once }
+
+    # c.register_request_matcher :uri do |request_1, request_2|
+    #   binding.pry
+    #   request_1.uri == request_2.uri
+    # end
 
     c.filter_sensitive_data('<OS_AUTH_URL>') { ENV['OS_AUTH_URL'] }
     c.filter_sensitive_data('<OS_USERNAME>') { ENV['OS_USERNAME'] }
