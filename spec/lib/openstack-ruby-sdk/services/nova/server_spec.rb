@@ -89,4 +89,9 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
     expect(server.config_drive).to eq("")
     expect(server.power_state).to eq(1)
   end
+
+  it 'knows about associated keypairs' do
+    expect(server.key_pairs).to eq([])
+  end
+
 end

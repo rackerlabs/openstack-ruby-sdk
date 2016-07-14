@@ -39,8 +39,11 @@ class OpenStackRubySDK::Nova::Server
 	def details;
     self.reload
   end
-  
-	def key_pairs; end
+
+	def key_pairs;
+    OpenStackRubySDK::Nova::KeyPair.all
+  end
+
 	def log_details_action; end
 	def metadata; end
 	def network_addresses_and_network; end
