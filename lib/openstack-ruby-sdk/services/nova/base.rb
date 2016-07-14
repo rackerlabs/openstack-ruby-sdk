@@ -1,6 +1,7 @@
 class OpenStackRubySDK::Nova
   include Peace::Service
 
+  has_resource :action
   has_resource :attachment
   has_resource :flavor
   has_resource :image

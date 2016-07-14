@@ -27,37 +27,32 @@ class OpenStackRubySDK::Nova::Server
   attr_with_alias :zone_id, 'RAX-PUBLIC-IP-ZONE-ID:publicIPZoneId'
 
   class << self
+  	def create_from_volume
+      # https://developer.rackspace.com/docs/cloud-servers/v2/developer-guide/#create-bootable-volume-and-server
+    end
   	def create_with_disk_config; end
-  	def servers_with_details; end
   end
 
 	def attach_volume; end
-  def boot_image; end
-  def boot_volume; end
-	def confirm_resize; end
-	def create_bootable_volume; end
-	def delete_volume_attachment; end
+	def detach_volume; end
 
-	def details;
+	def details
     self.reload
   end
 
-	def key_pairs;
+	def key_pairs
     OpenStackRubySDK::Nova::KeyPair.all
   end
 
-	def log_details_action; end
+	def available_actions
+    OpenStackRubySDK::Nova::Action.all(server_id: id)
+  end
+
 	def metadata; end
-	def network_addresses_and_network; end
-	def retrieves_addresses; end
-  def tenant; end
-  def user; end
 
   def volumes
     OpenStackRubySDK::Nova::Volume.all(server_id: id)
   end
-
-	def volume_attachment_details; end
 
   def save
     data = Peace::Helpers.payload_builder(:server, {

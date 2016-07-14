@@ -98,4 +98,8 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
     expect(server.volumes).to eq([])
   end
 
+  it 'knows about associated actions' do
+    expect(server.available_actions).to eq([])
+  end
+
 end
