@@ -35,7 +35,11 @@ class OpenStackRubySDK::Nova::Server
 	def confirm_resize; end
 	def create_bootable_volume; end
 	def delete_volume_attachment; end
-	def details; end
+
+	def details;
+    self.reload
+  end
+  
 	def key_pairs; end
 	def log_details_action; end
 	def metadata; end

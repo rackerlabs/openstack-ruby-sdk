@@ -83,4 +83,10 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
     Peace::Helpers.wait_for(server, 'REBUILD')
     expect(server.state).to eq('REBUILD')
   end
+
+  it 'gets its own details' do
+    server.details
+    expect(server.config_drive).to eq("")
+    expect(server.power_state).to eq(1)
+  end
 end
