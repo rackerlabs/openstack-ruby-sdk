@@ -94,4 +94,8 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
     expect(server.key_pairs).to eq([])
   end
 
+  it 'knows about associated volumes' do
+    expect(server.volumes).to eq([])
+  end
+
 end

@@ -32,6 +32,8 @@ class OpenStackRubySDK::Nova::Server
   end
 
 	def attach_volume; end
+  def boot_image; end
+  def boot_volume; end
 	def confirm_resize; end
 	def create_bootable_volume; end
 	def delete_volume_attachment; end
@@ -48,13 +50,14 @@ class OpenStackRubySDK::Nova::Server
 	def metadata; end
 	def network_addresses_and_network; end
 	def retrieves_addresses; end
-	def volume_attachment_details; end
-  def attachments; end
-  def boot_image; end
-  def boot_volume; end
   def tenant; end
   def user; end
-  def volumes; end
+
+  def volumes
+    OpenStackRubySDK::Nova::Volume.all(server_id: id)
+  end
+
+	def volume_attachment_details; end
 
   def save
     data = Peace::Helpers.payload_builder(:server, {
