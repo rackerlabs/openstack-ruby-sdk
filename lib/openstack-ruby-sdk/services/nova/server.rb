@@ -50,11 +50,13 @@ class OpenStackRubySDK::Nova::Server
   def volumes; end
 
   def save
-    data = { server: {} }
-    data[:server].merge!({ accessIPv4: ipv4_address }) if ipv4_address.present?
-    data[:server].merge!({ accessIPv6: ipv6_address }) if ipv6_address.present?
-    data[:server].merge!({ 'OS-DCF:diskConfig': disk_config }) if disk_config.present?
-    data[:server].merge!({ name: name }) if name.present?
+    data = Peace::Helpers.payload_builder(:server, {
+      'OS-DCF:diskConfig': disk_config,
+      accessIPv4: ipv4_address,
+      accessIPv6: ipv6_address,
+      name: name
+    })
+
     refresh! Peace::Request.put(url, data)
   end
 
@@ -81,15 +83,15 @@ class OpenStackRubySDK::Nova::Server
 
   # http://api.rackspace.com/#rebuildServer
   def rebuild
-    data = { rebuild: {} }
-    data[:rebuild].merge!({ accessIPv4: ipv4_address }) if ipv4_address.present?
-    data[:rebuild].merge!({ accessIPv6: ipv6_address }) if ipv6_address.present?
-    data[:rebuild].merge!({ name: name }) if name.present?
-    data[:rebuild].merge!({ imageRef: image['id'] }) if image['id'].present?
-    data[:rebuild].merge!({ name: name }) if name.present?
-    data[:rebuild].merge!({ 'OS-DCF:diskConfig': disk_config }) if disk_config.present?
-    data[:rebuild].merge!({ adminPass: password }) if password.present?
-    data[:rebuild].merge!({ metadata: metadata }) if metadata.present?
+    data = Peace::Helpers.payload_builder(:rebuild, {
+      'OS-DCF:diskConfig': disk_config,
+      accessIPv4: ipv4_address,
+      accessIPv6: ipv6_address,
+      adminPass: password,
+      imageRef: image['id'],
+      metadata: metadata,
+      name: name
+    })
 
     perform_action!(data)
   end
