@@ -73,6 +73,14 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
     expect(server.flavor['id']).to eq("1")
   end
 
-  # it 'can be rescued' do
-  # end
+  it 'can be rescued' do
+    expect(server.rescue(image_id)['adminPass']).to be_present
+    Peace::Helpers.wait_for(server, 'RESCUE')
+  end
+
+  it 'can be rebuilt' do
+    server.rebuild
+    Peace::Helpers.wait_for(server, 'REBUILD')
+    expect(server.state).to eq('REBUILD')
+  end
 end
