@@ -4,11 +4,13 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
   let(:flavor_id) { '1' }
   let(:image_id) { '9060f38f-bb54-4806-a2b3-24a2173af252' }
   let(:server) do
-    OpenStackRubySDK::Nova::Server.create({
+    s = OpenStackRubySDK::Nova::Server.create({
       flavorRef: flavor_id,
       imageRef: image_id,
       name: Time.now.usec.to_s
     })
+
+    Peace::Helpers.wait_for(s)
   end
 
   after do
@@ -29,7 +31,7 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
 
   it 'updates its self' do
     server.name = Time.now.usec.to_s
-    expect{ server.save }.to change{ server.updated }
+    expect{ server.save; server.reload }.to change{ server.updated }
   end
 
   it 'deletes its self' do
@@ -38,7 +40,6 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
 
   it 'updates the admin password' do
     skip "Is this RAX only?"
-    # Peace::Helpers.wait_for(server)
     # expect{ server.change_password("j3Peu626UnDJ") }.to change{ server.updated }
   end
 
@@ -54,4 +55,24 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
     expect(server.reboot).to eq(true)
   end
 
+  it 'can resize' do
+    expect(server.flavor['id']).to eq("1")
+    expect(server.resize("2")).to eq(true)
+    Peace::Helpers.wait_for(server, 'VERIFY_RESIZE')
+    server.confirm_resize
+    Peace::Helpers.wait_for(server)
+    expect(server.flavor['id']).to eq("2")
+  end
+
+  it 'can revert a resize' do
+    expect(server.flavor['id']).to eq("1")
+    expect(server.resize("2")).to eq(true)
+    Peace::Helpers.wait_for(server, 'VERIFY_RESIZE')
+    server.revert_resize
+    Peace::Helpers.wait_for(server)
+    expect(server.flavor['id']).to eq("1")
+  end
+
+  # it 'can be rescued' do
+  # end
 end
