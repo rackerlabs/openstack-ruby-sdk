@@ -58,12 +58,18 @@ class OpenStackRubySDK::Nova::Server
       volumeId: volume_id
     })
 
-    url = "#{self.url}/os-volume_attachments"
-    response = Peace::Request.post(url, data)
-    OpenStackRubySDK::Nova::VolumeAttachment.new(response)
+    url        = "#{self.url}/os-volume_attachments"
+    response   = Peace::Request.post(url, data)
+    attachment = OpenStackRubySDK::Nova::VolumeAttachment.new(response)
+    self.reload
+    attachment
   end
 
-	def detach_volume; end
+	def detach_volume(volume_id)
+    attachments = OpenStackRubySDK::Nova::VolumeAttachment.all(server_id: id)
+    attachment  = attachments.find{ |a| a.volume_id == volume_id}
+    Peace::Request.delete("#{self.url}/os-volume_attachments/#{attachment.id}")
+  end
 
 	def details
     self.reload

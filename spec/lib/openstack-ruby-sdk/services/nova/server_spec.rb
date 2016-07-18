@@ -123,4 +123,10 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
     expect(attachment.volume_id).to eq(volume_id)
   end
 
+  it 'can deattach a volume' do
+    attachment = server.attach_volume(volume_id)
+    server.reload
+    expect(server.detach_volume(volume_id)).to eq(true)
+  end
+
 end
