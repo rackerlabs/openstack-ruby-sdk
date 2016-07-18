@@ -3,6 +3,7 @@ require 'spec_helper'
 describe OpenStackRubySDK::Nova::Server, :vcr do
   let(:flavor_id) { '1' }
   let(:image_id) { '9060f38f-bb54-4806-a2b3-24a2173af252' }
+  let(:volume_id){ 'f2176250-b0d9-4e3f-948c-df959dfba6fc' }
   let(:server) do
     s = OpenStackRubySDK::Nova::Server.create({
       flavorRef: flavor_id,
@@ -114,6 +115,12 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
     # }
     #
     # OpenStackRubySDK::Nova::Server.create_from_volume(data)
+  end
+
+  it 'can attach a volume' do
+    attachment = server.attach_volume(volume_id)
+    expect(attachment.server_id).to eq(server.id)
+    expect(attachment.volume_id).to eq(volume_id)
   end
 
 end

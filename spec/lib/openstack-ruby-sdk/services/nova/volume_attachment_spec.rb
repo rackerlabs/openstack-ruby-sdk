@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe OpenStackRubySDK::Nova::VolumeAttachment, :vcr do
-  let(:attachment){ OpenStackRubySDK::Nova::VolumeAttachment.new }
+  let(:volume_id){ 'f2176250-b0d9-4e3f-948c-df959dfba6fc' }
   let(:flavor_id) { '1' }
   let(:image_id) { '9060f38f-bb54-4806-a2b3-24a2173af252' }
   let(:server) do
@@ -18,5 +18,6 @@ describe OpenStackRubySDK::Nova::VolumeAttachment, :vcr do
     OpenStackRubySDK::Nova::Server.all.each{ |s| s.destroy }
   end
 
+  it 'can get details about the attachment'
 
 end

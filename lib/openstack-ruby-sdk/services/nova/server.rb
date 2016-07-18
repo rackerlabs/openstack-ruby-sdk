@@ -53,7 +53,16 @@ class OpenStackRubySDK::Nova::Server
     end
   end
 
-	def attach_volume; end
+	def attach_volume(volume_id)
+    data = Peace::Helpers.payload_builder(:volumeAttachment, {
+      volumeId: volume_id
+    })
+
+    url = "#{self.url}/os-volume_attachments"
+    response = Peace::Request.post(url, data)
+    OpenStackRubySDK::Nova::VolumeAttachment.new(response)
+  end
+
 	def detach_volume; end
 
 	def details
