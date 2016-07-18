@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXh8TqOPZ5mjrWqTjvD-6ogq-DfJzcztC24__REViQmhoqppS2wWF1JvRmBjKxcTkAngvL_wYWobpUAEGDC-UCVOuDqeCKO-xfRygntkTzsG44AHj4lMerPcAIdrYq21S74GKsadON1LuhwsbtBAtmOO-BW0JEJ1H0uvOgv0lJ8gReg_Y
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-Length:
+      - '23'
+      Www-Authenticate:
+      - Keystone uri='http://172.29.236.100:5000'
+      X-Compute-Request-Id:
+      - req-1e3deba4-c793-4493-a44a-d8e0322e38c8
+      Date:
+      - Fri, 15 Jul 2016 16:13:33 GMT
+    body:
+      encoding: UTF-8
+      string: Authentication required
+    http_version: 
+  recorded_at: Fri, 15 Jul 2016 16:13:33 GMT
+recorded_with: VCR 3.0.3

@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://172.99.87.154:5000/v3/projects
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXdUFn8sb1t5o90UErqgGOmuUMySWd9oU4n1Ipuq16CoPy3NQmt0jmxz2fjVNiJb6_wyqeZfpU5IdzzNUAQPJUPSEYZXYi2h8OvFnSvtbCHFhhkkRXvL6QGa3tDW1hA8m2iWCMEzIqUPhdKpHY3ZtQNYIyGNAFTs1g16wjmoPcUlQ4u44
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jun 2016 15:57:45 GMT
+      Server:
+      - Apache
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-6b695150-77dc-46d4-9e34-1640f6fa5b5e
+      Content-Length:
+      - '1498'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"links": {"self": "http://172.99.87.154:5000/v3/projects", "previous":
+        null, "next": null}, "projects": [{"is_domain": false, "description": "",
+        "links": {"self": "http://172.99.87.154:5000/v3/projects/4f8f44a4262041e0a2330fb59099f810"},
+        "enabled": true, "id": "4f8f44a4262041e0a2330fb59099f810", "parent_id": "default",
+        "domain_id": "default", "name": "<OS_TENANT_NAME>"}, {"is_domain": false,
+        "description": "Bootstrap project for initializing the cloud.", "links": {"self":
+        "http://172.99.87.154:5000/v3/projects/52ae2199625245ef81e621a2abdd8a91"},
+        "enabled": true, "id": "52ae2199625245ef81e621a2abdd8a91", "parent_id": "default",
+        "domain_id": "default", "name": "admin"}, {"is_domain": false, "description":
+        "alt_demo Tenant", "links": {"self": "http://172.99.87.154:5000/v3/projects/6d278afd3b33416290ba87a23d94b301"},
+        "enabled": true, "id": "6d278afd3b33416290ba87a23d94b301", "parent_id": "default",
+        "domain_id": "default", "name": "alt_demo"}, {"is_domain": false, "description":
+        "demo Tenant", "links": {"self": "http://172.99.87.154:5000/v3/projects/85a9e42a64b74fa3b30195397f2838db"},
+        "enabled": true, "id": "85a9e42a64b74fa3b30195397f2838db", "parent_id": "default",
+        "domain_id": "default", "name": "demo"}, {"is_domain": false, "description":
+        "Keystone Identity Service", "links": {"self": "http://172.99.87.154:5000/v3/projects/d0083ccbdfd840e4b823587ff1b8bfbd"},
+        "enabled": true, "id": "d0083ccbdfd840e4b823587ff1b8bfbd", "parent_id": "default",
+        "domain_id": "default", "name": "service"}]}'
+    http_version: 
+  recorded_at: Thu, 30 Jun 2016 15:57:45 GMT
+recorded_with: VCR 3.0.3

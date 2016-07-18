@@ -1,0 +1,85 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://172.99.87.154:5000/v3/users
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXdUFn8sb1t5o90UErqgGOmuUMySWd9oU4n1Ipuq16CoPy3NQmt0jmxz2fjVNiJb6_wyqeZfpU5IdzzNUAQPJUPSEYZXYi2h8OvFnSvtbCHFhhkkRXvL6QGa3tDW1hA8m2iWCMEzIqUPhdKpHY3ZtQNYIyGNAFTs1g16wjmoPcUlQ4u44
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 30 Jun 2016 15:57:47 GMT
+      Server:
+      - Apache
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-c51c138d-fb4f-46ee-8588-319c388700a6
+      Content-Length:
+      - '3786'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"users": [{"name": "stack_domain_admin", "links": {"self": "http://172.99.87.154:5000/v3/users/09df49a9e67c40e196a5463fb065f38c"},
+        "enabled": true, "id": "09df49a9e67c40e196a5463fb065f38c", "domain_id": "d2750c1451b24c478db1ed78b297ea65"},
+        {"name": "aodh", "links": {"self": "http://172.99.87.154:5000/v3/users/0c82d59db0bd4618a7da5cf01766a601"},
+        "domain_id": "default", "enabled": true, "id": "0c82d59db0bd4618a7da5cf01766a601",
+        "default_project_id": "d0083ccbdfd840e4b823587ff1b8bfbd"}, {"name": "swift",
+        "links": {"self": "http://172.99.87.154:5000/v3/users/4e104f189b6a4d6fbe7d4e0bd92d3e95"},
+        "domain_id": "default", "enabled": true, "id": "4e104f189b6a4d6fbe7d4e0bd92d3e95",
+        "default_project_id": "d0083ccbdfd840e4b823587ff1b8bfbd"}, {"name": "alt_demo",
+        "links": {"self": "http://172.99.87.154:5000/v3/users/615faa41cbcc410d9562ac85e2477ee3"},
+        "domain_id": "default", "enabled": true, "id": "615faa41cbcc410d9562ac85e2477ee3",
+        "default_project_id": "6d278afd3b33416290ba87a23d94b301"}, {"name": "heat",
+        "links": {"self": "http://172.99.87.154:5000/v3/users/6f13dc5e5e674c98ac8da8a74c19999c"},
+        "domain_id": "default", "enabled": true, "id": "6f13dc5e5e674c98ac8da8a74c19999c",
+        "default_project_id": "d0083ccbdfd840e4b823587ff1b8bfbd"}, {"name": "glance",
+        "links": {"self": "http://172.99.87.154:5000/v3/users/7f0a70fd351a4d62b29fb938dcb1d516"},
+        "domain_id": "default", "enabled": true, "id": "7f0a70fd351a4d62b29fb938dcb1d516",
+        "default_project_id": "d0083ccbdfd840e4b823587ff1b8bfbd"}, {"name": "neutron",
+        "links": {"self": "http://172.99.87.154:5000/v3/users/81e4f0adfb274e7f9ca2f1be454463d3"},
+        "domain_id": "default", "enabled": true, "id": "81e4f0adfb274e7f9ca2f1be454463d3",
+        "default_project_id": "d0083ccbdfd840e4b823587ff1b8bfbd"}, {"name": "demo",
+        "links": {"self": "http://172.99.87.154:5000/v3/users/92895889ccb34249940e97071d854f32"},
+        "domain_id": "default", "enabled": true, "id": "92895889ccb34249940e97071d854f32",
+        "default_project_id": "85a9e42a64b74fa3b30195397f2838db"}, {"name": "dispersion",
+        "links": {"self": "http://172.99.87.154:5000/v3/users/933403946d704ed59eeca23be5290379"},
+        "domain_id": "default", "enabled": true, "id": "933403946d704ed59eeca23be5290379",
+        "default_project_id": "d0083ccbdfd840e4b823587ff1b8bfbd"}, {"name": "admin",
+        "links": {"self": "http://172.99.87.154:5000/v3/users/9a6ccb9dd81c4277a2d893b97d62c206"},
+        "enabled": true, "id": "9a6ccb9dd81c4277a2d893b97d62c206", "domain_id": "default"},
+        {"name": "cinder", "links": {"self": "http://172.99.87.154:5000/v3/users/c6db772c9b82416b9f7dfd7000168868"},
+        "domain_id": "default", "enabled": true, "id": "c6db772c9b82416b9f7dfd7000168868",
+        "default_project_id": "d0083ccbdfd840e4b823587ff1b8bfbd"}, {"name": "ceilometer",
+        "links": {"self": "http://172.99.87.154:5000/v3/users/caef48b3354e40a889f65167d63f37c6"},
+        "domain_id": "default", "enabled": true, "id": "caef48b3354e40a889f65167d63f37c6",
+        "default_project_id": "d0083ccbdfd840e4b823587ff1b8bfbd"}, {"name": "nova",
+        "links": {"self": "http://172.99.87.154:5000/v3/users/cf8f3e34ce7d4df0aa4cf5fe4cd05a98"},
+        "domain_id": "default", "enabled": true, "id": "cf8f3e34ce7d4df0aa4cf5fe4cd05a98",
+        "default_project_id": "d0083ccbdfd840e4b823587ff1b8bfbd"}, {"name": "<OS_USERNAME>",
+        "links": {"self": "http://172.99.87.154:5000/v3/users/e77daadf2e414f6ab9dc5da0520510ca"},
+        "domain_id": "default", "enabled": true, "id": "e77daadf2e414f6ab9dc5da0520510ca",
+        "default_project_id": "52ae2199625245ef81e621a2abdd8a91"}, {"name": "keystone",
+        "links": {"self": "http://172.99.87.154:5000/v3/users/f897117acd224725b7d27266ddea7ea6"},
+        "domain_id": "default", "enabled": true, "id": "f897117acd224725b7d27266ddea7ea6",
+        "default_project_id": "d0083ccbdfd840e4b823587ff1b8bfbd"}], "links": {"self":
+        "http://172.99.87.154:5000/v3/users", "previous": null, "next": null}}'
+    http_version: 
+  recorded_at: Thu, 30 Jun 2016 15:57:47 GMT
+recorded_with: VCR 3.0.3

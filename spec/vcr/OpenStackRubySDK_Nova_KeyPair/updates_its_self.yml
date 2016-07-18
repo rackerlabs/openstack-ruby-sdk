@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/os-keypairs
+    body:
+      encoding: UTF-8
+      string: '{"keypair":{"id":null,"public_key":null,"private_key":null,"user_id":null,"fingerprint":null,"name":"969417"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXdUFn8sb1t5o90UErqgGOmuUMySWd9oU4n1Ipuq16CoPy3NQmt0jmxz2fjVNiJb6_wyqeZfpU5IdzzNUAQPJUPSEYZXYi2h8OvFnSvtbCHFhhkkRXvL6QGa3tDW1hA8m2iWCMEzIqUPhdKpHY3ZtQNYIyGNAFTs1g16wjmoPcUlQ4u44
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '110'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '317'
+      X-Compute-Request-Id:
+      - req-6368a331-f382-4cff-b7a6-aec665241f78
+      Date:
+      - Thu, 30 Jun 2016 15:57:54 GMT
+    body:
+      encoding: UTF-8
+      string: '{"badRequest": {"message": "Invalid input for field/attribute keypair.
+        Value: {u''public_key'': None, u''private_key'': None, u''user_id'': None,
+        u''name'': u''969417'', u''fingerprint'': None, u''id'': None}. Additional
+        properties are not allowed (u''private_key'', u''user_id'', u''id'', u''fingerprint''
+        were unexpected)", "code": 400}}'
+    http_version: 
+  recorded_at: Thu, 30 Jun 2016 15:57:54 GMT
+recorded_with: VCR 3.0.3
