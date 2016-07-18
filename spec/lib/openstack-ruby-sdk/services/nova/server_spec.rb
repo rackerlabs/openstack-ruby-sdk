@@ -131,7 +131,6 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
 
   it 'can get details about volume attachments' do
     server.attach_volume(volume_id)
-    sleep 3
     server.reload
     attachments = server.volume_attachments
     expect(attachments.size).to eq(1)
