@@ -8,13 +8,14 @@ class OpenStackRubySDK::Nova::Flavor
   attr_with_alias :disabled, 'OS-FLV-DISABLED:disabled'
   attr_with_alias :is_public, 'os-flavor-access:is_public'
 
-  validates :name, :links, presence: true
-
   class << self
   	def flavors_with_details; end
   	def flavors_with_extra_specs; end
   end
 
-	def details; end
+	def details
+    self.reload
+  end
+
 	def extra_specs; end
 end

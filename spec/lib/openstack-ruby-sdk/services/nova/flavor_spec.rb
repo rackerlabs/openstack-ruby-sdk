@@ -1,29 +1,17 @@
 require 'spec_helper'
 
 describe OpenStackRubySDK::Nova::Flavor, :vcr do
-  let(:flavor){ OpenStackRubySDK::Nova::Flavor.new }
-
   it 'gets an index' do
-    expect(OpenStackRubySDK::Nova::Flavor.all).to eq([])
+    expect(OpenStackRubySDK::Nova::Flavor.all.count).to be >= 0
   end
 
   it 'gets its self' do
-    expect(OpenStackRubySDK::Nova::Flavor.find(flavor.id)).to eq(flavor)
+    expect(OpenStackRubySDK::Nova::Flavor.find(1)).to be_present
   end
 
-  it 'creates its self' do
-    flavor.name = Time.now.usec.to_s
-    expect(flavor.save).to eq(true)
-  end
-
-  it 'updates its self' do
-    flavor.name = Time.now.usec.to_s
-    expect(flavor.save).to eq(true)
-    flavor.name = Time.now.usec.to_s
-    expect(flavor.save).to eq(true)
-  end
-
-  it 'deletes its self' do
-    expect(flavor.destroy).to eq(true)
+  it 'gets details' do
+    f = OpenStackRubySDK::Nova::Flavor.find(1)
+    expect(f.details.ram).to be_present
+    expect(f.details.vcpus).to be_present
   end
 end
