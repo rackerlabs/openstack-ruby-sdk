@@ -1,14 +1,18 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Nova::Image, :vcr do
-  let(:image){ OpenStackRubySDK::Nova::Image.first }
+describe OpenStackRubySDK::Nova::ScheduledImage, :vcr do
+  let(:image){ OpenStackRubySDK::Nova::ScheduledImage.first }
+  
+  before do
+    skip 'Rackspace only'
+  end
 
   it 'gets an index' do
-    expect(OpenStackRubySDK::Nova::Image.all.count).to be > 0
+    expect(OpenStackRubySDK::Nova::ScheduledImage.all.count).to be > 0
   end
 
   it 'gets its self' do
-    expect(OpenStackRubySDK::Nova::Image.find(image.id).id).to eq(image.id)
+    expect(OpenStackRubySDK::Nova::ScheduledImage.find(image.id).id).to eq(image.id)
   end
 
   it 'deletes its self' do
@@ -22,7 +26,6 @@ describe OpenStackRubySDK::Nova::Image, :vcr do
     expect(image.state).to be_present
   end
 
-  # TODO: Move these to a ScheduleImage resource. It is RAX only.
   it 'can enable scheduled images'
   it 'can disable scheduled images'
   it 'can list scheduled images'

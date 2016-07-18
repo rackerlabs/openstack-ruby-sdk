@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Content-Length:
-      - '2990'
+      - '2494'
       Content-Type:
       - application/json
       X-Openstack-Nova-Api-Version:
@@ -31,17 +31,13 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-4e08f606-be09-4e62-87bc-311ebf715333
+      - req-ea3f9a85-36c9-48d1-a68a-7333a48e84ff
       Date:
-      - Mon, 18 Jul 2016 19:10:12 GMT
+      - Mon, 18 Jul 2016 19:11:23 GMT
     body:
       encoding: UTF-8
-      string: '{"images": [{"id": "12bc29bb-9648-430a-919c-bc5a6dfff015", "links":
-        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/images/12bc29bb-9648-430a-919c-bc5a6dfff015",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/12bc29bb-9648-430a-919c-bc5a6dfff015",
-        "rel": "bookmark"}, {"href": "http://172.29.237.224:9292/images/12bc29bb-9648-430a-919c-bc5a6dfff015",
-        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Testing"},
-        {"id": "9043aa53-4507-4ff3-bfbb-8ac07f12247d", "links": [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/images/9043aa53-4507-4ff3-bfbb-8ac07f12247d",
+      string: '{"images": [{"id": "9043aa53-4507-4ff3-bfbb-8ac07f12247d", "links":
+        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/images/9043aa53-4507-4ff3-bfbb-8ac07f12247d",
         "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/9043aa53-4507-4ff3-bfbb-8ac07f12247d",
         "rel": "bookmark"}, {"href": "http://172.29.237.224:9292/images/9043aa53-4507-4ff3-bfbb-8ac07f12247d",
         "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Testing"},
@@ -62,10 +58,10 @@ http_interactions:
         "rel": "bookmark"}, {"href": "http://172.29.237.224:9292/images/34694dc4-a9b4-4b1c-97a7-c12296950619",
         "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "cirros_alt"}]}'
     http_version: 
-  recorded_at: Mon, 18 Jul 2016 19:10:12 GMT
+  recorded_at: Mon, 18 Jul 2016 19:11:23 GMT
 - request:
     method: get
-    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/images
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/images/9043aa53-4507-4ff3-bfbb-8ac07f12247d
     body:
       encoding: US-ASCII
       string: ''
@@ -86,7 +82,7 @@ http_interactions:
       message: OK
     headers:
       Content-Length:
-      - '2990'
+      - '1323'
       Content-Type:
       - application/json
       X-Openstack-Nova-Api-Version:
@@ -94,36 +90,25 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-5369b776-3fb5-47a9-b1d9-212307821add
+      - req-673c9d3b-8af9-4a63-9a47-8ec8d7123f8e
       Date:
-      - Mon, 18 Jul 2016 19:10:12 GMT
+      - Mon, 18 Jul 2016 19:11:23 GMT
     body:
       encoding: UTF-8
-      string: '{"images": [{"id": "12bc29bb-9648-430a-919c-bc5a6dfff015", "links":
-        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/images/12bc29bb-9648-430a-919c-bc5a6dfff015",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/12bc29bb-9648-430a-919c-bc5a6dfff015",
-        "rel": "bookmark"}, {"href": "http://172.29.237.224:9292/images/12bc29bb-9648-430a-919c-bc5a6dfff015",
-        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Testing"},
-        {"id": "9043aa53-4507-4ff3-bfbb-8ac07f12247d", "links": [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/images/9043aa53-4507-4ff3-bfbb-8ac07f12247d",
+      string: '{"image": {"status": "ACTIVE", "updated": "2016-07-13T17:56:30Z", "links":
+        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/images/9043aa53-4507-4ff3-bfbb-8ac07f12247d",
         "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/9043aa53-4507-4ff3-bfbb-8ac07f12247d",
         "rel": "bookmark"}, {"href": "http://172.29.237.224:9292/images/9043aa53-4507-4ff3-bfbb-8ac07f12247d",
-        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Testing"},
-        {"id": "f75bc71c-8344-4687-98c4-65e96fada73f", "links": [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/images/f75bc71c-8344-4687-98c4-65e96fada73f",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/f75bc71c-8344-4687-98c4-65e96fada73f",
-        "rel": "bookmark"}, {"href": "http://172.29.237.224:9292/images/f75bc71c-8344-4687-98c4-65e96fada73f",
-        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "Testing"},
-        {"id": "cdac86ae-5234-439b-9c60-9e3987adb1fe", "links": [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/images/cdac86ae-5234-439b-9c60-9e3987adb1fe",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/cdac86ae-5234-439b-9c60-9e3987adb1fe",
-        "rel": "bookmark"}, {"href": "http://172.29.237.224:9292/images/cdac86ae-5234-439b-9c60-9e3987adb1fe",
-        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "<OS_TENANT_NAME>"},
-        {"id": "9060f38f-bb54-4806-a2b3-24a2173af252", "links": [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/images/9060f38f-bb54-4806-a2b3-24a2173af252",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/9060f38f-bb54-4806-a2b3-24a2173af252",
-        "rel": "bookmark"}, {"href": "http://172.29.237.224:9292/images/9060f38f-bb54-4806-a2b3-24a2173af252",
-        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "cirros"},
-        {"id": "34694dc4-a9b4-4b1c-97a7-c12296950619", "links": [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/images/34694dc4-a9b4-4b1c-97a7-c12296950619",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/34694dc4-a9b4-4b1c-97a7-c12296950619",
-        "rel": "bookmark"}, {"href": "http://172.29.237.224:9292/images/34694dc4-a9b4-4b1c-97a7-c12296950619",
-        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "cirros_alt"}]}'
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "id": "9043aa53-4507-4ff3-bfbb-8ac07f12247d",
+        "OS-EXT-IMG-SIZE:size": 22020096, "name": "Testing", "created": "2016-07-13T17:56:26Z",
+        "minDisk": 1, "server": {"id": "35db82e0-058d-408e-9256-bbf2e00ed1f9", "links":
+        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/35db82e0-058d-408e-9256-bbf2e00ed1f9",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/35db82e0-058d-408e-9256-bbf2e00ed1f9",
+        "rel": "bookmark"}]}, "progress": 100, "minRam": 0, "metadata": {"instance_uuid":
+        "35db82e0-058d-408e-9256-bbf2e00ed1f9", "image_location": "snapshot", "image_state":
+        "available", "user_id": "e77daadf2e414f6ab9dc5da0520510ca", "image_type":
+        "snapshot", "base_image_ref": "9060f38f-bb54-4806-a2b3-24a2173af252", "owner_id":
+        "4f8f44a4262041e0a2330fb59099f810"}}}'
     http_version: 
-  recorded_at: Mon, 18 Jul 2016 19:10:12 GMT
+  recorded_at: Mon, 18 Jul 2016 19:11:23 GMT
 recorded_with: VCR 3.0.3

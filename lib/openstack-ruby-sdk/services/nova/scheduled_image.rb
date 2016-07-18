@@ -1,4 +1,4 @@
-class OpenStackRubySDK::Nova::Image
+class OpenStackRubySDK::Nova::ScheduledImage
   include Peace::Model
 
   attr_accessor :id, :name, :created, :updated, :user_id, :tenant_id, :progress, :minDisk, :minRam, :disk_config, :links, :server, :metadata
@@ -10,14 +10,8 @@ class OpenStackRubySDK::Nova::Image
   belongs_to :user
   belongs_to :tenant
 
-	def details
-    self.reload
-  end
-
-	def metadata; end
-	def set_metadata; end
-
-	def get_metadata_item; end
-	def set_metadata_item; end
-	def delete_metadata_item; end
+  # TODO: This is RAX-only
+	def enable_scheduled_images; end
+	def disable_scheduled_images; end
+	def scheduled_images; end
 end
