@@ -139,4 +139,9 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
     expect(attachments.first.device).to be_present
   end
 
+  it 'can get a console' do
+    skip 'Rackspace only'
+    expect(server.console).to raise_error
+  end
+
 end

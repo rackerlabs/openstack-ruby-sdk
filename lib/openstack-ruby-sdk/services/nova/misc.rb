@@ -1,11 +1,26 @@
-class OpenStackRubySDK::Nova::Misc  
+class OpenStackRubySDK::Nova::Misc
   include Peace::Model
-	class << self
-		def rate_and_absolute_limits; end
-		def limits_including_used_limits; end
-		def console; end
-		def quotas; end
-		def extensions; end
-		def details_the_extension; end
-	end
+
+  class << self
+
+    def limits
+      Peace::Request.get(url('/limits'))
+    end
+
+    def quotas
+      Peace::Request.get(url("/os-quota-sets/#{Peace.tenant_id}"))
+    end
+
+    def extensions
+      Peace::Request.get(url("/extensions"))
+    end
+
+    private
+
+    def url(path)
+      # Even though we don't have a 'model', we can leverage Peace::Model to get the collection_url that we can modify
+      self.collection_url.gsub('/miscs', path)
+    end
+  end
+
 end

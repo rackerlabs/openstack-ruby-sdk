@@ -173,6 +173,10 @@ class OpenStackRubySDK::Nova::Server
     perform_action!(unrescue: nil)
   end
 
+  def console
+    perform_action!({ "os-getVNCConsole": { "type": "xvpvnc" } })
+  end
+
   private
 
   def perform_action!(data)
