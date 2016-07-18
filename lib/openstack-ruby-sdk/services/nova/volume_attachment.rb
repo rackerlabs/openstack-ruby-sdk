@@ -12,6 +12,4 @@ class OpenStackRubySDK::Nova::VolumeAttachment
   json_key_name :volumeAttachments
   rackspace_api_path "/servers/{{server_id}}/os-volume_attachments"
 
-  def details; end
-
 end

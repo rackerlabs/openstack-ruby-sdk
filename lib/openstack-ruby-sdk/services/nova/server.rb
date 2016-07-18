@@ -71,6 +71,10 @@ class OpenStackRubySDK::Nova::Server
     Peace::Request.delete("#{self.url}/os-volume_attachments/#{attachment.id}")
   end
 
+  def volume_attachments
+    OpenStackRubySDK::Nova::VolumeAttachment.all(server_id: id)
+  end
+
 	def details
     self.reload
   end

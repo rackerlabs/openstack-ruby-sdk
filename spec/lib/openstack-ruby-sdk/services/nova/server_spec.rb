@@ -129,4 +129,15 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
     expect(server.detach_volume(volume_id)).to eq(true)
   end
 
+  it 'can get details about volume attachments' do
+    server.attach_volume(volume_id)
+    sleep 3
+    server.reload
+    attachments = server.volume_attachments
+    expect(attachments.size).to eq(1)
+    expect(attachments.first.server_id).to eq(server.id)
+    expect(attachments.first.volume_id).to eq(volume_id)
+    expect(attachments.first.device).to be_present
+  end
+
 end

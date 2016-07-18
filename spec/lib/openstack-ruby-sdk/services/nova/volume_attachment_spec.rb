@@ -18,6 +18,4 @@ describe OpenStackRubySDK::Nova::VolumeAttachment, :vcr do
     OpenStackRubySDK::Nova::Server.all.each{ |s| s.destroy }
   end
 
-  it 'can get details about the attachment'
-
 end
