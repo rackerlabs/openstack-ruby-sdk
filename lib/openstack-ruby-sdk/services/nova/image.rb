@@ -1,5 +1,6 @@
 class OpenStackRubySDK::Nova::Image
   include Peace::Model
+  include Peace::Metadata
 
   attr_accessor :id, :name, :created, :updated, :user_id, :tenant_id, :progress, :minDisk, :minRam, :disk_config, :links, :server, :metadata
 
@@ -13,11 +14,4 @@ class OpenStackRubySDK::Nova::Image
 	def details
     self.reload
   end
-
-	def metadata; end
-	def set_metadata; end
-
-	def get_metadata_item; end
-	def set_metadata_item; end
-	def delete_metadata_item; end
 end
