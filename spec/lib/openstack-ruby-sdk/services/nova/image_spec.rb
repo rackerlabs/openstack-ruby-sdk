@@ -11,10 +11,6 @@ describe OpenStackRubySDK::Nova::Image, :vcr do
     expect(OpenStackRubySDK::Nova::Image.find(image.id).id).to eq(image.id)
   end
 
-  it 'deletes its self' do
-    expect(image.destroy).to eq(true)
-  end
-
   it 'gets details' do
     image.reload
     expect(image.minDisk).to be_present
@@ -22,8 +18,22 @@ describe OpenStackRubySDK::Nova::Image, :vcr do
     expect(image.state).to be_present
   end
 
+  it 'has metadata' do
+    expect(image.metadata).to eq(nil)
+  end
+
+  it 'can save metadata' do
+    image.set_metadata({some: 'value'})
+    expect(image.metadata).to eq({'some' => 'value'})
+  end
+
   # TODO: Move these to a ScheduleImage resource. It is RAX only.
   it 'can enable scheduled images'
   it 'can disable scheduled images'
   it 'can list scheduled images'
+
+  it 'deletes its self' do
+    expect(image.destroy).to eq(true)
+  end
+
 end
