@@ -104,6 +104,11 @@ class OpenStackRubySDK::Nova::Server
     refresh! Peace::Request.put(url, data)
   end
 
+  def virtual_interfaces
+    url = "#{self.url}/os-virtual-interfaces"
+    Peace::Request.get(url)
+  end
+
   # http://api.rackspace.com/#changePassword
   def change_password(pass)
     # TODO: This doesn't seem to work; always get the same error.

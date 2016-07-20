@@ -144,4 +144,9 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
     expect(server.console).to raise_error
   end
 
+  it 'lists virtual interfaces' do
+    # This will only work when an admin is configured in policy.json
+    expect { server.virtual_interfaces }.to raise_error Peace::BadRequest
+  end
+
 end
