@@ -92,7 +92,7 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
   end
 
   it 'knows about associated keypairs' do
-    expect(server.key_pairs).to eq([])
+    expect(server.key_pairs.count).to be >= 0
   end
 
   it 'knows about associated volumes' do
@@ -125,6 +125,7 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
 
   it 'can deattach a volume' do
     attachment = server.attach_volume(volume_id)
+    sleep 3 if VCR.current_cassette.recording?
     server.reload
     expect(server.detach_volume(volume_id)).to eq(true)
   end
@@ -147,6 +148,15 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
   it 'lists virtual interfaces' do
     # This will only work when an admin is configured in policy.json
     expect { server.virtual_interfaces }.to raise_error Peace::BadRequest
+  end
+
+  it 'has metadata' do
+    expect(server.metadata).to eq({})
+  end
+
+  it 'can save metadata' do
+    server.set_metadata({some: 'value'})
+    expect(server.metadata).to eq({'some' => 'value'})
   end
 
 end

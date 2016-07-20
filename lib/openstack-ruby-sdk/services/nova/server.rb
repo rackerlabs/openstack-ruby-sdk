@@ -1,9 +1,10 @@
 class OpenStackRubySDK::Nova::Server
   include Peace::Model
+  include Peace::Metadata
 
   REBOOT_TYPES = ['SOFT', 'HARD']
 
-  attr_accessor :id, :name, :created, :updated, :progress, :user_id, :tenant_id, :links, :personality, :config_drive, :user_data, :addresses, :boot_volume_id, :boot_volume_size, :boot_image_id, :key_name, :metadata, :image, :flavor, :security_groups
+  attr_accessor :id, :name, :created, :updated, :progress, :user_id, :tenant_id, :links, :personality, :config_drive, :user_data, :addresses, :boot_volume_id, :boot_volume_size, :boot_image_id, :key_name, :image, :flavor, :security_groups, :metadata
 
   attr_with_alias :availability_zone, 'OS-EXT-AZ:availability_zone'
   attr_with_alias :bandwidth, 'rax-bandwidth:bandwidth'
@@ -65,10 +66,16 @@ class OpenStackRubySDK::Nova::Server
     attachment
   end
 
-	def detach_volume(volume_id)
+	 def detach_volume(volume_id)
     attachments = OpenStackRubySDK::Nova::VolumeAttachment.all(server_id: id)
     attachment  = attachments.find{ |a| a.volume_id == volume_id}
-    Peace::Request.delete("#{self.url}/os-volume_attachments/#{attachment.id}")
+
+    if attachment.present?
+      url = "#{self.url}/os-volume_attachments/#{attachment.id}"
+      Peace::Request.delete(url)
+    else
+      raise "No attachment with #{volume_id} found."
+    end
   end
 
   def volume_attachments
@@ -86,8 +93,6 @@ class OpenStackRubySDK::Nova::Server
 	def available_actions
     OpenStackRubySDK::Nova::Action.all(server_id: id)
   end
-
-	def metadata; end
 
   def volumes
     OpenStackRubySDK::Nova::VolumeAttachment.all(server_id: id)
@@ -138,7 +143,7 @@ class OpenStackRubySDK::Nova::Server
       accessIPv6: ipv6_address,
       adminPass: password,
       imageRef: image['id'],
-      metadata: metadata,
+      metadata: '',
       name: name
     })
 

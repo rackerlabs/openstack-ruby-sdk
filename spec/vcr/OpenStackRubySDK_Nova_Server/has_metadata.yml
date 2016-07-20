@@ -5,7 +5,7 @@ http_interactions:
     uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers
     body:
       encoding: UTF-8
-      string: '{"server":{"flavorRef":"1","imageRef":"9060f38f-bb54-4806-a2b3-24a2173af252","name":"714644"}}'
+      string: '{"server":{"flavorRef":"1","imageRef":"9060f38f-bb54-4806-a2b3-24a2173af252","name":"537393"}}'
     headers:
       Accept:
       - application/json
@@ -27,7 +27,7 @@ http_interactions:
       Content-Length:
       - '444'
       Location:
-      - http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73
+      - http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51
       Content-Type:
       - application/json
       X-Openstack-Nova-Api-Version:
@@ -35,21 +35,21 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-77c5af45-9c46-4c00-9382-2fbbcff77cef
+      - req-5dc9dabd-6b69-457e-a7d9-bc506dcb876d
       Date:
-      - Wed, 20 Jul 2016 18:18:40 GMT
+      - Wed, 20 Jul 2016 18:18:48 GMT
     body:
       encoding: UTF-8
       string: '{"server": {"security_groups": [{"name": "default"}], "OS-DCF:diskConfig":
-        "MANUAL", "id": "c8fe61c5-198a-4594-afa3-2657f2b10d73", "links": [{"href":
-        "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
-        "rel": "bookmark"}], "adminPass": "Ff5HfV95CHaL"}}'
+        "MANUAL", "id": "740785c6-4146-4d71-b2b4-1cd3a6246d51", "links": [{"href":
+        "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
+        "rel": "bookmark"}], "adminPass": "P4bHHoRnUkPz"}}'
     http_version: 
-  recorded_at: Wed, 20 Jul 2016 18:18:40 GMT
+  recorded_at: Wed, 20 Jul 2016 18:18:49 GMT
 - request:
     method: get
-    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51
     body:
       encoding: US-ASCII
       string: ''
@@ -70,7 +70,7 @@ http_interactions:
       message: OK
     headers:
       Content-Length:
-      - '1431'
+      - '1423'
       Content-Type:
       - application/json
       X-Openstack-Nova-Api-Version:
@@ -78,31 +78,31 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-681f53ce-471a-41a9-ad33-96da0f16c786
+      - req-493e9286-7144-4a4e-9c42-f2a69a8db961
       Date:
-      - Wed, 20 Jul 2016 18:18:40 GMT
+      - Wed, 20 Jul 2016 18:18:49 GMT
     body:
       encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-07-20T18:18:40Z", "hostId":
-        "", "OS-EXT-SRV-ATTR:host": null, "addresses": {}, "links": [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
+      string: '{"server": {"status": "BUILD", "updated": "2016-07-20T18:18:49Z", "hostId":
+        "", "OS-EXT-SRV-ATTR:host": null, "addresses": {}, "links": [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
         "rel": "bookmark"}], "key_name": null, "image": {"id": "9060f38f-bb54-4806-a2b3-24a2173af252",
         "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/9060f38f-bb54-4806-a2b3-24a2173af252",
-        "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "scheduling", "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-000000d1", "OS-SRV-USG:launched_at":
+        "rel": "bookmark"}]}, "OS-EXT-STS:task_state": null, "OS-EXT-STS:vm_state":
+        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-000000d2", "OS-SRV-USG:launched_at":
         null, "OS-EXT-SRV-ATTR:hypervisor_hostname": null, "flavor": {"id": "1", "links":
         [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/flavors/1",
-        "rel": "bookmark"}]}, "id": "c8fe61c5-198a-4594-afa3-2657f2b10d73", "OS-SRV-USG:terminated_at":
+        "rel": "bookmark"}]}, "id": "740785c6-4146-4d71-b2b4-1cd3a6246d51", "OS-SRV-USG:terminated_at":
         null, "OS-EXT-AZ:availability_zone": "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca",
-        "name": "714644", "created": "2016-07-20T18:18:39Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810",
+        "name": "537393", "created": "2016-07-20T18:18:48Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810",
         "OS-DCF:diskConfig": "MANUAL", "os-extended-volumes:volumes_attached": [],
         "accessIPv4": "", "accessIPv6": "", "progress": 0, "OS-EXT-STS:power_state":
         0, "config_drive": "", "metadata": {}}}'
     http_version: 
-  recorded_at: Wed, 20 Jul 2016 18:18:40 GMT
+  recorded_at: Wed, 20 Jul 2016 18:18:49 GMT
 - request:
     method: get
-    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51
     body:
       encoding: US-ASCII
       string: ''
@@ -131,35 +131,35 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-87a8a860-2874-4725-8670-2139ee00a2d3
+      - req-672b71db-4f9e-4cfc-89ac-bd7b88f59ee1
       Date:
-      - Wed, 20 Jul 2016 18:18:41 GMT
+      - Wed, 20 Jul 2016 18:18:50 GMT
     body:
       encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-07-20T18:18:40Z", "hostId":
+      string: '{"server": {"status": "BUILD", "updated": "2016-07-20T18:18:49Z", "hostId":
         "9cd53b4d8fb8307be346690c66f452efbf84cff82d7ce7efb116fe7c", "OS-EXT-SRV-ATTR:host":
-        "osad", "addresses": {"Testing": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:9f:41:8e",
-        "version": 4, "addr": "172.2.0.173", "OS-EXT-IPS:type": "fixed"}]}, "links":
-        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
+        "osad", "addresses": {"Testing": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:e0:9d:34",
+        "version": 4, "addr": "172.2.0.174", "OS-EXT-IPS:type": "fixed"}]}, "links":
+        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
         "rel": "bookmark"}], "key_name": null, "image": {"id": "9060f38f-bb54-4806-a2b3-24a2173af252",
         "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/9060f38f-bb54-4806-a2b3-24a2173af252",
         "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-000000d1", "OS-SRV-USG:launched_at":
+        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-000000d2", "OS-SRV-USG:launched_at":
         null, "OS-EXT-SRV-ATTR:hypervisor_hostname": "osad.localdomain", "flavor":
         {"id": "1", "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/flavors/1",
-        "rel": "bookmark"}]}, "id": "c8fe61c5-198a-4594-afa3-2657f2b10d73", "security_groups":
+        "rel": "bookmark"}]}, "id": "740785c6-4146-4d71-b2b4-1cd3a6246d51", "security_groups":
         [{"name": "default"}], "OS-SRV-USG:terminated_at": null, "OS-EXT-AZ:availability_zone":
-        "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca", "name": "714644", "created":
-        "2016-07-20T18:18:39Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810", "OS-DCF:diskConfig":
+        "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca", "name": "537393", "created":
+        "2016-07-20T18:18:48Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810", "OS-DCF:diskConfig":
         "MANUAL", "os-extended-volumes:volumes_attached": [], "accessIPv4": "", "accessIPv6":
         "", "progress": 0, "OS-EXT-STS:power_state": 0, "config_drive": "", "metadata":
         {}}}'
     http_version: 
-  recorded_at: Wed, 20 Jul 2016 18:18:41 GMT
+  recorded_at: Wed, 20 Jul 2016 18:18:50 GMT
 - request:
     method: get
-    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51
     body:
       encoding: US-ASCII
       string: ''
@@ -188,35 +188,35 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-12235c4f-ce5e-4ef3-b22e-49e904b54e2f
+      - req-8a6b50f6-2a84-4585-a905-513ffc3defe2
       Date:
-      - Wed, 20 Jul 2016 18:18:42 GMT
+      - Wed, 20 Jul 2016 18:18:51 GMT
     body:
       encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-07-20T18:18:40Z", "hostId":
+      string: '{"server": {"status": "BUILD", "updated": "2016-07-20T18:18:49Z", "hostId":
         "9cd53b4d8fb8307be346690c66f452efbf84cff82d7ce7efb116fe7c", "OS-EXT-SRV-ATTR:host":
-        "osad", "addresses": {"Testing": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:9f:41:8e",
-        "version": 4, "addr": "172.2.0.173", "OS-EXT-IPS:type": "fixed"}]}, "links":
-        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
+        "osad", "addresses": {"Testing": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:e0:9d:34",
+        "version": 4, "addr": "172.2.0.174", "OS-EXT-IPS:type": "fixed"}]}, "links":
+        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
         "rel": "bookmark"}], "key_name": null, "image": {"id": "9060f38f-bb54-4806-a2b3-24a2173af252",
         "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/9060f38f-bb54-4806-a2b3-24a2173af252",
         "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-000000d1", "OS-SRV-USG:launched_at":
+        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-000000d2", "OS-SRV-USG:launched_at":
         null, "OS-EXT-SRV-ATTR:hypervisor_hostname": "osad.localdomain", "flavor":
         {"id": "1", "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/flavors/1",
-        "rel": "bookmark"}]}, "id": "c8fe61c5-198a-4594-afa3-2657f2b10d73", "security_groups":
+        "rel": "bookmark"}]}, "id": "740785c6-4146-4d71-b2b4-1cd3a6246d51", "security_groups":
         [{"name": "default"}], "OS-SRV-USG:terminated_at": null, "OS-EXT-AZ:availability_zone":
-        "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca", "name": "714644", "created":
-        "2016-07-20T18:18:39Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810", "OS-DCF:diskConfig":
+        "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca", "name": "537393", "created":
+        "2016-07-20T18:18:48Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810", "OS-DCF:diskConfig":
         "MANUAL", "os-extended-volumes:volumes_attached": [], "accessIPv4": "", "accessIPv6":
         "", "progress": 0, "OS-EXT-STS:power_state": 0, "config_drive": "", "metadata":
         {}}}'
     http_version: 
-  recorded_at: Wed, 20 Jul 2016 18:18:42 GMT
+  recorded_at: Wed, 20 Jul 2016 18:18:51 GMT
 - request:
     method: get
-    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51
     body:
       encoding: US-ASCII
       string: ''
@@ -245,35 +245,35 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-ee080833-6997-4952-8673-2e72ec768996
+      - req-4ca32af8-ded3-485a-82f3-c53a06f38a9f
       Date:
-      - Wed, 20 Jul 2016 18:18:44 GMT
+      - Wed, 20 Jul 2016 18:18:52 GMT
     body:
       encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-07-20T18:18:40Z", "hostId":
+      string: '{"server": {"status": "BUILD", "updated": "2016-07-20T18:18:49Z", "hostId":
         "9cd53b4d8fb8307be346690c66f452efbf84cff82d7ce7efb116fe7c", "OS-EXT-SRV-ATTR:host":
-        "osad", "addresses": {"Testing": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:9f:41:8e",
-        "version": 4, "addr": "172.2.0.173", "OS-EXT-IPS:type": "fixed"}]}, "links":
-        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
+        "osad", "addresses": {"Testing": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:e0:9d:34",
+        "version": 4, "addr": "172.2.0.174", "OS-EXT-IPS:type": "fixed"}]}, "links":
+        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
         "rel": "bookmark"}], "key_name": null, "image": {"id": "9060f38f-bb54-4806-a2b3-24a2173af252",
         "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/9060f38f-bb54-4806-a2b3-24a2173af252",
         "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-000000d1", "OS-SRV-USG:launched_at":
+        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-000000d2", "OS-SRV-USG:launched_at":
         null, "OS-EXT-SRV-ATTR:hypervisor_hostname": "osad.localdomain", "flavor":
         {"id": "1", "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/flavors/1",
-        "rel": "bookmark"}]}, "id": "c8fe61c5-198a-4594-afa3-2657f2b10d73", "security_groups":
+        "rel": "bookmark"}]}, "id": "740785c6-4146-4d71-b2b4-1cd3a6246d51", "security_groups":
         [{"name": "default"}], "OS-SRV-USG:terminated_at": null, "OS-EXT-AZ:availability_zone":
-        "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca", "name": "714644", "created":
-        "2016-07-20T18:18:39Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810", "OS-DCF:diskConfig":
+        "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca", "name": "537393", "created":
+        "2016-07-20T18:18:48Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810", "OS-DCF:diskConfig":
         "MANUAL", "os-extended-volumes:volumes_attached": [], "accessIPv4": "", "accessIPv6":
         "", "progress": 0, "OS-EXT-STS:power_state": 0, "config_drive": "", "metadata":
         {}}}'
     http_version: 
-  recorded_at: Wed, 20 Jul 2016 18:18:44 GMT
+  recorded_at: Wed, 20 Jul 2016 18:18:52 GMT
 - request:
     method: get
-    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51
     body:
       encoding: US-ASCII
       string: ''
@@ -302,35 +302,35 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-2ada21e0-ff03-4f01-826f-e17107abaa13
+      - req-03faae9e-5100-47ce-acc3-679cf552bc2e
       Date:
-      - Wed, 20 Jul 2016 18:18:45 GMT
+      - Wed, 20 Jul 2016 18:18:54 GMT
     body:
       encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-07-20T18:18:40Z", "hostId":
+      string: '{"server": {"status": "BUILD", "updated": "2016-07-20T18:18:49Z", "hostId":
         "9cd53b4d8fb8307be346690c66f452efbf84cff82d7ce7efb116fe7c", "OS-EXT-SRV-ATTR:host":
-        "osad", "addresses": {"Testing": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:9f:41:8e",
-        "version": 4, "addr": "172.2.0.173", "OS-EXT-IPS:type": "fixed"}]}, "links":
-        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
+        "osad", "addresses": {"Testing": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:e0:9d:34",
+        "version": 4, "addr": "172.2.0.174", "OS-EXT-IPS:type": "fixed"}]}, "links":
+        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
         "rel": "bookmark"}], "key_name": null, "image": {"id": "9060f38f-bb54-4806-a2b3-24a2173af252",
         "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/9060f38f-bb54-4806-a2b3-24a2173af252",
         "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-000000d1", "OS-SRV-USG:launched_at":
+        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-000000d2", "OS-SRV-USG:launched_at":
         null, "OS-EXT-SRV-ATTR:hypervisor_hostname": "osad.localdomain", "flavor":
         {"id": "1", "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/flavors/1",
-        "rel": "bookmark"}]}, "id": "c8fe61c5-198a-4594-afa3-2657f2b10d73", "security_groups":
+        "rel": "bookmark"}]}, "id": "740785c6-4146-4d71-b2b4-1cd3a6246d51", "security_groups":
         [{"name": "default"}], "OS-SRV-USG:terminated_at": null, "OS-EXT-AZ:availability_zone":
-        "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca", "name": "714644", "created":
-        "2016-07-20T18:18:39Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810", "OS-DCF:diskConfig":
+        "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca", "name": "537393", "created":
+        "2016-07-20T18:18:48Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810", "OS-DCF:diskConfig":
         "MANUAL", "os-extended-volumes:volumes_attached": [], "accessIPv4": "", "accessIPv6":
         "", "progress": 0, "OS-EXT-STS:power_state": 0, "config_drive": "", "metadata":
         {}}}'
     http_version: 
-  recorded_at: Wed, 20 Jul 2016 18:18:45 GMT
+  recorded_at: Wed, 20 Jul 2016 18:18:54 GMT
 - request:
     method: get
-    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51
     body:
       encoding: US-ASCII
       string: ''
@@ -359,35 +359,92 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-e0257594-6935-4816-9762-edf42a82fd8a
+      - req-72be463a-b47e-4ec5-9b0c-2f8899cdce35
       Date:
-      - Wed, 20 Jul 2016 18:18:46 GMT
+      - Wed, 20 Jul 2016 18:18:55 GMT
     body:
       encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-07-20T18:18:40Z", "hostId":
+      string: '{"server": {"status": "BUILD", "updated": "2016-07-20T18:18:49Z", "hostId":
         "9cd53b4d8fb8307be346690c66f452efbf84cff82d7ce7efb116fe7c", "OS-EXT-SRV-ATTR:host":
-        "osad", "addresses": {"Testing": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:9f:41:8e",
-        "version": 4, "addr": "172.2.0.173", "OS-EXT-IPS:type": "fixed"}]}, "links":
-        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
+        "osad", "addresses": {"Testing": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:e0:9d:34",
+        "version": 4, "addr": "172.2.0.174", "OS-EXT-IPS:type": "fixed"}]}, "links":
+        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
         "rel": "bookmark"}], "key_name": null, "image": {"id": "9060f38f-bb54-4806-a2b3-24a2173af252",
         "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/9060f38f-bb54-4806-a2b3-24a2173af252",
         "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-000000d1", "OS-SRV-USG:launched_at":
+        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-000000d2", "OS-SRV-USG:launched_at":
         null, "OS-EXT-SRV-ATTR:hypervisor_hostname": "osad.localdomain", "flavor":
         {"id": "1", "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/flavors/1",
-        "rel": "bookmark"}]}, "id": "c8fe61c5-198a-4594-afa3-2657f2b10d73", "security_groups":
+        "rel": "bookmark"}]}, "id": "740785c6-4146-4d71-b2b4-1cd3a6246d51", "security_groups":
         [{"name": "default"}], "OS-SRV-USG:terminated_at": null, "OS-EXT-AZ:availability_zone":
-        "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca", "name": "714644", "created":
-        "2016-07-20T18:18:39Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810", "OS-DCF:diskConfig":
+        "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca", "name": "537393", "created":
+        "2016-07-20T18:18:48Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810", "OS-DCF:diskConfig":
         "MANUAL", "os-extended-volumes:volumes_attached": [], "accessIPv4": "", "accessIPv6":
         "", "progress": 0, "OS-EXT-STS:power_state": 0, "config_drive": "", "metadata":
         {}}}'
     http_version: 
-  recorded_at: Wed, 20 Jul 2016 18:18:46 GMT
+  recorded_at: Wed, 20 Jul 2016 18:18:55 GMT
 - request:
     method: get
-    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXj7-sQ_1AnZvkjbs2r2lAJF3EJkKF-8QqgyhN6zo1NnZrT9LEGka74pmYCmDP4QufKvm5aUplptVrVNbdo91tjgm-ZREK6D5Ep4RgvU-I2a4FiKkoZrulGzqzxd55SMd30GPUin6kOjZkXVl2FajG9L3J9VPSXOzPudQT75a2jBlAWqo
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '1669'
+      Content-Type:
+      - application/json
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-e89c95ab-74da-4969-b171-9a0b054456e0
+      Date:
+      - Wed, 20 Jul 2016 18:18:56 GMT
+    body:
+      encoding: UTF-8
+      string: '{"server": {"status": "BUILD", "updated": "2016-07-20T18:18:49Z", "hostId":
+        "9cd53b4d8fb8307be346690c66f452efbf84cff82d7ce7efb116fe7c", "OS-EXT-SRV-ATTR:host":
+        "osad", "addresses": {"Testing": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:e0:9d:34",
+        "version": 4, "addr": "172.2.0.174", "OS-EXT-IPS:type": "fixed"}]}, "links":
+        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
+        "rel": "bookmark"}], "key_name": null, "image": {"id": "9060f38f-bb54-4806-a2b3-24a2173af252",
+        "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/9060f38f-bb54-4806-a2b3-24a2173af252",
+        "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state":
+        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-000000d2", "OS-SRV-USG:launched_at":
+        null, "OS-EXT-SRV-ATTR:hypervisor_hostname": "osad.localdomain", "flavor":
+        {"id": "1", "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/flavors/1",
+        "rel": "bookmark"}]}, "id": "740785c6-4146-4d71-b2b4-1cd3a6246d51", "security_groups":
+        [{"name": "default"}], "OS-SRV-USG:terminated_at": null, "OS-EXT-AZ:availability_zone":
+        "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca", "name": "537393", "created":
+        "2016-07-20T18:18:48Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810", "OS-DCF:diskConfig":
+        "MANUAL", "os-extended-volumes:volumes_attached": [], "accessIPv4": "", "accessIPv6":
+        "", "progress": 0, "OS-EXT-STS:power_state": 0, "config_drive": "", "metadata":
+        {}}}'
+    http_version: 
+  recorded_at: Wed, 20 Jul 2016 18:18:56 GMT
+- request:
+    method: get
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51
     body:
       encoding: US-ASCII
       string: ''
@@ -416,35 +473,35 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-91432a3d-ad7f-4dfa-a46f-e613f7733fb6
+      - req-e9f16fb7-b8ed-4038-8ea5-d6e958a3ace2
       Date:
-      - Wed, 20 Jul 2016 18:18:47 GMT
+      - Wed, 20 Jul 2016 18:18:57 GMT
     body:
       encoding: UTF-8
-      string: '{"server": {"status": "ACTIVE", "updated": "2016-07-20T18:18:47Z",
+      string: '{"server": {"status": "ACTIVE", "updated": "2016-07-20T18:18:57Z",
         "hostId": "9cd53b4d8fb8307be346690c66f452efbf84cff82d7ce7efb116fe7c", "OS-EXT-SRV-ATTR:host":
-        "osad", "addresses": {"Testing": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:9f:41:8e",
-        "version": 4, "addr": "172.2.0.173", "OS-EXT-IPS:type": "fixed"}]}, "links":
-        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
+        "osad", "addresses": {"Testing": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:e0:9d:34",
+        "version": 4, "addr": "172.2.0.174", "OS-EXT-IPS:type": "fixed"}]}, "links":
+        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
         "rel": "bookmark"}], "key_name": null, "image": {"id": "9060f38f-bb54-4806-a2b3-24a2173af252",
         "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/images/9060f38f-bb54-4806-a2b3-24a2173af252",
         "rel": "bookmark"}]}, "OS-EXT-STS:task_state": null, "OS-EXT-STS:vm_state":
-        "active", "OS-EXT-SRV-ATTR:instance_name": "instance-000000d1", "OS-SRV-USG:launched_at":
-        "2016-07-20T18:18:47.000000", "OS-EXT-SRV-ATTR:hypervisor_hostname": "osad.localdomain",
+        "active", "OS-EXT-SRV-ATTR:instance_name": "instance-000000d2", "OS-SRV-USG:launched_at":
+        "2016-07-20T18:18:57.000000", "OS-EXT-SRV-ATTR:hypervisor_hostname": "osad.localdomain",
         "flavor": {"id": "1", "links": [{"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/flavors/1",
-        "rel": "bookmark"}]}, "id": "c8fe61c5-198a-4594-afa3-2657f2b10d73", "security_groups":
+        "rel": "bookmark"}]}, "id": "740785c6-4146-4d71-b2b4-1cd3a6246d51", "security_groups":
         [{"name": "default"}], "OS-SRV-USG:terminated_at": null, "OS-EXT-AZ:availability_zone":
-        "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca", "name": "714644", "created":
-        "2016-07-20T18:18:39Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810", "OS-DCF:diskConfig":
+        "nova", "user_id": "e77daadf2e414f6ab9dc5da0520510ca", "name": "537393", "created":
+        "2016-07-20T18:18:48Z", "tenant_id": "4f8f44a4262041e0a2330fb59099f810", "OS-DCF:diskConfig":
         "MANUAL", "os-extended-volumes:volumes_attached": [], "accessIPv4": "", "accessIPv6":
         "", "progress": 0, "OS-EXT-STS:power_state": 1, "config_drive": "", "metadata":
         {}}}'
     http_version: 
-  recorded_at: Wed, 20 Jul 2016 18:18:47 GMT
+  recorded_at: Wed, 20 Jul 2016 18:18:57 GMT
 - request:
     method: get
-    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73/os-virtual-interfaces
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51/metadata
     body:
       encoding: US-ASCII
       string: ''
@@ -461,27 +518,26 @@ http_interactions:
       - Ruby
   response:
     status:
-      code: 400
-      message: Bad Request
+      code: 200
+      message: OK
     headers:
+      Content-Length:
+      - '16'
+      Content-Type:
+      - application/json
       X-Openstack-Nova-Api-Version:
       - '2.1'
       Vary:
       - X-OpenStack-Nova-API-Version
-      Content-Type:
-      - application/json; charset=UTF-8
-      Content-Length:
-      - '102'
       X-Compute-Request-Id:
-      - req-ff9fdc4f-b498-4491-ba1c-5bcb692ffe57
+      - req-0ecbbb68-baef-48bf-9257-f4cfa99c0e9c
       Date:
-      - Wed, 20 Jul 2016 18:18:48 GMT
+      - Wed, 20 Jul 2016 18:18:58 GMT
     body:
       encoding: UTF-8
-      string: '{"badRequest": {"message": "Listing virtual interfaces is not supported
-        by this cloud.", "code": 400}}'
+      string: '{"metadata": {}}'
     http_version: 
-  recorded_at: Wed, 20 Jul 2016 18:18:48 GMT
+  recorded_at: Wed, 20 Jul 2016 18:18:58 GMT
 - request:
     method: get
     uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers
@@ -513,20 +569,20 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-72af0f4b-d566-4b1f-96d7-9ba88392a5a0
+      - req-c7301ebf-1dba-41a3-8adb-1e00d5765808
       Date:
-      - Wed, 20 Jul 2016 18:18:48 GMT
+      - Wed, 20 Jul 2016 18:18:58 GMT
     body:
       encoding: UTF-8
-      string: '{"servers": [{"id": "c8fe61c5-198a-4594-afa3-2657f2b10d73", "links":
-        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
-        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73",
-        "rel": "bookmark"}], "name": "714644"}]}'
+      string: '{"servers": [{"id": "740785c6-4146-4d71-b2b4-1cd3a6246d51", "links":
+        [{"href": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
+        "rel": "self"}, {"href": "http://172.99.87.154:8774/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51",
+        "rel": "bookmark"}], "name": "537393"}]}'
     http_version: 
-  recorded_at: Wed, 20 Jul 2016 18:18:48 GMT
+  recorded_at: Wed, 20 Jul 2016 18:18:58 GMT
 - request:
     method: delete
-    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/c8fe61c5-198a-4594-afa3-2657f2b10d73
+    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/servers/740785c6-4146-4d71-b2b4-1cd3a6246d51
     body:
       encoding: US-ASCII
       string: ''
@@ -555,12 +611,12 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-56d7d3f1-69e1-4b18-9fa9-927afb1de7ba
+      - req-393f1042-71f4-4ee7-882a-ad69034a4eba
       Date:
-      - Wed, 20 Jul 2016 18:18:48 GMT
+      - Wed, 20 Jul 2016 18:18:58 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 20 Jul 2016 18:18:48 GMT
+  recorded_at: Wed, 20 Jul 2016 18:18:58 GMT
 recorded_with: VCR 3.0.3
