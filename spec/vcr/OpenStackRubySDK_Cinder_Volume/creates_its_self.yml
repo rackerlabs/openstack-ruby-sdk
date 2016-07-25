@@ -2,46 +2,129 @@
 http_interactions:
 - request:
     method: post
+    uri: "<OS_AUTH_URL>"
+    body:
+      encoding: UTF-8
+      string: '{"auth":{"tenantName":"<OS_TENANT_NAME>","passwordCredentials":{"username":"<OS_USERNAME>","password":"<OS_PASSWORD>"}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '113'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 25 Jul 2016 15:54:43 GMT
+      Server:
+      - Apache
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-36e5b6e2-48da-480d-b050-aac82f289ba1
+      Content-Length:
+      - '4281'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"access": {"token": {"issued_at": "2016-07-25T15:54:43.000000Z", "expires":
+        "2016-07-26T03:54:43Z", "id": "gAAAAABXljZDY8BUO4XIJtbNmneBcEqq1uUMiK9FB-m9VbQAvEBJyIZiHttpNhFPGhJ7Yju7vqVCPVpmnhGeRCFZQh78Sw7Km5XBm-KlR-h17vNJEmrjMp9UXD6Be49nNzSy5DGgAsM7BHy4ZXJmZb_0ciRWWv4E4LFFlql1XwQ2-Ejt8da9acU",
+        "tenant": {"description": "", "enabled": true, "id": "4f8f44a4262041e0a2330fb59099f810",
+        "name": "<OS_TENANT_NAME>"}, "audit_ids": ["GgxOX12dQGKpSiPf75Xl-w"]}, "serviceCatalog":
+        [{"endpoints": [{"adminURL": "http://172.29.236.100:8774/v2/4f8f44a4262041e0a2330fb59099f810",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8774/v2.1/4f8f44a4262041e0a2330fb59099f810",
+        "id": "5c705b8537e7476ea74527025de382c8", "publicURL": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810"}],
+        "endpoints_links": [], "type": "compute", "name": "nova"}, {"endpoints": [{"adminURL":
+        "http://172.29.236.100:9696", "region": "RegionOne", "internalURL": "http://172.29.236.100:9696",
+        "id": "5eb4d64141174dfcac8ed18845d86e8c", "publicURL": "http://172.99.87.154:9696"}],
+        "endpoints_links": [], "type": "network", "name": "neutron"}, {"endpoints":
+        [{"adminURL": "http://172.29.236.100:8776/v2/4f8f44a4262041e0a2330fb59099f810",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8776/v2/4f8f44a4262041e0a2330fb59099f810",
+        "id": "024b50dc6d5944308a977d17c0dfac9c", "publicURL": "http://172.99.87.154:8776/v2/4f8f44a4262041e0a2330fb59099f810"}],
+        "endpoints_links": [], "type": "volumev2", "name": "cinderv2"}, {"endpoints":
+        [{"adminURL": "http://172.29.236.100:8042", "region": "RegionOne", "internalURL":
+        "http://172.29.236.100:8042", "id": "7110c30e08684c5881b04e46e3e242fb", "publicURL":
+        "http://172.99.87.154:8042"}], "endpoints_links": [], "type": "alarming",
+        "name": "aodh"}, {"endpoints": [{"adminURL": "http://172.29.236.100:9292",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:9292", "id":
+        "5f9ca00fc1aa41de82f714af3ec2f44f", "publicURL": "http://172.99.87.154:9292"}],
+        "endpoints_links": [], "type": "image", "name": "glance"}, {"endpoints": [{"adminURL":
+        "http://172.29.236.100:8777/", "region": "RegionOne", "internalURL": "http://172.29.236.100:8777",
+        "id": "166d9f3d36104e60ab944f4147dddafe", "publicURL": "http://172.99.87.154:8777"}],
+        "endpoints_links": [], "type": "metering", "name": "ceilometer"}, {"endpoints":
+        [{"adminURL": "http://172.29.236.100:8000/v1", "region": "RegionOne", "internalURL":
+        "http://172.29.236.100:8000/v1", "id": "1432f36f2eb846e183eb5692e48c42b7",
+        "publicURL": "http://172.99.87.154:8000/v1"}], "endpoints_links": [], "type":
+        "cloudformation", "name": "heat-cfn"}, {"endpoints": [{"adminURL": "http://172.29.236.100:8776/v1/4f8f44a4262041e0a2330fb59099f810",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8776/v1/4f8f44a4262041e0a2330fb59099f810",
+        "id": "61e6c9e21bdf49f9a74c2f75284e8370", "publicURL": "http://172.99.87.154:8776/v1/4f8f44a4262041e0a2330fb59099f810"}],
+        "endpoints_links": [], "type": "volume", "name": "cinder"}, {"endpoints":
+        [{"adminURL": "http://172.29.236.100:8004/v1/4f8f44a4262041e0a2330fb59099f810",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8004/v1/4f8f44a4262041e0a2330fb59099f810",
+        "id": "271767fb39574a8da664a7c8e94d9ad1", "publicURL": "http://172.99.87.154:8004/v1/4f8f44a4262041e0a2330fb59099f810"}],
+        "endpoints_links": [], "type": "orchestration", "name": "heat"}, {"endpoints":
+        [{"adminURL": "http://172.29.236.100:8080/v1/AUTH_4f8f44a4262041e0a2330fb59099f810",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8080/v1/AUTH_4f8f44a4262041e0a2330fb59099f810",
+        "id": "10be816ee9c24178b85afaef361d7586", "publicURL": "http://172.99.87.154:8080/v1/AUTH_4f8f44a4262041e0a2330fb59099f810"}],
+        "endpoints_links": [], "type": "object-store", "name": "swift"}, {"endpoints":
+        [{"adminURL": "http://172.29.236.100:35357/v3", "region": "RegionOne", "internalURL":
+        "http://172.29.236.100:5000/v3", "id": "0f1132698b2a4732ac30d6f9cbfbd09b",
+        "publicURL": "http://172.99.87.154:5000/v3"}], "endpoints_links": [], "type":
+        "identity", "name": "keystone"}], "user": {"username": "<OS_USERNAME>", "roles_links":
+        [], "id": "e77daadf2e414f6ab9dc5da0520510ca", "roles": [{"name": "admin"}],
+        "name": "<OS_USERNAME>"}, "metadata": {"is_admin": 0, "roles": ["0ac5a1859cc345039eafaf2f9725bbe7"]}}}'
+    http_version: 
+  recorded_at: Mon, 25 Jul 2016 15:54:43 GMT
+- request:
+    method: post
     uri: http://172.99.87.154:8776/v1/4f8f44a4262041e0a2330fb59099f810/volumes
     body:
       encoding: UTF-8
-      string: '{"volume":{"attachments":null,"availability_zone":null,"bootable":null,"consistencygroup_id":null,"created_at":null,"description":null,"encrypted":null,"id":null,"links":null,"metadata":null,"migration_status":null,"multiattach":null,"name":"509931","os_vol_host_attr":null,"os_vol_mig_status_attr":null,"os_vol_tenant_attr":null,"os_volume_replication":null,"replication_status":null,"size":null,"snapshot_id":null,"source_volid":null,"status":null,"user_id":null,"volume_type":null}}'
+      string: '{"volume":{"attachments":null,"availability_zone":null,"bootable":null,"consistencygroup_id":null,"created_at":null,"description":null,"encrypted":null,"id":null,"links":null,"metadata":null,"migration_status":null,"multiattach":null,"name":"309145","os_vol_host_attr":null,"os_vol_mig_status_attr":null,"os_vol_tenant_attr":null,"os_volume_replication":null,"replication_status":null,"size":"100","snapshot_id":null,"source_volid":null,"status":null,"user_id":null,"volume_type":null,"display_name":null,"display_description":null}}'
     headers:
       Accept:
       - application/json
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXdUFn8sb1t5o90UErqgGOmuUMySWd9oU4n1Ipuq16CoPy3NQmt0jmxz2fjVNiJb6_wyqeZfpU5IdzzNUAQPJUPSEYZXYi2h8OvFnSvtbCHFhhkkRXvL6QGa3tDW1hA8m2iWCMEzIqUPhdKpHY3ZtQNYIyGNAFTs1g16wjmoPcUlQ4u44
+      - gAAAAABXljZDY8BUO4XIJtbNmneBcEqq1uUMiK9FB-m9VbQAvEBJyIZiHttpNhFPGhJ7Yju7vqVCPVpmnhGeRCFZQh78Sw7Km5XBm-KlR-h17vNJEmrjMp9UXD6Be49nNzSy5DGgAsM7BHy4ZXJmZb_0ciRWWv4E4LFFlql1XwQ2-Ejt8da9acU
       Content-Type:
       - application/json
       Content-Length:
-      - '485'
+      - '533'
       User-Agent:
       - Ruby
   response:
     status:
-      code: 400
-      message: Bad Request
+      code: 200
+      message: OK
     headers:
-      Openstack-Api-Version:
-      - '1.0'
-      Vary:
-      - OpenStack-API-Version
-      Content-Length:
-      - '124'
-      Content-Type:
-      - application/json; charset=UTF-8
       X-Compute-Request-Id:
-      - req-d9495cc5-a23d-48c5-a7ec-58f9b348c7ea
+      - req-9a2b5945-602b-4664-a24d-40ba40ae7993
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '381'
       X-Openstack-Request-Id:
-      - req-d9495cc5-a23d-48c5-a7ec-58f9b348c7ea
+      - req-9a2b5945-602b-4664-a24d-40ba40ae7993
       Date:
-      - Thu, 30 Jun 2016 15:57:35 GMT
+      - Mon, 25 Jul 2016 15:54:43 GMT
     body:
       encoding: UTF-8
-      string: '{"badRequest": {"message": "Invalid input received: Volume size ''None''
-        must be an integer and greater than 0", "code": 400}}'
+      string: '{"volume": {"status": "creating", "display_name": null, "attachments":
+        [], "availability_zone": "nova", "bootable": "false", "encrypted": false,
+        "created_at": "2016-07-25T15:54:43.633740", "multiattach": "false", "display_description":
+        null, "volume_type": null, "snapshot_id": null, "source_volid": null, "metadata":
+        {}, "id": "0e958839-e012-4341-badd-8df82559e95c", "size": 100}}'
     http_version: 
-  recorded_at: Thu, 30 Jun 2016 15:57:35 GMT
+  recorded_at: Mon, 25 Jul 2016 15:54:43 GMT
 recorded_with: VCR 3.0.3
