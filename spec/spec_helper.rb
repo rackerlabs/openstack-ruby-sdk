@@ -35,4 +35,11 @@ RSpec.configure do |config|
     c.filter_sensitive_data('<OS_PASSWORD>') { ENV['OS_PASSWORD'] }
     c.filter_sensitive_data('<OS_TENANT_NAME>') { ENV['OS_TENANT_NAME'] }
   end
+
+  config.after(:all) do
+    VCR.use_cassette('cleanup') do
+      OpenStackRubySDK::Nova::Server.all.each{ |s| s.destroy rescue next }
+      OpenStackRubySDK::Cinder::Volume.all.each{ |s| s.destroy rescue next }
+    end
+  end
 end

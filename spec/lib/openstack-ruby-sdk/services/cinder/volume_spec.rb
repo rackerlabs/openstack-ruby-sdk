@@ -52,6 +52,7 @@ describe OpenStackRubySDK::Cinder::Volume, :vcr do
   it 'can be resized' do
     expect do
       volume.extend_size(11)
+      Peace::Helpers.wait_for(volume, 'available')
       volume.reload
     end.to change(volume, :size).to(11)
   end
@@ -64,7 +65,18 @@ describe OpenStackRubySDK::Cinder::Volume, :vcr do
   end
 
   it 'can attach its self to a server' do
+    volume_attachment = volume.attach_to(server)
+    expect(volume_attachment.server_id).to eq(server.id)
+    expect(volume_attachment.volume_id).to eq(volume.id)
+    expect(volume_attachment.device).to eq("/dev/vdb")
+  end
+
+  it 'can force deattach its self to a server' do
     volume.attach_to(server)
+    Peace::Helpers.wait_for(volume, "in-use")
+    expect(volume.force_detach!).to be(true)
+    volume.reload
+    expect(volume.attachments).to eq([])
   end
 
   it 'deletes its self' do

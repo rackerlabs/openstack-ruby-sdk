@@ -42,7 +42,10 @@ class OpenStackRubySDK::Cinder::Volume
     server.attach_volume(self.id)
   end
 
-  def force_detach
+  def force_detach!
+    att_id = self.attachments.first['attachment_id']
+    data   = { "os-force_detach": { "attachment_id": "#{att_id}" } }
+    perform_action!(data)
   end
 
   def promote

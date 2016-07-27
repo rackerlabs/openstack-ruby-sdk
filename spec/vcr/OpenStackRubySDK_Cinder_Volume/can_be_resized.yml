@@ -5,14 +5,14 @@ http_interactions:
     uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes
     body:
       encoding: UTF-8
-      string: '{"volume":{"name":"346352","size":"10"}}'
+      string: '{"volume":{"name":"998817","size":"10"}}'
     headers:
       Accept:
       - application/json
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmA6fmXnwtMkWumcnp6ocqFWHoQcAaTyad5_qFlRprmk_HXgD6fvcpRhBZWoaqEnBAX2TPHNk_dEK4CLKB5zj3aPDiTGLhAHm5uX-ALN-vsWk3Ik_00yKgxflutUL1GAcV5UZEnRCgGBzrxpUH-7ovY_xXk0eGjSsJLuThuKQXgbdjug
+      - gAAAAABXmNG9ADGSvEfznDRv6rPtd1mFZqXoiNboPIwQPG71pdq3bO64ad5IYftGE273ZKWXmofhu4oJDbkY7RGF6CeynImtJAopRfT3CqWG2cTTMiJr6qvSgsvCJIfkILJMJ2bf65zUHgE58-j2_bzIyA7bujeZCn5Cjp8pGOiM85cjsPymsNY
       Content-Type:
       - application/json
       Content-Length:
@@ -25,27 +25,27 @@ http_interactions:
       message: OK
     headers:
       X-Compute-Request-Id:
-      - req-8347be1a-98c1-4baf-8675-f8a8af260678
+      - req-622ef158-323f-4438-bfef-6edb61fb361d
       Content-Type:
       - application/json
       Content-Length:
       - '380'
       X-Openstack-Request-Id:
-      - req-8347be1a-98c1-4baf-8675-f8a8af260678
+      - req-622ef158-323f-4438-bfef-6edb61fb361d
       Date:
-      - Wed, 27 Jul 2016 01:30:14 GMT
+      - Wed, 27 Jul 2016 15:38:51 GMT
     body:
       encoding: UTF-8
       string: '{"volume": {"status": "creating", "display_name": null, "attachments":
         [], "availability_zone": "nova", "bootable": "false", "encrypted": false,
-        "created_at": "2016-07-27T01:30:14.498902", "multiattach": "false", "display_description":
+        "created_at": "2016-07-27T15:38:51.141708", "multiattach": "false", "display_description":
         null, "volume_type": null, "snapshot_id": null, "source_volid": null, "metadata":
-        {}, "id": "09caa7ef-1b57-4d4b-8399-1b56f7d2c9d2", "size": 10}}'
+        {}, "id": "cd5a9cde-37b1-402b-b4bc-16d90a4b8ddb", "size": 10}}'
     http_version: 
-  recorded_at: Wed, 27 Jul 2016 01:30:14 GMT
+  recorded_at: Wed, 27 Jul 2016 15:38:51 GMT
 - request:
     method: get
-    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/09caa7ef-1b57-4d4b-8399-1b56f7d2c9d2
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/cd5a9cde-37b1-402b-b4bc-16d90a4b8ddb
     body:
       encoding: US-ASCII
       string: ''
@@ -55,7 +55,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmA6fmXnwtMkWumcnp6ocqFWHoQcAaTyad5_qFlRprmk_HXgD6fvcpRhBZWoaqEnBAX2TPHNk_dEK4CLKB5zj3aPDiTGLhAHm5uX-ALN-vsWk3Ik_00yKgxflutUL1GAcV5UZEnRCgGBzrxpUH-7ovY_xXk0eGjSsJLuThuKQXgbdjug
+      - gAAAAABXmNG9ADGSvEfznDRv6rPtd1mFZqXoiNboPIwQPG71pdq3bO64ad5IYftGE273ZKWXmofhu4oJDbkY7RGF6CeynImtJAopRfT3CqWG2cTTMiJr6qvSgsvCJIfkILJMJ2bf65zUHgE58-j2_bzIyA7bujeZCn5Cjp8pGOiM85cjsPymsNY
       Content-Type:
       - application/json
       User-Agent:
@@ -66,29 +66,29 @@ http_interactions:
       message: OK
     headers:
       X-Compute-Request-Id:
-      - req-ce7b7479-4f79-40e1-a5d0-45075354fd97
+      - req-ace42fb3-4817-4720-adfe-73b38aec49fe
       Content-Type:
       - application/json
       Content-Length:
       - '575'
       X-Openstack-Request-Id:
-      - req-ce7b7479-4f79-40e1-a5d0-45075354fd97
+      - req-ace42fb3-4817-4720-adfe-73b38aec49fe
       Date:
-      - Wed, 27 Jul 2016 01:30:15 GMT
+      - Wed, 27 Jul 2016 15:38:51 GMT
     body:
       encoding: UTF-8
       string: '{"volume": {"status": "creating", "display_name": null, "attachments":
         [], "availability_zone": "nova", "bootable": "false", "encrypted": false,
-        "created_at": "2016-07-27T01:30:14.000000", "multiattach": "false", "os-vol-tenant-attr:tenant_id":
+        "created_at": "2016-07-27T15:38:51.000000", "multiattach": "false", "os-vol-tenant-attr:tenant_id":
         "0c5dd43034614366b9e4e47887f38228", "display_description": null, "os-vol-host-attr:host":
         "osux@lvm#LVM_iSCSI", "volume_type": null, "snapshot_id": null, "source_volid":
-        null, "os-vol-mig-status-attr:name_id": null, "metadata": {}, "id": "09caa7ef-1b57-4d4b-8399-1b56f7d2c9d2",
+        null, "os-vol-mig-status-attr:name_id": null, "metadata": {}, "id": "cd5a9cde-37b1-402b-b4bc-16d90a4b8ddb",
         "os-vol-mig-status-attr:migstat": null, "size": 10}}'
     http_version: 
-  recorded_at: Wed, 27 Jul 2016 01:30:15 GMT
+  recorded_at: Wed, 27 Jul 2016 15:38:51 GMT
 - request:
     method: get
-    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/09caa7ef-1b57-4d4b-8399-1b56f7d2c9d2
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/cd5a9cde-37b1-402b-b4bc-16d90a4b8ddb
     body:
       encoding: US-ASCII
       string: ''
@@ -98,7 +98,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmA6fmXnwtMkWumcnp6ocqFWHoQcAaTyad5_qFlRprmk_HXgD6fvcpRhBZWoaqEnBAX2TPHNk_dEK4CLKB5zj3aPDiTGLhAHm5uX-ALN-vsWk3Ik_00yKgxflutUL1GAcV5UZEnRCgGBzrxpUH-7ovY_xXk0eGjSsJLuThuKQXgbdjug
+      - gAAAAABXmNG9ADGSvEfznDRv6rPtd1mFZqXoiNboPIwQPG71pdq3bO64ad5IYftGE273ZKWXmofhu4oJDbkY7RGF6CeynImtJAopRfT3CqWG2cTTMiJr6qvSgsvCJIfkILJMJ2bf65zUHgE58-j2_bzIyA7bujeZCn5Cjp8pGOiM85cjsPymsNY
       Content-Type:
       - application/json
       User-Agent:
@@ -109,29 +109,29 @@ http_interactions:
       message: OK
     headers:
       X-Compute-Request-Id:
-      - req-54a90016-d8ae-4013-8890-e94735ad3db3
+      - req-da909759-1fd7-47f1-bf82-5d763ac4aed3
       Content-Type:
       - application/json
       Content-Length:
       - '576'
       X-Openstack-Request-Id:
-      - req-54a90016-d8ae-4013-8890-e94735ad3db3
+      - req-da909759-1fd7-47f1-bf82-5d763ac4aed3
       Date:
-      - Wed, 27 Jul 2016 01:30:16 GMT
+      - Wed, 27 Jul 2016 15:38:52 GMT
     body:
       encoding: UTF-8
       string: '{"volume": {"status": "available", "display_name": null, "attachments":
         [], "availability_zone": "nova", "bootable": "false", "encrypted": false,
-        "created_at": "2016-07-27T01:30:14.000000", "multiattach": "false", "os-vol-tenant-attr:tenant_id":
+        "created_at": "2016-07-27T15:38:51.000000", "multiattach": "false", "os-vol-tenant-attr:tenant_id":
         "0c5dd43034614366b9e4e47887f38228", "display_description": null, "os-vol-host-attr:host":
         "osux@lvm#LVM_iSCSI", "volume_type": null, "snapshot_id": null, "source_volid":
-        null, "os-vol-mig-status-attr:name_id": null, "metadata": {}, "id": "09caa7ef-1b57-4d4b-8399-1b56f7d2c9d2",
+        null, "os-vol-mig-status-attr:name_id": null, "metadata": {}, "id": "cd5a9cde-37b1-402b-b4bc-16d90a4b8ddb",
         "os-vol-mig-status-attr:migstat": null, "size": 10}}'
     http_version: 
-  recorded_at: Wed, 27 Jul 2016 01:30:16 GMT
+  recorded_at: Wed, 27 Jul 2016 15:38:52 GMT
 - request:
     method: post
-    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/09caa7ef-1b57-4d4b-8399-1b56f7d2c9d2/action
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/cd5a9cde-37b1-402b-b4bc-16d90a4b8ddb/action
     body:
       encoding: UTF-8
       string: '{"os-extend":{"new_size":11}}'
@@ -141,7 +141,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmA6fmXnwtMkWumcnp6ocqFWHoQcAaTyad5_qFlRprmk_HXgD6fvcpRhBZWoaqEnBAX2TPHNk_dEK4CLKB5zj3aPDiTGLhAHm5uX-ALN-vsWk3Ik_00yKgxflutUL1GAcV5UZEnRCgGBzrxpUH-7ovY_xXk0eGjSsJLuThuKQXgbdjug
+      - gAAAAABXmNG9ADGSvEfznDRv6rPtd1mFZqXoiNboPIwQPG71pdq3bO64ad5IYftGE273ZKWXmofhu4oJDbkY7RGF6CeynImtJAopRfT3CqWG2cTTMiJr6qvSgsvCJIfkILJMJ2bf65zUHgE58-j2_bzIyA7bujeZCn5Cjp8pGOiM85cjsPymsNY
       Content-Type:
       - application/json
       Content-Length:
@@ -158,17 +158,17 @@ http_interactions:
       Content-Length:
       - '0'
       X-Openstack-Request-Id:
-      - req-699493bc-d737-436c-837c-4f23556f6e05
+      - req-d2214763-7f4c-4518-9767-50a111c8e7a6
       Date:
-      - Wed, 27 Jul 2016 01:30:16 GMT
+      - Wed, 27 Jul 2016 15:38:53 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 27 Jul 2016 01:30:17 GMT
+  recorded_at: Wed, 27 Jul 2016 15:38:53 GMT
 - request:
     method: get
-    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/09caa7ef-1b57-4d4b-8399-1b56f7d2c9d2
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/cd5a9cde-37b1-402b-b4bc-16d90a4b8ddb
     body:
       encoding: US-ASCII
       string: ''
@@ -178,7 +178,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmA6fmXnwtMkWumcnp6ocqFWHoQcAaTyad5_qFlRprmk_HXgD6fvcpRhBZWoaqEnBAX2TPHNk_dEK4CLKB5zj3aPDiTGLhAHm5uX-ALN-vsWk3Ik_00yKgxflutUL1GAcV5UZEnRCgGBzrxpUH-7ovY_xXk0eGjSsJLuThuKQXgbdjug
+      - gAAAAABXmNG9ADGSvEfznDRv6rPtd1mFZqXoiNboPIwQPG71pdq3bO64ad5IYftGE273ZKWXmofhu4oJDbkY7RGF6CeynImtJAopRfT3CqWG2cTTMiJr6qvSgsvCJIfkILJMJ2bf65zUHgE58-j2_bzIyA7bujeZCn5Cjp8pGOiM85cjsPymsNY
       Content-Type:
       - application/json
       User-Agent:
@@ -189,24 +189,67 @@ http_interactions:
       message: OK
     headers:
       X-Compute-Request-Id:
-      - req-d4c222c0-fcc6-4348-aabb-61f267ec371b
+      - req-865f8070-9c69-4cff-bc09-e5404bf33bfc
       Content-Type:
       - application/json
       Content-Length:
       - '576'
       X-Openstack-Request-Id:
-      - req-d4c222c0-fcc6-4348-aabb-61f267ec371b
+      - req-865f8070-9c69-4cff-bc09-e5404bf33bfc
       Date:
-      - Wed, 27 Jul 2016 01:30:17 GMT
+      - Wed, 27 Jul 2016 15:38:53 GMT
     body:
       encoding: UTF-8
       string: '{"volume": {"status": "available", "display_name": null, "attachments":
         [], "availability_zone": "nova", "bootable": "false", "encrypted": false,
-        "created_at": "2016-07-27T01:30:14.000000", "multiattach": "false", "os-vol-tenant-attr:tenant_id":
+        "created_at": "2016-07-27T15:38:51.000000", "multiattach": "false", "os-vol-tenant-attr:tenant_id":
         "0c5dd43034614366b9e4e47887f38228", "display_description": null, "os-vol-host-attr:host":
         "osux@lvm#LVM_iSCSI", "volume_type": null, "snapshot_id": null, "source_volid":
-        null, "os-vol-mig-status-attr:name_id": null, "metadata": {}, "id": "09caa7ef-1b57-4d4b-8399-1b56f7d2c9d2",
+        null, "os-vol-mig-status-attr:name_id": null, "metadata": {}, "id": "cd5a9cde-37b1-402b-b4bc-16d90a4b8ddb",
         "os-vol-mig-status-attr:migstat": null, "size": 11}}'
     http_version: 
-  recorded_at: Wed, 27 Jul 2016 01:30:17 GMT
+  recorded_at: Wed, 27 Jul 2016 15:38:53 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/cd5a9cde-37b1-402b-b4bc-16d90a4b8ddb
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXmNG9ADGSvEfznDRv6rPtd1mFZqXoiNboPIwQPG71pdq3bO64ad5IYftGE273ZKWXmofhu4oJDbkY7RGF6CeynImtJAopRfT3CqWG2cTTMiJr6qvSgsvCJIfkILJMJ2bf65zUHgE58-j2_bzIyA7bujeZCn5Cjp8pGOiM85cjsPymsNY
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-816d6a45-c1e4-4661-8a5e-9f9ee94a4f9f
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '576'
+      X-Openstack-Request-Id:
+      - req-816d6a45-c1e4-4661-8a5e-9f9ee94a4f9f
+      Date:
+      - Wed, 27 Jul 2016 15:38:53 GMT
+    body:
+      encoding: UTF-8
+      string: '{"volume": {"status": "available", "display_name": null, "attachments":
+        [], "availability_zone": "nova", "bootable": "false", "encrypted": false,
+        "created_at": "2016-07-27T15:38:51.000000", "multiattach": "false", "os-vol-tenant-attr:tenant_id":
+        "0c5dd43034614366b9e4e47887f38228", "display_description": null, "os-vol-host-attr:host":
+        "osux@lvm#LVM_iSCSI", "volume_type": null, "snapshot_id": null, "source_volid":
+        null, "os-vol-mig-status-attr:name_id": null, "metadata": {}, "id": "cd5a9cde-37b1-402b-b4bc-16d90a4b8ddb",
+        "os-vol-mig-status-attr:migstat": null, "size": 11}}'
+    http_version: 
+  recorded_at: Wed, 27 Jul 2016 15:38:54 GMT
 recorded_with: VCR 3.0.3

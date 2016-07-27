@@ -5,18 +5,18 @@ http_interactions:
     uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes
     body:
       encoding: UTF-8
-      string: '{"volume":{"attachments":null,"availability_zone":null,"bootable":null,"consistencygroup_id":null,"created_at":null,"description":null,"encrypted":null,"id":null,"links":null,"metadata":null,"os-vol-mig-status-attr:migstat":null,"multiattach":null,"name":"972563","replication_status":null,"size":"10","snapshot_id":null,"source_volid":null,"status":null,"user_id":null,"volume_type":null,"display_name":null,"display_description":null,"os-vol-tenant-attr:tenant_id":null,"os-vol-tenant-attr:host":null,"os-vol-tenant-attr:name_id":null,"os-vol-tenant-attr:migstat":null,"os-vol-host-attr:host":null,"os-vol-mig-status-attr:name_id":null}}'
+      string: '{"volume":{"attachments":null,"availability_zone":null,"bootable":null,"consistencygroup_id":null,"created_at":null,"description":null,"encrypted":null,"id":null,"links":null,"metadata":null,"os-vol-mig-status-attr:migstat":null,"multiattach":null,"name":"84861","replication_status":null,"size":"10","snapshot_id":null,"source_volid":null,"status":null,"user_id":null,"volume_type":null,"display_name":null,"display_description":null,"os-vol-tenant-attr:tenant_id":null,"os-vol-tenant-attr:host":null,"os-vol-tenant-attr:name_id":null,"os-vol-tenant-attr:migstat":null,"os-vol-host-attr:host":null,"os-vol-mig-status-attr:name_id":null}}'
     headers:
       Accept:
       - application/json
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmA6fmXnwtMkWumcnp6ocqFWHoQcAaTyad5_qFlRprmk_HXgD6fvcpRhBZWoaqEnBAX2TPHNk_dEK4CLKB5zj3aPDiTGLhAHm5uX-ALN-vsWk3Ik_00yKgxflutUL1GAcV5UZEnRCgGBzrxpUH-7ovY_xXk0eGjSsJLuThuKQXgbdjug
+      - gAAAAABXmNG9ADGSvEfznDRv6rPtd1mFZqXoiNboPIwQPG71pdq3bO64ad5IYftGE273ZKWXmofhu4oJDbkY7RGF6CeynImtJAopRfT3CqWG2cTTMiJr6qvSgsvCJIfkILJMJ2bf65zUHgE58-j2_bzIyA7bujeZCn5Cjp8pGOiM85cjsPymsNY
       Content-Type:
       - application/json
       Content-Length:
-      - '639'
+      - '638'
       User-Agent:
       - Ruby
   response:
@@ -25,22 +25,22 @@ http_interactions:
       message: OK
     headers:
       X-Compute-Request-Id:
-      - req-242f158f-dda0-46ae-9970-34074385575b
+      - req-7c7b3419-9f13-4117-b06c-4ae4b85fc691
       Content-Type:
       - application/json
       Content-Length:
       - '380'
       X-Openstack-Request-Id:
-      - req-242f158f-dda0-46ae-9970-34074385575b
+      - req-7c7b3419-9f13-4117-b06c-4ae4b85fc691
       Date:
-      - Wed, 27 Jul 2016 01:30:11 GMT
+      - Wed, 27 Jul 2016 15:22:45 GMT
     body:
       encoding: UTF-8
       string: '{"volume": {"status": "creating", "display_name": null, "attachments":
         [], "availability_zone": "nova", "bootable": "false", "encrypted": false,
-        "created_at": "2016-07-27T01:30:11.187023", "multiattach": "false", "display_description":
+        "created_at": "2016-07-27T15:22:45.215199", "multiattach": "false", "display_description":
         null, "volume_type": null, "snapshot_id": null, "source_volid": null, "metadata":
-        {}, "id": "7b290590-3dd0-407d-a573-5557a68e07b5", "size": 10}}'
+        {}, "id": "1a58a7c5-3931-450e-9331-e669b9222a2b", "size": 10}}'
     http_version: 
-  recorded_at: Wed, 27 Jul 2016 01:30:11 GMT
+  recorded_at: Wed, 27 Jul 2016 15:22:45 GMT
 recorded_with: VCR 3.0.3
