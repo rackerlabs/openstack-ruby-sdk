@@ -5,7 +5,7 @@ http_interactions:
     uri: "<OS_AUTH_URL>"
     body:
       encoding: UTF-8
-      string: '{"auth":{"tenantName":"<OS_TENANT_NAME>","passwordCredentials":{"username":"<OS_USERNAME>","password":"<OS_PASSWORD>"}}}'
+      string: '{"auth":{"tenantName":"<OS_USERNAME>","passwordCredentials":{"username":"<OS_USERNAME>","password":"<OS_PASSWORD>"}}}'
     headers:
       Accept:
       - application/json
@@ -14,7 +14,7 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '113'
+      - '147'
       User-Agent:
       - Ruby
   response:
@@ -23,70 +23,73 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 25 Jul 2016 15:30:16 GMT
+      - Wed, 27 Jul 2016 01:30:07 GMT
       Server:
       - Apache
       Vary:
       - X-Auth-Token
       X-Openstack-Request-Id:
-      - req-1b51fca5-a45d-4a57-a0ea-51eeb237555e
+      - req-385839e4-9516-4005-86d2-e4f62f5b0ccc
       Content-Length:
-      - '4281'
+      - '4396'
       Content-Type:
       - application/json
     body:
       encoding: UTF-8
-      string: '{"access": {"token": {"issued_at": "2016-07-25T15:30:16.000000Z", "expires":
-        "2016-07-26T03:30:16Z", "id": "gAAAAABXljCIopFFuUOQvXcCDJDFVq8E50mJ5YbINFtA6_89hE--d7oPh5z0hehc7JDSw35FvxrkUtrK7FBQnBB1mQO5RVuZynVHJOd3FB4dzwucdD85ALdClYNEjndpdl9bd2dqlCgyODvBlyBEYRrUSi_g3kKpsTQj2WE_qfwanlp80KQbkUo",
-        "tenant": {"description": "", "enabled": true, "id": "4f8f44a4262041e0a2330fb59099f810",
-        "name": "<OS_TENANT_NAME>"}, "audit_ids": ["FuOOclLzS6eluYUEM2wFKQ"]}, "serviceCatalog":
-        [{"endpoints": [{"adminURL": "http://172.29.236.100:8774/v2/4f8f44a4262041e0a2330fb59099f810",
-        "region": "RegionOne", "internalURL": "http://172.29.236.100:8774/v2.1/4f8f44a4262041e0a2330fb59099f810",
-        "id": "5c705b8537e7476ea74527025de382c8", "publicURL": "http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810"}],
-        "endpoints_links": [], "type": "compute", "name": "nova"}, {"endpoints": [{"adminURL":
+      string: '{"access": {"token": {"issued_at": "2016-07-27T01:30:07.000000Z", "expires":
+        "2016-07-27T13:30:07Z", "id": "gAAAAABXmA6fmXnwtMkWumcnp6ocqFWHoQcAaTyad5_qFlRprmk_HXgD6fvcpRhBZWoaqEnBAX2TPHNk_dEK4CLKB5zj3aPDiTGLhAHm5uX-ALN-vsWk3Ik_00yKgxflutUL1GAcV5UZEnRCgGBzrxpUH-7ovY_xXk0eGjSsJLuThuKQXgbdjug",
+        "tenant": {"description": "Bootstrap project for initializing the cloud.",
+        "enabled": true, "id": "0c5dd43034614366b9e4e47887f38228", "name": "<OS_USERNAME>"},
+        "audit_ids": ["bqoLs6VbQ9mP0Yh9b9ETTA"]}, "serviceCatalog": [{"endpoints":
+        [{"<OS_USERNAME>URL": "http://172.29.236.100:8774/v2.1/0c5dd43034614366b9e4e47887f38228",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8774/v2.1/0c5dd43034614366b9e4e47887f38228",
+        "id": "f3d5467f42f54ac78f4e80460aed3845", "publicURL": "http://172.99.88.174:8774/v2.1/0c5dd43034614366b9e4e47887f38228"}],
+        "endpoints_links": [], "type": "compute", "name": "nova"}, {"endpoints": [{"<OS_USERNAME>URL":
         "http://172.29.236.100:9696", "region": "RegionOne", "internalURL": "http://172.29.236.100:9696",
-        "id": "5eb4d64141174dfcac8ed18845d86e8c", "publicURL": "http://172.99.87.154:9696"}],
+        "id": "53f61e5b43204db09b362e75d87f5f7d", "publicURL": "http://172.99.88.174:9696"}],
         "endpoints_links": [], "type": "network", "name": "neutron"}, {"endpoints":
-        [{"adminURL": "http://172.29.236.100:8776/v2/4f8f44a4262041e0a2330fb59099f810",
-        "region": "RegionOne", "internalURL": "http://172.29.236.100:8776/v2/4f8f44a4262041e0a2330fb59099f810",
-        "id": "024b50dc6d5944308a977d17c0dfac9c", "publicURL": "http://172.99.87.154:8776/v2/4f8f44a4262041e0a2330fb59099f810"}],
+        [{"<OS_USERNAME>URL": "http://172.29.236.100:8776/v2/0c5dd43034614366b9e4e47887f38228",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8776/v2/0c5dd43034614366b9e4e47887f38228",
+        "id": "1a5716b5ecfd400fb33745e639a29126", "publicURL": "http://172.99.88.174:8776/v2/0c5dd43034614366b9e4e47887f38228"}],
         "endpoints_links": [], "type": "volumev2", "name": "cinderv2"}, {"endpoints":
-        [{"adminURL": "http://172.29.236.100:8042", "region": "RegionOne", "internalURL":
-        "http://172.29.236.100:8042", "id": "7110c30e08684c5881b04e46e3e242fb", "publicURL":
-        "http://172.99.87.154:8042"}], "endpoints_links": [], "type": "alarming",
-        "name": "aodh"}, {"endpoints": [{"adminURL": "http://172.29.236.100:9292",
+        [{"<OS_USERNAME>URL": "http://172.29.236.100:8042", "region": "RegionOne",
+        "internalURL": "http://172.29.236.100:8042", "id": "4b59dc377737480389b3cf9f27a2abed",
+        "publicURL": "http://172.99.88.174:8042"}], "endpoints_links": [], "type":
+        "alarming", "name": "aodh"}, {"endpoints": [{"<OS_USERNAME>URL": "http://172.29.236.100:9292",
         "region": "RegionOne", "internalURL": "http://172.29.236.100:9292", "id":
-        "5f9ca00fc1aa41de82f714af3ec2f44f", "publicURL": "http://172.99.87.154:9292"}],
-        "endpoints_links": [], "type": "image", "name": "glance"}, {"endpoints": [{"adminURL":
+        "2c42bd5b729c489ca1a8862257019668", "publicURL": "http://172.99.88.174:9292"}],
+        "endpoints_links": [], "type": "image", "name": "glance"}, {"endpoints": [{"<OS_USERNAME>URL":
         "http://172.29.236.100:8777/", "region": "RegionOne", "internalURL": "http://172.29.236.100:8777",
-        "id": "166d9f3d36104e60ab944f4147dddafe", "publicURL": "http://172.99.87.154:8777"}],
+        "id": "7ffe44d1288a427ab17d5672deaad32e", "publicURL": "http://172.99.88.174:8777"}],
         "endpoints_links": [], "type": "metering", "name": "ceilometer"}, {"endpoints":
-        [{"adminURL": "http://172.29.236.100:8000/v1", "region": "RegionOne", "internalURL":
-        "http://172.29.236.100:8000/v1", "id": "1432f36f2eb846e183eb5692e48c42b7",
-        "publicURL": "http://172.99.87.154:8000/v1"}], "endpoints_links": [], "type":
-        "cloudformation", "name": "heat-cfn"}, {"endpoints": [{"adminURL": "http://172.29.236.100:8776/v1/4f8f44a4262041e0a2330fb59099f810",
-        "region": "RegionOne", "internalURL": "http://172.29.236.100:8776/v1/4f8f44a4262041e0a2330fb59099f810",
-        "id": "61e6c9e21bdf49f9a74c2f75284e8370", "publicURL": "http://172.99.87.154:8776/v1/4f8f44a4262041e0a2330fb59099f810"}],
+        [{"<OS_USERNAME>URL": "http://172.29.236.100:8000/v1", "region": "RegionOne",
+        "internalURL": "http://172.29.236.100:8000/v1", "id": "0cb5655415314caf80cffb919c17ca53",
+        "publicURL": "http://172.99.88.174:8000/v1"}], "endpoints_links": [], "type":
+        "cloudformation", "name": "heat-cfn"}, {"endpoints": [{"<OS_USERNAME>URL":
+        "http://172.29.236.100:8776/v1/0c5dd43034614366b9e4e47887f38228", "region":
+        "RegionOne", "internalURL": "http://172.29.236.100:8776/v1/0c5dd43034614366b9e4e47887f38228",
+        "id": "2c738973cb864d67ad9e5497f7e264c5", "publicURL": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228"}],
         "endpoints_links": [], "type": "volume", "name": "cinder"}, {"endpoints":
-        [{"adminURL": "http://172.29.236.100:8004/v1/4f8f44a4262041e0a2330fb59099f810",
-        "region": "RegionOne", "internalURL": "http://172.29.236.100:8004/v1/4f8f44a4262041e0a2330fb59099f810",
-        "id": "271767fb39574a8da664a7c8e94d9ad1", "publicURL": "http://172.99.87.154:8004/v1/4f8f44a4262041e0a2330fb59099f810"}],
+        [{"<OS_USERNAME>URL": "http://172.29.236.100:8004/v1/0c5dd43034614366b9e4e47887f38228",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8004/v1/0c5dd43034614366b9e4e47887f38228",
+        "id": "5397c7ee7bbb4736afa7567ee116810b", "publicURL": "http://172.99.88.174:8004/v1/0c5dd43034614366b9e4e47887f38228"}],
         "endpoints_links": [], "type": "orchestration", "name": "heat"}, {"endpoints":
-        [{"adminURL": "http://172.29.236.100:8080/v1/AUTH_4f8f44a4262041e0a2330fb59099f810",
-        "region": "RegionOne", "internalURL": "http://172.29.236.100:8080/v1/AUTH_4f8f44a4262041e0a2330fb59099f810",
-        "id": "10be816ee9c24178b85afaef361d7586", "publicURL": "http://172.99.87.154:8080/v1/AUTH_4f8f44a4262041e0a2330fb59099f810"}],
+        [{"<OS_USERNAME>URL": "http://172.29.236.100:8080/v1/AUTH_0c5dd43034614366b9e4e47887f38228",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8080/v1/AUTH_0c5dd43034614366b9e4e47887f38228",
+        "id": "1471ebbe7abe44a4813514dc3e35249b", "publicURL": "http://172.99.88.174:8080/v1/AUTH_0c5dd43034614366b9e4e47887f38228"}],
         "endpoints_links": [], "type": "object-store", "name": "swift"}, {"endpoints":
-        [{"adminURL": "http://172.29.236.100:35357/v3", "region": "RegionOne", "internalURL":
-        "http://172.29.236.100:5000/v3", "id": "0f1132698b2a4732ac30d6f9cbfbd09b",
-        "publicURL": "http://172.99.87.154:5000/v3"}], "endpoints_links": [], "type":
+        [{"<OS_USERNAME>URL": "http://172.29.236.100:35357/v3", "region": "RegionOne",
+        "internalURL": "http://172.29.236.100:5000/v3", "id": "469599dd0008461b90e05db5b47efb8b",
+        "publicURL": "http://172.99.88.174:5000/v3"}], "endpoints_links": [], "type":
         "identity", "name": "keystone"}], "user": {"username": "<OS_USERNAME>", "roles_links":
-        [], "id": "e77daadf2e414f6ab9dc5da0520510ca", "roles": [{"name": "admin"}],
-        "name": "<OS_USERNAME>"}, "metadata": {"is_admin": 0, "roles": ["0ac5a1859cc345039eafaf2f9725bbe7"]}}}'
+        [], "id": "65289af47327447b8e3bfce09278f7e7", "roles": [{"name": "<OS_USERNAME>"},
+        {"name": "heat_stack_owner"}], "name": "<OS_USERNAME>"}, "metadata": {"is_<OS_USERNAME>":
+        0, "roles": ["c58244f321cd44c4a50bc4abe9f4653d", "a975e2506fcd4f81a376660e7b2cc5c8"]}}}'
     http_version: 
-  recorded_at: Mon, 25 Jul 2016 15:30:16 GMT
+  recorded_at: Wed, 27 Jul 2016 01:30:07 GMT
 - request:
     method: get
-    uri: http://172.99.87.154:8776/v1/4f8f44a4262041e0a2330fb59099f810/volumes
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes
     body:
       encoding: US-ASCII
       string: ''
@@ -96,7 +99,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXljCIopFFuUOQvXcCDJDFVq8E50mJ5YbINFtA6_89hE--d7oPh5z0hehc7JDSw35FvxrkUtrK7FBQnBB1mQO5RVuZynVHJOd3FB4dzwucdD85ALdClYNEjndpdl9bd2dqlCgyODvBlyBEYRrUSi_g3kKpsTQj2WE_qfwanlp80KQbkUo
+      - gAAAAABXmA6fmXnwtMkWumcnp6ocqFWHoQcAaTyad5_qFlRprmk_HXgD6fvcpRhBZWoaqEnBAX2TPHNk_dEK4CLKB5zj3aPDiTGLhAHm5uX-ALN-vsWk3Ik_00yKgxflutUL1GAcV5UZEnRCgGBzrxpUH-7ovY_xXk0eGjSsJLuThuKQXgbdjug
       Content-Type:
       - application/json
       User-Agent:
@@ -107,23 +110,18 @@ http_interactions:
       message: OK
     headers:
       X-Compute-Request-Id:
-      - req-f3b9fda1-5d60-4c09-9aca-d4cfb53142e8
+      - req-9abf9295-80f9-4555-883e-e9f25518ee31
       Content-Type:
       - application/json
       Content-Length:
-      - '413'
+      - '15'
       X-Openstack-Request-Id:
-      - req-f3b9fda1-5d60-4c09-9aca-d4cfb53142e8
+      - req-9abf9295-80f9-4555-883e-e9f25518ee31
       Date:
-      - Mon, 25 Jul 2016 15:30:16 GMT
+      - Wed, 27 Jul 2016 01:30:08 GMT
     body:
       encoding: UTF-8
-      string: '{"volumes": [{"status": "available", "display_name": "<OS_TENANT_NAME>",
-        "attachments": [], "availability_zone": "nova", "bootable": "true", "encrypted":
-        false, "created_at": "2016-07-18T16:10:31.000000", "multiattach": "false",
-        "display_description": "asdfasdf", "volume_type": "lvm", "snapshot_id": null,
-        "source_volid": null, "metadata": {"readonly": "False"}, "id": "f2176250-b0d9-4e3f-948c-df959dfba6fc",
-        "size": 1}]}'
+      string: '{"volumes": []}'
     http_version: 
-  recorded_at: Mon, 25 Jul 2016 15:30:16 GMT
+  recorded_at: Wed, 27 Jul 2016 01:30:08 GMT
 recorded_with: VCR 3.0.3
