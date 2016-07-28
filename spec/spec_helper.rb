@@ -35,6 +35,7 @@ RSpec.configure do |config|
     if VCR.current_cassette.recording?
       OpenStackRubySDK::Nova::Server.all.each{ |s| s.destroy rescue next }
       OpenStackRubySDK::Cinder::Volume.all.each{ |v| v.destroy rescue next }
+      OpenStackRubySDK::Cinder::VolumeSnapshot.all.each{ |v| v.destroy rescue next }
     end
   end
 

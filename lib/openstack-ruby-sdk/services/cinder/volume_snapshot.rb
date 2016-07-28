@@ -18,7 +18,7 @@ class OpenStackRubySDK::Cinder::VolumeSnapshot
       display_name: opts.fetch(:name),
       display_description: opts.fetch(:description),
       volume_id: opts.fetch(:volume_id),
-      force: opts.fetch(:force)
+      force: opts.fetch(:force, true)
     })
 
     response = Peace::Request.post(collection_url, data)

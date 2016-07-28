@@ -1,13 +1,15 @@
 require 'spec_helper'
 
 describe OpenStackRubySDK::Cinder::VolumeSnapshot, :vcr do
-  let(:server) { server_with_volume }
-  let(:mounted_volume) { server.volumes.first }
   let(:volume) { fresh_volume }
+  let(:snapshot) { volume.take_snapshot!("name", "description") }
 
   it 'is creatable' do
-    snapshot = volume.take_snapshot!("name", "description")
     expect(snapshot.name).to eq("name")
+  end
+
+  it 'is deletable' do
+    expect(snapshot.destroy).to eq(true)
   end
 
   # it 'gets an index' do
