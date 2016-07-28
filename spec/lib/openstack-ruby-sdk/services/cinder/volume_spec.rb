@@ -1,36 +1,12 @@
 require 'spec_helper'
 
 describe OpenStackRubySDK::Cinder::Volume, :vcr do
-  let(:flavor_id) { '1' }
-  let(:image_id) { '7c5d126c-c468-4436-bfca-a001d9ea6fea' }
-  let(:server) do
-    s = OpenStackRubySDK::Nova::Server.create({
-      flavorRef: flavor_id,
-      imageRef: image_id,
-      name: Time.now.usec.to_s
-    })
-
-    Peace::Helpers.wait_for(s)
-  end
-  let(:volume) do
-    v = OpenStackRubySDK::Cinder::Volume.create({
-      name: Time.now.usec.to_s,
-      size: '10'
-    })
-    Peace::Helpers.wait_for(v, 'available')
-  end
-
-  # after(:all) do
-  #   OpenStackRubySDK::Nova::Server.all.each{ |s| s.destroy }
-  #   OpenStackRubySDK::Cinder::Volume.all.each{ |v| v.destroy }
-  # end
+  let(:server) { server_with_volume }
+  let(:mounted_volume) { server.volumes.first }
+  let(:volume) { fresh_volume }
 
   it 'gets an index' do
     expect(OpenStackRubySDK::Cinder::Volume.all.count).to be >= 0
-  end
-
-  it 'gets its self' do
-    expect(OpenStackRubySDK::Cinder::Volume.find(volume.id).id).to eq(volume.id)
   end
 
   it 'creates its self' do
@@ -68,7 +44,8 @@ describe OpenStackRubySDK::Cinder::Volume, :vcr do
     volume_attachment = volume.attach_to(server)
     expect(volume_attachment.server_id).to eq(server.id)
     expect(volume_attachment.volume_id).to eq(volume.id)
-    expect(volume_attachment.device).to eq("/dev/vdb")
+    # /vdc is the second mount point
+    expect(volume_attachment.device).to eq("/dev/vdc")
   end
 
   it 'can force deattach its self to a server' do
@@ -82,5 +59,4 @@ describe OpenStackRubySDK::Cinder::Volume, :vcr do
   it 'deletes its self' do
     expect(volume.destroy).to eq(true)
   end
-
 end

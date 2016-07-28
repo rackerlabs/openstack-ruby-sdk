@@ -1,26 +1,8 @@
 require 'spec_helper'
 
 describe OpenStackRubySDK::Nova::Server, :vcr do
-  let(:flavor_id) { '1' }
-  let(:image_id) { '9060f38f-bb54-4806-a2b3-24a2173af252' }
-  let(:volume_id){ 'f2176250-b0d9-4e3f-948c-df959dfba6fc' }
-  let(:server) do
-    s = OpenStackRubySDK::Nova::Server.create({
-      flavorRef: flavor_id,
-      imageRef: image_id,
-      name: Time.now.usec.to_s
-    })
-
-    Peace::Helpers.wait_for(s)
-  end
-
-  after do
-    OpenStackRubySDK::Nova::Server.all.each{ |s| s.destroy }
-  end
-
-  it 'gets an index' do
-    expect(OpenStackRubySDK::Nova::Server.all).to eq([])
-  end
+  let!(:server) { fresh_server }
+  let(:volume) { fresh_volume }
 
   it 'creates its self' do
     expect(server.class).to eq(OpenStackRubySDK::Nova::Server)
@@ -28,6 +10,10 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
 
   it 'gets its self' do
     expect(OpenStackRubySDK::Nova::Server.find(server.id).id).to eq(server.id)
+  end
+
+  it 'gets an index' do
+    expect(OpenStackRubySDK::Nova::Server.all.count).to be >= 0
   end
 
   it 'updates its self' do
@@ -75,8 +61,9 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
   end
 
   it 'can be rescued' do
-    expect(server.rescue(image_id)['adminPass']).to be_present
+    expect(server.rescue(IMAGE_ID)['adminPass']).to be_present
     Peace::Helpers.wait_for(server, 'RESCUE')
+    expect(server.state).to eq('RESCUE')
   end
 
   it 'can be rebuilt' do
@@ -118,25 +105,31 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
   end
 
   it 'can attach a volume' do
-    attachment = server.attach_volume(volume_id)
-    expect(attachment.server_id).to eq(server.id)
-    expect(attachment.volume_id).to eq(volume_id)
+    a = server.attach_volume(volume.id)
+    Peace::Helpers.wait_for(volume, "in-use")
+    Peace::Helpers.wait_for(server)
+    expect(a.server_id).to eq(server.id)
+    expect(a.volume_id).to eq(volume.id)
   end
 
   it 'can deattach a volume' do
-    attachment = server.attach_volume(volume_id)
-    sleep 3 if VCR.current_cassette.recording?
-    server.reload
-    expect(server.detach_volume(volume_id)).to eq(true)
+    attachment = server.attach_volume(volume.id)
+    Peace::Helpers.wait_for(volume, "in-use")
+    Peace::Helpers.wait_for(server)
+    expect(server.detach_volume(volume.id)).to eq(true)
+    Peace::Helpers.wait_for(volume, "available")
+    Peace::Helpers.wait_for(server)
+    expect(server.volume_attachments).to eq([])
   end
 
   it 'can get details about volume attachments' do
-    server.attach_volume(volume_id)
-    server.reload
+    server.attach_volume(volume.id)
+    Peace::Helpers.wait_for(volume, "in-use")
+    Peace::Helpers.wait_for(server)
     attachments = server.volume_attachments
     expect(attachments.size).to eq(1)
     expect(attachments.first.server_id).to eq(server.id)
-    expect(attachments.first.volume_id).to eq(volume_id)
+    expect(attachments.first.volume_id).to eq(volume.id)
     expect(attachments.first.device).to be_present
   end
 

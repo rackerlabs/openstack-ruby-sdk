@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://172.99.87.154:8774/v2.1/4f8f44a4262041e0a2330fb59099f810/extensions
+    uri: http://172.99.88.174:8774/v2.1/0c5dd43034614366b9e4e47887f38228/servers
     body:
       encoding: US-ASCII
       string: ''
@@ -12,7 +12,178 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXjRhKzxZOt4rA7Ynlx2aSEK7ufyN805LEweSlxuf1IcD4MBSCziD0gkhm0FaVmdbsqLJIUqPqZYbORjjqxYvO_KrlkLM33o73uZzbtqIpb7Kj1-YKXLIpfkCk0fhaizQa2pNJAl0iyNwJXmOJfIA1e0RMEGV1ctpHqdkBKRreyohWORM
+      - gAAAAABXmULpAic6HcKaZyyGVTMCpgC5JGvWJ6ZZ_hwgWmJhjSuxOmpvmqC1w1yNKUbxay33MUyMaqPnHwXjH0Z7AcqvSU0vpl0P2701gjtqPJgPbLLi2g-1Jitu8tNc5IiiAPRG8yrxKZKxUCFHo1-7fgEGdcGN2HwywXNT912TDUjkfI7Eh2k
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '15'
+      Content-Type:
+      - application/json
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-6f7824df-48a0-4f80-9a87-7e181dbd3136
+      Date:
+      - Wed, 27 Jul 2016 23:25:43 GMT
+    body:
+      encoding: UTF-8
+      string: '{"servers": []}'
+    http_version: 
+  recorded_at: Wed, 27 Jul 2016 23:25:43 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXmULpAic6HcKaZyyGVTMCpgC5JGvWJ6ZZ_hwgWmJhjSuxOmpvmqC1w1yNKUbxay33MUyMaqPnHwXjH0Z7AcqvSU0vpl0P2701gjtqPJgPbLLi2g-1Jitu8tNc5IiiAPRG8yrxKZKxUCFHo1-7fgEGdcGN2HwywXNT912TDUjkfI7Eh2k
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-72b0d8ea-9a3a-4f63-8333-9eaa50030c43
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '754'
+      X-Openstack-Request-Id:
+      - req-72b0d8ea-9a3a-4f63-8333-9eaa50030c43
+      Date:
+      - Wed, 27 Jul 2016 23:25:43 GMT
+    body:
+      encoding: UTF-8
+      string: '{"volumes": [{"status": "creating", "display_name": null, "attachments":
+        [], "availability_zone": "nova", "bootable": "false", "encrypted": false,
+        "created_at": "2016-07-27T15:22:49.000000", "multiattach": "false", "display_description":
+        null, "volume_type": null, "snapshot_id": null, "source_volid": null, "metadata":
+        {}, "id": "c9123fff-3044-4e74-8759-1a2b2fecb452", "size": 10}, {"status":
+        "available", "display_name": null, "attachments": [], "availability_zone":
+        "nova", "bootable": "false", "encrypted": false, "created_at": "2016-07-27T01:30:17.000000",
+        "multiattach": "false", "display_description": null, "volume_type": null,
+        "snapshot_id": null, "source_volid": null, "metadata": {}, "id": "5e41e954-7a90-4ec5-959c-f153603f6c42",
+        "size": 10}]}'
+    http_version: 
+  recorded_at: Wed, 27 Jul 2016 23:25:43 GMT
+- request:
+    method: delete
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/c9123fff-3044-4e74-8759-1a2b2fecb452
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXmULpAic6HcKaZyyGVTMCpgC5JGvWJ6ZZ_hwgWmJhjSuxOmpvmqC1w1yNKUbxay33MUyMaqPnHwXjH0Z7AcqvSU0vpl0P2701gjtqPJgPbLLi2g-1Jitu8tNc5IiiAPRG8yrxKZKxUCFHo1-7fgEGdcGN2HwywXNT912TDUjkfI7Eh2k
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Openstack-Api-Version:
+      - '1.0'
+      Vary:
+      - OpenStack-API-Version
+      Content-Length:
+      - '224'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Compute-Request-Id:
+      - req-a6a71fd5-6535-45fa-b269-37dcdee2f39d
+      X-Openstack-Request-Id:
+      - req-a6a71fd5-6535-45fa-b269-37dcdee2f39d
+      Date:
+      - Wed, 27 Jul 2016 23:25:44 GMT
+    body:
+      encoding: UTF-8
+      string: '{"badRequest": {"message": "Invalid volume: Volume status must be available
+        or error or error_restoring or error_extending and must not be migrating,
+        attached, belong to a consistency group or have snapshots.", "code": 400}}'
+    http_version: 
+  recorded_at: Wed, 27 Jul 2016 23:25:44 GMT
+- request:
+    method: delete
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/5e41e954-7a90-4ec5-959c-f153603f6c42
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXmULpAic6HcKaZyyGVTMCpgC5JGvWJ6ZZ_hwgWmJhjSuxOmpvmqC1w1yNKUbxay33MUyMaqPnHwXjH0Z7AcqvSU0vpl0P2701gjtqPJgPbLLi2g-1Jitu8tNc5IiiAPRG8yrxKZKxUCFHo1-7fgEGdcGN2HwywXNT912TDUjkfI7Eh2k
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Openstack-Api-Version:
+      - '1.0'
+      Vary:
+      - OpenStack-API-Version
+      Content-Length:
+      - '224'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Compute-Request-Id:
+      - req-419291c1-1c26-438d-ba4e-78d01215a1dd
+      X-Openstack-Request-Id:
+      - req-419291c1-1c26-438d-ba4e-78d01215a1dd
+      Date:
+      - Wed, 27 Jul 2016 23:25:44 GMT
+    body:
+      encoding: UTF-8
+      string: '{"badRequest": {"message": "Invalid volume: Volume status must be available
+        or error or error_restoring or error_extending and must not be migrating,
+        attached, belong to a consistency group or have snapshots.", "code": 400}}'
+    http_version: 
+  recorded_at: Wed, 27 Jul 2016 23:25:44 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8774/v2.1/0c5dd43034614366b9e4e47887f38228/extensions
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXmULpAic6HcKaZyyGVTMCpgC5JGvWJ6ZZ_hwgWmJhjSuxOmpvmqC1w1yNKUbxay33MUyMaqPnHwXjH0Z7AcqvSU0vpl0P2701gjtqPJgPbLLi2g-1Jitu8tNc5IiiAPRG8yrxKZKxUCFHo1-7fgEGdcGN2HwywXNT912TDUjkfI7Eh2k
       Content-Type:
       - application/json
       User-Agent:
@@ -31,9 +202,9 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-812b23dd-7515-4ab5-bc0a-aa8c70721b22
+      - req-35b572c9-d389-47e7-9532-401d21323d2f
       Date:
-      - Mon, 18 Jul 2016 18:19:56 GMT
+      - Wed, 27 Jul 2016 23:25:44 GMT
     body:
       encoding: UTF-8
       string: '{"extensions": [{"updated": "2014-12-03T00:00:00Z", "name": "Multinic",
@@ -69,15 +240,15 @@ http_interactions:
         "http://docs.openstack.org/compute/ext/fake_xml", "alias": "os-access-ips",
         "description": "Access IPs support."}, {"updated": "2014-12-03T00:00:00Z",
         "name": "AdminActions", "links": [], "namespace": "http://docs.openstack.org/compute/ext/fake_xml",
-        "alias": "os-admin-actions", "description": "Enable admin-only server actions\n\n    Actions
-        include: resetNetwork, injectNetworkInfo, os-resetState\n    "}, {"updated":
-        "2014-12-03T00:00:00Z", "name": "AdminPassword", "links": [], "namespace":
-        "http://docs.openstack.org/compute/ext/fake_xml", "alias": "os-admin-password",
+        "alias": "os-<OS_USERNAME>-actions", "description": "Enable <OS_USERNAME>-only
+        server actions\n\n    Actions include: resetNetwork, injectNetworkInfo, os-resetState\n    "},
+        {"updated": "2014-12-03T00:00:00Z", "name": "AdminPassword", "links": [],
+        "namespace": "http://docs.openstack.org/compute/ext/fake_xml", "alias": "os-<OS_USERNAME>-password",
         "description": "Admin password management support."}, {"updated": "2014-12-03T00:00:00Z",
         "name": "Agents", "links": [], "namespace": "http://docs.openstack.org/compute/ext/fake_xml",
         "alias": "os-agents", "description": "Agents support."}, {"updated": "2014-12-03T00:00:00Z",
         "name": "Aggregates", "links": [], "namespace": "http://docs.openstack.org/compute/ext/fake_xml",
-        "alias": "os-aggregates", "description": "Admin-only aggregate administration."},
+        "alias": "os-aggregates", "description": "Admin-only aggregate <OS_USERNAME>istration."},
         {"updated": "2014-12-03T00:00:00Z", "name": "AssistedVolumeSnapshots", "links":
         [], "namespace": "http://docs.openstack.org/compute/ext/fake_xml", "alias":
         "os-assisted-volume-snapshots", "description": "Assisted volume snapshots."},
@@ -92,7 +263,7 @@ http_interactions:
         "os-baremetal-ext-status", "description": ""}, {"updated": "2014-12-03T00:00:00Z",
         "name": "BareMetalNodes", "links": [], "namespace": "http://docs.openstack.org/compute/ext/fake_xml",
         "alias": "os-baremetal-nodes", "description": "Admin-only bare-metal node
-        administration."}, {"updated": "2014-12-03T00:00:00Z", "name": "BlockDeviceMapping",
+        <OS_USERNAME>istration."}, {"updated": "2014-12-03T00:00:00Z", "name": "BlockDeviceMapping",
         "links": [], "namespace": "http://docs.openstack.org/compute/ext/fake_xml",
         "alias": "os-block-device-mapping", "description": "Block device mapping boot
         support."}, {"updated": "2014-12-03T00:00:00Z", "name": "BlockDeviceMappingV2Boot",
@@ -190,12 +361,12 @@ http_interactions:
         "http://docs.openstack.org/compute/ext/fake_xml", "alias": "os-hide-server-addresses",
         "description": "Support hiding server addresses in certain states."}, {"updated":
         "2014-12-03T00:00:00Z", "name": "Hosts", "links": [], "namespace": "http://docs.openstack.org/compute/ext/fake_xml",
-        "alias": "os-hosts", "description": "Admin-only host administration."}, {"updated":
-        "2014-12-03T00:00:00Z", "name": "HypervisorStatus", "links": [], "namespace":
-        "http://docs.openstack.org/compute/ext/fake_xml", "alias": "os-hypervisor-status",
+        "alias": "os-hosts", "description": "Admin-only host <OS_USERNAME>istration."},
+        {"updated": "2014-12-03T00:00:00Z", "name": "HypervisorStatus", "links": [],
+        "namespace": "http://docs.openstack.org/compute/ext/fake_xml", "alias": "os-hypervisor-status",
         "description": ""}, {"updated": "2014-12-03T00:00:00Z", "name": "Hypervisors",
         "links": [], "namespace": "http://docs.openstack.org/compute/ext/fake_xml",
-        "alias": "os-hypervisors", "description": "Admin-only hypervisor administration."},
+        "alias": "os-hypervisors", "description": "Admin-only hypervisor <OS_USERNAME>istration."},
         {"updated": "2014-12-03T00:00:00Z", "name": "InstanceActions", "links": [],
         "namespace": "http://docs.openstack.org/compute/ext/fake_xml", "alias": "os-instance-actions",
         "description": "View a log of actions and events taken on an instance."},
@@ -278,8 +449,8 @@ http_interactions:
         "os-used-limits", "description": "Provide data on limited resources that are
         being used."}, {"updated": "2014-12-03T00:00:00Z", "name": "UsedLimitsForAdmin",
         "links": [], "namespace": "http://docs.openstack.org/compute/ext/fake_xml",
-        "alias": "os-used-limits-for-admin", "description": ""}, {"updated": "2014-12-03T00:00:00Z",
-        "name": "UserData", "links": [], "namespace": "http://docs.openstack.org/compute/ext/fake_xml",
+        "alias": "os-used-limits-for-<OS_USERNAME>", "description": ""}, {"updated":
+        "2014-12-03T00:00:00Z", "name": "UserData", "links": [], "namespace": "http://docs.openstack.org/compute/ext/fake_xml",
         "alias": "os-user-data", "description": "Add user_data to the Create Server
         API."}, {"updated": "2014-12-03T00:00:00Z", "name": "UserQuotas", "links":
         [], "namespace": "http://docs.openstack.org/compute/ext/fake_xml", "alias":
@@ -292,5 +463,5 @@ http_interactions:
         "name": "Volumes", "links": [], "namespace": "http://docs.openstack.org/compute/ext/fake_xml",
         "alias": "os-volumes", "description": "Volumes support."}]}'
     http_version: 
-  recorded_at: Mon, 18 Jul 2016 18:19:56 GMT
+  recorded_at: Wed, 27 Jul 2016 23:25:44 GMT
 recorded_with: VCR 3.0.3

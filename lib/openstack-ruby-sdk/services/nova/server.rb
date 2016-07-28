@@ -95,7 +95,9 @@ class OpenStackRubySDK::Nova::Server
   end
 
   def volumes
-    OpenStackRubySDK::Nova::VolumeAttachment.all(server_id: id)
+    OpenStackRubySDK::Nova::VolumeAttachment.all(server_id: id).map do |va|
+      OpenStackRubySDK::Cinder::Volume.find(va.volume_id)
+    end
   end
 
   def save
