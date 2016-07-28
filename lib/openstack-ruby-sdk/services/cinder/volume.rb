@@ -13,6 +13,15 @@ class OpenStackRubySDK::Cinder::Volume
   attr_with_alias :migration_name_id, "os-vol-mig-status-attr:name_id"
   attr_with_alias :migration_status, "os-vol-mig-status-attr:migstat"
 
+  def take_snapshot!(name, description)
+    OpenStackRubySDK::Cinder::VolumeSnapshot.create({
+      name: name,
+      force: true,
+      volume_id: self.id,
+      description: description
+    })
+  end
+
   def detail
     self.reload
   end
