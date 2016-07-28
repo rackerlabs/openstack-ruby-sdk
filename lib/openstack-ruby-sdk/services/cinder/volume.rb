@@ -35,7 +35,8 @@ class OpenStackRubySDK::Cinder::Volume
     perform_action!(data)
   end
 
-  def unmanage
+  def unmanage!
+    perform_action!({ "os-unmanage": {} })
   end
 
   def attach_to(server)
@@ -46,12 +47,6 @@ class OpenStackRubySDK::Cinder::Volume
     att_id = self.attachments.first['attachment_id']
     data   = { "os-force_detach": { "attachment_id": "#{att_id}" } }
     perform_action!(data)
-  end
-
-  def promote
-  end
-
-  def reenable_replication
   end
 
   private

@@ -59,4 +59,9 @@ describe OpenStackRubySDK::Cinder::Volume, :vcr do
   it 'deletes its self' do
     expect(volume.destroy).to eq(true)
   end
+
+  it 'can unmanage its self' do
+    expect(volume.unmanage!).to eq(true)
+  end
+
 end
