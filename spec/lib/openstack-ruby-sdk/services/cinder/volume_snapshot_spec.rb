@@ -23,8 +23,4 @@ describe OpenStackRubySDK::Cinder::VolumeSnapshot, :vcr do
     expect(snapshot.name).to eq(title)
   end
 
-  # it 'gets its self' do
-  #   expect(OpenStackRubySDK::Cinder::VolumeSnapshot.find(volume_snapshot.id)).to eq(volume_snapshot)
-  # end
-  #
 end

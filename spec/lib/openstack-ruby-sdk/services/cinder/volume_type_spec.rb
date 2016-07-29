@@ -1,29 +1,22 @@
 require 'spec_helper'
 
 describe OpenStackRubySDK::Cinder::VolumeType, :vcr do
-  let(:volume_type){ OpenStackRubySDK::Cinder::VolumeType.new }
+  let(:volume_type){ OpenStackRubySDK::Cinder::VolumeType.first }
 
   it 'gets an index' do
-    expect(OpenStackRubySDK::Cinder::VolumeType.all).to eq([])
+    expect(OpenStackRubySDK::Cinder::VolumeType.all.count).to be >= 0
   end
 
-  it 'gets its self' do
-    expect(OpenStackRubySDK::Cinder::VolumeType.find(volume_type.id)).to eq(volume_type)
+  it 'grants access to a project' do
+    expect(volume_type.grant_access!(PROJECT_ID)).to eq(true)
   end
 
-  it 'creates its self' do
-    volume_type.name = Time.now.usec.to_s
-    expect(volume_type.save).to eq(true)
+  it 'removes access to a project' do
+    expect(volume_type.grant_access!(PROJECT_ID)).to eq(true)
+    expect(volume_type.revoke_access!(PROJECT_ID)).to eq(true)
   end
 
-  it 'updates its self' do
-    volume_type.name = Time.now.usec.to_s
-    expect(volume_type.save).to eq(true)
-    volume_type.name = Time.now.usec.to_s
-    expect(volume_type.save).to eq(true)
+  it 'has details' do
   end
 
-  it 'deletes its self' do
-    expect(volume_type.destroy).to eq(true)
-  end
 end

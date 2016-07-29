@@ -1,10 +1,21 @@
-class OpenStackRubySDK::Cinder::VolumeType  
+class OpenStackRubySDK::Cinder::VolumeType
   include Peace::Model
-  attr_accessor :description, :extra_specs, :id, :is_public, :name
-  # GET /v2/​{tenant_id}​/types
-  # POST /v2/​{tenant_id}​/types
-  # PUT /v2/​{tenant_id}​/types/​{volume_type_id}​
-  # PUT /v2/​{tenant_id}​/types/​{volume_type_id}​
-  # GET /v2/​{tenant_id}​/types/​{volume_type_id}​
-  # DELETE /v2/​{tenant_id}​/types/​{volume_type_id}​
+  attr_accessor :description, :extra_specs, :id, :name
+
+  attr_with_alias :is_public, "os-volume-type-access:is_public"
+  json_key_name :volume_types
+  rackspace_api_path "types"
+
+  def revoke_access!(project_id)
+    data = {"removeProjectAccess": { "project": "#{project_id}" }}
+    url  = "#{self.url}/action"
+    Peace::Request.post(url, data)
+  end
+
+  def grant_access!(project_id)
+    data = {"addProjectAccess": { "project": "#{project_id}" }}
+    url  = "#{self.url}/action"
+    Peace::Request.post(url, data)
+  end
+
 end

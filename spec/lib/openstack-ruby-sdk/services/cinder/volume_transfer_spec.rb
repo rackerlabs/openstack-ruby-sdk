@@ -1,29 +1,27 @@
 require 'spec_helper'
 
 describe OpenStackRubySDK::Cinder::VolumeTransfer, :vcr do
-  let(:volume_transfer){ OpenStackRubySDK::Cinder::VolumeTransfer.new }
+  let!(:volume) { fresh_volume }
+  let(:transfer) do
+    OpenStackRubySDK::Cinder::VolumeTransfer.create({
+      name: "testing",
+      volume_id: volume.id
+    })
+  end
+
+  it 'is creatable' do
+    expect(transfer.auth_key).to be_present
+  end
+
+  it 'is acceptable' do
+    expect(transfer.accept!(transfer.auth_key)).to eq(transfer)
+  end
 
   it 'gets an index' do
-    expect(OpenStackRubySDK::Cinder::VolumeTransfer.all).to eq([])
-  end
-
-  it 'gets its self' do
-    expect(OpenStackRubySDK::Cinder::VolumeTransfer.find(volume_transfer.id)).to eq(volume_transfer)
-  end
-
-  it 'creates its self' do
-    volume_transfer.name = Time.now.usec.to_s
-    expect(volume_transfer.save).to eq(true)
-  end
-
-  it 'updates its self' do
-    volume_transfer.name = Time.now.usec.to_s
-    expect(volume_transfer.save).to eq(true)
-    volume_transfer.name = Time.now.usec.to_s
-    expect(volume_transfer.save).to eq(true)
+    expect(OpenStackRubySDK::Cinder::VolumeTransfer.all.count).to be >= 0
   end
 
   it 'deletes its self' do
-    expect(volume_transfer.destroy).to eq(true)
+    expect(transfer.destroy).to eq(true)
   end
 end

@@ -4,8 +4,9 @@ require 'vcr'
 
 ENV['SDK']='openstack'
 
-FLAVOR_ID = '1'
-IMAGE_ID  = '62f213d9-634b-42b7-809d-f368ef33a3d4'
+FLAVOR_ID  = '1'
+IMAGE_ID   = '62f213d9-634b-42b7-809d-f368ef33a3d4'
+PROJECT_ID = '0c5dd43034614366b9e4e47887f38228'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
