@@ -17,5 +17,4 @@ class OpenStackRubySDK::Cinder::VolumeType
     url  = "#{self.url}/action"
     Peace::Request.post(url, data)
   end
-
 end

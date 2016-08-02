@@ -23,24 +23,24 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 28 Jul 2016 20:19:17 GMT
+      - Tue, 02 Aug 2016 16:20:26 GMT
       Server:
       - Apache
       Vary:
       - X-Auth-Token
       X-Openstack-Request-Id:
-      - req-e82e9262-7d04-4523-ae1c-1ad95fcd8378
+      - req-207b4a71-b206-4ac1-bd1f-51eb222161d7
       Content-Length:
       - '4396'
       Content-Type:
       - application/json
     body:
       encoding: UTF-8
-      string: '{"access": {"token": {"issued_at": "2016-07-28T20:19:17.000000Z", "expires":
-        "2016-07-29T08:19:17Z", "id": "gAAAAABXmmjFCGgakCGTUq3kT8byB5pPVBPlhTiACL2Ue7H7zsXsZInuddqVbisN0TpoS2lvk5q28sDUOTduN-ElCPwzPzL-lr0oiOfvc9JlhxJ1qHRLOS5rPxzN7XtZMr946OYENGWs4I8XeFzzMcFKUB9BgczT7TwiqSw_aAENgofVGXAqZ2o",
+      string: '{"access": {"token": {"issued_at": "2016-08-02T16:20:26.000000Z", "expires":
+        "2016-08-03T04:20:26Z", "id": "gAAAAABXoMhKCir4_TY8MVpaLWWwSy5XaM1cvgZoQ54c3BhmD_lNfPnG-N7cAZY_VbIw80Oryr-HaUzNCL76yA0OHAwTxg4OGLYvlRsqO9GWtiC5ITKiMxpl_QMTBNT2SlYqy4DI9A_-g4RYEpYtvwO3yKmaEBe6G7kxmPYGTNRxZtDZYaM8Q0g",
         "tenant": {"description": "Bootstrap project for initializing the cloud.",
         "enabled": true, "id": "0c5dd43034614366b9e4e47887f38228", "name": "<OS_USERNAME>"},
-        "audit_ids": ["e3IlHw4WSo6hN6vezt-iww"]}, "serviceCatalog": [{"endpoints":
+        "audit_ids": ["Xhfeyla_Sbusclvif6olZw"]}, "serviceCatalog": [{"endpoints":
         [{"<OS_USERNAME>URL": "http://172.29.236.100:8774/v2.1/0c5dd43034614366b9e4e47887f38228",
         "region": "RegionOne", "internalURL": "http://172.29.236.100:8774/v2.1/0c5dd43034614366b9e4e47887f38228",
         "id": "f3d5467f42f54ac78f4e80460aed3845", "publicURL": "http://172.99.88.174:8774/v2.1/0c5dd43034614366b9e4e47887f38228"}],
@@ -86,7 +86,7 @@ http_interactions:
         {"name": "heat_stack_owner"}], "name": "<OS_USERNAME>"}, "metadata": {"is_<OS_USERNAME>":
         0, "roles": ["c58244f321cd44c4a50bc4abe9f4653d", "a975e2506fcd4f81a376660e7b2cc5c8"]}}}'
     http_version: 
-  recorded_at: Thu, 28 Jul 2016 20:19:17 GMT
+  recorded_at: Tue, 02 Aug 2016 16:20:26 GMT
 - request:
     method: get
     uri: http://172.99.88.174:8774/v2.1/0c5dd43034614366b9e4e47887f38228/servers
@@ -99,7 +99,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmmjFCGgakCGTUq3kT8byB5pPVBPlhTiACL2Ue7H7zsXsZInuddqVbisN0TpoS2lvk5q28sDUOTduN-ElCPwzPzL-lr0oiOfvc9JlhxJ1qHRLOS5rPxzN7XtZMr946OYENGWs4I8XeFzzMcFKUB9BgczT7TwiqSw_aAENgofVGXAqZ2o
+      - gAAAAABXoMhKCir4_TY8MVpaLWWwSy5XaM1cvgZoQ54c3BhmD_lNfPnG-N7cAZY_VbIw80Oryr-HaUzNCL76yA0OHAwTxg4OGLYvlRsqO9GWtiC5ITKiMxpl_QMTBNT2SlYqy4DI9A_-g4RYEpYtvwO3yKmaEBe6G7kxmPYGTNRxZtDZYaM8Q0g
       Content-Type:
       - application/json
       User-Agent:
@@ -118,14 +118,14 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-c925fac9-258d-4939-b6d9-29ba7d590c25
+      - req-ce326325-6b03-40b8-937d-95c5a5a882aa
       Date:
-      - Thu, 28 Jul 2016 20:19:17 GMT
+      - Tue, 02 Aug 2016 16:20:27 GMT
     body:
       encoding: UTF-8
       string: '{"servers": []}'
     http_version: 
-  recorded_at: Thu, 28 Jul 2016 20:19:17 GMT
+  recorded_at: Tue, 02 Aug 2016 16:20:27 GMT
 - request:
     method: get
     uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes
@@ -138,7 +138,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmmjFCGgakCGTUq3kT8byB5pPVBPlhTiACL2Ue7H7zsXsZInuddqVbisN0TpoS2lvk5q28sDUOTduN-ElCPwzPzL-lr0oiOfvc9JlhxJ1qHRLOS5rPxzN7XtZMr946OYENGWs4I8XeFzzMcFKUB9BgczT7TwiqSw_aAENgofVGXAqZ2o
+      - gAAAAABXoMhKCir4_TY8MVpaLWWwSy5XaM1cvgZoQ54c3BhmD_lNfPnG-N7cAZY_VbIw80Oryr-HaUzNCL76yA0OHAwTxg4OGLYvlRsqO9GWtiC5ITKiMxpl_QMTBNT2SlYqy4DI9A_-g4RYEpYtvwO3yKmaEBe6G7kxmPYGTNRxZtDZYaM8Q0g
       Content-Type:
       - application/json
       User-Agent:
@@ -149,15 +149,15 @@ http_interactions:
       message: OK
     headers:
       X-Compute-Request-Id:
-      - req-e88f2d66-5738-409b-80aa-7d09df273e8d
+      - req-5e9dc7a9-ced7-4106-a052-5c9e6a1423b9
       Content-Type:
       - application/json
       Content-Length:
       - '2660'
       X-Openstack-Request-Id:
-      - req-e88f2d66-5738-409b-80aa-7d09df273e8d
+      - req-5e9dc7a9-ced7-4106-a052-5c9e6a1423b9
       Date:
-      - Thu, 28 Jul 2016 20:19:17 GMT
+      - Tue, 02 Aug 2016 16:20:27 GMT
     body:
       encoding: UTF-8
       string: '{"volumes": [{"status": "awaiting-transfer", "display_name": null,
@@ -194,7 +194,7 @@ http_interactions:
         "snapshot_id": null, "source_volid": null, "metadata": {}, "id": "5e41e954-7a90-4ec5-959c-f153603f6c42",
         "size": 10}]}'
     http_version: 
-  recorded_at: Thu, 28 Jul 2016 20:19:17 GMT
+  recorded_at: Tue, 02 Aug 2016 16:20:27 GMT
 - request:
     method: delete
     uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/894a9702-07df-4b1c-9423-5853bc4e0fa5
@@ -207,7 +207,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmmjFCGgakCGTUq3kT8byB5pPVBPlhTiACL2Ue7H7zsXsZInuddqVbisN0TpoS2lvk5q28sDUOTduN-ElCPwzPzL-lr0oiOfvc9JlhxJ1qHRLOS5rPxzN7XtZMr946OYENGWs4I8XeFzzMcFKUB9BgczT7TwiqSw_aAENgofVGXAqZ2o
+      - gAAAAABXoMhKCir4_TY8MVpaLWWwSy5XaM1cvgZoQ54c3BhmD_lNfPnG-N7cAZY_VbIw80Oryr-HaUzNCL76yA0OHAwTxg4OGLYvlRsqO9GWtiC5ITKiMxpl_QMTBNT2SlYqy4DI9A_-g4RYEpYtvwO3yKmaEBe6G7kxmPYGTNRxZtDZYaM8Q0g
       Content-Type:
       - application/json
       User-Agent:
@@ -226,18 +226,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       X-Compute-Request-Id:
-      - req-68537fc7-b5e2-4412-b6d3-0a0025e2bd45
+      - req-984b726e-087a-4d41-80a7-db31f47e2594
       X-Openstack-Request-Id:
-      - req-68537fc7-b5e2-4412-b6d3-0a0025e2bd45
+      - req-984b726e-087a-4d41-80a7-db31f47e2594
       Date:
-      - Thu, 28 Jul 2016 20:19:18 GMT
+      - Tue, 02 Aug 2016 16:20:27 GMT
     body:
       encoding: UTF-8
       string: '{"badRequest": {"message": "Invalid volume: Volume status must be available
         or error or error_restoring or error_extending and must not be migrating,
         attached, belong to a consistency group or have snapshots.", "code": 400}}'
     http_version: 
-  recorded_at: Thu, 28 Jul 2016 20:19:18 GMT
+  recorded_at: Tue, 02 Aug 2016 16:20:27 GMT
 - request:
     method: delete
     uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/8f236902-c05c-4c09-9b6f-e2eb11674b3b
@@ -250,7 +250,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmmjFCGgakCGTUq3kT8byB5pPVBPlhTiACL2Ue7H7zsXsZInuddqVbisN0TpoS2lvk5q28sDUOTduN-ElCPwzPzL-lr0oiOfvc9JlhxJ1qHRLOS5rPxzN7XtZMr946OYENGWs4I8XeFzzMcFKUB9BgczT7TwiqSw_aAENgofVGXAqZ2o
+      - gAAAAABXoMhKCir4_TY8MVpaLWWwSy5XaM1cvgZoQ54c3BhmD_lNfPnG-N7cAZY_VbIw80Oryr-HaUzNCL76yA0OHAwTxg4OGLYvlRsqO9GWtiC5ITKiMxpl_QMTBNT2SlYqy4DI9A_-g4RYEpYtvwO3yKmaEBe6G7kxmPYGTNRxZtDZYaM8Q0g
       Content-Type:
       - application/json
       User-Agent:
@@ -269,18 +269,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       X-Compute-Request-Id:
-      - req-a01a8cd8-a2c9-4bd1-8d57-09574d3a9aba
+      - req-8e82f8f8-8685-4775-958f-a74193becdcb
       X-Openstack-Request-Id:
-      - req-a01a8cd8-a2c9-4bd1-8d57-09574d3a9aba
+      - req-8e82f8f8-8685-4775-958f-a74193becdcb
       Date:
-      - Thu, 28 Jul 2016 20:19:18 GMT
+      - Tue, 02 Aug 2016 16:20:27 GMT
     body:
       encoding: UTF-8
       string: '{"badRequest": {"message": "Invalid volume: Volume status must be available
         or error or error_restoring or error_extending and must not be migrating,
         attached, belong to a consistency group or have snapshots.", "code": 400}}'
     http_version: 
-  recorded_at: Thu, 28 Jul 2016 20:19:18 GMT
+  recorded_at: Tue, 02 Aug 2016 16:20:27 GMT
 - request:
     method: delete
     uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/26f58f73-a0d6-44af-8c27-4a989fa7ce3c
@@ -293,7 +293,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmmjFCGgakCGTUq3kT8byB5pPVBPlhTiACL2Ue7H7zsXsZInuddqVbisN0TpoS2lvk5q28sDUOTduN-ElCPwzPzL-lr0oiOfvc9JlhxJ1qHRLOS5rPxzN7XtZMr946OYENGWs4I8XeFzzMcFKUB9BgczT7TwiqSw_aAENgofVGXAqZ2o
+      - gAAAAABXoMhKCir4_TY8MVpaLWWwSy5XaM1cvgZoQ54c3BhmD_lNfPnG-N7cAZY_VbIw80Oryr-HaUzNCL76yA0OHAwTxg4OGLYvlRsqO9GWtiC5ITKiMxpl_QMTBNT2SlYqy4DI9A_-g4RYEpYtvwO3yKmaEBe6G7kxmPYGTNRxZtDZYaM8Q0g
       Content-Type:
       - application/json
       User-Agent:
@@ -312,18 +312,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       X-Compute-Request-Id:
-      - req-b84e2b73-8739-4bbc-bc16-c15903ec5a12
+      - req-2e81da83-e9a7-43aa-a08d-e1f55df072be
       X-Openstack-Request-Id:
-      - req-b84e2b73-8739-4bbc-bc16-c15903ec5a12
+      - req-2e81da83-e9a7-43aa-a08d-e1f55df072be
       Date:
-      - Thu, 28 Jul 2016 20:19:18 GMT
+      - Tue, 02 Aug 2016 16:20:27 GMT
     body:
       encoding: UTF-8
       string: '{"badRequest": {"message": "Invalid volume: Volume status must be available
         or error or error_restoring or error_extending and must not be migrating,
         attached, belong to a consistency group or have snapshots.", "code": 400}}'
     http_version: 
-  recorded_at: Thu, 28 Jul 2016 20:19:18 GMT
+  recorded_at: Tue, 02 Aug 2016 16:20:27 GMT
 - request:
     method: delete
     uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/3db83706-d2de-404e-bd23-61d861f5d5a1
@@ -336,7 +336,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmmjFCGgakCGTUq3kT8byB5pPVBPlhTiACL2Ue7H7zsXsZInuddqVbisN0TpoS2lvk5q28sDUOTduN-ElCPwzPzL-lr0oiOfvc9JlhxJ1qHRLOS5rPxzN7XtZMr946OYENGWs4I8XeFzzMcFKUB9BgczT7TwiqSw_aAENgofVGXAqZ2o
+      - gAAAAABXoMhKCir4_TY8MVpaLWWwSy5XaM1cvgZoQ54c3BhmD_lNfPnG-N7cAZY_VbIw80Oryr-HaUzNCL76yA0OHAwTxg4OGLYvlRsqO9GWtiC5ITKiMxpl_QMTBNT2SlYqy4DI9A_-g4RYEpYtvwO3yKmaEBe6G7kxmPYGTNRxZtDZYaM8Q0g
       Content-Type:
       - application/json
       User-Agent:
@@ -355,18 +355,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       X-Compute-Request-Id:
-      - req-ebe65f7e-2dd1-4e19-a746-8d3bba0313e9
+      - req-95594692-0a7a-4a0b-aaac-2ff8a2e28f9a
       X-Openstack-Request-Id:
-      - req-ebe65f7e-2dd1-4e19-a746-8d3bba0313e9
+      - req-95594692-0a7a-4a0b-aaac-2ff8a2e28f9a
       Date:
-      - Thu, 28 Jul 2016 20:19:18 GMT
+      - Tue, 02 Aug 2016 16:20:27 GMT
     body:
       encoding: UTF-8
       string: '{"badRequest": {"message": "Invalid volume: Volume status must be available
         or error or error_restoring or error_extending and must not be migrating,
         attached, belong to a consistency group or have snapshots.", "code": 400}}'
     http_version: 
-  recorded_at: Thu, 28 Jul 2016 20:19:18 GMT
+  recorded_at: Tue, 02 Aug 2016 16:20:27 GMT
 - request:
     method: delete
     uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/f1066063-45c5-489f-9ee6-a64a59e5979d
@@ -379,7 +379,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmmjFCGgakCGTUq3kT8byB5pPVBPlhTiACL2Ue7H7zsXsZInuddqVbisN0TpoS2lvk5q28sDUOTduN-ElCPwzPzL-lr0oiOfvc9JlhxJ1qHRLOS5rPxzN7XtZMr946OYENGWs4I8XeFzzMcFKUB9BgczT7TwiqSw_aAENgofVGXAqZ2o
+      - gAAAAABXoMhKCir4_TY8MVpaLWWwSy5XaM1cvgZoQ54c3BhmD_lNfPnG-N7cAZY_VbIw80Oryr-HaUzNCL76yA0OHAwTxg4OGLYvlRsqO9GWtiC5ITKiMxpl_QMTBNT2SlYqy4DI9A_-g4RYEpYtvwO3yKmaEBe6G7kxmPYGTNRxZtDZYaM8Q0g
       Content-Type:
       - application/json
       User-Agent:
@@ -398,18 +398,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       X-Compute-Request-Id:
-      - req-c9d38c9f-de6c-4960-9b40-c7013cbab41d
+      - req-a87bf3d8-6de7-4cdf-928f-414928871351
       X-Openstack-Request-Id:
-      - req-c9d38c9f-de6c-4960-9b40-c7013cbab41d
+      - req-a87bf3d8-6de7-4cdf-928f-414928871351
       Date:
-      - Thu, 28 Jul 2016 20:19:18 GMT
+      - Tue, 02 Aug 2016 16:20:28 GMT
     body:
       encoding: UTF-8
       string: '{"badRequest": {"message": "Invalid volume: Volume status must be available
         or error or error_restoring or error_extending and must not be migrating,
         attached, belong to a consistency group or have snapshots.", "code": 400}}'
     http_version: 
-  recorded_at: Thu, 28 Jul 2016 20:19:18 GMT
+  recorded_at: Tue, 02 Aug 2016 16:20:27 GMT
 - request:
     method: delete
     uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/c9123fff-3044-4e74-8759-1a2b2fecb452
@@ -422,7 +422,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmmjFCGgakCGTUq3kT8byB5pPVBPlhTiACL2Ue7H7zsXsZInuddqVbisN0TpoS2lvk5q28sDUOTduN-ElCPwzPzL-lr0oiOfvc9JlhxJ1qHRLOS5rPxzN7XtZMr946OYENGWs4I8XeFzzMcFKUB9BgczT7TwiqSw_aAENgofVGXAqZ2o
+      - gAAAAABXoMhKCir4_TY8MVpaLWWwSy5XaM1cvgZoQ54c3BhmD_lNfPnG-N7cAZY_VbIw80Oryr-HaUzNCL76yA0OHAwTxg4OGLYvlRsqO9GWtiC5ITKiMxpl_QMTBNT2SlYqy4DI9A_-g4RYEpYtvwO3yKmaEBe6G7kxmPYGTNRxZtDZYaM8Q0g
       Content-Type:
       - application/json
       User-Agent:
@@ -441,18 +441,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       X-Compute-Request-Id:
-      - req-72789858-dceb-4abe-a0b5-d390cde5319f
+      - req-9f436d40-108a-4a78-b7a6-7c71e4c20a30
       X-Openstack-Request-Id:
-      - req-72789858-dceb-4abe-a0b5-d390cde5319f
+      - req-9f436d40-108a-4a78-b7a6-7c71e4c20a30
       Date:
-      - Thu, 28 Jul 2016 20:19:18 GMT
+      - Tue, 02 Aug 2016 16:20:28 GMT
     body:
       encoding: UTF-8
       string: '{"badRequest": {"message": "Invalid volume: Volume status must be available
         or error or error_restoring or error_extending and must not be migrating,
         attached, belong to a consistency group or have snapshots.", "code": 400}}'
     http_version: 
-  recorded_at: Thu, 28 Jul 2016 20:19:18 GMT
+  recorded_at: Tue, 02 Aug 2016 16:20:28 GMT
 - request:
     method: delete
     uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/5e41e954-7a90-4ec5-959c-f153603f6c42
@@ -465,7 +465,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmmjFCGgakCGTUq3kT8byB5pPVBPlhTiACL2Ue7H7zsXsZInuddqVbisN0TpoS2lvk5q28sDUOTduN-ElCPwzPzL-lr0oiOfvc9JlhxJ1qHRLOS5rPxzN7XtZMr946OYENGWs4I8XeFzzMcFKUB9BgczT7TwiqSw_aAENgofVGXAqZ2o
+      - gAAAAABXoMhKCir4_TY8MVpaLWWwSy5XaM1cvgZoQ54c3BhmD_lNfPnG-N7cAZY_VbIw80Oryr-HaUzNCL76yA0OHAwTxg4OGLYvlRsqO9GWtiC5ITKiMxpl_QMTBNT2SlYqy4DI9A_-g4RYEpYtvwO3yKmaEBe6G7kxmPYGTNRxZtDZYaM8Q0g
       Content-Type:
       - application/json
       User-Agent:
@@ -484,18 +484,18 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       X-Compute-Request-Id:
-      - req-0fe37656-0b6b-4126-81b9-9db383f1b94c
+      - req-ea738d95-936c-4092-90b4-97e15fce0c1e
       X-Openstack-Request-Id:
-      - req-0fe37656-0b6b-4126-81b9-9db383f1b94c
+      - req-ea738d95-936c-4092-90b4-97e15fce0c1e
       Date:
-      - Thu, 28 Jul 2016 20:19:19 GMT
+      - Tue, 02 Aug 2016 16:20:28 GMT
     body:
       encoding: UTF-8
       string: '{"badRequest": {"message": "Invalid volume: Volume status must be available
         or error or error_restoring or error_extending and must not be migrating,
         attached, belong to a consistency group or have snapshots.", "code": 400}}'
     http_version: 
-  recorded_at: Thu, 28 Jul 2016 20:19:19 GMT
+  recorded_at: Tue, 02 Aug 2016 16:20:28 GMT
 - request:
     method: get
     uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/snapshots
@@ -508,7 +508,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmmjFCGgakCGTUq3kT8byB5pPVBPlhTiACL2Ue7H7zsXsZInuddqVbisN0TpoS2lvk5q28sDUOTduN-ElCPwzPzL-lr0oiOfvc9JlhxJ1qHRLOS5rPxzN7XtZMr946OYENGWs4I8XeFzzMcFKUB9BgczT7TwiqSw_aAENgofVGXAqZ2o
+      - gAAAAABXoMhKCir4_TY8MVpaLWWwSy5XaM1cvgZoQ54c3BhmD_lNfPnG-N7cAZY_VbIw80Oryr-HaUzNCL76yA0OHAwTxg4OGLYvlRsqO9GWtiC5ITKiMxpl_QMTBNT2SlYqy4DI9A_-g4RYEpYtvwO3yKmaEBe6G7kxmPYGTNRxZtDZYaM8Q0g
       Content-Type:
       - application/json
       User-Agent:
@@ -519,15 +519,15 @@ http_interactions:
       message: OK
     headers:
       X-Compute-Request-Id:
-      - req-9f4fb6c5-0c37-49d4-8ae4-2220796067e4
+      - req-52cfc420-9b38-45aa-92b7-98ac7394439e
       Content-Type:
       - application/json
       Content-Length:
       - '287'
       X-Openstack-Request-Id:
-      - req-9f4fb6c5-0c37-49d4-8ae4-2220796067e4
+      - req-52cfc420-9b38-45aa-92b7-98ac7394439e
       Date:
-      - Thu, 28 Jul 2016 20:19:19 GMT
+      - Tue, 02 Aug 2016 16:20:28 GMT
     body:
       encoding: UTF-8
       string: '{"snapshots": [{"status": "available", "display_name": "Something different",
@@ -535,7 +535,7 @@ http_interactions:
         "volume_id": "26f58f73-a0d6-44af-8c27-4a989fa7ce3c", "metadata": {}, "id":
         "3f17b079-bdee-4f56-b5f1-dd6a50f4a0d3", "size": 1}]}'
     http_version: 
-  recorded_at: Thu, 28 Jul 2016 20:19:19 GMT
+  recorded_at: Tue, 02 Aug 2016 16:20:28 GMT
 - request:
     method: get
     uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/types
@@ -548,7 +548,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXmmjFCGgakCGTUq3kT8byB5pPVBPlhTiACL2Ue7H7zsXsZInuddqVbisN0TpoS2lvk5q28sDUOTduN-ElCPwzPzL-lr0oiOfvc9JlhxJ1qHRLOS5rPxzN7XtZMr946OYENGWs4I8XeFzzMcFKUB9BgczT7TwiqSw_aAENgofVGXAqZ2o
+      - gAAAAABXoMhKCir4_TY8MVpaLWWwSy5XaM1cvgZoQ54c3BhmD_lNfPnG-N7cAZY_VbIw80Oryr-HaUzNCL76yA0OHAwTxg4OGLYvlRsqO9GWtiC5ITKiMxpl_QMTBNT2SlYqy4DI9A_-g4RYEpYtvwO3yKmaEBe6G7kxmPYGTNRxZtDZYaM8Q0g
       Content-Type:
       - application/json
       User-Agent:
@@ -559,20 +559,20 @@ http_interactions:
       message: OK
     headers:
       X-Compute-Request-Id:
-      - req-0a8ede02-5efc-4e84-aff5-eb23fcd9c590
+      - req-4aa58abc-f94a-4f5a-a400-c98a71d55d83
       Content-Type:
       - application/json
       Content-Length:
       - '215'
       X-Openstack-Request-Id:
-      - req-0a8ede02-5efc-4e84-aff5-eb23fcd9c590
+      - req-4aa58abc-f94a-4f5a-a400-c98a71d55d83
       Date:
-      - Thu, 28 Jul 2016 20:19:19 GMT
+      - Tue, 02 Aug 2016 16:20:28 GMT
     body:
       encoding: UTF-8
       string: '{"volume_types": [{"name": "lvm", "extra_specs": {"volume_backend_name":
         "LVM_iSCSI"}, "os-volume-type-access:is_public": true, "is_public": true,
         "id": "f5f71d6d-47a6-4e60-bb16-e54b46493066", "description": null}]}'
     http_version: 
-  recorded_at: Thu, 28 Jul 2016 20:19:19 GMT
+  recorded_at: Tue, 02 Aug 2016 16:20:28 GMT
 recorded_with: VCR 3.0.3
