@@ -1,0 +1,1307 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<OS_AUTH_URL>"
+    body:
+      encoding: UTF-8
+      string: '{"auth":{"tenantName":"<OS_USERNAME>","passwordCredentials":{"username":"<OS_USERNAME>","password":"<OS_PASSWORD>"}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '147'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 04 Aug 2016 14:23:27 GMT
+      Server:
+      - Apache
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-178ce4ab-f5c0-4d1e-b591-7b17edc6b911
+      Content-Length:
+      - '4396'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"access": {"token": {"issued_at": "2016-08-04T14:23:27.000000Z", "expires":
+        "2016-08-05T02:23:27Z", "id": "gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ",
+        "tenant": {"description": "Bootstrap project for initializing the cloud.",
+        "enabled": true, "id": "0c5dd43034614366b9e4e47887f38228", "name": "<OS_USERNAME>"},
+        "audit_ids": ["U4vmCF2eQjy2l4qPxGcU6Q"]}, "serviceCatalog": [{"endpoints":
+        [{"<OS_USERNAME>URL": "http://172.29.236.100:8774/v2.1/0c5dd43034614366b9e4e47887f38228",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8774/v2.1/0c5dd43034614366b9e4e47887f38228",
+        "id": "f3d5467f42f54ac78f4e80460aed3845", "publicURL": "http://172.99.88.174:8774/v2.1/0c5dd43034614366b9e4e47887f38228"}],
+        "endpoints_links": [], "type": "compute", "name": "nova"}, {"endpoints": [{"<OS_USERNAME>URL":
+        "http://172.29.236.100:9696", "region": "RegionOne", "internalURL": "http://172.29.236.100:9696",
+        "id": "53f61e5b43204db09b362e75d87f5f7d", "publicURL": "http://172.99.88.174:9696"}],
+        "endpoints_links": [], "type": "network", "name": "neutron"}, {"endpoints":
+        [{"<OS_USERNAME>URL": "http://172.29.236.100:8776/v2/0c5dd43034614366b9e4e47887f38228",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8776/v2/0c5dd43034614366b9e4e47887f38228",
+        "id": "1a5716b5ecfd400fb33745e639a29126", "publicURL": "http://172.99.88.174:8776/v2/0c5dd43034614366b9e4e47887f38228"}],
+        "endpoints_links": [], "type": "volumev2", "name": "cinderv2"}, {"endpoints":
+        [{"<OS_USERNAME>URL": "http://172.29.236.100:8042", "region": "RegionOne",
+        "internalURL": "http://172.29.236.100:8042", "id": "4b59dc377737480389b3cf9f27a2abed",
+        "publicURL": "http://172.99.88.174:8042"}], "endpoints_links": [], "type":
+        "alarming", "name": "aodh"}, {"endpoints": [{"<OS_USERNAME>URL": "http://172.29.236.100:9292",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:9292", "id":
+        "2c42bd5b729c489ca1a8862257019668", "publicURL": "http://172.99.88.174:9292"}],
+        "endpoints_links": [], "type": "image", "name": "glance"}, {"endpoints": [{"<OS_USERNAME>URL":
+        "http://172.29.236.100:8777/", "region": "RegionOne", "internalURL": "http://172.29.236.100:8777",
+        "id": "7ffe44d1288a427ab17d5672deaad32e", "publicURL": "http://172.99.88.174:8777"}],
+        "endpoints_links": [], "type": "metering", "name": "ceilometer"}, {"endpoints":
+        [{"<OS_USERNAME>URL": "http://172.29.236.100:8000/v1", "region": "RegionOne",
+        "internalURL": "http://172.29.236.100:8000/v1", "id": "0cb5655415314caf80cffb919c17ca53",
+        "publicURL": "http://172.99.88.174:8000/v1"}], "endpoints_links": [], "type":
+        "cloudformation", "name": "heat-cfn"}, {"endpoints": [{"<OS_USERNAME>URL":
+        "http://172.29.236.100:8776/v1/0c5dd43034614366b9e4e47887f38228", "region":
+        "RegionOne", "internalURL": "http://172.29.236.100:8776/v1/0c5dd43034614366b9e4e47887f38228",
+        "id": "2c738973cb864d67ad9e5497f7e264c5", "publicURL": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228"}],
+        "endpoints_links": [], "type": "volume", "name": "cinder"}, {"endpoints":
+        [{"<OS_USERNAME>URL": "http://172.29.236.100:8004/v1/0c5dd43034614366b9e4e47887f38228",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8004/v1/0c5dd43034614366b9e4e47887f38228",
+        "id": "5397c7ee7bbb4736afa7567ee116810b", "publicURL": "http://172.99.88.174:8004/v1/0c5dd43034614366b9e4e47887f38228"}],
+        "endpoints_links": [], "type": "orchestration", "name": "heat"}, {"endpoints":
+        [{"<OS_USERNAME>URL": "http://172.29.236.100:8080/v1/AUTH_0c5dd43034614366b9e4e47887f38228",
+        "region": "RegionOne", "internalURL": "http://172.29.236.100:8080/v1/AUTH_0c5dd43034614366b9e4e47887f38228",
+        "id": "1471ebbe7abe44a4813514dc3e35249b", "publicURL": "http://172.99.88.174:8080/v1/AUTH_0c5dd43034614366b9e4e47887f38228"}],
+        "endpoints_links": [], "type": "object-store", "name": "swift"}, {"endpoints":
+        [{"<OS_USERNAME>URL": "http://172.29.236.100:35357/v3", "region": "RegionOne",
+        "internalURL": "http://172.29.236.100:5000/v3", "id": "469599dd0008461b90e05db5b47efb8b",
+        "publicURL": "http://172.99.88.174:5000/v3"}], "endpoints_links": [], "type":
+        "identity", "name": "keystone"}], "user": {"username": "<OS_USERNAME>", "roles_links":
+        [], "id": "65289af47327447b8e3bfce09278f7e7", "roles": [{"name": "<OS_USERNAME>"},
+        {"name": "heat_stack_owner"}], "name": "<OS_USERNAME>"}, "metadata": {"is_<OS_USERNAME>":
+        0, "roles": ["c58244f321cd44c4a50bc4abe9f4653d", "a975e2506fcd4f81a376660e7b2cc5c8"]}}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:26 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8774/v2.1/0c5dd43034614366b9e4e47887f38228/servers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Length:
+      - '15'
+      Content-Type:
+      - application/json
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-a3cc6024-36b9-4fe6-9224-ca1f6eea304f
+      Date:
+      - Thu, 04 Aug 2016 14:23:27 GMT
+    body:
+      encoding: UTF-8
+      string: '{"servers": []}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:26 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-b8f676b7-3d68-4c46-a8ce-4c478295f7db
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '383'
+      X-Openstack-Request-Id:
+      - req-b8f676b7-3d68-4c46-a8ce-4c478295f7db
+      Date:
+      - Thu, 04 Aug 2016 14:23:28 GMT
+    body:
+      encoding: UTF-8
+      string: '{"volumes": [{"status": "available", "display_name": null, "attachments":
+        [], "availability_zone": "nova", "bootable": "false", "encrypted": false,
+        "created_at": "2016-08-04T14:21:55.000000", "multiattach": "false", "display_description":
+        null, "volume_type": null, "snapshot_id": null, "source_volid": null, "metadata":
+        {}, "id": "977374e0-803d-44be-9585-c16359e283b2", "size": 1}]}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:26 GMT
+- request:
+    method: delete
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/977374e0-803d-44be-9585-c16359e283b2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-Length:
+      - '0'
+      X-Openstack-Request-Id:
+      - req-c7cc5f7d-eeb4-4c1a-86e7-34bc95446053
+      Date:
+      - Thu, 04 Aug 2016 14:23:28 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:27 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/snapshots
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-7def1d82-f530-453e-9835-3502a017eaf4
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '17'
+      X-Openstack-Request-Id:
+      - req-7def1d82-f530-453e-9835-3502a017eaf4
+      Date:
+      - Thu, 04 Aug 2016 14:23:28 GMT
+    body:
+      encoding: UTF-8
+      string: '{"snapshots": []}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:27 GMT
+- request:
+    method: post
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes
+    body:
+      encoding: UTF-8
+      string: '{"volume":{"size":"1","name":"256441"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '39'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-08d7bb87-9ece-41bb-a834-35a5305b0881
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '379'
+      X-Openstack-Request-Id:
+      - req-08d7bb87-9ece-41bb-a834-35a5305b0881
+      Date:
+      - Thu, 04 Aug 2016 14:23:28 GMT
+    body:
+      encoding: UTF-8
+      string: '{"volume": {"status": "creating", "display_name": null, "attachments":
+        [], "availability_zone": "nova", "bootable": "false", "encrypted": false,
+        "created_at": "2016-08-04T14:23:28.533194", "multiattach": "false", "display_description":
+        null, "volume_type": null, "snapshot_id": null, "source_volid": null, "metadata":
+        {}, "id": "c525d6e1-0678-4af2-af24-119b502a5a09", "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:27 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/volumes/c525d6e1-0678-4af2-af24-119b502a5a09
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-1981eab0-dc18-4615-b76f-20fa304d7aa4
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '575'
+      X-Openstack-Request-Id:
+      - req-1981eab0-dc18-4615-b76f-20fa304d7aa4
+      Date:
+      - Thu, 04 Aug 2016 14:23:29 GMT
+    body:
+      encoding: UTF-8
+      string: '{"volume": {"status": "available", "display_name": null, "attachments":
+        [], "availability_zone": "nova", "bootable": "false", "encrypted": false,
+        "created_at": "2016-08-04T14:23:28.000000", "multiattach": "false", "os-vol-tenant-attr:tenant_id":
+        "0c5dd43034614366b9e4e47887f38228", "display_description": null, "os-vol-host-attr:host":
+        "osux@lvm#LVM_iSCSI", "volume_type": null, "snapshot_id": null, "source_volid":
+        null, "os-vol-mig-status-attr:name_id": null, "metadata": {}, "id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "os-vol-mig-status-attr:migstat": null, "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:28 GMT
+- request:
+    method: post
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups
+    body:
+      encoding: UTF-8
+      string: '{"backup":{"description":"description","name":"name","volume_id":"c525d6e1-0678-4af2-af24-119b502a5a09","incremental":false}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '125'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      X-Compute-Request-Id:
+      - req-bebd2b84-9481-4d86-9818-c38482825bc8
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '356'
+      X-Openstack-Request-Id:
+      - req-bebd2b84-9481-4d86-9818-c38482825bc8
+      Date:
+      - Thu, 04 Aug 2016 14:23:32 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"id": "5c986c65-c5c8-4071-89da-1a86e73d165f", "links":
+        [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "name": "name"}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:31 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-bca0c8ff-539c-4375-a0c2-4db63ef7246d
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '774'
+      X-Openstack-Request-Id:
+      - req-bca0c8ff-539c-4375-a0c2-4db63ef7246d
+      Date:
+      - Thu, 04 Aug 2016 14:23:32 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": null,
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:32.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:31 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-19d16372-97fe-4911-a501-a2d95162be7e
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '774'
+      X-Openstack-Request-Id:
+      - req-19d16372-97fe-4911-a501-a2d95162be7e
+      Date:
+      - Thu, 04 Aug 2016 14:23:33 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": null,
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:32.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:32 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-00ddcd27-0012-4248-8f1f-c55ca7adefc1
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '774'
+      X-Openstack-Request-Id:
+      - req-00ddcd27-0012-4248-8f1f-c55ca7adefc1
+      Date:
+      - Thu, 04 Aug 2016 14:23:35 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": null,
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:32.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:33 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-d7a4ad0a-3550-49ba-8aff-3d52ab4770fe
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '785'
+      X-Openstack-Request-Id:
+      - req-d7a4ad0a-3550-49ba-8aff-3d52ab4770fe
+      Date:
+      - Thu, 04 Aug 2016 14:23:36 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": "volumebackups",
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:35.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:35 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-b76f17f1-67ea-4023-9d58-70bc2f4df9b1
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '785'
+      X-Openstack-Request-Id:
+      - req-b76f17f1-67ea-4023-9d58-70bc2f4df9b1
+      Date:
+      - Thu, 04 Aug 2016 14:23:37 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": "volumebackups",
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:35.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:36 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-f0170a9a-058f-45be-b46d-f6ba84726178
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '785'
+      X-Openstack-Request-Id:
+      - req-f0170a9a-058f-45be-b46d-f6ba84726178
+      Date:
+      - Thu, 04 Aug 2016 14:23:38 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": "volumebackups",
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:35.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:37 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-2136072f-4c3d-43e1-bafe-4c380d494607
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '785'
+      X-Openstack-Request-Id:
+      - req-2136072f-4c3d-43e1-bafe-4c380d494607
+      Date:
+      - Thu, 04 Aug 2016 14:23:39 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": "volumebackups",
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:35.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:38 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-98e8cdf5-4615-4c88-ae4c-a335e7454973
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '785'
+      X-Openstack-Request-Id:
+      - req-98e8cdf5-4615-4c88-ae4c-a335e7454973
+      Date:
+      - Thu, 04 Aug 2016 14:23:40 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": "volumebackups",
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:35.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:39 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-ab2809b0-65e7-4e64-b828-febbe1e50b32
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '785'
+      X-Openstack-Request-Id:
+      - req-ab2809b0-65e7-4e64-b828-febbe1e50b32
+      Date:
+      - Thu, 04 Aug 2016 14:23:41 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": "volumebackups",
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:35.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:40 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-1e1354e6-72cf-496c-bd97-e3bdeb318ea6
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '785'
+      X-Openstack-Request-Id:
+      - req-1e1354e6-72cf-496c-bd97-e3bdeb318ea6
+      Date:
+      - Thu, 04 Aug 2016 14:23:43 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": "volumebackups",
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:35.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:41 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-59aec340-bd3a-4d00-b2fd-cec929f607d4
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '785'
+      X-Openstack-Request-Id:
+      - req-59aec340-bd3a-4d00-b2fd-cec929f607d4
+      Date:
+      - Thu, 04 Aug 2016 14:23:44 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": "volumebackups",
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:35.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:43 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-cdcde343-b60e-4a13-8765-57dc3010ba13
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '785'
+      X-Openstack-Request-Id:
+      - req-cdcde343-b60e-4a13-8765-57dc3010ba13
+      Date:
+      - Thu, 04 Aug 2016 14:23:45 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": "volumebackups",
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:35.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:44 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-d6cc0c4e-b78e-4dc8-80f7-385d523bd6c2
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '785'
+      X-Openstack-Request-Id:
+      - req-d6cc0c4e-b78e-4dc8-80f7-385d523bd6c2
+      Date:
+      - Thu, 04 Aug 2016 14:23:46 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": "volumebackups",
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:35.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:45 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-2860cc9a-3b36-4a14-a676-71908b963307
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '785'
+      X-Openstack-Request-Id:
+      - req-2860cc9a-3b36-4a14-a676-71908b963307
+      Date:
+      - Thu, 04 Aug 2016 14:23:47 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": "volumebackups",
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:35.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:46 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-a9f8db21-5746-4af9-ae2d-88d0cc111b0c
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '785'
+      X-Openstack-Request-Id:
+      - req-a9f8db21-5746-4af9-ae2d-88d0cc111b0c
+      Date:
+      - Thu, 04 Aug 2016 14:23:48 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": "volumebackups",
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:35.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:47 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-f2def4e3-2653-491d-b0e6-91401a3379ba
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '785'
+      X-Openstack-Request-Id:
+      - req-f2def4e3-2653-491d-b0e6-91401a3379ba
+      Date:
+      - Thu, 04 Aug 2016 14:23:49 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": "volumebackups",
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:35.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:48 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-b0b390bc-1a55-403f-a8e8-0a2facdc90d0
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '785'
+      X-Openstack-Request-Id:
+      - req-b0b390bc-1a55-403f-a8e8-0a2facdc90d0
+      Date:
+      - Thu, 04 Aug 2016 14:23:51 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": "volumebackups",
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:35.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:49 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-951dac6c-1cdf-4ca3-9268-ece6c382a1c6
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '785'
+      X-Openstack-Request-Id:
+      - req-951dac6c-1cdf-4ca3-9268-ece6c382a1c6
+      Date:
+      - Thu, 04 Aug 2016 14:23:52 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 0, "container": "volumebackups",
+        "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:35.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:51 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-22298b91-9994-407c-b540-01057c985c08
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '786'
+      X-Openstack-Request-Id:
+      - req-22298b91-9994-407c-b540-01057c985c08
+      Date:
+      - Thu, 04 Aug 2016 14:23:53 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "creating", "object_count": 22, "container":
+        "volumebackups", "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:52.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:52 GMT
+- request:
+    method: get
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-71e105ba-2855-451f-a6ff-6a1ac46774b1
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '787'
+      X-Openstack-Request-Id:
+      - req-71e105ba-2855-451f-a6ff-6a1ac46774b1
+      Date:
+      - Thu, 04 Aug 2016 14:23:54 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backup": {"status": "available", "object_count": 22, "container":
+        "volumebackups", "name": "name", "links": [{"href": "http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "self"}, {"href": "http://172.99.88.174:8776/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "rel": "bookmark"}], "availability_zone": "nova", "created_at": "2016-08-04T14:23:32.000000",
+        "description": "description", "updated_at": "2016-08-04T14:23:53.000000",
+        "data_timestamp": "2016-08-04T14:23:32.000000", "has_dependent_backups": false,
+        "snapshot_id": null, "volume_id": "c525d6e1-0678-4af2-af24-119b502a5a09",
+        "fail_reason": null, "is_incremental": false, "id": "5c986c65-c5c8-4071-89da-1a86e73d165f",
+        "size": 1}}'
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:53 GMT
+- request:
+    method: post
+    uri: http://172.99.88.174:8776/v1/0c5dd43034614366b9e4e47887f38228/backups/5c986c65-c5c8-4071-89da-1a86e73d165f/action
+    body:
+      encoding: UTF-8
+      string: '{"os-force_delete":{}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXo0_fZxjWt3YdN_xi5JXHcjL5bLYqa_IYwfAJou_VcAAb9q5kTZdGDjpPqDwS04mGhFppLlbtCsup7hIIbXuTf8BbKXEnkD25aHoR63DEoDkjQGV09fjYIAv1s1VfTR-cBJa4z4qX1Y-fxmD6-DnCdCAFOkQMm8M3ZKwqNSu8hk6MzOQ
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '22'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 202
+      message: Accepted
+    headers:
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-Length:
+      - '0'
+      X-Openstack-Request-Id:
+      - req-5d563392-5093-4c2a-af32-f908026d4d88
+      Date:
+      - Thu, 04 Aug 2016 14:23:54 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 04 Aug 2016 14:23:53 GMT
+recorded_with: VCR 3.0.3

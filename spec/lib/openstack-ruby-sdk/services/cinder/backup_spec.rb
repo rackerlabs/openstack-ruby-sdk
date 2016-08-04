@@ -38,4 +38,9 @@ describe OpenStackRubySDK::Cinder::Backup, :vcr do
     expect(restore["restore"]["backup_id"]).to eq(backup.id)
     expect(restore["restore"]["volume_id"]).to eq(volume.id)
   end
+
+  it 'force-deletes its self' do
+    Peace::Helpers.wait_for(backup, "available")
+    expect(backup.force_delete!).to eq(true)
+  end
 end

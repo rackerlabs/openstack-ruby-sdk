@@ -4,13 +4,6 @@ class OpenStackRubySDK::Cinder::Backup
 
   attr_with_alias :state, :status
 
-  # POST /v2/​{tenant_id}​/backups
-  # GET /v2/​{tenant_id}​/backups
-  # GET /v2/​{tenant_id}​/backups/detail
-  # GET /v2/​{tenant_id}​/backups/​{backup_id}​
-  # DELETE /v2/​{tenant_id}​/backups/​{backup_id}​
-  # POST /v2/​{tenant_id}​/backups/​{backup_id}​/restore
-
   def create(opts={})
     data = Peace::Helpers.payload_builder("backup", {
       container: nil,
@@ -28,8 +21,14 @@ class OpenStackRubySDK::Cinder::Backup
   end
 
   def restore!(volume)
+    url  = "#{self.url}/restore"
     data = { restore: { backup_id: self.id, volume_id: volume.id } }
-    url = "#{self.url}/restore"
+    Peace::Request.post(url, data)
+  end
+
+  def force_delete!
+    url  = "#{self.url}/action"
+    data = { "os-force_delete": {} }
     Peace::Request.post(url, data)
   end
 end
