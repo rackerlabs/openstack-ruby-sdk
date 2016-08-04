@@ -1,5 +1,6 @@
 class OpenStackRubySDK::Cinder::Backup
   include Peace::Model
+  
   attr_accessor :availability_zone, :container, :created_at, :description, :fail_reason, :has_dependent_backups, :id, :is_incremental, :links, :name, :object_count, :size, :status, :volume_id, :updated_at, :data_timestamp, :snapshot_id
 
   attr_with_alias :state, :status
