@@ -1,29 +1,34 @@
 require 'spec_helper'
 
 describe OpenStackRubySDK::Cinder::Backup, :vcr do
-  let(:backup){ OpenStackRubySDK::Cinder::Backup.new }
+  let(:volume){ fresh_volume}
+  let(:backup) do
+    OpenStackRubySDK::Cinder::Backup.create({
+      description: "description",
+      name: "name",
+      volume_id: fresh_volume.id,
+      incremental: false
+    })
+  end
 
   it 'gets an index' do
-    expect(OpenStackRubySDK::Cinder::Backup.all).to eq([])
+    expect(OpenStackRubySDK::Cinder::Backup.all.count).to be >= 0
   end
 
   it 'gets its self' do
-    expect(OpenStackRubySDK::Cinder::Backup.find(backup.id)).to eq(backup)
+    expect(OpenStackRubySDK::Cinder::Backup.find(backup.id).id).to eq(backup.id)
   end
 
   it 'creates its self' do
-    backup.name = Time.now.usec.to_s
-    expect(backup.save).to eq(true)
-  end
-
-  it 'updates its self' do
-    backup.name = Time.now.usec.to_s
-    expect(backup.save).to eq(true)
-    backup.name = Time.now.usec.to_s
-    expect(backup.save).to eq(true)
+    backup.reload
+    expect(backup.availability_zone).to eq("nova")
+    expect(backup.description).to eq("description")
+    expect(backup.name).to eq("name")
+    expect(backup.id).to be_present
   end
 
   it 'deletes its self' do
+    Peace::Helpers.wait_for(backup, "available")
     expect(backup.destroy).to eq(true)
   end
 end

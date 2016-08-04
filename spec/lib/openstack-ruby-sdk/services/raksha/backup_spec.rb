@@ -2,6 +2,7 @@ require 'spec_helper'
 
 describe OpenStackRubySDK::Raksha::Backup, :vcr do
   let(:backup){ OpenStackRubySDK::Raksha::Backup.new }
+  let(:volume){ fresh_volume }
 
   it 'gets an index' do
     expect(OpenStackRubySDK::Raksha::Backup.all).to eq([])
@@ -12,8 +13,6 @@ describe OpenStackRubySDK::Raksha::Backup, :vcr do
   end
 
   it 'creates its self' do
-    backup.name = Time.now.usec.to_s
-    expect(backup.save).to eq(true)
   end
 
   it 'updates its self' do

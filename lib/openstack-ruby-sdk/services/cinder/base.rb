@@ -11,8 +11,6 @@ class OpenStackRubySDK::Cinder
   has_resource :volume_manage_extension
   has_resource :volume_snapshot
   has_resource :volume_transfer
-  has_resource :volume_type_access
-  has_resource :volume_type
   has_resource :volume
 
 end
