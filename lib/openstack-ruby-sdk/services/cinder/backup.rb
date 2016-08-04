@@ -26,4 +26,10 @@ class OpenStackRubySDK::Cinder::Backup
   def detail
     self.reload
   end
+
+  def restore!(volume)
+    data = { restore: { backup_id: self.id, volume_id: volume.id } }
+    url = "#{self.url}/restore"
+    Peace::Request.post(url, data)
+  end
 end
