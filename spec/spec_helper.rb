@@ -5,8 +5,8 @@ require 'vcr'
 ENV['SDK']='openstack'
 
 FLAVOR_ID  = '1'
-IMAGE_ID   = '62f213d9-634b-42b7-809d-f368ef33a3d4'
-PROJECT_ID = '0c5dd43034614366b9e4e47887f38228'
+IMAGE_ID   = 'd1a3bf61-7346-482e-91aa-b038ad784042'
+PROJECT_ID = '92ac5831e22341bc9cc88f3942ba4d68'
 
 RSpec.configure do |config|
   config.expect_with :rspec do |expectations|
@@ -35,8 +35,9 @@ RSpec.configure do |config|
   config.before(:each) do
     if VCR.current_cassette.recording?
       OpenStackRubySDK::Nova::Server.all.each{ |s| s.destroy rescue next }
+      OpenStackRubySDK::Cinder::Snapshot.all.each{ |v| v.destroy rescue next }
+      OpenStackRubySDK::Cinder::Backup.all.each{ |v| v.destroy rescue next }
       OpenStackRubySDK::Cinder::Volume.all.each{ |v| v.destroy rescue next }
-      OpenStackRubySDK::Cinder::VolumeSnapshot.all.each{ |v| v.destroy rescue next }
     end
   end
 

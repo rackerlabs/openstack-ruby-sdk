@@ -4,17 +4,19 @@ class OpenStackRubySDK::Cinder::Volume
 
   attr_accessor :attachments, :availability_zone, :bootable, :consistencygroup_id, :created_at, :description, :encrypted, :id, :links, :metadata, :migration_status, :multiattach, :name, :replication_status, :size, :snapshot_id, :source_volid, :status, :user_id, :volume_type, :display_name, :display_description
 
-  attr_with_alias :state, :status
-  attr_with_alias :tenant_id, "os-vol-tenant-attr:tenant_id"
-  attr_with_alias :tenant_host, "os-vol-tenant-attr:host"
-  attr_with_alias :tenant_name_id, "os-vol-tenant-attr:name_id"
-  attr_with_alias :tenant_migstat, "os-vol-tenant-attr:migstat"
   attr_with_alias :host, "os-vol-host-attr:host"
   attr_with_alias :migration_name_id, "os-vol-mig-status-attr:name_id"
   attr_with_alias :migration_status, "os-vol-mig-status-attr:migstat"
+  attr_with_alias :replication_driver, "os-volume-replication:driver_data"
+  attr_with_alias :replication_status, "os-volume-replication:extended_status"
+  attr_with_alias :state, :status
+  attr_with_alias :tenant_host, "os-vol-tenant-attr:host"
+  attr_with_alias :tenant_id, "os-vol-tenant-attr:tenant_id"
+  attr_with_alias :tenant_migstat, "os-vol-tenant-attr:migstat"
+  attr_with_alias :tenant_name_id, "os-vol-tenant-attr:name_id"
 
   def take_snapshot!(name, description)
-    OpenStackRubySDK::Cinder::VolumeSnapshot.create({
+    OpenStackRubySDK::Cinder::Snapshot.create({
       name: name,
       force: true,
       volume_id: self.id,

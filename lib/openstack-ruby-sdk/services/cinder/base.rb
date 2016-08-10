@@ -7,10 +7,10 @@ class OpenStackRubySDK::Cinder
   has_resource :limit
   has_resource :quality_of_service
   has_resource :quota_sets_extension
+  has_resource :snapshot
+  has_resource :volume
   has_resource :volume_image_metadata_extension
   has_resource :volume_manage_extension
-  has_resource :volume_snapshot
   has_resource :volume_transfer
-  has_resource :volume
 
 end

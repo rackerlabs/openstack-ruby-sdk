@@ -1,4 +1,4 @@
-class OpenStackRubySDK::Cinder::VolumeSnapshot
+class OpenStackRubySDK::Cinder::Snapshot
   include Peace::Model
   include Peace::Metadata
 

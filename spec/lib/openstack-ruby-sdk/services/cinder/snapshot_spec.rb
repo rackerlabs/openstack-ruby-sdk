@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Cinder::VolumeSnapshot, :vcr do
+describe OpenStackRubySDK::Cinder::Snapshot, :vcr do
   let(:volume) { fresh_volume }
   let(:snapshot) { volume.take_snapshot!("name", "description") }
 
@@ -13,7 +13,7 @@ describe OpenStackRubySDK::Cinder::VolumeSnapshot, :vcr do
   end
 
   it 'gets an index' do
-    expect(OpenStackRubySDK::Cinder::VolumeSnapshot.all.count).to be >= 0
+    expect(OpenStackRubySDK::Cinder::Snapshot.all.count).to be >= 0
   end
 
   it 'updates its self' do
