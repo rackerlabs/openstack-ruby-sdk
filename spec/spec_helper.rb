@@ -41,6 +41,22 @@ RSpec.configure do |config|
     end
   end
 
+  def vcr_on
+    VCR.turn_on!
+    WebMock.disable_net_connect!
+  end
+
+  def vcr_off
+    VCR.turn_off!
+    WebMock.allow_net_connect!
+  end
+
+  def do_it_live
+    unless VCR.current_cassette.recording?
+      File.delete(VCR.current_cassette.file)
+    end
+  end
+
   def fast_forward(n)
     sleep n if VCR.current_cassette.recording?
   end
