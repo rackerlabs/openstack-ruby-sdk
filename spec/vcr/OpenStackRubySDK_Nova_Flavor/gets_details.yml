@@ -1,0 +1,295 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '15'
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-8d51b1eb-59ac-4bdc-8ef1-19d3fd371c9b
+      Date:
+      - Thu, 11 Aug 2016 16:59:03 GMT
+    body:
+      encoding: UTF-8
+      string: '{"servers": []}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:02 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/snapshots
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-a601065b-05e6-4928-9664-cfc8acc617bf
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '17'
+      X-Openstack-Request-Id:
+      - req-a601065b-05e6-4928-9664-cfc8acc617bf
+      Date:
+      - Thu, 11 Aug 2016 16:59:03 GMT
+    body:
+      encoding: UTF-8
+      string: '{"snapshots": []}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:02 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/backups
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-1f500412-87f2-499c-897d-bd7934d20e84
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '15'
+      X-Openstack-Request-Id:
+      - req-1f500412-87f2-499c-897d-bd7934d20e84
+      Date:
+      - Thu, 11 Aug 2016 16:59:03 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backups": []}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:03 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/volumes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-fa2a7fc6-aa6f-4201-9ba9-44cc08f681a3
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '15'
+      X-Openstack-Request-Id:
+      - req-fa2a7fc6-aa6f-4201-9ba9-44cc08f681a3
+      Date:
+      - Thu, 11 Aug 2016 16:59:03 GMT
+    body:
+      encoding: UTF-8
+      string: '{"volumes": []}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:03 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1755'
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-14dc6b8e-9d31-4157-ac31-1ee82381cb54
+      Date:
+      - Thu, 11 Aug 2016 16:59:03 GMT
+    body:
+      encoding: UTF-8
+      string: '{"flavors": [{"id": "1", "links": [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
+        "rel": "bookmark"}], "name": "m1.tiny"}, {"id": "2", "links": [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/2",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/2",
+        "rel": "bookmark"}], "name": "m1.small"}, {"id": "201", "links": [{"href":
+        "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/201",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/201",
+        "rel": "bookmark"}], "name": "tempest1"}, {"id": "202", "links": [{"href":
+        "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/202",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/202",
+        "rel": "bookmark"}], "name": "tempest2"}, {"id": "3", "links": [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/3",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/3",
+        "rel": "bookmark"}], "name": "m1.medium"}, {"id": "4", "links": [{"href":
+        "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/4",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/4",
+        "rel": "bookmark"}], "name": "m1.large"}, {"id": "5", "links": [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/5",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/5",
+        "rel": "bookmark"}], "name": "m1.xlarge"}]}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:03 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '426'
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-ea14682d-2930-4512-b397-1f5e497edfaf
+      Date:
+      - Thu, 11 Aug 2016 16:59:03 GMT
+    body:
+      encoding: UTF-8
+      string: '{"flavor": {"name": "m1.tiny", "links": [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
+        "rel": "bookmark"}], "ram": 512, "OS-FLV-DISABLED:disabled": false, "vcpus":
+        1, "swap": "", "os-flavor-access:is_public": true, "rxtx_factor": 1.0, "OS-FLV-EXT-DATA:ephemeral":
+        0, "disk": 1, "id": "1"}}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:03 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '426'
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-881d5e47-ffba-4225-b06a-7c41f8019ad7
+      Date:
+      - Thu, 11 Aug 2016 16:59:04 GMT
+    body:
+      encoding: UTF-8
+      string: '{"flavor": {"name": "m1.tiny", "links": [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
+        "rel": "bookmark"}], "ram": 512, "OS-FLV-DISABLED:disabled": false, "vcpus":
+        1, "swap": "", "os-flavor-access:is_public": true, "rxtx_factor": 1.0, "OS-FLV-EXT-DATA:ephemeral":
+        0, "disk": 1, "id": "1"}}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:03 GMT
+recorded_with: VCR 3.0.3

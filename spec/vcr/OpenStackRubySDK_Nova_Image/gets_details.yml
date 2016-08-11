@@ -1,0 +1,245 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '15'
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-a3415b35-7516-43e8-bdce-79ae8efeec21
+      Date:
+      - Thu, 11 Aug 2016 16:59:06 GMT
+    body:
+      encoding: UTF-8
+      string: '{"servers": []}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:05 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/snapshots
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-8553e094-c1df-4afc-8765-5ce8cef4c06f
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '17'
+      X-Openstack-Request-Id:
+      - req-8553e094-c1df-4afc-8765-5ce8cef4c06f
+      Date:
+      - Thu, 11 Aug 2016 16:59:06 GMT
+    body:
+      encoding: UTF-8
+      string: '{"snapshots": []}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:06 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/backups
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-f07f417a-d4eb-4738-abf6-bdb6bb68c30e
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '15'
+      X-Openstack-Request-Id:
+      - req-f07f417a-d4eb-4738-abf6-bdb6bb68c30e
+      Date:
+      - Thu, 11 Aug 2016 16:59:06 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backups": []}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:06 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/volumes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-85bcd5e9-8795-44d1-8eeb-06caff3359ec
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '15'
+      X-Openstack-Request-Id:
+      - req-85bcd5e9-8795-44d1-8eeb-06caff3359ec
+      Date:
+      - Thu, 11 Aug 2016 16:59:06 GMT
+    body:
+      encoding: UTF-8
+      string: '{"volumes": []}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:06 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/images
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1006'
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-6f983b38-0d5e-4db2-8314-de19770b95a0
+      Date:
+      - Thu, 11 Aug 2016 16:59:06 GMT
+    body:
+      encoding: UTF-8
+      string: '{"images": [{"id": "520b7bb4-2441-4bbb-9db1-c0507bed6fda", "links":
+        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/images/520b7bb4-2441-4bbb-9db1-c0507bed6fda",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/images/520b7bb4-2441-4bbb-9db1-c0507bed6fda",
+        "rel": "bookmark"}, {"href": "http://172.29.236.100:9292/images/520b7bb4-2441-4bbb-9db1-c0507bed6fda",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "cirros_alt"},
+        {"id": "d1a3bf61-7346-482e-91aa-b038ad784042", "links": [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/images/d1a3bf61-7346-482e-91aa-b038ad784042",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/images/d1a3bf61-7346-482e-91aa-b038ad784042",
+        "rel": "bookmark"}, {"href": "http://172.29.236.100:9292/images/d1a3bf61-7346-482e-91aa-b038ad784042",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "name": "cirros"}]}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:06 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/images/520b7bb4-2441-4bbb-9db1-c0507bed6fda
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '692'
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-8dd82de0-a3d0-474a-ba3f-0579282a626f
+      Date:
+      - Thu, 11 Aug 2016 16:59:07 GMT
+    body:
+      encoding: UTF-8
+      string: '{"image": {"status": "ACTIVE", "updated": "2016-08-09T20:59:24Z", "links":
+        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/images/520b7bb4-2441-4bbb-9db1-c0507bed6fda",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/images/520b7bb4-2441-4bbb-9db1-c0507bed6fda",
+        "rel": "bookmark"}, {"href": "http://172.29.236.100:9292/images/520b7bb4-2441-4bbb-9db1-c0507bed6fda",
+        "type": "application/vnd.openstack.image", "rel": "alternate"}], "id": "520b7bb4-2441-4bbb-9db1-c0507bed6fda",
+        "OS-EXT-IMG-SIZE:size": 13287936, "name": "cirros_alt", "created": "2016-08-09T20:58:58Z",
+        "minDisk": 0, "progress": 100, "minRam": 0, "metadata": {}}}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:06 GMT
+recorded_with: VCR 3.0.3

@@ -12,7 +12,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
+      - gAAAAABXrKxlUyZvKC70n7H2-JA8q0xbbDMNh9QngJ66i7FYXO_yFJrkHVH-7TiK6AGvRnTLHXQyPkh7KB7oLvyf37waNrCkr_9c5mb9SzSqK-9Z_0s5F2MqidLe8BJb0mvLOYdPCmA6Z63uVgLaw0mkF0bp6oSTyuSLFZDCx--E6Dyg238RdJc
       Content-Type:
       - application/json
       User-Agent:
@@ -31,20 +31,20 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-f31ebf0c-0d33-4a96-98cb-157978343c35
+      - req-64cbfffe-d88c-43c0-95fe-10224af33a09
       Date:
-      - Wed, 10 Aug 2016 17:56:37 GMT
+      - Thu, 11 Aug 2016 16:48:48 GMT
     body:
       encoding: UTF-8
-      string: '{"servers": [{"id": "4b2f117b-539d-452e-ba51-036a3cf76153", "links":
-        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/4b2f117b-539d-452e-ba51-036a3cf76153",
-        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/4b2f117b-539d-452e-ba51-036a3cf76153",
-        "rel": "bookmark"}], "name": "844366"}]}'
+      string: '{"servers": [{"id": "98020d84-d6ff-4e3a-b3ac-2fd6f29a3782", "links":
+        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/98020d84-d6ff-4e3a-b3ac-2fd6f29a3782",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/98020d84-d6ff-4e3a-b3ac-2fd6f29a3782",
+        "rel": "bookmark"}], "name": "270418"}]}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:37 GMT
+  recorded_at: Thu, 11 Aug 2016 16:48:47 GMT
 - request:
     method: delete
-    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/4b2f117b-539d-452e-ba51-036a3cf76153
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/98020d84-d6ff-4e3a-b3ac-2fd6f29a3782
     body:
       encoding: US-ASCII
       string: ''
@@ -54,7 +54,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
+      - gAAAAABXrKxlUyZvKC70n7H2-JA8q0xbbDMNh9QngJ66i7FYXO_yFJrkHVH-7TiK6AGvRnTLHXQyPkh7KB7oLvyf37waNrCkr_9c5mb9SzSqK-9Z_0s5F2MqidLe8BJb0mvLOYdPCmA6Z63uVgLaw0mkF0bp6oSTyuSLFZDCx--E6Dyg238RdJc
       Content-Type:
       - application/json
       User-Agent:
@@ -73,14 +73,14 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-0d2dc5c6-38e1-4603-a5e3-92747cb39fe8
+      - req-223c05a4-488e-4d1d-b979-4ecfdfb8c027
       Date:
-      - Wed, 10 Aug 2016 17:56:37 GMT
+      - Thu, 11 Aug 2016 16:48:48 GMT
     body:
       encoding: UTF-8
       string: ''
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:37 GMT
+  recorded_at: Thu, 11 Aug 2016 16:48:48 GMT
 - request:
     method: get
     uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/snapshots
@@ -93,7 +93,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
+      - gAAAAABXrKxlUyZvKC70n7H2-JA8q0xbbDMNh9QngJ66i7FYXO_yFJrkHVH-7TiK6AGvRnTLHXQyPkh7KB7oLvyf37waNrCkr_9c5mb9SzSqK-9Z_0s5F2MqidLe8BJb0mvLOYdPCmA6Z63uVgLaw0mkF0bp6oSTyuSLFZDCx--E6Dyg238RdJc
       Content-Type:
       - application/json
       User-Agent:
@@ -104,20 +104,20 @@ http_interactions:
       message: OK
     headers:
       X-Compute-Request-Id:
-      - req-e954f782-f0a4-4d07-be52-5ce90797a301
+      - req-2f7875c7-e2ed-4be6-ac0b-cb675ffcb8d3
       Content-Type:
       - application/json
       Content-Length:
       - '17'
       X-Openstack-Request-Id:
-      - req-e954f782-f0a4-4d07-be52-5ce90797a301
+      - req-2f7875c7-e2ed-4be6-ac0b-cb675ffcb8d3
       Date:
-      - Wed, 10 Aug 2016 17:56:38 GMT
+      - Thu, 11 Aug 2016 16:48:48 GMT
     body:
       encoding: UTF-8
       string: '{"snapshots": []}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:37 GMT
+  recorded_at: Thu, 11 Aug 2016 16:48:48 GMT
 - request:
     method: get
     uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/backups
@@ -130,7 +130,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
+      - gAAAAABXrKxlUyZvKC70n7H2-JA8q0xbbDMNh9QngJ66i7FYXO_yFJrkHVH-7TiK6AGvRnTLHXQyPkh7KB7oLvyf37waNrCkr_9c5mb9SzSqK-9Z_0s5F2MqidLe8BJb0mvLOYdPCmA6Z63uVgLaw0mkF0bp6oSTyuSLFZDCx--E6Dyg238RdJc
       Content-Type:
       - application/json
       User-Agent:
@@ -141,20 +141,20 @@ http_interactions:
       message: OK
     headers:
       X-Compute-Request-Id:
-      - req-bc3aa99d-076c-45e3-a767-39ccb561212c
+      - req-8916dcaf-dcf9-4a7e-b8d7-9943d7fd637c
       Content-Type:
       - application/json
       Content-Length:
       - '15'
       X-Openstack-Request-Id:
-      - req-bc3aa99d-076c-45e3-a767-39ccb561212c
+      - req-8916dcaf-dcf9-4a7e-b8d7-9943d7fd637c
       Date:
-      - Wed, 10 Aug 2016 17:56:38 GMT
+      - Thu, 11 Aug 2016 16:48:48 GMT
     body:
       encoding: UTF-8
       string: '{"backups": []}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:38 GMT
+  recorded_at: Thu, 11 Aug 2016 16:48:48 GMT
 - request:
     method: get
     uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/volumes
@@ -167,7 +167,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
+      - gAAAAABXrKxlUyZvKC70n7H2-JA8q0xbbDMNh9QngJ66i7FYXO_yFJrkHVH-7TiK6AGvRnTLHXQyPkh7KB7oLvyf37waNrCkr_9c5mb9SzSqK-9Z_0s5F2MqidLe8BJb0mvLOYdPCmA6Z63uVgLaw0mkF0bp6oSTyuSLFZDCx--E6Dyg238RdJc
       Content-Type:
       - application/json
       User-Agent:
@@ -178,33 +178,33 @@ http_interactions:
       message: OK
     headers:
       X-Compute-Request-Id:
-      - req-9e033431-f04d-44fa-bb74-71ffa4846676
+      - req-eb50c719-958d-4a93-8c87-86911f616dde
       Content-Type:
       - application/json
       Content-Length:
       - '15'
       X-Openstack-Request-Id:
-      - req-9e033431-f04d-44fa-bb74-71ffa4846676
+      - req-eb50c719-958d-4a93-8c87-86911f616dde
       Date:
-      - Wed, 10 Aug 2016 17:56:38 GMT
+      - Thu, 11 Aug 2016 16:48:49 GMT
     body:
       encoding: UTF-8
       string: '{"volumes": []}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:38 GMT
+  recorded_at: Thu, 11 Aug 2016 16:48:48 GMT
 - request:
     method: post
     uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers
     body:
       encoding: UTF-8
-      string: '{"server":{"name":"211280","flavorRef":"1","imageRef":"d1a3bf61-7346-482e-91aa-b038ad784042"}}'
+      string: '{"server":{"name":"693832","flavorRef":"1","imageRef":"d1a3bf61-7346-482e-91aa-b038ad784042"}}'
     headers:
       Accept:
       - application/json
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
+      - gAAAAABXrKxlUyZvKC70n7H2-JA8q0xbbDMNh9QngJ66i7FYXO_yFJrkHVH-7TiK6AGvRnTLHXQyPkh7KB7oLvyf37waNrCkr_9c5mb9SzSqK-9Z_0s5F2MqidLe8BJb0mvLOYdPCmA6Z63uVgLaw0mkF0bp6oSTyuSLFZDCx--E6Dyg238RdJc
       Content-Type:
       - application/json
       Content-Length:
@@ -217,7 +217,7 @@ http_interactions:
       message: Accepted
     headers:
       Location:
-      - http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2
+      - http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869
       Content-Type:
       - application/json
       Content-Length:
@@ -227,21 +227,21 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-c90ffc9b-d091-4283-be56-0799b35c2a39
+      - req-5ad33a96-62fe-4a19-9798-fcb6d7f69728
       Date:
-      - Wed, 10 Aug 2016 17:56:39 GMT
+      - Thu, 11 Aug 2016 16:48:49 GMT
     body:
       encoding: UTF-8
       string: '{"server": {"security_groups": [{"name": "default"}], "OS-DCF:diskConfig":
-        "MANUAL", "id": "7d7c696e-d812-4330-8cd9-fb627d768ad2", "links": [{"href":
-        "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "bookmark"}], "<OS_USERNAME>Pass": "HykgwkSHKk7n"}}'
+        "MANUAL", "id": "c30b2d2e-f091-4525-88e4-5fe1ad2e1869", "links": [{"href":
+        "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
+        "rel": "bookmark"}], "<OS_USERNAME>Pass": "kP7Sf2gsSCzM"}}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:39 GMT
+  recorded_at: Thu, 11 Aug 2016 16:48:49 GMT
 - request:
     method: get
-    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869
     body:
       encoding: US-ASCII
       string: ''
@@ -251,7 +251,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
+      - gAAAAABXrKxlUyZvKC70n7H2-JA8q0xbbDMNh9QngJ66i7FYXO_yFJrkHVH-7TiK6AGvRnTLHXQyPkh7KB7oLvyf37waNrCkr_9c5mb9SzSqK-9Z_0s5F2MqidLe8BJb0mvLOYdPCmA6Z63uVgLaw0mkF0bp6oSTyuSLFZDCx--E6Dyg238RdJc
       Content-Type:
       - application/json
       User-Agent:
@@ -264,37 +264,37 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1427'
+      - '1419'
       X-Openstack-Nova-Api-Version:
       - '2.1'
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-d5f08736-f8d6-442d-b60f-89ec4b84a7a8
+      - req-943c3c40-c239-4d42-aa02-a17e57559319
       Date:
-      - Wed, 10 Aug 2016 17:56:39 GMT
+      - Thu, 11 Aug 2016 16:48:50 GMT
     body:
       encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-08-10T17:56:39Z", "hostId":
-        "", "OS-EXT-SRV-ATTR:host": null, "addresses": {}, "links": [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
+      string: '{"server": {"status": "BUILD", "updated": "2016-08-11T16:48:50Z", "hostId":
+        "", "OS-EXT-SRV-ATTR:host": null, "addresses": {}, "links": [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
         "rel": "bookmark"}], "key_name": null, "image": {"id": "d1a3bf61-7346-482e-91aa-b038ad784042",
         "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/images/d1a3bf61-7346-482e-91aa-b038ad784042",
-        "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "scheduling", "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-0000000a", "OS-SRV-USG:launched_at":
+        "rel": "bookmark"}]}, "OS-EXT-STS:task_state": null, "OS-EXT-STS:vm_state":
+        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-00000079", "OS-SRV-USG:launched_at":
         null, "OS-EXT-SRV-ATTR:hypervisor_hostname": null, "flavor": {"id": "1", "links":
         [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
-        "rel": "bookmark"}]}, "id": "7d7c696e-d812-4330-8cd9-fb627d768ad2", "OS-SRV-USG:terminated_at":
+        "rel": "bookmark"}]}, "id": "c30b2d2e-f091-4525-88e4-5fe1ad2e1869", "OS-SRV-USG:terminated_at":
         null, "OS-EXT-AZ:availability_zone": "", "user_id": "291651f78d4d46738e3b6dc413243760",
-        "name": "211280", "created": "2016-08-10T17:56:39Z", "tenant_id": "92ac5831e22341bc9cc88f3942ba4d68",
+        "name": "693832", "created": "2016-08-11T16:48:49Z", "tenant_id": "92ac5831e22341bc9cc88f3942ba4d68",
         "OS-DCF:diskConfig": "MANUAL", "os-extended-volumes:volumes_attached": [],
         "accessIPv4": "", "accessIPv6": "", "progress": 0, "OS-EXT-STS:power_state":
         0, "config_drive": "", "metadata": {}}}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:39 GMT
+  recorded_at: Thu, 11 Aug 2016 16:48:50 GMT
 - request:
     method: get
-    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869
     body:
       encoding: US-ASCII
       string: ''
@@ -304,7 +304,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
+      - gAAAAABXrKxlUyZvKC70n7H2-JA8q0xbbDMNh9QngJ66i7FYXO_yFJrkHVH-7TiK6AGvRnTLHXQyPkh7KB7oLvyf37waNrCkr_9c5mb9SzSqK-9Z_0s5F2MqidLe8BJb0mvLOYdPCmA6Z63uVgLaw0mkF0bp6oSTyuSLFZDCx--E6Dyg238RdJc
       Content-Type:
       - application/json
       User-Agent:
@@ -317,96 +317,41 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1543'
+      - '1658'
       X-Openstack-Nova-Api-Version:
       - '2.1'
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-cfecbcba-b392-4cba-a12f-1674f6e7d64f
+      - req-c03167fe-0115-459a-8b75-5fc656532649
       Date:
-      - Wed, 10 Aug 2016 17:56:41 GMT
+      - Thu, 11 Aug 2016 16:48:52 GMT
     body:
       encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-08-10T17:56:41Z", "hostId":
+      string: '{"server": {"status": "BUILD", "updated": "2016-08-11T16:48:51Z", "hostId":
         "ddfbbf847bc526c52777edc7173a5f9f0b95c29110710d02afb8eb50", "OS-EXT-SRV-ATTR:host":
-        "pita", "addresses": {}, "links": [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "bookmark"}], "key_name": null, "image": {"id": "d1a3bf61-7346-482e-91aa-b038ad784042",
-        "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/images/d1a3bf61-7346-482e-91aa-b038ad784042",
-        "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "block_device_mapping", "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-0000000a", "OS-SRV-USG:launched_at":
-        null, "OS-EXT-SRV-ATTR:hypervisor_hostname": "pita", "flavor": {"id": "1",
-        "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
-        "rel": "bookmark"}]}, "id": "7d7c696e-d812-4330-8cd9-fb627d768ad2", "security_groups":
-        [{"name": "default"}], "OS-SRV-USG:terminated_at": null, "OS-EXT-AZ:availability_zone":
-        "nova", "user_id": "291651f78d4d46738e3b6dc413243760", "name": "211280", "created":
-        "2016-08-10T17:56:39Z", "tenant_id": "92ac5831e22341bc9cc88f3942ba4d68", "OS-DCF:diskConfig":
-        "MANUAL", "os-extended-volumes:volumes_attached": [], "accessIPv4": "", "accessIPv6":
-        "", "progress": 0, "OS-EXT-STS:power_state": 0, "config_drive": "", "metadata":
-        {}}}'
-    http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:41 GMT
-- request:
-    method: get
-    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '1657'
-      X-Openstack-Nova-Api-Version:
-      - '2.1'
-      Vary:
-      - X-OpenStack-Nova-API-Version
-      X-Compute-Request-Id:
-      - req-c363152d-c2e0-4c20-a98f-d75b9ebc0d46
-      Date:
-      - Wed, 10 Aug 2016 17:56:42 GMT
-    body:
-      encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-08-10T17:56:41Z", "hostId":
-        "ddfbbf847bc526c52777edc7173a5f9f0b95c29110710d02afb8eb50", "OS-EXT-SRV-ATTR:host":
-        "pita", "addresses": {"public": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:26:58:6e",
-        "version": 4, "addr": "172.29.248.6", "OS-EXT-IPS:type": "fixed"}]}, "links":
-        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
+        "pita", "addresses": {"public": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:cc:b4:be",
+        "version": 4, "addr": "172.29.248.42", "OS-EXT-IPS:type": "fixed"}]}, "links":
+        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
         "rel": "bookmark"}], "key_name": null, "image": {"id": "d1a3bf61-7346-482e-91aa-b038ad784042",
         "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/images/d1a3bf61-7346-482e-91aa-b038ad784042",
         "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-0000000a", "OS-SRV-USG:launched_at":
+        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-00000079", "OS-SRV-USG:launched_at":
         null, "OS-EXT-SRV-ATTR:hypervisor_hostname": "pita", "flavor": {"id": "1",
         "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
-        "rel": "bookmark"}]}, "id": "7d7c696e-d812-4330-8cd9-fb627d768ad2", "security_groups":
+        "rel": "bookmark"}]}, "id": "c30b2d2e-f091-4525-88e4-5fe1ad2e1869", "security_groups":
         [{"name": "default"}], "OS-SRV-USG:terminated_at": null, "OS-EXT-AZ:availability_zone":
-        "nova", "user_id": "291651f78d4d46738e3b6dc413243760", "name": "211280", "created":
-        "2016-08-10T17:56:39Z", "tenant_id": "92ac5831e22341bc9cc88f3942ba4d68", "OS-DCF:diskConfig":
+        "nova", "user_id": "291651f78d4d46738e3b6dc413243760", "name": "693832", "created":
+        "2016-08-11T16:48:49Z", "tenant_id": "92ac5831e22341bc9cc88f3942ba4d68", "OS-DCF:diskConfig":
         "MANUAL", "os-extended-volumes:volumes_attached": [], "accessIPv4": "", "accessIPv6":
         "", "progress": 0, "OS-EXT-STS:power_state": 0, "config_drive": "", "metadata":
         {}}}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:42 GMT
+  recorded_at: Thu, 11 Aug 2016 16:48:51 GMT
 - request:
     method: get
-    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869
     body:
       encoding: US-ASCII
       string: ''
@@ -416,7 +361,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
+      - gAAAAABXrKxlUyZvKC70n7H2-JA8q0xbbDMNh9QngJ66i7FYXO_yFJrkHVH-7TiK6AGvRnTLHXQyPkh7KB7oLvyf37waNrCkr_9c5mb9SzSqK-9Z_0s5F2MqidLe8BJb0mvLOYdPCmA6Z63uVgLaw0mkF0bp6oSTyuSLFZDCx--E6Dyg238RdJc
       Content-Type:
       - application/json
       User-Agent:
@@ -429,41 +374,41 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1657'
+      - '1658'
       X-Openstack-Nova-Api-Version:
       - '2.1'
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-d412ad8d-090d-4e5a-b2df-318a7a43e951
+      - req-4c68674f-8679-4bca-ba24-2d7eba571d45
       Date:
-      - Wed, 10 Aug 2016 17:56:44 GMT
+      - Thu, 11 Aug 2016 16:48:53 GMT
     body:
       encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-08-10T17:56:41Z", "hostId":
+      string: '{"server": {"status": "BUILD", "updated": "2016-08-11T16:48:51Z", "hostId":
         "ddfbbf847bc526c52777edc7173a5f9f0b95c29110710d02afb8eb50", "OS-EXT-SRV-ATTR:host":
-        "pita", "addresses": {"public": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:26:58:6e",
-        "version": 4, "addr": "172.29.248.6", "OS-EXT-IPS:type": "fixed"}]}, "links":
-        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
+        "pita", "addresses": {"public": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:cc:b4:be",
+        "version": 4, "addr": "172.29.248.42", "OS-EXT-IPS:type": "fixed"}]}, "links":
+        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
         "rel": "bookmark"}], "key_name": null, "image": {"id": "d1a3bf61-7346-482e-91aa-b038ad784042",
         "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/images/d1a3bf61-7346-482e-91aa-b038ad784042",
         "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-0000000a", "OS-SRV-USG:launched_at":
+        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-00000079", "OS-SRV-USG:launched_at":
         null, "OS-EXT-SRV-ATTR:hypervisor_hostname": "pita", "flavor": {"id": "1",
         "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
-        "rel": "bookmark"}]}, "id": "7d7c696e-d812-4330-8cd9-fb627d768ad2", "security_groups":
+        "rel": "bookmark"}]}, "id": "c30b2d2e-f091-4525-88e4-5fe1ad2e1869", "security_groups":
         [{"name": "default"}], "OS-SRV-USG:terminated_at": null, "OS-EXT-AZ:availability_zone":
-        "nova", "user_id": "291651f78d4d46738e3b6dc413243760", "name": "211280", "created":
-        "2016-08-10T17:56:39Z", "tenant_id": "92ac5831e22341bc9cc88f3942ba4d68", "OS-DCF:diskConfig":
+        "nova", "user_id": "291651f78d4d46738e3b6dc413243760", "name": "693832", "created":
+        "2016-08-11T16:48:49Z", "tenant_id": "92ac5831e22341bc9cc88f3942ba4d68", "OS-DCF:diskConfig":
         "MANUAL", "os-extended-volumes:volumes_attached": [], "accessIPv4": "", "accessIPv6":
         "", "progress": 0, "OS-EXT-STS:power_state": 0, "config_drive": "", "metadata":
         {}}}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:43 GMT
+  recorded_at: Thu, 11 Aug 2016 16:48:52 GMT
 - request:
     method: get
-    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869
     body:
       encoding: US-ASCII
       string: ''
@@ -473,7 +418,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
+      - gAAAAABXrKxlUyZvKC70n7H2-JA8q0xbbDMNh9QngJ66i7FYXO_yFJrkHVH-7TiK6AGvRnTLHXQyPkh7KB7oLvyf37waNrCkr_9c5mb9SzSqK-9Z_0s5F2MqidLe8BJb0mvLOYdPCmA6Z63uVgLaw0mkF0bp6oSTyuSLFZDCx--E6Dyg238RdJc
       Content-Type:
       - application/json
       User-Agent:
@@ -486,41 +431,41 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1657'
+      - '1658'
       X-Openstack-Nova-Api-Version:
       - '2.1'
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-06a108db-1aac-4a6a-a1f3-f279a2ad0f18
+      - req-cfa438ad-2f2d-492f-83fe-a89499ace2ff
       Date:
-      - Wed, 10 Aug 2016 17:56:45 GMT
+      - Thu, 11 Aug 2016 16:48:54 GMT
     body:
       encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-08-10T17:56:41Z", "hostId":
+      string: '{"server": {"status": "BUILD", "updated": "2016-08-11T16:48:51Z", "hostId":
         "ddfbbf847bc526c52777edc7173a5f9f0b95c29110710d02afb8eb50", "OS-EXT-SRV-ATTR:host":
-        "pita", "addresses": {"public": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:26:58:6e",
-        "version": 4, "addr": "172.29.248.6", "OS-EXT-IPS:type": "fixed"}]}, "links":
-        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
+        "pita", "addresses": {"public": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:cc:b4:be",
+        "version": 4, "addr": "172.29.248.42", "OS-EXT-IPS:type": "fixed"}]}, "links":
+        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
         "rel": "bookmark"}], "key_name": null, "image": {"id": "d1a3bf61-7346-482e-91aa-b038ad784042",
         "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/images/d1a3bf61-7346-482e-91aa-b038ad784042",
         "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-0000000a", "OS-SRV-USG:launched_at":
+        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-00000079", "OS-SRV-USG:launched_at":
         null, "OS-EXT-SRV-ATTR:hypervisor_hostname": "pita", "flavor": {"id": "1",
         "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
-        "rel": "bookmark"}]}, "id": "7d7c696e-d812-4330-8cd9-fb627d768ad2", "security_groups":
+        "rel": "bookmark"}]}, "id": "c30b2d2e-f091-4525-88e4-5fe1ad2e1869", "security_groups":
         [{"name": "default"}], "OS-SRV-USG:terminated_at": null, "OS-EXT-AZ:availability_zone":
-        "nova", "user_id": "291651f78d4d46738e3b6dc413243760", "name": "211280", "created":
-        "2016-08-10T17:56:39Z", "tenant_id": "92ac5831e22341bc9cc88f3942ba4d68", "OS-DCF:diskConfig":
+        "nova", "user_id": "291651f78d4d46738e3b6dc413243760", "name": "693832", "created":
+        "2016-08-11T16:48:49Z", "tenant_id": "92ac5831e22341bc9cc88f3942ba4d68", "OS-DCF:diskConfig":
         "MANUAL", "os-extended-volumes:volumes_attached": [], "accessIPv4": "", "accessIPv6":
         "", "progress": 0, "OS-EXT-STS:power_state": 0, "config_drive": "", "metadata":
         {}}}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:45 GMT
+  recorded_at: Thu, 11 Aug 2016 16:48:54 GMT
 - request:
     method: get
-    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869
     body:
       encoding: US-ASCII
       string: ''
@@ -530,7 +475,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
+      - gAAAAABXrKxlUyZvKC70n7H2-JA8q0xbbDMNh9QngJ66i7FYXO_yFJrkHVH-7TiK6AGvRnTLHXQyPkh7KB7oLvyf37waNrCkr_9c5mb9SzSqK-9Z_0s5F2MqidLe8BJb0mvLOYdPCmA6Z63uVgLaw0mkF0bp6oSTyuSLFZDCx--E6Dyg238RdJc
       Content-Type:
       - application/json
       User-Agent:
@@ -543,41 +488,41 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1657'
+      - '1658'
       X-Openstack-Nova-Api-Version:
       - '2.1'
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-4faa19c7-0f22-4cef-ab70-d588fae350c7
+      - req-5559d0f6-6252-4a56-b1ba-0150c6ac36d4
       Date:
-      - Wed, 10 Aug 2016 17:56:46 GMT
+      - Thu, 11 Aug 2016 16:48:56 GMT
     body:
       encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-08-10T17:56:41Z", "hostId":
+      string: '{"server": {"status": "BUILD", "updated": "2016-08-11T16:48:51Z", "hostId":
         "ddfbbf847bc526c52777edc7173a5f9f0b95c29110710d02afb8eb50", "OS-EXT-SRV-ATTR:host":
-        "pita", "addresses": {"public": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:26:58:6e",
-        "version": 4, "addr": "172.29.248.6", "OS-EXT-IPS:type": "fixed"}]}, "links":
-        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
+        "pita", "addresses": {"public": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:cc:b4:be",
+        "version": 4, "addr": "172.29.248.42", "OS-EXT-IPS:type": "fixed"}]}, "links":
+        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
         "rel": "bookmark"}], "key_name": null, "image": {"id": "d1a3bf61-7346-482e-91aa-b038ad784042",
         "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/images/d1a3bf61-7346-482e-91aa-b038ad784042",
         "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-0000000a", "OS-SRV-USG:launched_at":
+        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-00000079", "OS-SRV-USG:launched_at":
         null, "OS-EXT-SRV-ATTR:hypervisor_hostname": "pita", "flavor": {"id": "1",
         "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
-        "rel": "bookmark"}]}, "id": "7d7c696e-d812-4330-8cd9-fb627d768ad2", "security_groups":
+        "rel": "bookmark"}]}, "id": "c30b2d2e-f091-4525-88e4-5fe1ad2e1869", "security_groups":
         [{"name": "default"}], "OS-SRV-USG:terminated_at": null, "OS-EXT-AZ:availability_zone":
-        "nova", "user_id": "291651f78d4d46738e3b6dc413243760", "name": "211280", "created":
-        "2016-08-10T17:56:39Z", "tenant_id": "92ac5831e22341bc9cc88f3942ba4d68", "OS-DCF:diskConfig":
+        "nova", "user_id": "291651f78d4d46738e3b6dc413243760", "name": "693832", "created":
+        "2016-08-11T16:48:49Z", "tenant_id": "92ac5831e22341bc9cc88f3942ba4d68", "OS-DCF:diskConfig":
         "MANUAL", "os-extended-volumes:volumes_attached": [], "accessIPv4": "", "accessIPv6":
         "", "progress": 0, "OS-EXT-STS:power_state": 0, "config_drive": "", "metadata":
         {}}}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:46 GMT
+  recorded_at: Thu, 11 Aug 2016 16:48:55 GMT
 - request:
     method: get
-    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869
     body:
       encoding: US-ASCII
       string: ''
@@ -587,7 +532,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
+      - gAAAAABXrKxlUyZvKC70n7H2-JA8q0xbbDMNh9QngJ66i7FYXO_yFJrkHVH-7TiK6AGvRnTLHXQyPkh7KB7oLvyf37waNrCkr_9c5mb9SzSqK-9Z_0s5F2MqidLe8BJb0mvLOYdPCmA6Z63uVgLaw0mkF0bp6oSTyuSLFZDCx--E6Dyg238RdJc
       Content-Type:
       - application/json
       User-Agent:
@@ -600,209 +545,38 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '1657'
+      - '1675'
       X-Openstack-Nova-Api-Version:
       - '2.1'
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-af47a1b7-70de-46dc-922d-8f2818ecf05b
+      - req-99af361a-1efa-47c5-85e8-65bf2090264a
       Date:
-      - Wed, 10 Aug 2016 17:56:47 GMT
+      - Thu, 11 Aug 2016 16:48:57 GMT
     body:
       encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-08-10T17:56:41Z", "hostId":
-        "ddfbbf847bc526c52777edc7173a5f9f0b95c29110710d02afb8eb50", "OS-EXT-SRV-ATTR:host":
-        "pita", "addresses": {"public": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:26:58:6e",
-        "version": 4, "addr": "172.29.248.6", "OS-EXT-IPS:type": "fixed"}]}, "links":
-        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "bookmark"}], "key_name": null, "image": {"id": "d1a3bf61-7346-482e-91aa-b038ad784042",
-        "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/images/d1a3bf61-7346-482e-91aa-b038ad784042",
-        "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-0000000a", "OS-SRV-USG:launched_at":
-        null, "OS-EXT-SRV-ATTR:hypervisor_hostname": "pita", "flavor": {"id": "1",
-        "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
-        "rel": "bookmark"}]}, "id": "7d7c696e-d812-4330-8cd9-fb627d768ad2", "security_groups":
-        [{"name": "default"}], "OS-SRV-USG:terminated_at": null, "OS-EXT-AZ:availability_zone":
-        "nova", "user_id": "291651f78d4d46738e3b6dc413243760", "name": "211280", "created":
-        "2016-08-10T17:56:39Z", "tenant_id": "92ac5831e22341bc9cc88f3942ba4d68", "OS-DCF:diskConfig":
-        "MANUAL", "os-extended-volumes:volumes_attached": [], "accessIPv4": "", "accessIPv6":
-        "", "progress": 0, "OS-EXT-STS:power_state": 0, "config_drive": "", "metadata":
-        {}}}'
-    http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:47 GMT
-- request:
-    method: get
-    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '1657'
-      X-Openstack-Nova-Api-Version:
-      - '2.1'
-      Vary:
-      - X-OpenStack-Nova-API-Version
-      X-Compute-Request-Id:
-      - req-dcd19843-814d-4c46-9e6d-745a43a2102d
-      Date:
-      - Wed, 10 Aug 2016 17:56:49 GMT
-    body:
-      encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-08-10T17:56:41Z", "hostId":
-        "ddfbbf847bc526c52777edc7173a5f9f0b95c29110710d02afb8eb50", "OS-EXT-SRV-ATTR:host":
-        "pita", "addresses": {"public": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:26:58:6e",
-        "version": 4, "addr": "172.29.248.6", "OS-EXT-IPS:type": "fixed"}]}, "links":
-        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "bookmark"}], "key_name": null, "image": {"id": "d1a3bf61-7346-482e-91aa-b038ad784042",
-        "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/images/d1a3bf61-7346-482e-91aa-b038ad784042",
-        "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-0000000a", "OS-SRV-USG:launched_at":
-        null, "OS-EXT-SRV-ATTR:hypervisor_hostname": "pita", "flavor": {"id": "1",
-        "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
-        "rel": "bookmark"}]}, "id": "7d7c696e-d812-4330-8cd9-fb627d768ad2", "security_groups":
-        [{"name": "default"}], "OS-SRV-USG:terminated_at": null, "OS-EXT-AZ:availability_zone":
-        "nova", "user_id": "291651f78d4d46738e3b6dc413243760", "name": "211280", "created":
-        "2016-08-10T17:56:39Z", "tenant_id": "92ac5831e22341bc9cc88f3942ba4d68", "OS-DCF:diskConfig":
-        "MANUAL", "os-extended-volumes:volumes_attached": [], "accessIPv4": "", "accessIPv6":
-        "", "progress": 0, "OS-EXT-STS:power_state": 0, "config_drive": "", "metadata":
-        {}}}'
-    http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:49 GMT
-- request:
-    method: get
-    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '1657'
-      X-Openstack-Nova-Api-Version:
-      - '2.1'
-      Vary:
-      - X-OpenStack-Nova-API-Version
-      X-Compute-Request-Id:
-      - req-7fb313d8-ead2-4656-9a91-ab9ed145fd9a
-      Date:
-      - Wed, 10 Aug 2016 17:56:50 GMT
-    body:
-      encoding: UTF-8
-      string: '{"server": {"status": "BUILD", "updated": "2016-08-10T17:56:41Z", "hostId":
-        "ddfbbf847bc526c52777edc7173a5f9f0b95c29110710d02afb8eb50", "OS-EXT-SRV-ATTR:host":
-        "pita", "addresses": {"public": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:26:58:6e",
-        "version": 4, "addr": "172.29.248.6", "OS-EXT-IPS:type": "fixed"}]}, "links":
-        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "bookmark"}], "key_name": null, "image": {"id": "d1a3bf61-7346-482e-91aa-b038ad784042",
-        "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/images/d1a3bf61-7346-482e-91aa-b038ad784042",
-        "rel": "bookmark"}]}, "OS-EXT-STS:task_state": "spawning", "OS-EXT-STS:vm_state":
-        "building", "OS-EXT-SRV-ATTR:instance_name": "instance-0000000a", "OS-SRV-USG:launched_at":
-        null, "OS-EXT-SRV-ATTR:hypervisor_hostname": "pita", "flavor": {"id": "1",
-        "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
-        "rel": "bookmark"}]}, "id": "7d7c696e-d812-4330-8cd9-fb627d768ad2", "security_groups":
-        [{"name": "default"}], "OS-SRV-USG:terminated_at": null, "OS-EXT-AZ:availability_zone":
-        "nova", "user_id": "291651f78d4d46738e3b6dc413243760", "name": "211280", "created":
-        "2016-08-10T17:56:39Z", "tenant_id": "92ac5831e22341bc9cc88f3942ba4d68", "OS-DCF:diskConfig":
-        "MANUAL", "os-extended-volumes:volumes_attached": [], "accessIPv4": "", "accessIPv6":
-        "", "progress": 0, "OS-EXT-STS:power_state": 0, "config_drive": "", "metadata":
-        {}}}'
-    http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:50 GMT
-- request:
-    method: get
-    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept:
-      - application/json
-      Accept-Encoding:
-      - gzip, deflate
-      X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
-      Content-Type:
-      - application/json
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - application/json
-      Content-Length:
-      - '1674'
-      X-Openstack-Nova-Api-Version:
-      - '2.1'
-      Vary:
-      - X-OpenStack-Nova-API-Version
-      X-Compute-Request-Id:
-      - req-216ccc29-f67e-4c65-819d-9328a790d225
-      Date:
-      - Wed, 10 Aug 2016 17:56:51 GMT
-    body:
-      encoding: UTF-8
-      string: '{"server": {"status": "ACTIVE", "updated": "2016-08-10T17:56:50Z",
+      string: '{"server": {"status": "ACTIVE", "updated": "2016-08-11T16:48:56Z",
         "hostId": "ddfbbf847bc526c52777edc7173a5f9f0b95c29110710d02afb8eb50", "OS-EXT-SRV-ATTR:host":
-        "pita", "addresses": {"public": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:26:58:6e",
-        "version": 4, "addr": "172.29.248.6", "OS-EXT-IPS:type": "fixed"}]}, "links":
-        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
+        "pita", "addresses": {"public": [{"OS-EXT-IPS-MAC:mac_addr": "fa:16:3e:cc:b4:be",
+        "version": 4, "addr": "172.29.248.42", "OS-EXT-IPS:type": "fixed"}]}, "links":
+        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
         "rel": "bookmark"}], "key_name": null, "image": {"id": "d1a3bf61-7346-482e-91aa-b038ad784042",
         "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/images/d1a3bf61-7346-482e-91aa-b038ad784042",
         "rel": "bookmark"}]}, "OS-EXT-STS:task_state": null, "OS-EXT-STS:vm_state":
-        "active", "OS-EXT-SRV-ATTR:instance_name": "instance-0000000a", "OS-SRV-USG:launched_at":
-        "2016-08-10T17:56:50.000000", "OS-EXT-SRV-ATTR:hypervisor_hostname": "pita",
+        "active", "OS-EXT-SRV-ATTR:instance_name": "instance-00000079", "OS-SRV-USG:launched_at":
+        "2016-08-11T16:48:56.000000", "OS-EXT-SRV-ATTR:hypervisor_hostname": "pita",
         "flavor": {"id": "1", "links": [{"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
-        "rel": "bookmark"}]}, "id": "7d7c696e-d812-4330-8cd9-fb627d768ad2", "security_groups":
+        "rel": "bookmark"}]}, "id": "c30b2d2e-f091-4525-88e4-5fe1ad2e1869", "security_groups":
         [{"name": "default"}], "OS-SRV-USG:terminated_at": null, "OS-EXT-AZ:availability_zone":
-        "nova", "user_id": "291651f78d4d46738e3b6dc413243760", "name": "211280", "created":
-        "2016-08-10T17:56:39Z", "tenant_id": "92ac5831e22341bc9cc88f3942ba4d68", "OS-DCF:diskConfig":
+        "nova", "user_id": "291651f78d4d46738e3b6dc413243760", "name": "693832", "created":
+        "2016-08-11T16:48:49Z", "tenant_id": "92ac5831e22341bc9cc88f3942ba4d68", "OS-DCF:diskConfig":
         "MANUAL", "os-extended-volumes:volumes_attached": [], "accessIPv4": "", "accessIPv6":
         "", "progress": 0, "OS-EXT-STS:power_state": 1, "config_drive": "", "metadata":
         {}}}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:52 GMT
+  recorded_at: Thu, 11 Aug 2016 16:48:56 GMT
 - request:
     method: get
     uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers
@@ -815,7 +589,7 @@ http_interactions:
       Accept-Encoding:
       - gzip, deflate
       X-Auth-Token:
-      - gAAAAABXq2rI88vA4eTQd0MMDKXEywxVMlqvg32oqqufL31uZaLxQ72Qv473la-0D9FYoBtGGUfMP3aIyiiApGKi7OyluljHxR0d2vPbfzz0qWEmMugFKe-4Bh-wxIMgwOK7AoPP3psM_R_DzXKe8KMTQKIoK-AROnAB9D6yxdFmqh34wkuNy4s
+      - gAAAAABXrKxlUyZvKC70n7H2-JA8q0xbbDMNh9QngJ66i7FYXO_yFJrkHVH-7TiK6AGvRnTLHXQyPkh7KB7oLvyf37waNrCkr_9c5mb9SzSqK-9Z_0s5F2MqidLe8BJb0mvLOYdPCmA6Z63uVgLaw0mkF0bp6oSTyuSLFZDCx--E6Dyg238RdJc
       Content-Type:
       - application/json
       User-Agent:
@@ -834,15 +608,57 @@ http_interactions:
       Vary:
       - X-OpenStack-Nova-API-Version
       X-Compute-Request-Id:
-      - req-ed6d3d33-8053-490f-aa4a-091110483308
+      - req-2356acb5-9055-42ea-a779-b9a2e0ce49c5
       Date:
-      - Wed, 10 Aug 2016 17:56:52 GMT
+      - Thu, 11 Aug 2016 16:49:10 GMT
     body:
       encoding: UTF-8
-      string: '{"servers": [{"id": "7d7c696e-d812-4330-8cd9-fb627d768ad2", "links":
-        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/7d7c696e-d812-4330-8cd9-fb627d768ad2",
-        "rel": "bookmark"}], "name": "211280"}]}'
+      string: '{"servers": [{"id": "c30b2d2e-f091-4525-88e4-5fe1ad2e1869", "links":
+        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
+        "rel": "bookmark"}], "name": "693832"}]}'
     http_version: 
-  recorded_at: Wed, 10 Aug 2016 17:56:52 GMT
+  recorded_at: Thu, 11 Aug 2016 16:49:10 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrKxlUyZvKC70n7H2-JA8q0xbbDMNh9QngJ66i7FYXO_yFJrkHVH-7TiK6AGvRnTLHXQyPkh7KB7oLvyf37waNrCkr_9c5mb9SzSqK-9Z_0s5F2MqidLe8BJb0mvLOYdPCmA6Z63uVgLaw0mkF0bp6oSTyuSLFZDCx--E6Dyg238RdJc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '363'
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-6a64a1de-d4a6-4d4b-bc65-a422ff498263
+      Date:
+      - Thu, 11 Aug 2016 16:49:16 GMT
+    body:
+      encoding: UTF-8
+      string: '{"servers": [{"id": "c30b2d2e-f091-4525-88e4-5fe1ad2e1869", "links":
+        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/c30b2d2e-f091-4525-88e4-5fe1ad2e1869",
+        "rel": "bookmark"}], "name": "693832"}]}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:49:16 GMT
 recorded_with: VCR 3.0.3

@@ -1,0 +1,376 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: "<OS_AUTH_URL>/auth/tokens"
+    body:
+      encoding: UTF-8
+      string: '{"auth":{"identity":{"methods":["password"],"password":{"user":{"id":"291651f78d4d46738e3b6dc413243760","password":"<OS_PASSWORD>"}}},"scope":{"project":{"id":"92ac5831e22341bc9cc88f3942ba4d68"}}}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '218'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Date:
+      - Thu, 11 Aug 2016 16:58:59 GMT
+      Server:
+      - Apache
+      X-Subject-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Vary:
+      - X-Auth-Token
+      X-Openstack-Request-Id:
+      - req-ebb3018f-de61-4b18-9ba8-adb1b3d90ed3
+      Content-Length:
+      - '7255'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"token": {"methods": ["password"], "roles": [{"id": "62e62bfdf0d34d83a13f8f7d2c3de4eb",
+        "name": "<OS_USERNAME>"}, {"id": "70245224f2f44b0e890207f552dd11cf", "name":
+        "heat_stack_owner"}], "expires_at": "2016-08-12T04:58:59.992102Z", "project":
+        {"domain": {"id": "default", "name": "Default"}, "id": "92ac5831e22341bc9cc88f3942ba4d68",
+        "name": "<OS_USERNAME>"}, "catalog": [{"endpoints": [{"region_id": "RegionOne",
+        "url": "http://172.29.236.100:8776/v1/92ac5831e22341bc9cc88f3942ba4d68", "region":
+        "RegionOne", "interface": "internal", "id": "296d4ab42ed54a1f8fd2e5e074192128"},
+        {"region_id": "RegionOne", "url": "http://172.29.236.100:8776/v1/92ac5831e22341bc9cc88f3942ba4d68",
+        "region": "RegionOne", "interface": "<OS_USERNAME>", "id": "34f9fff46bd340c9a1ddb452ec91cbf9"},
+        {"region_id": "RegionOne", "url": "http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68",
+        "region": "RegionOne", "interface": "public", "id": "5a8af7e7062f49378c174bdb37ce6ffa"}],
+        "type": "volume", "id": "261e05739b7e4b089445c175d20d6d6b", "name": "cinder"},
+        {"endpoints": [{"region_id": "RegionOne", "url": "http://172.29.236.100:9292",
+        "region": "RegionOne", "interface": "internal", "id": "119f9cbb9bc04838ad28c1ce38419ce3"},
+        {"region_id": "RegionOne", "url": "http://146.20.103.69:9292", "region": "RegionOne",
+        "interface": "public", "id": "5c3cf95e30794363a86634aeac9b9a3f"}, {"region_id":
+        "RegionOne", "url": "http://172.29.236.100:9292", "region": "RegionOne", "interface":
+        "<OS_USERNAME>", "id": "e916ce60ba76408698b47d4d6f1ed288"}], "type": "image",
+        "id": "444e55d8210d40b9ab903743cf9baa5b", "name": "glance"}, {"endpoints":
+        [{"region_id": "RegionOne", "url": "http://172.29.236.100:8777", "region":
+        "RegionOne", "interface": "internal", "id": "1bdeb9251ca14f8e8ea65b72f5e85886"},
+        {"region_id": "RegionOne", "url": "http://146.20.103.69:8777", "region": "RegionOne",
+        "interface": "public", "id": "30e26674afe949198b3e374d3b5f78ce"}, {"region_id":
+        "RegionOne", "url": "http://172.29.236.100:8777/", "region": "RegionOne",
+        "interface": "<OS_USERNAME>", "id": "db36ec89c95143a4b54010b443b4bf90"}],
+        "type": "metering", "id": "67da4be148b84223a3122a411ffcf934", "name": "ceilometer"},
+        {"endpoints": [{"region_id": "RegionOne", "url": "http://172.29.236.100:8776/v2/92ac5831e22341bc9cc88f3942ba4d68",
+        "region": "RegionOne", "interface": "internal", "id": "353af1dfd5dd4e28b64bc8d25a1297a0"},
+        {"region_id": "RegionOne", "url": "http://146.20.103.69:8776/v2", "region":
+        "RegionOne", "interface": "public", "id": "517fcef7d51642879b7d5767313f1134"},
+        {"region_id": "RegionOne", "url": "http://172.29.236.100:8776/v2/92ac5831e22341bc9cc88f3942ba4d68",
+        "region": "RegionOne", "interface": "<OS_USERNAME>", "id": "b4a08c735e1a48a59f2c9fa683614feb"}],
+        "type": "volumev2", "id": "830e3e49545d4a418f6c77c17fb5c6f9", "name": "cinderv2"},
+        {"endpoints": [{"region_id": "RegionOne", "url": "http://172.29.236.100:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68",
+        "region": "RegionOne", "interface": "<OS_USERNAME>", "id": "01909f8514734b28a5e2e708b9297d0c"},
+        {"region_id": "RegionOne", "url": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68",
+        "region": "RegionOne", "interface": "public", "id": "3799b1b2777748caa06a4acf22680a0e"},
+        {"region_id": "RegionOne", "url": "http://172.29.236.100:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68",
+        "region": "RegionOne", "interface": "internal", "id": "a304fd27822146bd8e32eb762e5bb5f0"}],
+        "type": "compute", "id": "a788f652c90b4e5e87bca9d7f1dffd9a", "name": "nova"},
+        {"endpoints": [{"region_id": "RegionOne", "url": "http://172.29.236.100:8080/v1/AUTH_92ac5831e22341bc9cc88f3942ba4d68",
+        "region": "RegionOne", "interface": "<OS_USERNAME>", "id": "726006d5ceec4bdc8633f0a29eeb811e"},
+        {"region_id": "RegionOne", "url": "http://172.29.236.100:8080/v1/AUTH_92ac5831e22341bc9cc88f3942ba4d68",
+        "region": "RegionOne", "interface": "internal", "id": "8dde2d6deeab41b9ad4de01d972c0ad3"},
+        {"region_id": "RegionOne", "url": "http://146.20.103.69:8080/v1/AUTH_92ac5831e22341bc9cc88f3942ba4d68",
+        "region": "RegionOne", "interface": "public", "id": "e0be6f2bcaa64f5fb15d6da67640ad7b"}],
+        "type": "object-store", "id": "a9b173ae35d44438bf04f364d924f775", "name":
+        "swift"}, {"endpoints": [{"region_id": "RegionOne", "url": "<OS_AUTH_URL>",
+        "region": "RegionOne", "interface": "public", "id": "1543845909e14580903e11ff0c281315"},
+        {"region_id": "RegionOne", "url": "http://172.29.236.100:5000/v3", "region":
+        "RegionOne", "interface": "internal", "id": "cab9ed12ea3549848ef046da27bd8c04"},
+        {"region_id": "RegionOne", "url": "http://172.29.236.100:35357/v3", "region":
+        "RegionOne", "interface": "<OS_USERNAME>", "id": "f5f63635e3da464383e7a719969898c2"}],
+        "type": "identity", "id": "c73f56d7373e4ea88c593b4eb0e06f88", "name": "keystone"},
+        {"endpoints": [{"region_id": "RegionOne", "url": "http://172.29.236.100:8042",
+        "region": "RegionOne", "interface": "internal", "id": "006d3a0ddb8c482ba8453066a4bfb59f"},
+        {"region_id": "RegionOne", "url": "http://172.29.236.100:8042", "region":
+        "RegionOne", "interface": "<OS_USERNAME>", "id": "6da9eb9bc1db46f1bbf3c729733c8217"},
+        {"region_id": "RegionOne", "url": "http://146.20.103.69:8042", "region": "RegionOne",
+        "interface": "public", "id": "ba86041f7a044c1b9951a4e9ff3b98e9"}], "type":
+        "alarming", "id": "ce97f94861164163969a63f10a451033", "name": "aodh"}, {"endpoints":
+        [{"region_id": "RegionOne", "url": "http://172.29.236.100:8000/v1", "region":
+        "RegionOne", "interface": "<OS_USERNAME>", "id": "5b7095def9e145c59f4a5c03e7c16d34"},
+        {"region_id": "RegionOne", "url": "http://172.29.236.100:8000/v1", "region":
+        "RegionOne", "interface": "internal", "id": "7d0df639b3ba4366b2f46d4bb1518847"},
+        {"region_id": "RegionOne", "url": "http://146.20.103.69:8000/v1", "region":
+        "RegionOne", "interface": "public", "id": "f3c47b6a4e5e4d3a838ec5254f14c1bf"}],
+        "type": "cloudformation", "id": "eb2d2438689647ad8d3efec2ed42e6a5", "name":
+        "heat-cfn"}, {"endpoints": [{"region_id": "RegionOne", "url": "http://172.29.236.100:9696",
+        "region": "RegionOne", "interface": "internal", "id": "41a9e34eece94f139686ea7565db95e0"},
+        {"region_id": "RegionOne", "url": "http://146.20.103.69:9696/v2.0", "region":
+        "RegionOne", "interface": "public", "id": "7b9a38708ae54f258e85571520991e09"},
+        {"region_id": "RegionOne", "url": "http://172.29.236.100:9696", "region":
+        "RegionOne", "interface": "<OS_USERNAME>", "id": "b18abcba1d7b428a8c087db97375d0de"}],
+        "type": "network", "id": "f9041affd6e748a090999746b6e4d81b", "name": "neutron"},
+        {"endpoints": [{"region_id": "RegionOne", "url": "http://172.29.236.100:8004/v1/92ac5831e22341bc9cc88f3942ba4d68",
+        "region": "RegionOne", "interface": "internal", "id": "6748f91f9f1140eb8bcbe3694317e92f"},
+        {"region_id": "RegionOne", "url": "http://172.29.236.100:8004/v1/92ac5831e22341bc9cc88f3942ba4d68",
+        "region": "RegionOne", "interface": "<OS_USERNAME>", "id": "b8e274b0e43d4928b78277a473303cc6"},
+        {"region_id": "RegionOne", "url": "http://146.20.103.69:8004/v1/92ac5831e22341bc9cc88f3942ba4d68",
+        "region": "RegionOne", "interface": "public", "id": "e36c5fb8dd6e45e88b2502b32be7ba0e"}],
+        "type": "orchestration", "id": "fb414c7367c74fcd80dab402fb743e71", "name":
+        "heat"}], "extras": {}, "user": {"domain": {"id": "default", "name": "Default"},
+        "id": "291651f78d4d46738e3b6dc413243760", "name": "<OS_USERNAME>"}, "audit_ids":
+        ["v104RAUMROyQnUM46lbEXA"], "issued_at": "2016-08-11T16:58:59.000000Z"}}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:58:59 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '363'
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-b10074df-4a54-4e39-93f1-b3067dd1975b
+      Date:
+      - Thu, 11 Aug 2016 16:59:00 GMT
+    body:
+      encoding: UTF-8
+      string: '{"servers": [{"id": "a1d8a8ef-e65a-463a-a471-b1d9d679543c", "links":
+        [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/a1d8a8ef-e65a-463a-a471-b1d9d679543c",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/servers/a1d8a8ef-e65a-463a-a471-b1d9d679543c",
+        "rel": "bookmark"}], "name": "583396"}]}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:58:59 GMT
+- request:
+    method: delete
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers/a1d8a8ef-e65a-463a-a471-b1d9d679543c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Content-Length:
+      - '0'
+      Content-Type:
+      - application/json
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-702e1e3b-b85c-427f-98ec-a87c442b0621
+      Date:
+      - Thu, 11 Aug 2016 16:59:00 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:00 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/snapshots
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-b89c72fd-64f3-4732-8ab3-c095fb593b08
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '17'
+      X-Openstack-Request-Id:
+      - req-b89c72fd-64f3-4732-8ab3-c095fb593b08
+      Date:
+      - Thu, 11 Aug 2016 16:59:00 GMT
+    body:
+      encoding: UTF-8
+      string: '{"snapshots": []}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:00 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/backups
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-8b7143da-3047-4b7e-8f4f-870c762aa404
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '15'
+      X-Openstack-Request-Id:
+      - req-8b7143da-3047-4b7e-8f4f-870c762aa404
+      Date:
+      - Thu, 11 Aug 2016 16:59:01 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backups": []}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:00 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/volumes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-2bd8f3cb-d8e0-4b1d-a9ae-6250f32fa6ac
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '15'
+      X-Openstack-Request-Id:
+      - req-2bd8f3cb-d8e0-4b1d-a9ae-6250f32fa6ac
+      Date:
+      - Thu, 11 Aug 2016 16:59:01 GMT
+    body:
+      encoding: UTF-8
+      string: '{"volumes": []}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:00 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1755'
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-fa2baa2f-2115-40c2-9554-625dddbcc0c6
+      Date:
+      - Thu, 11 Aug 2016 16:59:01 GMT
+    body:
+      encoding: UTF-8
+      string: '{"flavors": [{"id": "1", "links": [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/1",
+        "rel": "bookmark"}], "name": "m1.tiny"}, {"id": "2", "links": [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/2",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/2",
+        "rel": "bookmark"}], "name": "m1.small"}, {"id": "201", "links": [{"href":
+        "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/201",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/201",
+        "rel": "bookmark"}], "name": "tempest1"}, {"id": "202", "links": [{"href":
+        "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/202",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/202",
+        "rel": "bookmark"}], "name": "tempest2"}, {"id": "3", "links": [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/3",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/3",
+        "rel": "bookmark"}], "name": "m1.medium"}, {"id": "4", "links": [{"href":
+        "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/4",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/4",
+        "rel": "bookmark"}], "name": "m1.large"}, {"id": "5", "links": [{"href": "http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/flavors/5",
+        "rel": "self"}, {"href": "http://146.20.103.69:8774/92ac5831e22341bc9cc88f3942ba4d68/flavors/5",
+        "rel": "bookmark"}], "name": "m1.xlarge"}]}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:01 GMT
+recorded_with: VCR 3.0.3

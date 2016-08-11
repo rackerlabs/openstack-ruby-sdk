@@ -1,0 +1,192 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '15'
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-b861ccb1-363a-4887-b48a-63a78d0dfaf4
+      Date:
+      - Thu, 11 Aug 2016 16:59:10 GMT
+    body:
+      encoding: UTF-8
+      string: '{"servers": []}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:10 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/snapshots
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-36c3eec7-7e0c-4a6d-b67e-1bf6d496cf76
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '17'
+      X-Openstack-Request-Id:
+      - req-36c3eec7-7e0c-4a6d-b67e-1bf6d496cf76
+      Date:
+      - Thu, 11 Aug 2016 16:59:10 GMT
+    body:
+      encoding: UTF-8
+      string: '{"snapshots": []}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:10 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/backups
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-e0a8e331-71db-43bb-8a71-429cd52ea1dd
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '15'
+      X-Openstack-Request-Id:
+      - req-e0a8e331-71db-43bb-8a71-429cd52ea1dd
+      Date:
+      - Thu, 11 Aug 2016 16:59:10 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backups": []}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:10 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/volumes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-e1919cde-6a97-4214-a40f-0f00e9eab3fc
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '15'
+      X-Openstack-Request-Id:
+      - req-e1919cde-6a97-4214-a40f-0f00e9eab3fc
+      Date:
+      - Thu, 11 Aug 2016 16:59:10 GMT
+    body:
+      encoding: UTF-8
+      string: '{"volumes": []}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:10 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/os-keypairs
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXrK7T-zuHsFM7TjTya1hnBFB58wUW65EoFsJws3zD-vbZR_PVhACNpCH1h0TBuX8XeC0FazFGnYG9UQkaO9p4cXEDXkCn8CWVVqXhFxN321XtZW-WSSKopYqfx2hQ0Y4siw00Fi5bz50nUyL-oqNAA6WnO7o8dT1PC_zkyfgI_rw6CNc
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '16'
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-2f6e879d-cefc-448f-a53a-a0dd9bf12b18
+      Date:
+      - Thu, 11 Aug 2016 16:59:11 GMT
+    body:
+      encoding: UTF-8
+      string: '{"keypairs": []}'
+    http_version: 
+  recorded_at: Thu, 11 Aug 2016 16:59:10 GMT
+recorded_with: VCR 3.0.3

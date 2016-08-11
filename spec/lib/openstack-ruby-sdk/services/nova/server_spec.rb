@@ -9,6 +9,7 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
   end
 
   it 'gets its self' do
+    OpenStackRubySDK::Nova::Server.all
     expect(OpenStackRubySDK::Nova::Server.find(server.id).id).to eq(server.id)
   end
 
@@ -113,7 +114,6 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
   end
 
   it 'can deattach a volume' do
-    do_it_live
     attachment = server.attach_volume(volume.id)
     Peace::Helpers.wait_for(volume, "in-use")
     Peace::Helpers.wait_for(server)

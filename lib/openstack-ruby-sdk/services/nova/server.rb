@@ -63,7 +63,7 @@ class OpenStackRubySDK::Nova::Server
     attachment
   end
 
-	 def detach_volume(volume_id)
+  def detach_volume(volume_id)
     attachments = OpenStackRubySDK::Nova::VolumeAttachment.all(server_id: id)
     attachment  = attachments.find{ |a| a.volume_id == volume_id}
 

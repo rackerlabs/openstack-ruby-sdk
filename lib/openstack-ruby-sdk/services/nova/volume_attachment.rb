@@ -9,7 +9,7 @@ class OpenStackRubySDK::Nova::VolumeAttachment
   belongs_to :server
   belongs_to :volume
 
-  json_key_name :volumeAttachment
+  json_key_name :volumeAttachments
   rackspace_api_path "/servers/{{server_id}}/os-volume_attachments"
 
 end
