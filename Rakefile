@@ -30,3 +30,15 @@ task :rerun do
   task service.to_sym do ; end
   task model.to_sym do ; end
 end
+
+desc "doooooo itttttt"
+task :purge_openstack do
+  UUID = /([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})/
+
+  %w{backup snapshot volume server port subnet network}.each do |r|
+    ids = `openstack #{r} list | awk '{print $2}'`
+    ids.scan(UUID).each do |uid|
+      `openstack #{r} delete #{uid.first}`
+    end
+  end
+end
