@@ -1,26 +1,29 @@
 require 'spec_helper'
 
 describe OpenStackRubySDK::Neutron::Network, :vcr do
-  let(:network){ OpenStackRubySDK::Neutron::Network.new }
+  let(:network) do
+    OpenStackRubySDK::Neutron::Network.create({ name: "testing" })
+  end
 
   it 'gets an index' do
-    expect(OpenStackRubySDK::Neutron::Network.all).to eq([])
+    expect(OpenStackRubySDK::Neutron::Network.all.count).to be >= 0
   end
 
   it 'gets its self' do
-    expect(OpenStackRubySDK::Neutron::Network.find(network.id)).to eq(network)
+    n = OpenStackRubySDK::Neutron::Network.find(network.id)
+    expect(n.id).to eq(network.id)
   end
 
   it 'creates its self' do
-    network.name = Time.now.usec.to_s
-    expect(network.save).to eq(true)
+    expect(network).to be_present
   end
 
   it 'updates its self' do
-    network.name = Time.now.usec.to_s
-    expect(network.save).to eq(true)
-    network.name = Time.now.usec.to_s
-    expect(network.save).to eq(true)
+    name = "something wacky"
+    network.name = name
+    network.save
+    network.reload
+    expect(network.name).to eq(name)
   end
 
   it 'deletes its self' do

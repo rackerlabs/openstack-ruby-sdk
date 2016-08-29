@@ -52,13 +52,17 @@ RSpec.configure do |config|
   end
 
   def do_it_live
-    unless VCR.current_cassette.recording?
+    unless recording?
       File.delete(VCR.current_cassette.file)
     end
   end
 
+  def recording?
+    VCR.current_cassette.recording?
+  end
+
   def fast_forward(n)
-    sleep n if VCR.current_cassette.recording?
+    sleep n if recording?
   end
 
   def fresh_server
