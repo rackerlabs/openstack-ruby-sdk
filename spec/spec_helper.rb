@@ -34,10 +34,10 @@ RSpec.configure do |config|
   # We must keep this at :each recurrence; otherwise we swamp the testing server limits on large enough test runs.
   config.before(:each) do
     if VCR.current_cassette.recording?
-      OpenStackRubySDK::Nova::Server.all.each{ |s| s.destroy rescue next }
       OpenStackRubySDK::Cinder::Snapshot.all.each{ |v| v.destroy rescue next }
       OpenStackRubySDK::Cinder::Backup.all.each{ |v| v.destroy rescue next }
       OpenStackRubySDK::Cinder::Volume.all.each{ |v| v.destroy rescue next }
+      OpenStackRubySDK::Nova::Server.all.each{ |s| s.destroy rescue next }
     end
   end
 
