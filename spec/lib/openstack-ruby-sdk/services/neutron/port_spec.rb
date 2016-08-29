@@ -1,26 +1,36 @@
 require 'spec_helper'
 
 describe OpenStackRubySDK::Neutron::Port, :vcr do
-  let(:port){ OpenStackRubySDK::Neutron::Port.new }
+  let(:network) do
+    OpenStackRubySDK::Neutron::Network.create({ name: "testing" })
+  end
+
+  let(:port) do
+    OpenStackRubySDK::Neutron::Port.create({
+      network_id: network.id,
+      name: "testing",
+      admin_state_up: true
+    })
+  end
 
   it 'gets an index' do
-    expect(OpenStackRubySDK::Neutron::Port.all).to eq([])
+    expect(OpenStackRubySDK::Neutron::Port.all.count).to be >= 0
   end
 
   it 'gets its self' do
-    expect(OpenStackRubySDK::Neutron::Port.find(port.id)).to eq(port)
+    expect(OpenStackRubySDK::Neutron::Port.find(port.id).id).to eq(port.id)
   end
 
   it 'creates its self' do
-    port.name = Time.now.usec.to_s
-    expect(port.save).to eq(true)
+    expect(port).to be_present
   end
 
   it 'updates its self' do
-    port.name = Time.now.usec.to_s
-    expect(port.save).to eq(true)
-    port.name = Time.now.usec.to_s
-    expect(port.save).to eq(true)
+    name = "something wacky"
+    port.name = name
+    port.save
+    port.reload
+    expect(port.name).to eq(name)
   end
 
   it 'deletes its self' do
