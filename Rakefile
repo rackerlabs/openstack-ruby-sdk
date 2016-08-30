@@ -38,6 +38,7 @@ task :purge_openstack do
   %w{backup snapshot volume server port subnet network}.each do |r|
     ids = `openstack #{r} list | awk '{print $2}'`
     ids.scan(UUID).each do |uid|
+      puts "#{r} - #{uid.first}"
       `openstack #{r} delete #{uid.first}`
     end
   end

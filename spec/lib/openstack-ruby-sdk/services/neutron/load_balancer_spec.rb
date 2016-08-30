@@ -11,41 +11,38 @@ describe OpenStackRubySDK::Neutron::LoadBalancer, :vcr do
     OpenStackRubySDK::Neutron::Subnet.create({
       network_id: network.id,
       ip_version: 4,
-      cidr: "10.0.0.1"
+      cidr: "10.0.0.1/8"
     })
   end
 
   let(:lb) do
     OpenStackRubySDK::Neutron::LoadBalancer.create({
-      admin_state_up: "",
-      description: "",
-      listeners: "",
-      name: "",
-      operating_status: "",
-      provisioning_status: "",
-      vip_address: "",
-      vip_subnet_id: ""
+      admin_state_up: true,
+      description: "testing",
+      name: "testing",
+      vip_address: "10.0.0.4",
+      vip_subnet_id: subnet.id
     })
   end
 
   it 'gets an index' do
-    expect(OpenStackRubySDK::Neutron::LoadBalancer.all).to eq([])
+    expect(OpenStackRubySDK::Neutron::LoadBalancer.all.count).to be >= 0
   end
 
   it 'gets its self' do
-    expect(OpenStackRubySDK::Neutron::LoadBalancer.find(lb.id)).to eq(lb)
+    expect(OpenStackRubySDK::Neutron::LoadBalancer.find(lb.id).id).to eq(lb.id)
   end
 
   it 'creates its self' do
-    lb.name = Time.now.usec.to_s
-    expect(lb.save).to eq(true)
+    expect(lb).to be_present
   end
 
   it 'updates its self' do
-    lb.name = Time.now.usec.to_s
-    expect(lb.save).to eq(true)
-    lb.name = Time.now.usec.to_s
-    expect(lb.save).to eq(true)
+    name = "something wacky"
+    lb.name = name
+    lb.save
+    lb.reload
+    expect(lb.name).to eq(name)
   end
 
   it 'deletes its self' do

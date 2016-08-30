@@ -1,0 +1,318 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/snapshots
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXxcwKvRjm6M7GQq5KA1vlSsOUmQ6B-QqwsQeVucGvPIXQSzhjznAV7I0q04cv70j63LZJI-UU-eHRWyFkc_ATIXiViPHs6UgyuWzg4VjcmSscBay_0RNJ4ZG_Y1PA9Sy0hAkgOwSDwWHlifZfYME0UM5qQkuMT1ih0EL4IZe-Zr2S33Q
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-08321366-7462-4668-ade8-5082f37000ee
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '17'
+      X-Openstack-Request-Id:
+      - req-08321366-7462-4668-ade8-5082f37000ee
+      Date:
+      - Tue, 30 Aug 2016 18:10:24 GMT
+    body:
+      encoding: UTF-8
+      string: '{"snapshots": []}'
+    http_version: 
+  recorded_at: Tue, 30 Aug 2016 18:10:19 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/backups
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXxcwKvRjm6M7GQq5KA1vlSsOUmQ6B-QqwsQeVucGvPIXQSzhjznAV7I0q04cv70j63LZJI-UU-eHRWyFkc_ATIXiViPHs6UgyuWzg4VjcmSscBay_0RNJ4ZG_Y1PA9Sy0hAkgOwSDwWHlifZfYME0UM5qQkuMT1ih0EL4IZe-Zr2S33Q
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-f1aaeea0-9211-467e-aca0-848340d3f63e
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '15'
+      X-Openstack-Request-Id:
+      - req-f1aaeea0-9211-467e-aca0-848340d3f63e
+      Date:
+      - Tue, 30 Aug 2016 18:10:24 GMT
+    body:
+      encoding: UTF-8
+      string: '{"backups": []}'
+    http_version: 
+  recorded_at: Tue, 30 Aug 2016 18:10:20 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/volumes
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXxcwKvRjm6M7GQq5KA1vlSsOUmQ6B-QqwsQeVucGvPIXQSzhjznAV7I0q04cv70j63LZJI-UU-eHRWyFkc_ATIXiViPHs6UgyuWzg4VjcmSscBay_0RNJ4ZG_Y1PA9Sy0hAkgOwSDwWHlifZfYME0UM5qQkuMT1ih0EL4IZe-Zr2S33Q
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Compute-Request-Id:
+      - req-fc886b4e-61e4-46e8-95a1-1c625a38566d
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1129'
+      X-Openstack-Request-Id:
+      - req-fc886b4e-61e4-46e8-95a1-1c625a38566d
+      Date:
+      - Tue, 30 Aug 2016 18:10:24 GMT
+    body:
+      encoding: UTF-8
+      string: '{"volumes": [{"status": "awaiting-transfer", "display_name": null,
+        "attachments": [], "availability_zone": "nova", "bootable": "false", "encrypted":
+        false, "created_at": "2016-08-29T15:31:04.000000", "multiattach": "false",
+        "display_description": null, "volume_type": null, "snapshot_id": null, "source_volid":
+        null, "metadata": {}, "id": "e42c90ac-a82a-49cb-8d12-8461a30aed73", "size":
+        1}, {"status": "creating", "display_name": null, "attachments": [], "availability_zone":
+        "nova", "bootable": "false", "encrypted": false, "created_at": "2016-08-11T17:09:07.000000",
+        "multiattach": "false", "display_description": null, "volume_type": null,
+        "snapshot_id": null, "source_volid": null, "metadata": {}, "id": "30da9b4e-d569-4f4c-a791-d193587005c9",
+        "size": 1}, {"status": "creating", "display_name": null, "attachments": [],
+        "availability_zone": "nova", "bootable": "false", "encrypted": false, "created_at":
+        "2016-08-11T17:03:56.000000", "multiattach": "false", "display_description":
+        null, "volume_type": null, "snapshot_id": null, "source_volid": null, "metadata":
+        {}, "id": "f64bf99f-1127-4544-a6cd-5cccc441057c", "size": 1}]}'
+    http_version: 
+  recorded_at: Tue, 30 Aug 2016 18:10:20 GMT
+- request:
+    method: delete
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/volumes/e42c90ac-a82a-49cb-8d12-8461a30aed73
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXxcwKvRjm6M7GQq5KA1vlSsOUmQ6B-QqwsQeVucGvPIXQSzhjznAV7I0q04cv70j63LZJI-UU-eHRWyFkc_ATIXiViPHs6UgyuWzg4VjcmSscBay_0RNJ4ZG_Y1PA9Sy0hAkgOwSDwWHlifZfYME0UM5qQkuMT1ih0EL4IZe-Zr2S33Q
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Length:
+      - '143'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Compute-Request-Id:
+      - req-34219289-76f8-4848-af7f-c8b451c959aa
+      X-Openstack-Request-Id:
+      - req-34219289-76f8-4848-af7f-c8b451c959aa
+      Date:
+      - Tue, 30 Aug 2016 18:10:25 GMT
+    body:
+      encoding: UTF-8
+      string: '{"badRequest": {"message": "Invalid volume: Volume status must be available
+        or error, but current status is: awaiting-transfer.", "code": 400}}'
+    http_version: 
+  recorded_at: Tue, 30 Aug 2016 18:10:20 GMT
+- request:
+    method: delete
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/volumes/30da9b4e-d569-4f4c-a791-d193587005c9
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXxcwKvRjm6M7GQq5KA1vlSsOUmQ6B-QqwsQeVucGvPIXQSzhjznAV7I0q04cv70j63LZJI-UU-eHRWyFkc_ATIXiViPHs6UgyuWzg4VjcmSscBay_0RNJ4ZG_Y1PA9Sy0hAkgOwSDwWHlifZfYME0UM5qQkuMT1ih0EL4IZe-Zr2S33Q
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Length:
+      - '134'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Compute-Request-Id:
+      - req-16127f2a-5fe6-4288-bb2a-5f428c466f88
+      X-Openstack-Request-Id:
+      - req-16127f2a-5fe6-4288-bb2a-5f428c466f88
+      Date:
+      - Tue, 30 Aug 2016 18:10:25 GMT
+    body:
+      encoding: UTF-8
+      string: '{"badRequest": {"message": "Invalid volume: Volume status must be available
+        or error, but current status is: creating.", "code": 400}}'
+    http_version: 
+  recorded_at: Tue, 30 Aug 2016 18:10:20 GMT
+- request:
+    method: delete
+    uri: http://146.20.103.69:8776/v1/92ac5831e22341bc9cc88f3942ba4d68/volumes/f64bf99f-1127-4544-a6cd-5cccc441057c
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXxcwKvRjm6M7GQq5KA1vlSsOUmQ6B-QqwsQeVucGvPIXQSzhjznAV7I0q04cv70j63LZJI-UU-eHRWyFkc_ATIXiViPHs6UgyuWzg4VjcmSscBay_0RNJ4ZG_Y1PA9Sy0hAkgOwSDwWHlifZfYME0UM5qQkuMT1ih0EL4IZe-Zr2S33Q
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Content-Length:
+      - '134'
+      Content-Type:
+      - application/json; charset=UTF-8
+      X-Compute-Request-Id:
+      - req-cf6c6910-02a2-4ce3-9782-dccbeda8e5a3
+      X-Openstack-Request-Id:
+      - req-cf6c6910-02a2-4ce3-9782-dccbeda8e5a3
+      Date:
+      - Tue, 30 Aug 2016 18:10:25 GMT
+    body:
+      encoding: UTF-8
+      string: '{"badRequest": {"message": "Invalid volume: Volume status must be available
+        or error, but current status is: creating.", "code": 400}}'
+    http_version: 
+  recorded_at: Tue, 30 Aug 2016 18:10:20 GMT
+- request:
+    method: get
+    uri: http://146.20.103.69:8774/v2.1/92ac5831e22341bc9cc88f3942ba4d68/servers
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXxcwKvRjm6M7GQq5KA1vlSsOUmQ6B-QqwsQeVucGvPIXQSzhjznAV7I0q04cv70j63LZJI-UU-eHRWyFkc_ATIXiViPHs6UgyuWzg4VjcmSscBay_0RNJ4ZG_Y1PA9Sy0hAkgOwSDwWHlifZfYME0UM5qQkuMT1ih0EL4IZe-Zr2S33Q
+      Content-Type:
+      - application/json
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '15'
+      X-Openstack-Nova-Api-Version:
+      - '2.1'
+      Vary:
+      - X-OpenStack-Nova-API-Version
+      X-Compute-Request-Id:
+      - req-8d1d5fd7-b381-4b61-8d8c-179896d1beb2
+      Date:
+      - Tue, 30 Aug 2016 18:10:25 GMT
+    body:
+      encoding: UTF-8
+      string: '{"servers": []}'
+    http_version: 
+  recorded_at: Tue, 30 Aug 2016 18:10:20 GMT
+- request:
+    method: post
+    uri: http://146.20.103.69:9696/v2.0/networks
+    body:
+      encoding: UTF-8
+      string: '{"network":{"name":"testing"}}'
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      X-Auth-Token:
+      - gAAAAABXxcwKvRjm6M7GQq5KA1vlSsOUmQ6B-QqwsQeVucGvPIXQSzhjznAV7I0q04cv70j63LZJI-UU-eHRWyFkc_ATIXiViPHs6UgyuWzg4VjcmSscBay_0RNJ4ZG_Y1PA9Sy0hAkgOwSDwWHlifZfYME0UM5qQkuMT1ih0EL4IZe-Zr2S33Q
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '30'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 409
+      message: Conflict
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Content-Length:
+      - '109'
+      X-Openstack-Request-Id:
+      - req-e5a39735-cfae-4268-a23c-d993864240e1
+      Date:
+      - Tue, 30 Aug 2016 18:10:25 GMT
+    body:
+      encoding: UTF-8
+      string: '{"NeutronError": {"message": "Quota exceeded for resources: [''network'']",
+        "type": "OverQuota", "detail": ""}}'
+    http_version: 
+  recorded_at: Tue, 30 Aug 2016 18:10:21 GMT
+recorded_with: VCR 3.0.3
