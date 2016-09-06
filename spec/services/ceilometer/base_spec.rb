@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Keystone::Role do
-  let(:klass){ OpenStackRubySDK::Keystone::Role }
+describe OpenStackRubySDK::Ceilometer::Base do
+  let(:klass){ OpenStackRubySDK::Ceilometer::Base }
   let(:obj){ klass.new }
 
   describe "Validation" do
