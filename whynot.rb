@@ -1,21 +1,25 @@
 require 'pry'
 require 'pathname'
 require 'active_support/all'
-# require "#{Dir.pwd}/lib/openstack-ruby-sdk"
-# require "#{Dir.pwd}/lib/openstack-ruby-sdk/version"
-#
-# Dir.glob("#{Dir.pwd}/lib/openstack-ruby-sdk/services/**/*.rb").each do |file|
-#   require file
-# end
+
+require "#{Dir.pwd}/lib/openstack-ruby-sdk"
+Dir.glob('lib/**/*.rb'){ |f| require_relative f }
 
 Dir.glob("#{Dir.pwd}/lib/openstack-ruby-sdk/services/**/*.rb").each do |file|
+  next if file =~ /base.rb/
+
   spec_path = file.gsub('lib/openstack-ruby-sdk/services', 'spec/services')
   bits      = spec_path.split('/')
   service   = bits[-2].to_sym
   object    = bits[-1][0...-3]
   klass     = "OpenStackRubySDK::#{service.to_s.classify}::#{object.classify}"
   path      = Pathname.new(spec_path)
-  obj       = klass.constantize.new
+
+  if klass =~ /Datum/
+    klass.gsub!('Datum', 'Data')
+  end
+
+  obj = klass.constantize.new
 
   `mkdir -p #{path.dirname}`
 
