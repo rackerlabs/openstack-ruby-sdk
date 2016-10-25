@@ -3,7 +3,7 @@ class OpenStackRubySDK::Cinder::VolumeTransfer
   attr_accessor :created_at, :id, :links, :name, :volume_id, :auth_key
 
   json_key_name "transfer"
-  rackspace_api_path "os-volume-transfer"
+  api_path "os-volume-transfer"
 
   def self.create(opts={})
     data = Core::Helpers.payload_builder("transfer", {

@@ -8,7 +8,7 @@ class OpenStackRubySDK::Neutron::Network
   attr_with_alias :provider_network_type, "provider:network_type"
   attr_with_alias :provider_segmentation_id, "provider:segmentation_id"
 
-  rackspace_api_path "/v2.0/networks"
+  api_path "/v2.0/networks"
 
   def save
     data = Core::Helpers.payload_builder(:network, {

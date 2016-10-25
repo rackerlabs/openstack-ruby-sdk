@@ -1,22 +1,17 @@
 module Core; end
 
-project_root = File.dirname(File.absolute_path(__FILE__))
-Dir.glob(project_root + '/rackspace-ruby-sdk-core/modules/*.rb'){ |f| require f }
-Dir.glob(project_root + '/rackspace-ruby-sdk-core/*.rb'){ |f| require f }
+path = File.dirname(File.absolute_path(__FILE__))
+Dir.glob("#{path}/modules/*.rb"){ |f| require f }
+Dir.glob("#{path}/*.rb"){ |f| require f }
 
 module Core
 
   @@auth_token      = nil
   @@service_catalog = nil
   @@tenant_id       = nil
-  @@sdk             = nil
   @@logger          = nil
 
   class << self
-    def sdk
-      @@sdk
-    end
-
     def auth_token
       @@auth_token
     end
@@ -26,13 +21,7 @@ module Core
     end
 
     def service_catalog
-      host = ENV['SDK'].to_s
-
-      if host == "" || host.nil? || !%w{openstack rackspace}.include?(host)
-        raise "ENV['SDK'] must be either 'openstack' or 'rackspace'"
-      end
-
-      @@service_catalog ||= Core::ServiceCatalog.load!(host)
+      @@service_catalog ||= Core::ServiceCatalog.load!
     end
 
     def sdk=(sdk)

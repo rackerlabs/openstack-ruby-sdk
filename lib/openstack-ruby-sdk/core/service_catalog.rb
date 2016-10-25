@@ -5,18 +5,11 @@ require 'pry'
 
 class Core::ServiceCatalog
 
-  RACKSPACE_AUTH_URL = "https://identity.api.rackspacecloud.com/v2.0/tokens"
-
   attr_accessor :id, :services, :access_token, :region
 
   class << self
-    def load!(host)
-      info = case host.to_sym
-        when :rackspace then rackspace_based_auth
-        when :openstack then openstack_based_auth
-        else
-          raise "Requires either :rackspace or :openstack as `host`"
-        end
+    def load!
+      info = openstack_based_auth
 
       if ENV['SC_STUB'] == 'true'
         auth_url = "http://127.0.0.1:7000/service_catalog"
@@ -30,7 +23,6 @@ class Core::ServiceCatalog
       response = ::RestClient.post(auth_url, body, headers)
       token    = response.headers[:x_subject_token]
       body     = JSON.parse(response.body)
-      binding.pry
 
       # catalog = body['token']['catalog']
       catalog = body['access']['serviceCatalog']
@@ -38,30 +30,6 @@ class Core::ServiceCatalog
     end
 
     private
-
-    def rackspace_based_auth
-      Core.logger.debug 'Loading Rackspace ServiceCatalog'
-
-      auth_url = RACKSPACE_AUTH_URL
-      api_key  = ENV['RS_API_KEY']
-      username = ENV['RS_USERNAME']
-      region   = ENV['RS_REGION_NAME']
-
-      raise "ENV['RS_API_KEY'] not set" unless api_key
-      raise "ENV['RS_USERNAME'] not set" unless username
-      raise "ENV['RS_REGION_NAME'] not set" unless region
-
-      body = {
-        "auth": {
-          "RAX-KSKEY:apiKeyCredentials": {
-            "apiKey": api_key,
-            "username": username
-          }
-        }
-      }
-
-      { auth_url: auth_url, body: body.to_json, region: region }
-    end
 
     def openstack_based_auth
       Core.logger.debug 'Loading OpenStack ServiceCatalog'

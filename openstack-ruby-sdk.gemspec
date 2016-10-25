@@ -19,8 +19,10 @@ Gem::Specification.new do |s|
   s.executables   = []
   s.require_paths = ["lib"]
 
-  s.add_dependency "rackspace-ruby-sdk-core"
   s.add_dependency "thor"
+  s.add_dependency "activesupport"
+  s.add_dependency "activemodel"
+  s.add_dependency "rest_client"
 
   s.add_development_dependency "awesome_print"
   s.add_development_dependency "bundler", "~> 1.10"

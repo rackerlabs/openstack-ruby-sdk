@@ -10,7 +10,7 @@ class OpenStackRubySDK::Cinder::Snapshot
   attr_with_alias :progress, "os-extended-snapshot-attributes:progress"
   attr_with_alias :project_id, "os-extended-snapshot-attributes:project_id"
 
-  rackspace_api_path "snapshots"
+  api_path "snapshots"
   json_key_name :snapshot
 
   def self.create(opts={})

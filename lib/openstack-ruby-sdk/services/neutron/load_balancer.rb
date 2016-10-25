@@ -5,7 +5,7 @@ class OpenStackRubySDK::Neutron::LoadBalancer
 
   attr_with_alias :state, :provisioning_status
 
-  rackspace_api_path "/v2.0/lbaas/loadbalancers"
+  api_path "/v2.0/lbaas/loadbalancers"
   json_key_name :loadbalancer
 
   def self.create(opts={})

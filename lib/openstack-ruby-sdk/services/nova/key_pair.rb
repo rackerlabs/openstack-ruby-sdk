@@ -4,7 +4,7 @@ class OpenStackRubySDK::Nova::KeyPair
   attr_accessor :id, :public_key, :private_key, :user_id, :fingerprint, :name
 
   belongs_to :user
-  rackspace_api_path "os-keypairs"
+  api_path "os-keypairs"
 
   class << self
     def collection_name

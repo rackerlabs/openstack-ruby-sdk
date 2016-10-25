@@ -9,7 +9,7 @@ class OpenStackRubySDK::Neutron::Port
   attr_with_alias :binding_vif_type, "binding:vif_type"
   attr_with_alias :binding_vnic_type, "binding:vnic_type"
 
-  rackspace_api_path "/v2.0/ports"
+  api_path "/v2.0/ports"
 
   def save
     data = Core::Helpers.payload_builder(:port, {

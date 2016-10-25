@@ -61,8 +61,8 @@ module Core::ORM
 
     # A Mustache-inspired templated string that overrides
     # default naming conventions and injects nested URL variables.
-    def rackspace_api_path(str)
-      @rackspace_api_path = str
+    def api_path(str)
+      @api_path = str
     end
 
     # A symbol that describes the JSON key name where the object
@@ -84,7 +84,7 @@ module Core::ORM
 
     # Provide full enpoint URL for a collection of objects
     def collection_url(attrs={})
-      path = (@rackspace_api_path && attrs) ? build_api_url!(attrs) : collection_name
+      path = (@api_path && attrs) ? build_api_url!(attrs) : collection_name
       "#{service_url}/#{path}"
     end
 
@@ -96,7 +96,7 @@ module Core::ORM
     private
 
     def build_api_url!(attrs)
-      path = @rackspace_api_path.dup
+      path = @api_path.dup
 
       attrs.each do |(k,v)|
         if arr = /{{\w+}}/.match(path)

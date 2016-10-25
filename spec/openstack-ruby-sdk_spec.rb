@@ -13,40 +13,33 @@ describe OpenStackRubySDK, :vcr do
     expect(Core.service_catalog.available_services.size).to be > 0
   end
 
-  it 'require ENV["SDK"] to be either :rackspace or :openstack' do
-    expect( Core.service_catalog && Core.sdk ).to eq('openstack')
+  let!(:catalog){ Core::ServiceCatalog.load! }
+
+  it 'sets the tenant_id globally' do
+    expect(Core.tenant_id).not_to be_nil
   end
 
-  describe "OpenStack-based catalogs" do
-    let!(:catalog){ Core::ServiceCatalog.load!(:openstack) }
-
-    it 'sets the tenant_id globally' do
-      expect(Core.tenant_id).not_to be_nil
-    end
-
-    it 'sets the auth_token globally' do
-      expect(Core.auth_token).not_to be_nil
-    end
-
-    it 'sets the catalog globally' do
-      expect(Core.service_catalog).not_to be_nil
-    end
-
-    it 'knows which services are available' do
-      expect(Core.service_catalog.available_services).not_to be_nil
-    end
-
-    it 'knows the URL for a service based on name and region' do
-      expect(Core.service_catalog.url_for('neutron')).not_to be_nil
-    end
-
-    it 'expects these env vars' do
-      %w{OS_AUTH_URL OS_USERNAME OS_PASSWORD OS_TENANT_NAME}.each do |var|
-        ENV[var] = nil
-        expect{ Core::ServiceCatalog.load!(:openstack) }.to raise_error RuntimeError
-        ENV[var] = "something"
-      end
-    end
+  it 'sets the auth_token globally' do
+    expect(Core.auth_token).not_to be_nil
   end
 
+  it 'sets the catalog globally' do
+    expect(Core.service_catalog).not_to be_nil
+  end
+
+  it 'knows which services are available' do
+    expect(Core.service_catalog.available_services).not_to be_nil
+  end
+
+  it 'knows the URL for a service based on name and region' do
+    expect(Core.service_catalog.url_for('neutron')).not_to be_nil
+  end
+
+  it 'expects these env vars' do
+    %w{OS_AUTH_URL OS_USERNAME OS_PASSWORD OS_TENANT_NAME}.each do |var|
+      ENV[var] = nil
+      expect{ Core::ServiceCatalog.load! }.to raise_error RuntimeError
+      ENV[var] = "something"
+    end
+  end
 end
