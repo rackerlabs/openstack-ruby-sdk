@@ -1,10 +1,10 @@
-module Peace::Service
+module Core::Service
 
   def self.included(klass)
     klass.extend ClassMethods
     
     klass.class_eval do
-      include Peace::HasResources
+      include Core::HasResources
     end
   end
 

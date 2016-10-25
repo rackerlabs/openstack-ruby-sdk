@@ -58,22 +58,22 @@ RSpec.configure do |config|
       name: Time.now.usec.to_s,
       flavorRef: FLAVOR_ID,
       imageRef: IMAGE_ID })
-    Peace::Helpers.wait_for(server)
+    Core::Helpers.wait_for(server)
   end
 
   def fresh_volume
     volume = OpenStackRubySDK::Cinder::Volume.create({
       size: '1',
       name: Time.now.usec.to_s })
-    Peace::Helpers.wait_for(volume, "available")
+    Core::Helpers.wait_for(volume, "available")
   end
 
   def server_with_volume
     v = fresh_volume
     s = fresh_server
     s.attach_volume(v.id)
-    Peace::Helpers.wait_for(v, "in-use")
-    Peace::Helpers.wait_for(s)
+    Core::Helpers.wait_for(v, "in-use")
+    Core::Helpers.wait_for(s)
   end
 
 end

@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Raksha::Backup
-  include Peace::Model
+  include Core::Model
 	attr_accessor :BackupId, :BackupConfigurationId, :CurrentState, :BackupConfigurationName, :MachineAgentId, :MachineName, :StateChangeTime, :IsEncrypted, :EncryptionKey
 	has_many :restores
 	has_many :restore_configurations

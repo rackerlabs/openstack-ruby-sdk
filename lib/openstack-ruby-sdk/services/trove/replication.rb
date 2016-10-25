@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Trove::Replication 
-  include Peace::Model
+  include Core::Model
 	attr_accessor :created, :datastore, :flavor, :id, :ip, :links, :name, :replica_of, :status, :updated, :volume
 	
 	class << self

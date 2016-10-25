@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Nova::Action
-  include Peace::Model
+  include Core::Model
   attr_accessor :action, :instance_uuid, :message, :project_id, :request_id, :start_time, :user_id, :server_id
 
   belongs_to :server

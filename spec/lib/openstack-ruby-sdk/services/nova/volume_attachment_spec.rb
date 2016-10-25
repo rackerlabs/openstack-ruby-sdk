@@ -11,7 +11,7 @@ describe OpenStackRubySDK::Nova::VolumeAttachment, :vcr do
       name: Time.now.usec.to_s
     })
 
-    Peace::Helpers.wait_for(s)
+    Core::Helpers.wait_for(s)
   end
 
   after do

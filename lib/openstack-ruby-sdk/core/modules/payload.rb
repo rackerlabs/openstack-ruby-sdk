@@ -1,7 +1,7 @@
 ENV['SDK'] = "openstack"
 ENV['SC_STUB'] = "true"
 
-module Peace::Payload
+module Core::Payload
   def self.included(klass)
     klass.extend ClassMethods
   end

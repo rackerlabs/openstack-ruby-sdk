@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Designate::Zone 
-  include Peace::Model
+  include Core::Model
   attr_accessor :id, :email, :domain, :created, :updated, :account_id, :ttl, :nameservers, :comment
   
   belongs_to :account

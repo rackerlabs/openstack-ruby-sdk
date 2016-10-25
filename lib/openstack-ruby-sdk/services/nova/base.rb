@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Nova
-  include Peace::Service
+  include Core::Service
 
   has_resource :action
   has_resource :flavor

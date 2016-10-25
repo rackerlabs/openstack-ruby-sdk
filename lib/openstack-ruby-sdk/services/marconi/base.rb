@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Marconi 
-  include Peace::Service
+  include Core::Service
 
   has_resource :claim
   has_resource :message

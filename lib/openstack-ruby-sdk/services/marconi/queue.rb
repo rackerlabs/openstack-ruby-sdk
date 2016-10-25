@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Marconi::Queue 
-  include Peace::Model
+  include Core::Model
 	attr_accessor :href, :name
 	
 	def check_existence; end

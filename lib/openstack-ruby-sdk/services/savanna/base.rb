@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Savanna 
-  include Peace::Service
+  include Core::Service
 
   has_resource :cluster
   has_resource :credential

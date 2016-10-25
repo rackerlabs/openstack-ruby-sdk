@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Keystone::AuthenticationAndTokenManagement  
-  include Peace::Model
+  include Core::Model
   attr_accessor :audit_ids, :expires_at, :extras, :issued_at, :methods, :user
   # POST /v3/auth/tokens
   # POST /v3/auth/tokens

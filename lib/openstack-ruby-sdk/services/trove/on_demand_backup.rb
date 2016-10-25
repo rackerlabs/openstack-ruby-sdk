@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Trove::OnDemandBackup 
-  include Peace::Model
+  include Core::Model
 	attr_accessor :created, :datastore, :description, :id, :instance_id, :location_ref, :name, :parent_id, :size, :status, :updated, :is_automated, :flavor_ram, :source, :type, :volume_size
 
 	class << self

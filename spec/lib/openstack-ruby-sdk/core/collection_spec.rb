@@ -1,4 +1,4 @@
 require 'spec_helper'
 
-describe Peace::Collection do
+describe Core::Collection do
 end

@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Marconi::Message 
-  include Peace::Model
+  include Core::Model
   attr_accessor :id, :age, :ttl, :body, :href, :claim_id
   belongs_to :claim
 

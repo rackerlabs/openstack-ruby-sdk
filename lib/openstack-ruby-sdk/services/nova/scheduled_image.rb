@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Nova::ScheduledImage
-  include Peace::Model
+  include Core::Model
 
   attr_accessor :id, :name, :created, :updated, :user_id, :tenant_id, :progress, :minDisk, :minRam, :disk_config, :links, :server, :metadata
 

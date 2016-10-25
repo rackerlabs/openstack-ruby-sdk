@@ -3,7 +3,7 @@ require 'openssl'
 require 'yaml'
 require 'pry'
 
-class Peace::ServiceCatalog
+class Core::ServiceCatalog
 
   RACKSPACE_AUTH_URL = "https://identity.api.rackspacecloud.com/v2.0/tokens"
 
@@ -34,13 +34,13 @@ class Peace::ServiceCatalog
 
       # catalog = body['token']['catalog']
       catalog = body['access']['serviceCatalog']
-      Peace::ServiceCatalog.new(catalog, token, host)
+      Core::ServiceCatalog.new(catalog, token, host)
     end
 
     private
 
     def rackspace_based_auth
-      Peace.logger.debug 'Loading Rackspace ServiceCatalog'
+      Core.logger.debug 'Loading Rackspace ServiceCatalog'
 
       auth_url = RACKSPACE_AUTH_URL
       api_key  = ENV['RS_API_KEY']
@@ -64,7 +64,7 @@ class Peace::ServiceCatalog
     end
 
     def openstack_based_auth
-      Peace.logger.debug 'Loading OpenStack ServiceCatalog'
+      Core.logger.debug 'Loading OpenStack ServiceCatalog'
 
       auth_url   = ENV['OS_AUTH_URL']
       username   = ENV['OS_USERNAME']
@@ -113,9 +113,9 @@ class Peace::ServiceCatalog
     @access_token    = token
     @region          = ENV['OS_REGION_NAME']
     @services        = catalog.map{ |s| Service.new(s) }
-    Peace.tenant_id  = ENV['OS_PROJECT_ID']
-    Peace.auth_token = token
-    Peace.sdk        = sdk
+    Core.tenant_id  = ENV['OS_PROJECT_ID']
+    Core.auth_token = token
+    Core.sdk        = sdk
   end
 
   def available_services

@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Trove::User 
-  include Peace::Model
+  include Core::Model
   attr_accessor :id, :password, :databases, :host
 
   def grant_user_access; end

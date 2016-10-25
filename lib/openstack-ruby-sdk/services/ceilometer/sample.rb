@@ -1,6 +1,6 @@
 class OpenStackRubySDK::Ceilometer::Sample
 
-  include Peace::Model
+  include Core::Model
   attr_accessor :id, :metadata, :meter, :project_id, :recorded_at, :resource_id, :source, :timestamp, :type, :unit, :user_id, :volume
 
   # "GET /v2/samples",

@@ -1,4 +1,4 @@
-module Peace::ORM
+module Core::ORM
 
   def self.included(klass)
     klass.extend ClassMethods
@@ -6,16 +6,16 @@ module Peace::ORM
 
   def save
     method   = self.id.present? ? 'put' : 'post'
-    response = Peace::Request.send(method, self.url, self)
+    response = Core::Request.send(method, self.url, self)
     self.send(:refresh!, response)
   end
 
   def destroy
-    Peace::Request.delete(self.url)
+    Core::Request.delete(self.url)
   end
 
   def reload
-    response = Peace::Request.get(self.url)
+    response = Core::Request.get(self.url)
     self.send(:refresh!, response)
   end
 
@@ -31,7 +31,7 @@ module Peace::ORM
   module ClassMethods
 
     def all(attrs={})
-      response = Peace::Request.get(collection_url(attrs))
+      response = Core::Request.get(collection_url(attrs))
       objs     = response[@json_key_name || collection_name]
 
       [*objs].map do |f|
@@ -54,7 +54,7 @@ module Peace::ORM
     def create(options={})
       wrapper  = collection_name.singularize
       payload  = {"#{wrapper}" => options}
-      response = Peace::Request.post(collection_url, payload)
+      response = Core::Request.post(collection_url, payload)
 
       self.new(response)
     end
@@ -66,7 +66,7 @@ module Peace::ORM
     end
 
     # A symbol that describes the JSON key name where the object
-    # data is stored in the Peace API payload.
+    # data is stored in the Core API payload.
     def json_key_name(sym=nil)
       return @json_key_name unless sym
       @json_key_name = sym.to_s
@@ -74,7 +74,7 @@ module Peace::ORM
 
     # Find the endpoint for a Service by name and region
     def service_url
-      @service_url ||= Peace.service_catalog.url_for(service_name)
+      @service_url ||= Core.service_catalog.url_for(service_name)
     end
 
     # Provide the service name based on the child (calling) class

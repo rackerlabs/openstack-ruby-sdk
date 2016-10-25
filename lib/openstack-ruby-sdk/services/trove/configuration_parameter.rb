@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Trove::ConfigurationParameter 
-  include Peace::Model
+  include Core::Model
 	attr_accessor :max, :min, :name, :restart_required, :type
 	
 	def details; end

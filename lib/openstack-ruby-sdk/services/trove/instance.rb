@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Trove::Instance 
-  include Peace::Model
+  include Core::Model
   attr_accessor :id, :name, :created, :updated, :state, :hostname, :links, :flavor_id, :volume, :datastore
 
   attr_with_alias :state, :status

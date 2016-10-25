@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Keystone::Role
-  include Peace::Model
+  include Core::Model
   attr_accessor :id, :links, :name, :domain_id
   # POST /v3/roles
   # GET /v3/roles

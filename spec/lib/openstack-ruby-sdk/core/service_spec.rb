@@ -2,11 +2,11 @@ require 'spec_helper'
 
 module Testing
   class Network
-    include Peace::Service
+    include Core::Service
   end
 end
 
-describe Peace::Service do
+describe Core::Service do
   let(:service){ Testing::Network.new }
 
   it 'knows the service_name' do

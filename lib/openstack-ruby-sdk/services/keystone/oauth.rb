@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Keystone::Oauth  
-  include Peace::Model
+  include Core::Model
   attr_accessor :id, :description, :links
   # POST /v3/OS-OAUTH1/consumers
   # GET /v3/OS-OAUTH1/consumers

@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Designate::Domain 
-  include Peace::Model
+  include Core::Model
 	attr_accessor :account_id, :comment, :created, :email_address, :id, :name, :nameservers, :records_list, :ttl, :updated
 	
 	belongs_to :account

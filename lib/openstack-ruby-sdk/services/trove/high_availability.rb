@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Trove::HighAvailability 
-  include Peace::Model
+  include Core::Model
 	attr_accessor :acls, :configuration, :datastore, :flavor, :id, :name, :networks, :replica_source, :replicas, :state, :tenant_id, :volume
 	
 	def acls; end

@@ -1,6 +1,6 @@
 class OpenStackRubySDK::Cinder::Snapshot
-  include Peace::Model
-  include Peace::Metadata
+  include Core::Model
+  include Core::Metadata
 
   attr_accessor :created_at, :description, :id, :name, :size, :status, :volume_id, :metadata
 
@@ -14,16 +14,16 @@ class OpenStackRubySDK::Cinder::Snapshot
   json_key_name :snapshot
 
   def self.create(opts={})
-    data = Peace::Helpers.payload_builder("snapshot", {
+    data = Core::Helpers.payload_builder("snapshot", {
       display_name: opts.fetch(:name),
       display_description: opts.fetch(:description),
       volume_id: opts.fetch(:volume_id),
       force: opts.fetch(:force, true)
     })
 
-    response = Peace::Request.post(collection_url, data)
+    response = Core::Request.post(collection_url, data)
     snapshot = self.new(response)
-    Peace::Helpers.wait_for(snapshot, 'available')
+    Core::Helpers.wait_for(snapshot, 'available')
   end
 
 end

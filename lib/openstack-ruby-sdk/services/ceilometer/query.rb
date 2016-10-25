@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Ceilometer::Query
   
-  include Peace::Model
+  include Core::Model
   attr_accessor :field, :op, :type, :value
 end

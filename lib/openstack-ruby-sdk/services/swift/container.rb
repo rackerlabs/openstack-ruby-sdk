@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Swift::Container
-  include Peace::Model
+  include Core::Model
   attr_accessor :hash, :last_modified, :bytes, :name, :content_type
 
   class << self

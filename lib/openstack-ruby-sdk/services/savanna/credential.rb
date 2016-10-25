@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Savanna::Credential 
-  include Peace::Model
+  include Core::Model
 	attr_accessor :ssh_keys, :cloud_files
 	
 	class << self

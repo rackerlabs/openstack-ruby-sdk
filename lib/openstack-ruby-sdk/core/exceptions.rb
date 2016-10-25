@@ -1,4 +1,4 @@
-module Peace
+module Core
   class BadRequest < StandardError
     def initialize(msg)
       msg        = msg.gsub("u'", "'")

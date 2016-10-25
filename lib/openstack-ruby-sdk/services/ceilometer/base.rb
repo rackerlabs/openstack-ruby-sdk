@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Ceilometer
-  include Peace::Service
+  include Core::Service
   has_resource :resource
   has_resource :meter
   has_resource :sample

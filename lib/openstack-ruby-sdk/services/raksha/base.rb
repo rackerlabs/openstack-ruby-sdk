@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Raksha 
-  include Peace::Service
+  include Core::Service
 
   has_resource :activity
   has_resource :agent

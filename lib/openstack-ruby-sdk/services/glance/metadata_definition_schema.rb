@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Glance::MetadataDefinitionSchema  
-  include Peace::Model
+  include Core::Model
   # GET /v2/schemas/metadefs/namespace
   # GET /v2/schemas/metadefs/namespaces
   # GET /v2/schemas/metadefs/object

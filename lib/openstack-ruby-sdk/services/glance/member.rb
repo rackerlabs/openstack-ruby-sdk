@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Glance::Member  
-  include Peace::Model
+  include Core::Model
   attr_accessor :created_at, :image_id, :member_id, :schema, :status, :updated_at
   # GET /v2/images/​{image_id}​/members
   # POST /v2/images/​{image_id}​/members

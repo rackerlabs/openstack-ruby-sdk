@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Swift::File
-  include Peace::Model
+  include Core::Model
   attr_accessor :id, :content_length, :content_type, :content_disposition, :etag, :last_modified, :access_control_allow_origin, :origin, :content_encoding, :delete_at, :delete_after
 
   attr_with_alias :content_length, 'Content-Length'

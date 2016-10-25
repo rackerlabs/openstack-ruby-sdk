@@ -1,6 +1,6 @@
 class OpenStackRubySDK::Nova::Image
-  include Peace::Model
-  include Peace::Metadata
+  include Core::Model
+  include Core::Metadata
 
   attr_accessor :id, :name, :created, :updated, :user_id, :tenant_id, :progress, :minDisk, :minRam, :disk_config, :links, :server, :metadata
 

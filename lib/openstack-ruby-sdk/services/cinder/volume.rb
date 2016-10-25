@@ -1,6 +1,6 @@
 class OpenStackRubySDK::Cinder::Volume
-  include Peace::Model
-  include Peace::Metadata
+  include Core::Model
+  include Core::Metadata
 
   attr_accessor :attachments, :availability_zone, :bootable, :consistencygroup_id, :created_at, :description, :encrypted, :id, :links, :metadata, :migration_status, :multiattach, :name, :replication_status, :size, :snapshot_id, :source_volid, :status, :user_id, :volume_type, :display_name, :display_description
 
@@ -37,7 +37,7 @@ class OpenStackRubySDK::Cinder::Volume
     attach  = options[:attach] || "detached"
     migrate = options[:migrate] || "migrating"
 
-    data = Peace::Helpers.payload_builder("os-reset_status", {
+    data = Core::Helpers.payload_builder("os-reset_status", {
       status: status,
       attach_status: attach,
       migration_status: migrate
@@ -63,6 +63,6 @@ class OpenStackRubySDK::Cinder::Volume
   private
 
   def perform_action!(data)
-    Peace::Request.post("#{url}/action", data)
+    Core::Request.post("#{url}/action", data)
   end
 end

@@ -1,3 +1,3 @@
 class OpenStackRubySDK::Keystone
-  include Peace::Service
+  include Core::Service
 end

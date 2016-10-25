@@ -1,4 +1,4 @@
 class OpenStackRubySDK::Nova::MetadatumItem  
-  include Peace::Model
+  include Core::Model
   attr_accessor :id, :meta
 end

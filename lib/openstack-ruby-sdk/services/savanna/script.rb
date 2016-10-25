@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Savanna::Script 
-  include Peace::Model
+  include Core::Model
 	attr_accessor :created, :id, :is_public, :links, :name, :type, :updated, :url
 
 	class << self

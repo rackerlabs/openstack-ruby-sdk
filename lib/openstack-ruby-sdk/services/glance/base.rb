@@ -1,3 +1,3 @@
 class OpenStackRubySDK::Glance
-  include Peace::Service
+  include Core::Service
 end

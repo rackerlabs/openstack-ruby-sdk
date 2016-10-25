@@ -1,4 +1,4 @@
-module Peace::HasResources
+module Core::HasResources
 
   def self.included(klass)
     mattr_accessor :resources
@@ -25,7 +25,7 @@ module Peace::HasResources
     end
 
     def available_services
-      @available_services ||= Peace::ServiceCatalog.load!.available_services
+      @available_services ||= Core::ServiceCatalog.load!.available_services
     end
 
     def available_resources

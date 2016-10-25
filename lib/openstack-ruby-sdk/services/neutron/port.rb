@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Neutron::Port
-  include Peace::Model
+  include Core::Model
 
   attr_accessor :admin_state_up, :allowed_address_pairs, :created_at, :device_id, :device_owner, :extra_dhcp_opts, :fixed_ips, :id, :mac_address, :name, :network_id, :security_groups, :status, :tenant_id, :updated_at, :dns_assignment, :dns_name, :port_security_enabled, :subnet_id
 
@@ -12,7 +12,7 @@ class OpenStackRubySDK::Neutron::Port
   rackspace_api_path "/v2.0/ports"
 
   def save
-    data = Peace::Helpers.payload_builder(:port, {
+    data = Core::Helpers.payload_builder(:port, {
       admin_state_up: admin_state_up,
       allowed_address_pairs: allowed_address_pairs,
       device_id: device_id,
@@ -25,6 +25,6 @@ class OpenStackRubySDK::Neutron::Port
       security_groups: security_groups,
       subnet_id: subnet_id
     })
-    refresh! Peace::Request.put(url, data)
+    refresh! Core::Request.put(url, data)
   end
 end

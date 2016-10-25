@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Designate::Record 
-  include Peace::Model
+  include Core::Model
   attr_accessor :id, :name, :value, :ttl, :type, :priority, :created, :updated
 
 	def details; end

@@ -1,2 +1,2 @@
-class Peace::Collection
+class Core::Collection
 end

@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Swift::Object
-  include Peace::Model
+  include Core::Model
   attr_accessor :content
 
   class << self

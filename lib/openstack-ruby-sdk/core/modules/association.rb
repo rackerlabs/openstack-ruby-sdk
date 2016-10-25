@@ -1,4 +1,4 @@
-module Peace::Association
+module Core::Association
 
   def self.included(klass)
     klass.extend ClassMethods

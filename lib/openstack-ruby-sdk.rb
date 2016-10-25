@@ -1,5 +1,5 @@
 require "openstack-ruby-sdk/version"
-require 'rackspace-ruby-sdk-core'
+require "openstack-ruby-sdk/core/base"
 require 'pry'
 
 module OpenStackRubySDK

@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Designate
-  include Peace::Service
+  include Core::Service
 
   has_resource :domain
   has_resource :limit

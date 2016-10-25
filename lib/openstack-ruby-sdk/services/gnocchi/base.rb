@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Gnocchi 
-  include Peace::Service
+  include Core::Service
 
   def initialize
   end

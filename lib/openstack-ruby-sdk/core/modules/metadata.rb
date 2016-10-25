@@ -1,12 +1,12 @@
-module Peace::Metadata
+module Core::Metadata
 
   def get_metadata
-    Peace::Request.get("#{self.url}/metadata")
+    Core::Request.get("#{self.url}/metadata")
   end
 
   def set_metadata(hash)
     url = "#{self.url}/metadata"
-    Peace::Request.put(url, { metadata: hash })
+    Core::Request.put(url, { metadata: hash })
     self.reload
     self.metadata
   end

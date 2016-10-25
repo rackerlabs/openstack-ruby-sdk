@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Savanna::Distro 
-  include Peace::Model
+  include Core::Model
 	attr_accessor :id, :links, :name, :services, :version
 	
 	class << self

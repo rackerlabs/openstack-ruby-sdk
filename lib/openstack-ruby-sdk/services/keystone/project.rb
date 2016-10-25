@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Keystone::Project
-  include Peace::Model
+  include Core::Model
   attr_accessor :description, :domain_id, :enabled, :id, :links, :name, :parent_id, :is_domain
   # GET /v3/projects
   # POST /v3/projects

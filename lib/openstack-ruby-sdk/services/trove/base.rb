@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Trove 
-  include Peace::Service
+  include Core::Service
 
   has_resource :configuration
   has_resource :configuration_parameter

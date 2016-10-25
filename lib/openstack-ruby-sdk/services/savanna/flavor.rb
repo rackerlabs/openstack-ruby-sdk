@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Savanna::Flavor 
-  include Peace::Model
+  include Core::Model
 	attr_accessor :class, :disk, :id, :name, :ram, :vcpus
 
 	has_many :nodes

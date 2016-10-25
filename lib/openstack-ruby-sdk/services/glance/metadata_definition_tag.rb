@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Glance::MetadataDefinitionTag  
-  include Peace::Model
+  include Core::Model
   attr_accessor :name
   # POST /v2/metadefs/namespaces/tags/​{namespace_id}​
   # GET /v2/metadefs/namespaces/tags/​{namespace_id}​

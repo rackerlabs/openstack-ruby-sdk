@@ -1,4 +1,4 @@
 class OpenStackRubySDK::Ceilometer::Trait  
-  include Peace::Model
+  include Core::Model
   attr_accessor :name, :type, :value
 end

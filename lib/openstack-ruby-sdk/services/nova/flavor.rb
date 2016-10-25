@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Nova::Flavor
-  include Peace::Model
+  include Core::Model
 
   attr_accessor :id, :name, :links, :ram, :vcpus, :swap, :rxtx_factor, :disk
 

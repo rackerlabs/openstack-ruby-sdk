@@ -1,7 +1,7 @@
 require 'active_support/all'
 require 'active_model'
 
-module Peace::Model
+module Core::Model
 
   def self.included(klass)
     klass.class_variable_set :@@alias_map, {}
@@ -11,10 +11,10 @@ module Peace::Model
 
     klass.class_eval do
       include ActiveModel::Validations
-      include Peace::ORM
-      include Peace::Association
-      include Peace::Endpoints
-      include Peace::Payload
+      include Core::ORM
+      include Core::Association
+      include Core::Endpoints
+      include Core::Payload
     end
   end
 
@@ -63,7 +63,7 @@ module Peace::Model
       begin
         self.send("#{k}=", v)
       rescue Exception => e
-        Peace.logger.error "Peace::Model#refresh failed: #{e}"
+        Core.logger.error "Core::Model#refresh failed: #{e}"
       end
     end
 

@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Neutron::Network
-  include Peace::Model
+  include Core::Model
 
   attr_accessor :admin_state_up, :created_at, :id, :mtu, :name, :port_security_enabled, :qos_policy_id, :router, :shared, :status, :subnets, :tenant_id, :updated_at
 
@@ -11,13 +11,13 @@ class OpenStackRubySDK::Neutron::Network
   rackspace_api_path "/v2.0/networks"
 
   def save
-    data = Peace::Helpers.payload_builder(:network, {
+    data = Core::Helpers.payload_builder(:network, {
       'router:external': external_router,
       admin_state_up: admin_state_up,
       name: name,
       port_security_enabled: port_security_enabled
     })
 
-    refresh! Peace::Request.put(url, data)
+    refresh! Core::Request.put(url, data)
   end
 end

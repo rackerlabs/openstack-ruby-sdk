@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Poppy 
-  include Peace::Service
+  include Core::Service
 
   has_resource :flavor
   has_resource :service

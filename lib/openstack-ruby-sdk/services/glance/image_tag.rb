@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Glance::ImageTag  
-  include Peace::Model
+  include Core::Model
   # POST /v2/metadefs/namespaces/tags/​{namespace_id}​
   # GET /v2/metadefs/namespaces/tags/​{namespace_id}​
   # DELETE /v2/metadefs/namespaces/tags/​{namespace_id}​

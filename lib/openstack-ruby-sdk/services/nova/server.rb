@@ -1,6 +1,6 @@
 class OpenStackRubySDK::Nova::Server
-  include Peace::Model
-  include Peace::Metadata
+  include Core::Model
+  include Core::Metadata
 
   REBOOT_TYPES = ['SOFT', 'HARD']
 
@@ -31,14 +31,14 @@ class OpenStackRubySDK::Nova::Server
 
     # TODO: This is asking for device UUIDs. Isn't that what we're creating?
   	def create_from_volume(options={})
-      volume_data = Peace::Helpers.payload_builder(:block_device_mapping_v2, {
+      volume_data = Core::Helpers.payload_builder(:block_device_mapping_v2, {
         uuid: options[:uuid],
         volume_size: options[:volume_size],
         source_type: 'image',
         delete_on_termination: true
       })
 
-      data = Peace::Helpers.payload_builder(:server, {
+      data = Core::Helpers.payload_builder(:server, {
         name: options[:name],
         imageRef: options[:imageRef],
         flavorRef: options[:flavorRef]
@@ -50,14 +50,14 @@ class OpenStackRubySDK::Nova::Server
       volume_info = data[:server][:block_device_mapping_v2]
       data[:server][:block_device_mapping_v2] = [volume_info]
 
-      response = Peace::Request.post(collection_url, data)
+      response = Core::Request.post(collection_url, data)
     end
   end
 
 	def attach_volume(volume_id)
-    data       = Peace::Helpers.payload_builder(:volumeAttachment, { volumeId: volume_id })
+    data       = Core::Helpers.payload_builder(:volumeAttachment, { volumeId: volume_id })
     url        = "#{self.url}/os-volume_attachments"
-    response   = Peace::Request.post(url, data)
+    response   = Core::Request.post(url, data)
     attachment = OpenStackRubySDK::Nova::VolumeAttachment.new(response)
     self.reload
     attachment
@@ -69,7 +69,7 @@ class OpenStackRubySDK::Nova::Server
 
     if attachment.present?
       url = "#{self.url}/os-volume_attachments/#{attachment.id}"
-      Peace::Request.delete(url)
+      Core::Request.delete(url)
     else
       raise "No attachment with #{volume_id} found."
     end
@@ -98,19 +98,19 @@ class OpenStackRubySDK::Nova::Server
   end
 
   def save
-    data = Peace::Helpers.payload_builder(:server, {
+    data = Core::Helpers.payload_builder(:server, {
       'OS-DCF:diskConfig': disk_config,
       accessIPv4: ipv4_address,
       accessIPv6: ipv6_address,
       name: name
     })
 
-    refresh! Peace::Request.put(url, data)
+    refresh! Core::Request.put(url, data)
   end
 
   def virtual_interfaces
     url = "#{self.url}/os-virtual-interfaces"
-    Peace::Request.get(url)
+    Core::Request.get(url)
   end
 
   # http://api.rackspace.com/#changePassword
@@ -136,7 +136,7 @@ class OpenStackRubySDK::Nova::Server
 
   # http://api.rackspace.com/#rebuildServer
   def rebuild
-    data = Peace::Helpers.payload_builder(:rebuild, {
+    data = Core::Helpers.payload_builder(:rebuild, {
       'OS-DCF:diskConfig': disk_config,
       accessIPv4: ipv4_address,
       accessIPv6: ipv6_address,
@@ -189,7 +189,7 @@ class OpenStackRubySDK::Nova::Server
   private
 
   def perform_action!(data)
-    Peace::Request.post("#{url}/action", data)
+    Core::Request.post("#{url}/action", data)
   end
 
 end

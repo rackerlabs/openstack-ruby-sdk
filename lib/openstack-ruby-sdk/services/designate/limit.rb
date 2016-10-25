@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Designate::Limit 
-  include Peace::Model
+  include Core::Model
 	attr_accessor :absolute, :rates
 	
 	class << self

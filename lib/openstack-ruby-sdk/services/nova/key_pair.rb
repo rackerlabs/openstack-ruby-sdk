@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Nova::KeyPair
-  include Peace::Model
+  include Core::Model
 
   attr_accessor :id, :public_key, :private_key, :user_id, :fingerprint, :name
 
@@ -21,17 +21,17 @@ class OpenStackRubySDK::Nova::KeyPair
   end
 
   def destroy
-    Peace::Request.delete("#{url}/#{name}")
+    Core::Request.delete("#{url}/#{name}")
   end
 
   def save
-    data = Peace::Helpers.payload_builder(:keypair, {
+    data = Core::Helpers.payload_builder(:keypair, {
       name: name,
       public_key: public_key,
       fingerprint: fingerprint
     })
 
-    refresh! Peace::Request.post(url, data)
+    refresh! Core::Request.post(url, data)
   end
 
 end

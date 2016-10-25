@@ -1,4 +1,4 @@
 class OpenStackRubySDK::Designate::Subdomain 
-  include Peace::Model
+  include Core::Model
   attr_accessor :domains, :total_entries
 end

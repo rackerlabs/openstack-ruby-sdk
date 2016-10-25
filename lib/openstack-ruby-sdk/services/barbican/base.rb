@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Barbican
-  include Peace::Service
+  include Core::Service
 
   has_resource :consumer
   has_resource :container

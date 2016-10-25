@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Neutron::SecurityGroup 
-  include Peace::Model
+  include Core::Model
   attr_accessor :id, :name, :description, :tenant_id
   belongs_to :tenant
   has_many :security_group_rules

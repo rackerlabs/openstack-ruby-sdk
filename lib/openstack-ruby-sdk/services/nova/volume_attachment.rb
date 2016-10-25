@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Nova::VolumeAttachment
-  include Peace::Model
+  include Core::Model
 
   attr_accessor :id, :server_id, :volume_id, :device
 

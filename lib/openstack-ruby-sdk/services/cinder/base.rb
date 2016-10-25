@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Cinder
-  include Peace::Service
+  include Core::Service
 
   has_resource :backup
   has_resource :consistency_group

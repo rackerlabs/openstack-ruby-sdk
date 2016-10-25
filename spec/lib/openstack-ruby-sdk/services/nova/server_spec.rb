@@ -46,30 +46,30 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
   it 'can resize' do
     expect(server.flavor['id']).to eq("1")
     expect(server.resize("2")).to eq(true)
-    Peace::Helpers.wait_for(server, 'VERIFY_RESIZE')
+    Core::Helpers.wait_for(server, 'VERIFY_RESIZE')
     server.confirm_resize
-    Peace::Helpers.wait_for(server)
+    Core::Helpers.wait_for(server)
     expect(server.flavor['id']).to eq("2")
   end
 
   it 'can revert a resize' do
     expect(server.flavor['id']).to eq("1")
     expect(server.resize("2")).to eq(true)
-    Peace::Helpers.wait_for(server, 'VERIFY_RESIZE')
+    Core::Helpers.wait_for(server, 'VERIFY_RESIZE')
     server.revert_resize
-    Peace::Helpers.wait_for(server)
+    Core::Helpers.wait_for(server)
     expect(server.flavor['id']).to eq("1")
   end
 
   it 'can be rescued' do
     expect(server.rescue(IMAGE_ID)['adminPass']).to be_present
-    Peace::Helpers.wait_for(server, 'RESCUE')
+    Core::Helpers.wait_for(server, 'RESCUE')
     expect(server.state).to eq('RESCUE')
   end
 
   it 'can be rebuilt' do
     server.rebuild
-    Peace::Helpers.wait_for(server, 'REBUILD')
+    Core::Helpers.wait_for(server, 'REBUILD')
     expect(server.state).to eq('REBUILD')
   end
 
@@ -107,26 +107,26 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
 
   it 'can attach a volume' do
     a = server.attach_volume(volume.id)
-    Peace::Helpers.wait_for(volume, "in-use")
-    Peace::Helpers.wait_for(server)
+    Core::Helpers.wait_for(volume, "in-use")
+    Core::Helpers.wait_for(server)
     expect(a.server_id).to eq(server.id)
     expect(a.volume_id).to eq(volume.id)
   end
 
   it 'can deattach a volume' do
     attachment = server.attach_volume(volume.id)
-    Peace::Helpers.wait_for(volume, "in-use")
-    Peace::Helpers.wait_for(server)
+    Core::Helpers.wait_for(volume, "in-use")
+    Core::Helpers.wait_for(server)
     expect(server.detach_volume(volume.id)).to eq(true)
-    Peace::Helpers.wait_for(volume, "available")
-    Peace::Helpers.wait_for(server)
+    Core::Helpers.wait_for(volume, "available")
+    Core::Helpers.wait_for(server)
     expect(server.volume_attachments).to eq([])
   end
 
   it 'can get details about volume attachments' do
     server.attach_volume(volume.id)
-    Peace::Helpers.wait_for(volume, "in-use")
-    Peace::Helpers.wait_for(server)
+    Core::Helpers.wait_for(volume, "in-use")
+    Core::Helpers.wait_for(server)
     attachments = server.volume_attachments
     expect(attachments.size).to eq(1)
     expect(attachments.first.server_id).to eq(server.id)
@@ -141,7 +141,7 @@ describe OpenStackRubySDK::Nova::Server, :vcr do
 
   it 'lists virtual interfaces' do
     # This will only work when an admin is configured in policy.json
-    expect { server.virtual_interfaces }.to raise_error Peace::BadRequest
+    expect { server.virtual_interfaces }.to raise_error Core::BadRequest
   end
 
   it 'has metadata' do

@@ -10,7 +10,7 @@ describe OpenStackRubySDK::Cinder::Backup, :vcr do
       incremental: false
     })
 
-    Peace::Helpers.wait_for(backup, "available")
+    Core::Helpers.wait_for(backup, "available")
     backup
   end
 
@@ -34,19 +34,19 @@ describe OpenStackRubySDK::Cinder::Backup, :vcr do
   end
 
   it 'deletes its self' do
-    Peace::Helpers.wait_for(backup, "available")
+    Core::Helpers.wait_for(backup, "available")
     expect(backup.destroy).to eq(true)
   end
 
   it 'restores its self' do
-    Peace::Helpers.wait_for(backup, "available")
+    Core::Helpers.wait_for(backup, "available")
     restore = backup.restore!(volume)
     expect(restore["restore"]["backup_id"]).to eq(backup.id)
     expect(restore["restore"]["volume_id"]).to eq(volume.id)
   end
 
   it 'force-deletes its self' do
-    Peace::Helpers.wait_for(backup, "available")
+    Core::Helpers.wait_for(backup, "available")
     expect(backup.force_delete!).to eq(true)
   end
 end

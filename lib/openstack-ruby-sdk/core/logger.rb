@@ -1,6 +1,6 @@
 require 'logger'
 
-class Peace::Logger
+class Core::Logger
 
   def self.logger
     logger = Logger.new(STDOUT)

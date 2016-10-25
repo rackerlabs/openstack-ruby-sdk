@@ -1,4 +1,4 @@
 class OpenStackRubySDK::Swift::Endpoint  
-  include Peace::Model
+  include Core::Model
   # GET /v1/endpoints
 end

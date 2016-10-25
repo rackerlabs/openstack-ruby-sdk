@@ -3,7 +3,7 @@ require 'spec_helper'
 module Testing
   module Compute
     class Server
-      include Peace::Model
+      include Core::Model
 
       attr_accessor :foo
       attr_with_alias :bandwidth, 'rax-bandwidth:bandwidth'
@@ -11,7 +11,7 @@ module Testing
   end
 end
 
-describe Peace::Model do
+describe Core::Model do
   let(:model){ Testing::Compute::Server.new }
 
   it 'knows the resource_name at object level' do

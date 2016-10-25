@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Keystone::ServiceCatalogAndEndpoint  
-  include Peace::Model
+  include Core::Model
   attr_accessor :description, :enabled, :id, :links, :name, :type
   # GET /v3/services
   # POST /v3/services

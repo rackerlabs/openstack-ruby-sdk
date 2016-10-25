@@ -1,10 +1,10 @@
-module Peace; end
+module Core; end
 
 project_root = File.dirname(File.absolute_path(__FILE__))
 Dir.glob(project_root + '/rackspace-ruby-sdk-core/modules/*.rb'){ |f| require f }
 Dir.glob(project_root + '/rackspace-ruby-sdk-core/*.rb'){ |f| require f }
 
-module Peace
+module Core
 
   @@auth_token      = nil
   @@service_catalog = nil
@@ -32,7 +32,7 @@ module Peace
         raise "ENV['SDK'] must be either 'openstack' or 'rackspace'"
       end
 
-      @@service_catalog ||= Peace::ServiceCatalog.load!(host)
+      @@service_catalog ||= Core::ServiceCatalog.load!(host)
     end
 
     def sdk=(sdk)
@@ -52,7 +52,7 @@ module Peace
     end
 
     def logger
-      @@logger ||= Peace::Logger.logger
+      @@logger ||= Core::Logger.logger
     end
   end
 end

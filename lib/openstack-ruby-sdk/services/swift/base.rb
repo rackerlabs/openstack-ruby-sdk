@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Swift
-  include Peace::Service
+  include Core::Service
   has_resource :account
   has_resource :container
   has_resource :file

@@ -1,4 +1,4 @@
-class Peace::Helpers
+class Core::Helpers
 
   def self.wait_for(obj, state='ACTIVE')
     obj.reload

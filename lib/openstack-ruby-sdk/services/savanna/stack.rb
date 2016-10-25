@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Savanna::Stack 
-  include Peace::Model
+  include Core::Model
 	attr_accessor :created, :description, :distro, :id, :links, :name, :node_groups, :services
 
 	has_many :clusters

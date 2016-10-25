@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Neutron
-  include Peace::Service
+  include Core::Service
 
   has_resource :load_balancer
   has_resource :network

@@ -1,7 +1,7 @@
 ENV['SDK'] = "openstack"
 ENV['SC_STUB'] = "true"
 
-module Peace::Endpoints
+module Core::Endpoints
 
   class EndpointCollection
     attr_accessor :endpoints
@@ -37,7 +37,7 @@ module Peace::Endpoints
     end
 
     def is_class_level?(obj)
-      obj.singleton_class.included_modules.include?(Peace::ORM::ClassMethods)
+      obj.singleton_class.included_modules.include?(Core::ORM::ClassMethods)
     end
 
     def method_missing(method_sym, *arguments, &block)

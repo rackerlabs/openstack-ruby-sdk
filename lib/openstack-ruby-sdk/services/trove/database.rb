@@ -1,5 +1,5 @@
 class OpenStackRubySDK::Trove::Database 
-  include Peace::Model
+  include Core::Model
   attr_accessor :id, :character_set, :collate
 
   def restart; end
