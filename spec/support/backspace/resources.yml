@@ -1,0 +1,22 @@
+services:
+  block-storage:
+    - backup
+    - capability
+    - cgsnapshot
+    - consistencygroup
+    - limit
+    - os-vol-image-meta
+    - volume
+    - qos-spec
+    - os-quota_set
+    - volume-type-access
+    - snapshot
+    - volume-type
+    - volume
+  compute:
+  dns:
+  identity:
+  image:
+  networking:
+  object-storage:
+  orchestration:

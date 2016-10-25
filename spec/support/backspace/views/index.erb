@@ -1,0 +1,25 @@
+<table>
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Method</th>
+      <th>Path</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @all_routes.each do |r| %>
+      <tr>
+        <td><%= r[:method] %></td>
+        <td><a href='<%= r[:path] %>'><%= r[:path] %></a></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<style type="text/css">
+  body { font: 16px/1.5 Helvetica; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; font-weight: 300; }
+  td,th { padding: 0.5em; }
+  table { border-collapse: collapse; }
+  tr:nth-child(even){ background: whitesmoke; border: 1px solid #DDD; }
+</style>
