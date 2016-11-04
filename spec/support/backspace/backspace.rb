@@ -6,7 +6,8 @@ require 'pry'
 class Router
   def self.all_routes
     routes = []
-    JSON.parse(File.read("./latest.json")).each do |s|
+    path = "spec/support/backspace/latest.json"
+    JSON.parse(File.read(path)).each do |s|
       s['resources'].each do |r|
         r["endpoints"].each do |e|
           routes << e.symbolize_keys

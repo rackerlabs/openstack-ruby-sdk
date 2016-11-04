@@ -43,3 +43,8 @@ task :purge_openstack do
     end
   end
 end
+
+desc "Load the Backspace mock server"
+task :backspace do
+   `ruby spec/support/backspace/backspace.rb`
+end

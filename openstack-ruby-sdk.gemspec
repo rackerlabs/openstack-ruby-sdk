@@ -33,4 +33,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec-mocks"
   s.add_development_dependency "vcr"
   s.add_development_dependency "webmock"
+  s.add_development_dependency "sinatra"
+  s.add_development_dependency "thin"
 end
