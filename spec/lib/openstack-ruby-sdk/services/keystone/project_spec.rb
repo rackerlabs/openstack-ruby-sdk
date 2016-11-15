@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Keystone::Project, :vcr do
+describe OpenStackRubySDK::Keystone::Project do
   let(:project){ OpenStackRubySDK::Keystone::Project.new }
 
   it 'gets an index' do

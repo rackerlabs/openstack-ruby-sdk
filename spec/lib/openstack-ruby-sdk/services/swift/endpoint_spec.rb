@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Swift::Endpoint, :vcr do
+describe OpenStackRubySDK::Swift::Endpoint do
   let(:endpoint){ OpenStackRubySDK::Swift::Endpoint.new }
 
   it 'gets an index' do

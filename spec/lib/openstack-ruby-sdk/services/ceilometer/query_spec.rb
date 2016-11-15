@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Ceilometer::Query, :vcr do
+describe OpenStackRubySDK::Ceilometer::Query do
   let(:query){ OpenStackRubySDK::Ceilometer::Query.new }
 
   it 'gets an index' do

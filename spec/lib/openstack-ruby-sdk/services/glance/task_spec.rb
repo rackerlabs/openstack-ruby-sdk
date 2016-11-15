@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Glance::Task, :vcr do
+describe OpenStackRubySDK::Glance::Task do
   let(:task){ OpenStackRubySDK::Glance::Task.new }
 
   it 'gets an index' do

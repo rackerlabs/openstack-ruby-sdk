@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Glance::MetadataDefinitionTag, :vcr do
+describe OpenStackRubySDK::Glance::MetadataDefinitionTag do
   let(:metadata_definition_tag){ OpenStackRubySDK::Glance::MetadataDefinitionTag.new }
 
   it 'gets an index' do

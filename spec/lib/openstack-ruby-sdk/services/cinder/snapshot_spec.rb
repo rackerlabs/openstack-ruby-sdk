@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Cinder::Snapshot, :vcr do
+describe OpenStackRubySDK::Cinder::Snapshot do
   let(:volume) { fresh_volume }
   let(:snapshot) { volume.take_snapshot!("name", "description") }
 

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Glance::MetadataDefinitionNamespace, :vcr do
+describe OpenStackRubySDK::Glance::MetadataDefinitionNamespace do
   let(:metadata_definition_namespace){ OpenStackRubySDK::Glance::MetadataDefinitionNamespace.new }
 
   it 'gets an index' do

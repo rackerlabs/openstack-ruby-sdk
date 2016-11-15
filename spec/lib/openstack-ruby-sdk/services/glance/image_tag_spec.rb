@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Glance::ImageTag, :vcr do
+describe OpenStackRubySDK::Glance::ImageTag do
   let(:image_tag){ OpenStackRubySDK::Glance::ImageTag.new }
 
   it 'gets an index' do

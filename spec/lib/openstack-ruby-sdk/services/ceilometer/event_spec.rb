@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Ceilometer::Event, :vcr do
+describe OpenStackRubySDK::Ceilometer::Event do
   let(:event){ OpenStackRubySDK::Ceilometer::Event.new }
 
   it 'gets an index' do

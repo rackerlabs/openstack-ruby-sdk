@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Nova::ScheduledImage, :vcr do
+describe OpenStackRubySDK::Nova::ScheduledImage do
   let(:image){ OpenStackRubySDK::Nova::ScheduledImage.first }
   
   before do

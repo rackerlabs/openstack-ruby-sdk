@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Keystone::Role, :vcr do
+describe OpenStackRubySDK::Keystone::Role do
   let(:role){ OpenStackRubySDK::Keystone::Role.new }
 
   it 'gets an index' do

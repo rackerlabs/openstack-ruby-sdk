@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Cinder::VolumeTransfer, :vcr do
+describe OpenStackRubySDK::Cinder::VolumeTransfer do
   let!(:volume) { fresh_volume }
   let(:transfer) do
     OpenStackRubySDK::Cinder::VolumeTransfer.create({

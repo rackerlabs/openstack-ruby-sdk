@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Heat::BuildInfo, :vcr do
+describe OpenStackRubySDK::Heat::BuildInfo do
   let(:build_info){ OpenStackRubySDK::Heat::BuildInfo.new }
 
   it 'gets an index' do

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Nova::Image, :vcr do
+describe OpenStackRubySDK::Nova::Image do
   let(:image){ OpenStackRubySDK::Nova::Image.first }
 
   it 'gets an index' do

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Neutron::SecurityGroup, :vcr do
+describe OpenStackRubySDK::Neutron::SecurityGroup do
   let(:security_group){ OpenStackRubySDK::Neutron::SecurityGroup.new }
 
   it 'gets an index' do

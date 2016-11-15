@@ -24,9 +24,9 @@ class Core::ServiceCatalog
       token    = response.headers[:x_subject_token]
       body     = JSON.parse(response.body)
 
-      # catalog = body['token']['catalog']
       catalog = body['access']['serviceCatalog']
-      Core::ServiceCatalog.new(catalog, token, host)
+      sc = Core::ServiceCatalog.new(catalog, token)
+      binding.pry
     end
 
     private
@@ -77,13 +77,12 @@ class Core::ServiceCatalog
     end
   end
 
-  def initialize(catalog, token, sdk)
-    @access_token    = token
-    @region          = ENV['OS_REGION_NAME']
-    @services        = catalog.map{ |s| Service.new(s) }
+  def initialize(catalog, token)
+    @access_token   = token
+    @region         = ENV['OS_REGION_NAME']
+    @services       = catalog.map{ |s| Service.new(s) }
     Core.tenant_id  = ENV['OS_PROJECT_ID']
     Core.auth_token = token
-    Core.sdk        = sdk
   end
 
   def available_services
@@ -133,7 +132,7 @@ class Core::ServiceCatalog
       def initialize(hash)
         @id        = hash['id']
         @region    = hash['region'].downcase
-        @url       = hash['url']
+        @url       = hash['publicURL']
         @interface = hash['interface']
       end
     end

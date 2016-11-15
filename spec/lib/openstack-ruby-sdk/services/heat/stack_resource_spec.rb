@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Heat::StackResource, :vcr do
+describe OpenStackRubySDK::Heat::StackResource do
   let(:stack_resource){ OpenStackRubySDK::Heat::StackResource.new }
 
   it 'gets an index' do

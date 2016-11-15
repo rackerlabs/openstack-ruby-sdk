@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Nova::Misc, :vcr do
+describe OpenStackRubySDK::Nova::Misc do
 
   it 'gets rate and absolute limits' do
     limits = OpenStackRubySDK::Nova::Misc.limits

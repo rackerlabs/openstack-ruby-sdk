@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Glance::Member, :vcr do
+describe OpenStackRubySDK::Glance::Member do
   let(:member){ OpenStackRubySDK::Glance::Member.new }
 
   it 'gets an index' do

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Neutron::Port, :vcr do
+describe OpenStackRubySDK::Neutron::Port do
   let(:network) do
     OpenStackRubySDK::Neutron::Network.create({ name: "testing" })
   end

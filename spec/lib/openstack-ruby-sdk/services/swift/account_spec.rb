@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Swift::Account, :vcr do
+describe OpenStackRubySDK::Swift::Account do
   let(:account){ OpenStackRubySDK::Swift::Account.new }
 
   it 'gets an index' do

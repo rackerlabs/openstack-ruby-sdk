@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Keystone::Oauth, :vcr do
+describe OpenStackRubySDK::Keystone::Oauth do
   let(:oauth){ OpenStackRubySDK::Keystone::Oauth.new }
 
   it 'gets an index' do

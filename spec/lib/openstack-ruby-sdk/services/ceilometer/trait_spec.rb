@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Ceilometer::Trait, :vcr do
+describe OpenStackRubySDK::Ceilometer::Trait do
   let(:trait){ OpenStackRubySDK::Ceilometer::Trait.new }
 
   it 'gets an index' do

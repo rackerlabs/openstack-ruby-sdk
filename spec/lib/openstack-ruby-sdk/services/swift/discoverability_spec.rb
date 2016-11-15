@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Swift::Discoverability, :vcr do
+describe OpenStackRubySDK::Swift::Discoverability do
   let(:discoverability){ OpenStackRubySDK::Swift::Discoverability.new }
 
   it 'gets an index' do

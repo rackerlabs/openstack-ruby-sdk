@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Ceilometer::Meter, :vcr do
+describe OpenStackRubySDK::Ceilometer::Meter do
   let(:meter){ OpenStackRubySDK::Ceilometer::Meter.new }
 
   it 'gets an index' do

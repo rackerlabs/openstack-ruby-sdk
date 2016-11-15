@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Heat::StackEvent, :vcr do
+describe OpenStackRubySDK::Heat::StackEvent do
   let(:stack_event){ OpenStackRubySDK::Heat::StackEvent.new }
 
   it 'gets an index' do

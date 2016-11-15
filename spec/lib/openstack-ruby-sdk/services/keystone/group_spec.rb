@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Keystone::Group, :vcr do
+describe OpenStackRubySDK::Keystone::Group do
   let(:group){ OpenStackRubySDK::Keystone::Group.new }
 
   it 'gets an index' do

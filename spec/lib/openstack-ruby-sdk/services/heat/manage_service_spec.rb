@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Heat::ManageService, :vcr do
+describe OpenStackRubySDK::Heat::ManageService do
   let(:manage_service){ OpenStackRubySDK::Heat::ManageService.new }
 
   it 'gets an index' do

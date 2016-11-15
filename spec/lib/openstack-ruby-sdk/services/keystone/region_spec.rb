@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Keystone::Region, :vcr do
+describe OpenStackRubySDK::Keystone::Region do
   let(:region){ OpenStackRubySDK::Keystone::Region.new }
 
   it 'gets an index' do

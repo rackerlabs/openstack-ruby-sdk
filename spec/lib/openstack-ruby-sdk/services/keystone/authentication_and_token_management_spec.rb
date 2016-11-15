@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Keystone::AuthenticationAndTokenManagement, :vcr do
+describe OpenStackRubySDK::Keystone::AuthenticationAndTokenManagement do
   let(:authentication_and_token_management){ OpenStackRubySDK::Keystone::AuthenticationAndTokenManagement.new }
 
   it 'gets an index' do

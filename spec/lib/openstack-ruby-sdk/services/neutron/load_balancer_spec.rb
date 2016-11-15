@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Neutron::LoadBalancer, :vcr do
+describe OpenStackRubySDK::Neutron::LoadBalancer do
   let(:network) do
     OpenStackRubySDK::Neutron::Network.create({
       name: "testing"

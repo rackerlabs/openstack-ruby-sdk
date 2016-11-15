@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Heat::SoftwareConfiguration, :vcr do
+describe OpenStackRubySDK::Heat::SoftwareConfiguration do
   let(:software_configuration){ OpenStackRubySDK::Heat::SoftwareConfiguration.new }
 
   it 'gets an index' do

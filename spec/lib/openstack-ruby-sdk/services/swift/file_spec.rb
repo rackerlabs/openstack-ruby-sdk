@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Swift::File, :vcr do
+describe OpenStackRubySDK::Swift::File do
   let(:file){ OpenStackRubySDK::Swift::File.new }
 
   it 'gets an index' do

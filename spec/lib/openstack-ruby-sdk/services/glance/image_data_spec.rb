@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Glance::ImageData, :vcr do
+describe OpenStackRubySDK::Glance::ImageData do
   let(:image_data){ OpenStackRubySDK::Glance::ImageData.new }
 
   it 'gets an index' do

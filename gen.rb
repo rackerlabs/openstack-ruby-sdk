@@ -20,7 +20,7 @@ Dir.glob("#{Dir.pwd}/lib/openstack-ruby-sdk/services/**/*.rb").each do |file|
 file = <<-EOF
 require 'spec_helper'
 
-describe #{klass}, :vcr do
+describe #{klass} do
   let(:#{obj}){ #{klass}.new }
 
   it 'gets an index' do

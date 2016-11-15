@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Glance::ImageSchema, :vcr do
+describe OpenStackRubySDK::Glance::ImageSchema do
   let(:image_schema){ OpenStackRubySDK::Glance::ImageSchema.new }
 
   it 'gets an index' do

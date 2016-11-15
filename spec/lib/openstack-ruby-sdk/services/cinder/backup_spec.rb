@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Cinder::Backup, :vcr do
+describe OpenStackRubySDK::Cinder::Backup do
   let(:volume){ fresh_volume }
   let(:backup) do
     backup = OpenStackRubySDK::Cinder::Backup.create({

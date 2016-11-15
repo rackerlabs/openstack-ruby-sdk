@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Keystone::ServiceCatalogAndEndpoint, :vcr do
+describe OpenStackRubySDK::Keystone::ServiceCatalogAndEndpoint do
   let(:service_catalog_and_endpoint){ OpenStackRubySDK::Keystone::ServiceCatalogAndEndpoint.new }
 
   it 'gets an index' do

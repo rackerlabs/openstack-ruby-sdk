@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Neutron::ServiceProvider, :vcr do
+describe OpenStackRubySDK::Neutron::ServiceProvider do
   let(:service_provider){ OpenStackRubySDK::Neutron::ServiceProvider.new }
 
   it 'gets an index' do

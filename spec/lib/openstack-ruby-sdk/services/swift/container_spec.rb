@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Swift::Container, :vcr do
+describe OpenStackRubySDK::Swift::Container do
   let(:container){ OpenStackRubySDK::Swift::Container.new }
 
   it 'gets an index' do

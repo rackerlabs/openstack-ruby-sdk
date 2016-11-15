@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Glance::MetadataDefinitionResourceType, :vcr do
+describe OpenStackRubySDK::Glance::MetadataDefinitionResourceType do
   let(:metadata_definition_resource_type){ OpenStackRubySDK::Glance::MetadataDefinitionResourceType.new }
 
   it 'gets an index' do

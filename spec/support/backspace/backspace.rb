@@ -48,7 +48,7 @@ class MyApp < Sinatra::Base
 
   post '/service_catalog' do
     content_type 'application/json'
-    File.read("service_catalog.json")
+    File.read("spec/support/backspace/service_catalog.json")
   end
 
   run! if app_file == $0

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Nova::Flavor, :vcr do
+describe OpenStackRubySDK::Nova::Flavor do
   it 'gets an index' do
     expect(OpenStackRubySDK::Nova::Flavor.all.count).to be >= 0
   end

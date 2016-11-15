@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Cinder::Volume, :vcr do
+describe OpenStackRubySDK::Cinder::Volume do
   let(:server) { server_with_volume }
   let(:mounted_volume) { server.volumes.first }
   let(:volume) { fresh_volume }

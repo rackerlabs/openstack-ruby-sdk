@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Keystone::Policy, :vcr do
+describe OpenStackRubySDK::Keystone::Policy do
   let(:policy){ OpenStackRubySDK::Keystone::Policy.new }
 
   it 'gets an index' do

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Keystone::Credential, :vcr do
+describe OpenStackRubySDK::Keystone::Credential do
   let(:credential){ OpenStackRubySDK::Keystone::Credential.new }
 
   it 'gets an index' do

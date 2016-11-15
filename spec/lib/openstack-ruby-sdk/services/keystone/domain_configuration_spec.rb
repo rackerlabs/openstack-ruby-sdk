@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Keystone::DomainConfiguration, :vcr do
+describe OpenStackRubySDK::Keystone::DomainConfiguration do
   let(:domain_configuration){ OpenStackRubySDK::Keystone::DomainConfiguration.new }
 
   it 'gets an index' do

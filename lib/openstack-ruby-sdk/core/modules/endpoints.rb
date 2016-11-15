@@ -1,4 +1,3 @@
-ENV['SDK'] = "openstack"
 ENV['SC_STUB'] = "true"
 
 module Core::Endpoints

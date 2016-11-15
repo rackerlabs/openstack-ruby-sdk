@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Swift::Object, :vcr do
+describe OpenStackRubySDK::Swift::Object do
   let(:object){ OpenStackRubySDK::Swift::Object.new }
 
   it 'gets an index' do

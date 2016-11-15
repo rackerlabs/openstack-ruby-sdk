@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Glance::ApiVersion, :vcr do
+describe OpenStackRubySDK::Glance::ApiVersion do
   let(:api_version){ OpenStackRubySDK::Glance::ApiVersion.new }
 
   it 'gets an index' do

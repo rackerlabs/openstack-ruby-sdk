@@ -22,7 +22,7 @@ Gem::Specification.new do |s|
   s.add_dependency "thor"
   s.add_dependency "activesupport"
   s.add_dependency "activemodel"
-  s.add_dependency "rest_client"
+  s.add_dependency "rest-client"
 
   s.add_development_dependency "awesome_print"
   s.add_development_dependency "bundler", "~> 1.10"
@@ -31,8 +31,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency "rspec-core"
   s.add_development_dependency "rspec-expectations"
   s.add_development_dependency "rspec-mocks"
-  s.add_development_dependency "vcr"
-  s.add_development_dependency "webmock"
   s.add_development_dependency "sinatra"
   s.add_development_dependency "thin"
 end

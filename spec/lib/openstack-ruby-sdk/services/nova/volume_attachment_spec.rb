@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Nova::VolumeAttachment, :vcr do
+describe OpenStackRubySDK::Nova::VolumeAttachment do
   let(:volume_id){ 'f2176250-b0d9-4e3f-948c-df959dfba6fc' }
   let(:flavor_id) { '1' }
   let(:image_id) { '9060f38f-bb54-4806-a2b3-24a2173af252' }

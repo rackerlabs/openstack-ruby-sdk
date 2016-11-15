@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Heat::Template, :vcr do
+describe OpenStackRubySDK::Heat::Template do
   let(:template){ OpenStackRubySDK::Heat::Template.new }
 
   it 'gets an index' do

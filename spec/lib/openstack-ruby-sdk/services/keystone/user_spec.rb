@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Keystone::User, :vcr do
+describe OpenStackRubySDK::Keystone::User do
   let(:user){ OpenStackRubySDK::Keystone::User.new }
 
   it 'gets an index' do

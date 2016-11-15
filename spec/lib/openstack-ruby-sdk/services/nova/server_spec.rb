@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Nova::Server, :vcr do
+describe OpenStackRubySDK::Nova::Server do
   let!(:server) { fresh_server }
   let(:volume) { fresh_volume }
 

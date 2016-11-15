@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OpenStackRubySDK::Cinder::Limit, :vcr do
+describe OpenStackRubySDK::Cinder::Limit do
   it 'gets a list' do
     limits = OpenStackRubySDK::Cinder::Limit.all
     expect(limits["limits"]["absolute"]["totalSnapshotsUsed"]).to be >= 0
