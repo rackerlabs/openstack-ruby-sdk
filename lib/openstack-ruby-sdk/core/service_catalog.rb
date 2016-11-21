@@ -9,7 +9,7 @@ class Core::ServiceCatalog
 
   class << self
     def load!
-      info = openstack_based_auth
+      info = openstack_auth
 
       if ENV['SC_STUB'] == 'true'
         auth_url = "http://127.0.0.1:7000/service_catalog"
@@ -25,15 +25,12 @@ class Core::ServiceCatalog
       body     = JSON.parse(response.body)
 
       catalog = body['access']['serviceCatalog']
-      sc = Core::ServiceCatalog.new(catalog, token)
-      binding.pry
+      Core::ServiceCatalog.new(catalog, token)
     end
 
     private
 
-    def openstack_based_auth
-      Core.logger.debug 'Loading OpenStack ServiceCatalog'
-
+    def openstack_auth
       auth_url   = ENV['OS_AUTH_URL']
       username   = ENV['OS_USERNAME']
       password   = ENV['OS_PASSWORD']

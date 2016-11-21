@@ -24,20 +24,12 @@ module Core
       @@service_catalog ||= Core::ServiceCatalog.load!
     end
 
-    def sdk=(sdk)
-      @@sdk = sdk
-    end
-
     def auth_token=(token)
       @@auth_token = token
     end
 
     def tenant_id=(id)
       @@tenant_id = id
-    end
-
-    def service_catalog=(catalog)
-      @@service_catalog = catalog
     end
 
     def logger

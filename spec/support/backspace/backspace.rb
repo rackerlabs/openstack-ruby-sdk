@@ -20,6 +20,7 @@ class Router
       .sort_by{ |e| e[:path] }
       .uniq{ |e| e[:path] }
       .each{ |e| e[:path] = e[:path].tr('{', ':').tr('}', '') }
+      .reject{ |e| e[:path] =~ /\/:/ }
   end
 end
 
@@ -27,16 +28,16 @@ class MyApp < Sinatra::Base
   set :server, :thin
   set :port, 7000
   set :bind, '0.0.0.0'
-  set :logging, Logger::DEBUG
+  set :logging, Logger::INFO
   set :mocked_routes, Router.all_routes
 
   before do
-    content_type 'application/json'
+    content_type :json
   end
 
   mocked_routes.each do |hash|
     self.send hash[:method].downcase, hash[:path] do
-      hash[:res]
+      hash[:res].to_json
     end
   end
 
@@ -47,7 +48,6 @@ class MyApp < Sinatra::Base
   end
 
   post '/service_catalog' do
-    content_type 'application/json'
     File.read("spec/support/backspace/service_catalog.json")
   end
 
